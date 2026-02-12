@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Hextra – Navbar + Footer tweaks
+   ========================================================================== */
+
+/* ----------------------------------------------------------------------------
+   Navbar typography
+   (Set the footer-ish/nav link/button font size here; change to 15/17/18.)
+   ---------------------------------------------------------------------------- */
+.hextra-nav-container a:not(.hextra-language-switcher),
+.hextra-nav-container button:not(.hextra-theme-toggle) {
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+}
+
+/* ----------------------------------------------------------------------------
+   Sticky bottom switches panel (sidebar)
+   ---------------------------------------------------------------------------- */
+aside .hx\:sticky.hx\:bottom-0.hx\:border-t {
+  display: none !important;
+}
+
+/* ----------------------------------------------------------------------------
+   Theme + language switchers (inherit size, unify icon sizing, set colors)
+   ---------------------------------------------------------------------------- */
+.hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  color: rgb(107 114 128); /* Tailwind gray-500 */
+}
+
+html.dark .hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) {
+  color: rgb(156 163 175); /* Tailwind gray-400 */
+}
+
+.hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) svg {
+  width: 1em !important;
+  height: 1em !important;
+  color: currentColor;
+  stroke: currentColor;
+}
+
+/* ----------------------------------------------------------------------------
+   Footer layout + content visibility
+   ---------------------------------------------------------------------------- */
+
+/* Full-width footer container (Hextra supports --hextra-max-footer-width). */
+:root {
+  --hextra-max-footer-width: 100%;
+}
+
+/* Make footer background match the page (transparent in both modes). */
+.hextra-footer,
+.hextra-footer:is(html[class~="dark"] *) {
+  background: transparent !important;
+}
+
+/* Remove default horizontal padding so custom footer can span full width. */
+.hextra-footer {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Hide built-in footer switches + divider. */
+.hextra-footer :is(
+  .hextra-language-switcher,
+  .hextra-language-options,
+  .hextra-theme-toggle
+) {
+  display: none !important;
+}
+
+.hextra-footer hr {
+  display: none !important;
+}
+
+/* Custom footer icons row. */
+.hextra-custom-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.hextra-footer .hextra-custom-footer svg {
+  width: 28px !important;
+  height: 28px !important;
+}
+

@@ -1,0 +1,513 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ergohaven docs – Wireless devices</title><link>http://localhost:1313/en/wireless/</link><description>Recent content in Wireless devices on ergohaven docs</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="http://localhost:1313/en/wireless/index.xml" rel="self" type="application/rss+xml"/><item><title>Imperial44 – Wireless Edition</title><link>http://localhost:1313/en/wireless/imperial44-we/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/en/wireless/imperial44-we/</guid><description>
+&lt;p&gt;&lt;img src="http://localhost:1313/images/layouts/imperial44_ru.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;Imperial44 Wireless Edition is a wireless, programmable mechanical split keyboard with a hot-swap system for quick replacement of MX-compatible switches and the option to install one hot-swap encoder on each half.&lt;/p&gt;
+&lt;h2&gt;Keyboard hardware&lt;span class="hx:absolute hx:-mt-20" id="keyboard-hardware"&gt;&lt;/span&gt;
+&lt;a href="#keyboard-hardware" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="http://localhost:1313/images/imperial_we/imperial_we.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;RESET button&lt;/li&gt;
+&lt;li&gt;Integrated MagSafe ring for WPC&lt;/li&gt;
+&lt;li&gt;Silicone feet&lt;/li&gt;
+&lt;li&gt;Service cutout/window for disassembling the keyboard case&lt;/li&gt;
+&lt;li&gt;Keyboard power switch&lt;/li&gt;
+&lt;li&gt;Transparent panel&lt;/li&gt;
+&lt;li&gt;Slot for installing an MX switch or a hot-swap encoder&lt;/li&gt;
+&lt;li&gt;USB‑C port&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;First connection&lt;span class="hx:absolute hx:-mt-20" id="first-connection"&gt;&lt;/span&gt;
+&lt;a href="#first-connection" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;The Imperial44 – Wireless Edition keyboard works with devices running Windows, macOS, Linux, Android, and iOS.&lt;/li&gt;
+&lt;li&gt;The keyboard connects via Plug and Play (PnP); no additional driver installation is required.&lt;/li&gt;
+&lt;li&gt;The keyboard ships ready to connect to your device with the firmware version current at the time of purchase.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" &gt;
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90"&gt;
+&lt;strong class="hx:text-lg"&gt;Direct connection (without Ergohaven&amp;rsquo;s Qube)&lt;/strong&gt;
+&lt;/summary&gt;
+&lt;div class="hx:p-2 hx:overflow-hidden"&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Turn on power on the left and right halves of the keyboard&lt;/strong&gt; — the halves are already synchronized with each other.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Select a connection profile on the keyboard&lt;/strong&gt; — if you’re connecting to only one device for the first time, you can skip this step.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Connect the keyboard to your device&lt;/strong&gt; — enable Bluetooth on the device, then complete pairing in the device settings.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" &gt;
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90"&gt;
+&lt;strong class="hx:text-lg"&gt;Connection via Ergohaven&amp;rsquo;s Qube&lt;/strong&gt;
+&lt;/summary&gt;
+&lt;div class="hx:p-2 hx:overflow-hidden"&gt;
+&lt;p&gt;&lt;strong&gt;Ergohaven&amp;rsquo;s Qube&lt;/strong&gt; is a universal dongle for Ergohaven wireless keyboards that displays useful information and reduces the keyboard’s power consumption.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Connect Ergohaven&amp;rsquo;s Qube to your computer using a USB Type‑C cable&lt;/strong&gt; and wait for Qube to boot.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Turn on power on the left half of the keyboard&lt;/strong&gt; — it will connect to Qube automatically.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Turn on power on the right half&lt;/strong&gt; — it will also connect to Qube, completing the setup.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;h2&gt;Keyboard configuration&lt;span class="hx:absolute hx:-mt-20" id="keyboard-configuration"&gt;&lt;/span&gt;
+&lt;a href="#keyboard-configuration" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Please refer to the article &lt;a href="http://localhost:1313/en/zmk/keymap-editor/"&gt;Keyboard configuration in ZMK keymap-editor&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;RuEn mode&lt;span class="hx:absolute hx:-mt-20" id="ruen-mode"&gt;&lt;/span&gt;
+&lt;a href="#ruen-mode" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Please refer to the article &lt;a href="http://localhost:1313/en/zmk/zmk-ruen/"&gt;RuEn layout for wireless keyboards&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Firmware update&lt;span class="hx:absolute hx:-mt-20" id="firmware-update"&gt;&lt;/span&gt;
+&lt;a href="#firmware-update" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" &gt;
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90"&gt;
+&lt;strong class="hx:text-lg"&gt;Firmware for a keyboard without Ergohaven&amp;rsquo;s Qube&lt;/strong&gt;
+&lt;/summary&gt;
+&lt;div class="hx:p-2 hx:overflow-hidden"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download the &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/settings_reset-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;settings reset firmware&lt;/a&gt; and the latest firmware for the &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_left-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;left&lt;/a&gt; and &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_right-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;right&lt;/a&gt; halves.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Turn off both halves using the switch on the back of the keyboard.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Connect the USB power cable to the left half, then press the Reset button on the back of the keyboard twice.&lt;/li&gt;
+&lt;li&gt;Wait until the controller enters bootloader mode and a mass-storage drive opens (if autorun for removable drives is disabled on your device, open the drive manually).&lt;/li&gt;
+&lt;li&gt;Copy or drag-and-drop the UF2 file with the “settings reset” firmware; the controller should reboot immediately.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The reset firmware is used to wipe the keyboard’s internal memory. It resets connection profiles and half synchronization settings.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;Press the Reset button on the back of the keyboard twice again and wait until the controller enters bootloader mode (the mass-storage drive opens).&lt;/li&gt;
+&lt;li&gt;Copy or drag-and-drop the UF2 firmware file for the left half; the controller should reboot immediately.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Repeat steps 1–5 for the right half.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Turn on both halves using the switch on the back of the keyboard.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press and release the Reset buttons on both halves at the same time — this will synchronize the halves with each other.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect the keyboard to your device.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" &gt;
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90"&gt;
+&lt;strong class="hx:text-lg"&gt;Firmware for a keyboard with Ergohaven&amp;rsquo;s Qube&lt;/strong&gt;
+&lt;/summary&gt;
+&lt;div class="hx:p-2 hx:overflow-hidden"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download the &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/settings_reset-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;settings reset firmware&lt;/a&gt; and the latest firmware for &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_qube-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;Qube&lt;/a&gt;, the &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_left_qube-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;left half&lt;/a&gt;, and the &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_right-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;right half&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Turn off both halves using the switch on the back of the keyboard.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect the USB power cable to Qube, then press the Reset button on the back of Qube twice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wait until the controller enters bootloader mode and a mass-storage drive opens (if autorun for removable drives is disabled on your device, open the drive manually).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy or drag-and-drop the UF2 file with the “settings reset” firmware; the controller should reboot immediately.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The reset firmware is used to wipe Qube’s and the keyboard’s internal memory. It resets half-to-half synchronization and Qube pairing settings.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Press the Reset button on the back of Qube twice again and wait until the controller enters bootloader mode (the mass-storage drive opens).&lt;/li&gt;
+&lt;li&gt;Copy or drag-and-drop the UF2 firmware file for Qube; the controller should reboot immediately.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Connect the USB power cable to the left half, then press the Reset button on the back of the keyboard twice.&lt;/li&gt;
+&lt;li&gt;Wait until the controller enters bootloader mode and a mass-storage drive opens (if autorun for removable drives is disabled on your device, open the drive manually).&lt;/li&gt;
+&lt;li&gt;Copy or drag-and-drop the UF2 file with the “settings reset” firmware; the controller should reboot immediately.&lt;/li&gt;
+&lt;li&gt;Press the Reset button on the back of the keyboard twice again and wait until the controller enters bootloader mode (the mass-storage drive opens).&lt;/li&gt;
+&lt;li&gt;Copy or drag-and-drop the UF2 firmware file for the left half; the controller should reboot immediately.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Repeat steps 1–5 for the right half.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Connect Qube to your device and wait for Qube to boot.&lt;/li&gt;
+&lt;li&gt;Turn on the left half using the switch on the back of the keyboard and wait for it to sync with Qube.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is important to follow the left-then-right connection order when pairing to Qube, because Qube synchronizes sequentially: first with the left half, then with the right half.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Turn on the right half using the switch on the back of the keyboard and wait for it to sync with Qube.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/details&gt;</description></item><item><title>K:03 – Wireless Edition</title><link>http://localhost:1313/en/wireless/k03-we/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/en/wireless/k03-we/</guid><description/></item><item><title>Qube</title><link>http://localhost:1313/en/wireless/qube/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/en/wireless/qube/</guid><description>
+&lt;p&gt;In this guide, we will thoroughly break down the process of fully setting up and flashing an Ergohaven split keyboard using the Qube dongle. You will learn how to prepare the files, perform a full reset, and correctly flash all components for stable operation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ergohaven&amp;rsquo;s Qube&lt;/strong&gt; - universal device is designed to be an essential companion for wireless keyboards. It works as a dongle and displays useful information.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/qube/qubes.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Step 1: Preparing the firmware&lt;span class="hx:absolute hx:-mt-20" id="step-1-preparing-the-firmware"&gt;&lt;/span&gt;
+&lt;a href="#step-1-preparing-the-firmware" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Before you begin, you need to obtain the latest firmware files. The firmware file is essentially the &amp;ldquo;brain&amp;rdquo; of your keyboard, which determines how it works.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;If you have a fork (copy) of the repository on GitHub:&lt;/strong&gt; Synchronize your fork with the main ZMK repository to get the latest updates. After that, build (compile) the firmware and download the resulting &lt;code&gt;*.uf2&lt;/code&gt; files: one for the left and right halves, and one for the Qube dongle.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;If you don&amp;rsquo;t have your own fork:&lt;/strong&gt; Download the ready-made standard firmware from the &lt;a href="https://github.com/ergohaven/keymap_hub" target="_blank"&gt;ergohaven/keymap_hub&lt;/a&gt; repository. You will also need three &lt;code&gt;.uf2&lt;/code&gt; files.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Additionally, you will need a &lt;strong&gt;reset firmware&lt;/strong&gt; (&lt;code&gt;settings_reset-ergohaven-zmk.uf2&lt;/code&gt;). Usually, it can be found in the same place as the main firmware, or in our &lt;a href="https://github.com/ergohaven/keymap_hub" target="_blank"&gt;keymap_hub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/qube/keymap_hub.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Step 2: Full reset&lt;span class="hx:absolute hx:-mt-20" id="step-2-full-reset"&gt;&lt;/span&gt;
+&lt;a href="#step-2-full-reset" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;This step is necessary for a &amp;ldquo;clean&amp;rdquo; installation and to avoid conflicts between the old and new firmware. We will sequentially install the reset firmware on all three devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Turn off the power on both halves of the keyboard.&lt;/strong&gt; Use the physical switches on the bottom of the case for this.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/qube/buttons.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;&lt;strong&gt;Flash the Reset firmware&lt;/strong&gt;. Connect each of the three devices (left half, right half, Qube) to the computer one by one. After connecting, quickly double-press the Reset button on the back of the device to put it into bootloader mode. The device will appear in the system as a removable USB drive. Drag and drop the Reset firmware file (&lt;code&gt;settings_reset-ergohaven-zmk.uf2&lt;/code&gt;) onto this drive. After copying, the device will automatically reboot.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is normal to see a warning about a file transfer error or an improper device ejection after copying the firmware. The file has been transferred successfully, but the drive disconnects before the operating system can register the completion of the transfer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Step 3: Flashing&lt;span class="hx:absolute hx:-mt-20" id="step-3-flashing"&gt;&lt;/span&gt;
+&lt;a href="#step-3-flashing" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Now that all devices are reset, you can install the main firmware. &lt;strong&gt;The order here is important!&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Flash Qube.&lt;/strong&gt; Connect the dongle to the computer, put it into bootloader mode, and copy the corresponding firmware file (&lt;code&gt;op36_qube-ergohaven-zmk.uf2&lt;/code&gt; or similar) to it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disconnect Qube from the computer.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flash the left half.&lt;/strong&gt; Connect the left half of the keyboard, put it into bootloader mode, and copy the firmware file for the left side (&lt;code&gt;op36_left_qube-ergohaven-zmk.uf2&lt;/code&gt;) to it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To flash the left half, exclusively use the firmware file named &lt;code&gt;&lt;b&gt;left_qube&lt;/b&gt;-ergohaven-zmk.uf2&lt;/code&gt;. The exception is the Velvet UI, which uses &lt;code&gt;&lt;b&gt;ui_left&lt;/b&gt;-ergohaven-zmk.uf2&lt;/code&gt; for the left half and &lt;code&gt;&lt;b&gt;ui_right_qube&lt;/b&gt;-ergohaven-zmk.uf2&lt;/code&gt; for the right half.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;&lt;strong&gt;Disconnect the left half from the computer.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flash the right half.&lt;/strong&gt; Connect the right half, put it into bootloader mode, and copy its firmware file (&lt;code&gt;op36_right-ergohaven-zmk.uf2&lt;/code&gt;) to it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Step 4: First power-up and synchronization&lt;span class="hx:absolute hx:-mt-20" id="step-4-first-power-up-and-synchronization"&gt;&lt;/span&gt;
+&lt;a href="#step-4-first-power-up-and-synchronization" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;All components are flashed. Now they have to be started correctly.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Using a Type-C cable, connect Ergohaven&amp;rsquo;s Qube to the PC.&lt;/strong&gt; It will act as a receiver.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Turn on the power on the left half of the keyboard.&lt;/strong&gt; It should automatically connect to Qube.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Turn on the power on the right half.&lt;/strong&gt; It will connect to the Qube, completing the setup.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Wait a few seconds. Try typing something. If everything is done correctly, your keyboard is ready to use!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If nothing happens, press the reset button on Qube once.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/qube/op36_qube.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;How to update the layout in the future?&lt;span class="hx:absolute hx:-mt-20" id="how-to-update-the-layout-in-the-future"&gt;&lt;/span&gt;
+&lt;a href="#how-to-update-the-layout-in-the-future" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;This is one of the main advantages of using Ergohaven&amp;rsquo;s Qube. All the keyboard layout logic is stored in it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you have changed your layout (swapped keys, added a macro) and built a new firmware, you &lt;strong&gt;do not need&lt;/strong&gt; to re-flash the halves of the keyboard.
+It is enough to re-flash only the dongle! Just connect it to the computer, put it into bootloader mode, and copy the new firmware file to it. This makes the update process quick and convenient.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Congratulations! Your keyboard is ready to use.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Trackball Mini</title><link>http://localhost:1313/en/wireless/tb-mini/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/en/wireless/tb-mini/</guid><description>
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/hero.jpg" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Trackball Mini V3&lt;/strong&gt; - an updated revision of the compact trackball, now connecting to any device wirelessly via Bluetooth and featuring 2 multi-functional keys. The keys allow you to perform basic mouse clicks and switch between trackball usage modes. This guide describes all the features of the trackball, its modes, and the setup process.&lt;/p&gt;
+&lt;h2&gt;Connecting the Trackball&lt;span class="hx:absolute hx:-mt-20" id="connecting-the-trackball"&gt;&lt;/span&gt;
+&lt;a href="#connecting-the-trackball" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Step 1. Turn on Bluetooth on the device you are connecting the trackball to.&lt;/p&gt;
+&lt;p&gt;Step 2. Turn on the trackball by switching the power switch on the bottom cover of the trackball to the ON position.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/controls.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;After this step, the trackball will enter pairing mode and appear in the list of available devices for connection. Connect to it. The trackball is ready to use!&lt;/p&gt;
+&lt;h2&gt;Keys on the Base Layer of the Trackball&lt;span class="hx:absolute hx:-mt-20" id="keys-on-the-base-layer-of-the-trackball"&gt;&lt;/span&gt;
+&lt;a href="#keys-on-the-base-layer-of-the-trackball" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/keys.jpg" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;The two new keys on the trackball allow it to be used completely independently of programmable keyboards, as all actions performed with a mouse are available by pressing keys on the trackball, and the need for a separate mouse layer on the keyboard is completely eliminated.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take a closer look at what the keys can do.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;strong&gt;left key&lt;/strong&gt; of the trackball acts as the left mouse button (LMB);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;strong&gt;right key&lt;/strong&gt; of the trackball, &lt;strong&gt;when tapped&lt;/strong&gt;, will perform a right mouse button click (RMB), and &lt;strong&gt;when held down&lt;/strong&gt;, activates &amp;ldquo;sniper&amp;rdquo; mode, in which the cursor movement speed is slowed down, allowing for more precise cursor aiming;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tapping both keys simultaneously&lt;/strong&gt; produces a middle mouse button click (MMB);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Holding down both keys&lt;/strong&gt; puts the trackball into scroll mode, and rotating the trackball will scroll. Scrolling occurs both vertically and horizontally, depending on the direction of rotation of the trackball.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/base-layout-en.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Settings Layer&lt;span class="hx:absolute hx:-mt-20" id="settings-layer"&gt;&lt;/span&gt;
+&lt;a href="#settings-layer" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The trackball mini v3, like other ZMK devices, can be paired with up to 6 devices, and after pairing, the trackball can be switched between them by pressing a couple of keys. To connect the trackball to additional devices, you will need to use the &lt;em&gt;settings layer&lt;/em&gt;. To access this layer, press both trackball keys simultaneously twice in a row.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To indicate being on the &lt;em&gt;settings layer&lt;/em&gt;, the cursor moves significantly slower on it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A brief summary of the actions available while on the &lt;em&gt;settings layer&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Tapping the &lt;strong&gt;left key&lt;/strong&gt; will select connection profile 0 (the first connected device);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tapping the &lt;strong&gt;right key&lt;/strong&gt; will switch to the next connection profile (there are 6 profiles available, numbered 0 through 5);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Double-tapping the &lt;strong&gt;left button&lt;/strong&gt; will clear the current profile, making it available for connection to a new device;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Double-tapping the &lt;strong&gt;right button&lt;/strong&gt; will clear all profiles, making them available for connection to new devices;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tapping the &lt;strong&gt;left and right buttons&lt;/strong&gt; simultaneously will exit the &lt;em&gt;settings layer&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For more details on connecting to multiple devices and the purpose of the listed functions, please refer to the user manual &lt;a href="https://journey.ergohaven.xyz/en-gb/pages/docs/zmk-keyboards#connecting-to-multiple-devices/" target="_blank"&gt;First Steps with a ZMK Keyboard&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/adjust-layout-en.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Configuring Trackball Keys&lt;span class="hx:absolute hx:-mt-20" id="configuring-trackball-keys"&gt;&lt;/span&gt;
+&lt;a href="#configuring-trackball-keys" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Any &lt;strong&gt;behavior&lt;/strong&gt; can be assigned to the trackball keys using the &lt;a href="https://journey.ergohaven.xyz/en-gb/pages/docs/keymap-editor/" target="_blank"&gt;keymap editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For example, if you rarely use Sniper Mode but frequently use Scroll Mode, you can swap their activation methods: activate Scroll Mode by holding the right mouse button, and Sniper Mode by holding down both buttons.
+Or, if you often use applications where holding down MMB is used, you can remove the action when holding down the &lt;em&gt;LMB + RMB&lt;/em&gt; combo, assigning &lt;code&gt;&amp;amp;mkp MB3&lt;/code&gt; to it.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/base-layer.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Firmware, Charge Monitoring&lt;span class="hx:absolute hx:-mt-20" id="firmware-charge-monitoring"&gt;&lt;/span&gt;
+&lt;a href="#firmware-charge-monitoring" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Firmware updating and charge monitoring are similar to &lt;a href="https://journey.ergohaven.xyz/en-gb/pages/docs/keymap-editor/" target="_blank"&gt;wireless keyboards on ZMK&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Switching Modes&lt;span class="hx:absolute hx:-mt-20" id="switching-modes"&gt;&lt;/span&gt;
+&lt;a href="#switching-modes" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Scroll and sniper modes are activated on the layers specified in the configuration, by default &lt;strong&gt;1&lt;/strong&gt; and &lt;strong&gt;2&lt;/strong&gt; respectively, and if you want to use these layers for some other purpose, you can move the activation of these modes to any other layer. How to change the layer numbers for the modes is described in &lt;a href="#scroll-mode-settings"&gt;Scroll Mode Settings&lt;/a&gt; and &lt;a href="#sniper-mode-settings"&gt;Sniper Mode Settings&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the default layout, modes are switched using the &lt;code&gt;&amp;amp;mo&lt;/code&gt; behavior, but modes can also be switched using any other behavior that activates layers. If you don&amp;rsquo;t want to hold the scroll mode button down, you can use the &lt;code&gt;&amp;amp;tog 1&lt;/code&gt; behavior to turn on the mode, then pressing it once will turn on layer 1 along with scroll mode, and pressing it again will deactivate layer 1 and scroll mode.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/scroll-combo.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Configuring the Trackball&lt;span class="hx:absolute hx:-mt-20" id="configuring-the-trackball"&gt;&lt;/span&gt;
+&lt;a href="#configuring-the-trackball" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;All trackball modes can be configured in the &lt;code&gt;config/trackball.keymap&lt;/code&gt; file, which can be done quickly and easily in the GitHub web-interface by clicking the &lt;strong&gt;Edit this file&lt;/strong&gt; button.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/edit-github.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;Open the file in your fork and scroll to the bottom, looking for the lines:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;amp;trackball { cpi = &amp;lt;1000&amp;gt;; };
+&amp;amp;trackball_listener {
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;;
+scroller {
+layers = &amp;lt;1&amp;gt;;
+input-processors =
+&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_to_scroll_mapper&amp;gt;;
+};
+sniper {
+layers = &amp;lt;2&amp;gt;;
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;;
+};
+adjust {
+layers = &amp;lt;3&amp;gt;;
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 1 8&amp;gt;;
+};
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Let&amp;rsquo;s look at all available settings.&lt;/p&gt;
+&lt;h3&gt;Cursor Sensitivity in Normal Mode&lt;span class="hx:absolute hx:-mt-20" id="cursor-sensitivity-in-normal-mode"&gt;&lt;/span&gt;
+&lt;a href="#cursor-sensitivity-in-normal-mode" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;You can change the cursor sensitivity in normal mode in the line &lt;code&gt;&amp;amp;trackball { cpi = &amp;lt;1000&amp;gt;; };&lt;/code&gt;, the &lt;code&gt;cpi&lt;/code&gt; value is specified in steps of &lt;em&gt;200&lt;/em&gt;, and must not be greater than &lt;em&gt;3200&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In addition to the &lt;code&gt;cpi&lt;/code&gt; parameter, the multiplier &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;&lt;/code&gt; is also applied, meaning that the final sensitivity will be nine-twentieths of the initial &lt;code&gt;cpi&lt;/code&gt; value. This value can also be changed.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;amp;trackball_listener {
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;You can read more about the available &lt;code&gt;input-processors&lt;/code&gt; in the ZMK documentation: &lt;a href="https://zmk.dev/docs/keymaps/input-processors"target="_blank" rel="noopener"&gt;https://zmk.dev/docs/keymaps/input-processors&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Scroll Mode Settings&lt;span class="hx:absolute hx:-mt-20" id="scroll-mode-settings"&gt;&lt;/span&gt;
+&lt;a href="#scroll-mode-settings" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The following settings are available for scroll mode:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;scroller {
+layers = &amp;lt;1&amp;gt;;
+input-processors =
+&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_to_scroll_mapper&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;layers = &amp;lt;1&amp;gt;;&lt;/code&gt; - the layers on which scroll mode will be active. After changing the layer number, you also need to change the behavior that switches to the layer with scroll mode.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;&lt;/code&gt; - inverting scrolling, you can invert both the &lt;strong&gt;Y&lt;/strong&gt; axis and the &lt;strong&gt;X&lt;/strong&gt; axis (&lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_X_INVERT&amp;gt;&lt;/code&gt;), or even invert both axes by listing the parameters separated by commas: &lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;, &amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_X_INVERT&amp;gt;,&lt;/code&gt;.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;&lt;/code&gt; - the scroll speed is specified as a ratio, by default the speed is one thirty-second. You can either slow down scrolling by changing the value, for example to &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 64&amp;gt;&lt;/code&gt;, or speed up scrolling &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 2 32&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Sniper Mode Settings&lt;span class="hx:absolute hx:-mt-20" id="sniper-mode-settings"&gt;&lt;/span&gt;
+&lt;a href="#sniper-mode-settings" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The following settings are available for sniper mode:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;sniper {
+layers = &amp;lt;2&amp;gt;;
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;layers = &amp;lt;2&amp;gt;;&lt;/code&gt; - the layers on which sniper mode will be active. After changing the layer number, you also need to change the behavior that switches to the layer with sniper mode.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;&lt;/code&gt; - speed multiplier for sniper mode. By default, the trackball speed is reduced to one-quarter in sniper mode.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The cursor slowdown on the settings layer (&lt;code&gt;adjust&lt;/code&gt;) is configured in a similar way.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/final.jpg" alt="image" loading="lazy" /&gt;&lt;/p&gt;</description></item><item><title>Velvet v3 – Wireless and UI Edition</title><link>http://localhost:1313/en/wireless/velvet-ui/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/en/wireless/velvet-ui/</guid><description>
+&lt;p&gt;&lt;img src="http://localhost:1313/images/layouts/velvet_ui.png" alt="Velvet v3 UI" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Velvet v3 - Ultimate Interface Edition&lt;/strong&gt; is a keyboard that reduces the need to move your hand to a minimum with a keywell layout and a trackball under your thumb. The curved key placement makes moving your fingers between rows of keys noticeably easier, and the functional trackball, easily accessible under your thumb, nearly eliminates the need to move your hand to the mouse.&lt;/p&gt;
+&lt;h2&gt;Cursor Control&lt;span class="hx:absolute hx:-mt-20" id="cursor-control"&gt;&lt;/span&gt;
+&lt;a href="#cursor-control" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="http://localhost:1313/images/velvet-ui/trackball.jpg" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;The main feature of Velvet UI is a built-in trackball located under the thumb. Rotating the trackball moves the mouse cursor and temporarily activates a special layer with mouse keys.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/velvet-ui/layer.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;The mouse layer contains keys for cursor control: left mouse button (&lt;strong&gt;MB1&lt;/strong&gt;), right mouse button (&lt;strong&gt;MB2&lt;/strong&gt;), middle mouse click (&lt;strong&gt;MB3&lt;/strong&gt;), as well as switching to Scroll mode (&lt;strong&gt;&amp;amp;mo 5&lt;/strong&gt;) and Sniper mode (&lt;strong&gt;&amp;amp;mo 6&lt;/strong&gt;).
+The mouse layer is activated when moving the cursor with the trackball, and if the trackball remains stationary for 500 milliseconds, the layer will automatically turn off.&lt;/p&gt;
+&lt;p&gt;&lt;video
+autoplay
+loop
+muted
+style="max-width: 100%"&gt;
+&lt;source src="http://localhost:1313/video/velvet-ui/scroll.mp4" type="video/mp4"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Sniper mode reduces the speed of the cursor movement, allowing you to aim it more accurately.&lt;/p&gt;
+&lt;p&gt;&lt;video
+autoplay
+loop
+muted
+style="max-width: 100%"&gt;
+&lt;source src="http://localhost:1313/video/velvet-ui/sniper.mp4" type="video/mp4"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;Mode switching&lt;span class="hx:absolute hx:-mt-20" id="mode-switching"&gt;&lt;/span&gt;
+&lt;a href="#mode-switching" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Scroll and Sniper modes are activated on the configured layers, by default &lt;strong&gt;5&lt;/strong&gt; and &lt;strong&gt;6&lt;/strong&gt; respectively, and if you want to use these layers for some other purpose, you can move the activation of these modes to any other layer. See &lt;a href="#scroll-mode-settings"&gt;Scroll Mode Settings&lt;/a&gt; and &lt;a href="#sniper-mode-settings"&gt;Sniper Mode Settings&lt;/a&gt; on how to change the layer numbers for the modes.&lt;/p&gt;
+&lt;p&gt;In the default layout, modes are switched using the &lt;code&gt;&amp;amp;mo&lt;/code&gt; behavior, but you can switch modes using any other behavior that activates layers. If you don&amp;rsquo;t want to keep the scroll mode button pressed, you can use the &lt;code&gt;&amp;amp;tog 5&lt;/code&gt; behavior to activate the mode, then a single tap will activate layer 5 along with the scroll mode, and a second tap will deactivate layer 5 and the scroll mode.&lt;/p&gt;
+&lt;p&gt;You can also make a hybrid &lt;a href="https://journey.ergohaven.xyz/en-gb/pages/docs/keymap-editor/#custom-behaviors" target="_blank"&gt;custom behavior&lt;/a&gt; that when held will turn on the layer with the &lt;code&gt;&amp;amp;mo&lt;/code&gt; behavior, and when tapped will toggle it with the &lt;code&gt;&amp;amp;tog&lt;/code&gt; behavior.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/velvet-ui/mode-behavior.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Trackball configuration&lt;span class="hx:absolute hx:-mt-20" id="trackball-configuration"&gt;&lt;/span&gt;
+&lt;a href="#trackball-configuration" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;All trackball modes, including the automatic switching to the mouse layer, can be configured in the &lt;code&gt;config/velvet_v3_ui.keymap&lt;/code&gt; file, this can be done quickly and conveniently in the GitHub web-interface by clicking &lt;strong&gt;Edit this file&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/velvet-ui/github-edit.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;Open the file in your fork and scroll to the very bottom, looking for lines:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;amp;trackball { cpi = &amp;lt;1000&amp;gt;; };
+&amp;amp;trackball_listener {
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;;
+scroller {
+layers = &amp;lt;5&amp;gt;;
+input-processors =
+&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_to_scroll_mapper&amp;gt;;
+};
+sniper {
+layers = &amp;lt;6&amp;gt;;
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;;
+};
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Let&amp;rsquo;s take a look at all the available settings.&lt;/p&gt;
+&lt;h3&gt;Cursor sensitivity in normal mode&lt;span class="hx:absolute hx:-mt-20" id="cursor-sensitivity-in-normal-mode"&gt;&lt;/span&gt;
+&lt;a href="#cursor-sensitivity-in-normal-mode" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;You can change the cursor sensitivity in normal mode in the line &lt;code&gt;&amp;amp;trackball { cpi = &amp;lt;1000&amp;gt;; };&lt;/code&gt;, the value of &lt;code&gt;cpi&lt;/code&gt; is set in increments of &lt;em&gt;200&lt;/em&gt;, and should not be greater than &lt;em&gt;3200&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In addition to the &lt;code&gt;cpi&lt;/code&gt; parameter, a multiplier &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;&lt;/code&gt; is also applied, which means that the final sensitivity will be &lt;code&gt;9 / 20 * cpi&lt;/code&gt;. This value can also be changed.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;amp;trackball_listener {
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;You can read more about the available &lt;code&gt;input-processors&lt;/code&gt; in the ZMK documentation: &lt;a href="https://zmk.dev/docs/keymaps/input-processors"target="_blank" rel="noopener"&gt;https://zmk.dev/docs/keymaps/input-processors&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Configuring Mouse Layer Activation&lt;span class="hx:absolute hx:-mt-20" id="configuring-mouse-layer-activation"&gt;&lt;/span&gt;
+&lt;a href="#configuring-mouse-layer-activation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The &lt;code&gt;&amp;lt;&amp;amp;zip_auto_mouse 4 500&amp;gt;&lt;/code&gt; fragment handles the automatic activation of the mouse layer. Let&amp;rsquo;s review the available settings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 - the number of the layer to be automatically activated. If you change the keymap and the mouse layer gets a different number, simply update this value;&lt;/li&gt;
+&lt;li&gt;500 - the duration for which the mouse layer remains active.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you want to disable the automatic mouse layer activation, simply remove the &amp;lt;&amp;amp;zip_auto_mouse 4 500&amp;gt; fragment.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To prevent accidental mouse layer activations during typing, the layer will not activate for 800 milliseconds after any key press. This delay can also be configured in the fragment located higher in the &lt;code&gt;config/velvet_v3_ui.keymap&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt; zip_auto_mouse: zip_auto_mouse {
+compatible = &amp;#34;zmk,input-processor-temp-layer&amp;#34;;
+#input-processor-cells = &amp;lt;2&amp;gt;;
+require-prior-idle-ms = &amp;lt;800&amp;gt;;
+excluded-positions = &amp;lt;&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you want to increase or decrease this threshold, edit the &lt;code&gt;require-prior-idle-ms&lt;/code&gt; value.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For more information about automatic mouse layer settings, please refer to the &lt;a href="https://zmk.dev/docs/keymaps/input-processors/temp-layer"target="_blank" rel="noopener"&gt;ZMK documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Scroll mode settings&lt;span class="hx:absolute hx:-mt-20" id="scroll-mode-settings"&gt;&lt;/span&gt;
+&lt;a href="#scroll-mode-settings" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The following settings are available for the scroll mode:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;scroller {
+layers = &amp;lt;5&amp;gt;;
+input-processors =
+&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_to_scroll_mapper&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;layers = &amp;lt;5&amp;gt;;&lt;/code&gt; - layers on which the scroll mode will be active. After changing the layer number, you should also change the behavior that switches to the the scroll mode layer.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;&lt;/code&gt; - scrolling inversion, you can invert both &lt;strong&gt;Y&lt;/strong&gt; and &lt;strong&gt;X&lt;/strong&gt; axis (&lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_X_INVERT&amp;gt;&lt;/code&gt;), or even invert both axes, listing the parameters in commas: &lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;, &amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_X_INVERT&amp;gt;,&lt;/code&gt;.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;&lt;/code&gt; - the scrolling speed is set as a ratio, the default speed is &lt;code&gt;1 / 32 * cpi&lt;/code&gt;. You can both slow down scrolling by changing the value, for example, to &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 64&amp;gt;&lt;/code&gt;, and speed up scrolling &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 2 32&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Sniper mode settings&lt;span class="hx:absolute hx:-mt-20" id="sniper-mode-settings"&gt;&lt;/span&gt;
+&lt;a href="#sniper-mode-settings" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The following settings are available for sniper mode:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;sniper {
+layers = &amp;lt;6&amp;gt;;
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;layers = &amp;lt;6&amp;gt;;&lt;/code&gt; - layers on which the sniper mode will be active. After changing the layer number, you should also change the behavior that switches to the the sniper mode layer.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;&lt;/code&gt; - speed multiplier for sniper mode. By default, in sniper mode the trackball speed is &lt;code&gt;1 / 4 * cpi&lt;/code&gt;. You can both slow down scrolling by changing the value, for example, to &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 8&amp;gt;&lt;/code&gt;, and speed up cursor &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 2 4&amp;gt;&lt;/code&gt;.&lt;/p&gt;</description></item></channel></rss>

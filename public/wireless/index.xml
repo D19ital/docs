@@ -1,0 +1,514 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ergohaven docs – Беспроводные девайсы</title><link>http://localhost:1313/wireless/</link><description>Recent content in Беспроводные девайсы on ergohaven docs</description><generator>Hugo -- gohugo.io</generator><language>ru</language><atom:link href="http://localhost:1313/wireless/index.xml" rel="self" type="application/rss+xml"/><item><title>Imperial44 – Wireless Edition</title><link>http://localhost:1313/wireless/imperial44-we/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/wireless/imperial44-we/</guid><description>
+&lt;p&gt;&lt;img src="http://localhost:1313/images/layouts/imperial44_ru.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;Imperial44 Wireless Edition - беспроводная программируемая механическая сплит-клавиатура с хотсвап-системой для быстрой замены MX-совместимых свитчей и возможностью установить по одному хотсвап энкодеру на каждую половинку&lt;/p&gt;
+&lt;h2&gt;Устройство клавиатуры&lt;span class="hx:absolute hx:-mt-20" id="устройство-клавиатуры"&gt;&lt;/span&gt;
+&lt;a href="#%d1%83%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%81%d1%82%d0%b2%d0%be-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="http://localhost:1313/images/imperial_we/imperial_we.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;кнопка RESET&lt;/li&gt;
+&lt;li&gt;интегрированое кольцо MagSafe для УСН&lt;/li&gt;
+&lt;li&gt;силиконовые ножки&lt;/li&gt;
+&lt;li&gt;вспомогательное окно для разбора корпуса клавиатуры&lt;/li&gt;
+&lt;li&gt;переключатель питания клавиатуры&lt;/li&gt;
+&lt;li&gt;прозрачная панель&lt;/li&gt;
+&lt;li&gt;место для установки MX-свитча либо хотсвап-энкодера&lt;/li&gt;
+&lt;li&gt;USB-C разъем&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Первое подключение&lt;span class="hx:absolute hx:-mt-20" id="первое-подключение"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bf%d0%b5%d1%80%d0%b2%d0%be%d0%b5-%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Клавиатура Imperial44 – Wireless Edition работает с устройствами под управлением Windows, macOS, Linux, Android, iOS&lt;/li&gt;
+&lt;li&gt;Подключение клавиатуры осущевствляется посредством Plug and Play (PnP), дополнительная установка драйверов не требуется&lt;/li&gt;
+&lt;li&gt;Клавиатура поставляется готовой для подключения к вашему устройству с актуальной на момент покупки прошивкой&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" &gt;
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90"&gt;
+&lt;strong class="hx:text-lg"&gt;Подключение напрямую (без Ergohaven&amp;rsquo;s Qube)&lt;/strong&gt;
+&lt;/summary&gt;
+&lt;div class="hx:p-2 hx:overflow-hidden"&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Включите питание на левой и правой половинках клавиатуры&lt;/strong&gt; - половинки уже синхронизированы между собой&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Выберите профиль подключения на клавиатуре&lt;/strong&gt; - если нужно подключить на несколько устройств, для первого подключения можете пропустить этот шаг&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Подключите клавиатуру к устройству&lt;/strong&gt; - включите Bluetooth на устройстве, затем выполните сопряжение в настройках устройства&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" &gt;
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90"&gt;
+&lt;strong class="hx:text-lg"&gt;Подключение через Ergohaven&amp;rsquo;s Qube&lt;/strong&gt;
+&lt;/summary&gt;
+&lt;div class="hx:p-2 hx:overflow-hidden"&gt;
+&lt;p&gt;&lt;strong&gt;Ergohaven&amp;rsquo;s Qube&lt;/strong&gt; — универсальный донгл для беспроводных клавиатур Ergohaven, который отображает полезную информацию и снижает энергопотребление клавиатуры&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Используя Type-C кабель подключите Ergohaven&amp;rsquo;s Qube к компьютеру&lt;/strong&gt; и дождитесь загрузки Qube&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Включите питание на левой половинке клавиатуры&lt;/strong&gt; - половинка автоматически подключится к Qube&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Включите питание на правой половинке&lt;/strong&gt; - половинка также подключится к Qube, завершая настройку&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;h2&gt;Настройка клавиатуры&lt;span class="hx:absolute hx:-mt-20" id="настройка-клавиатуры"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Пожалуйста перейдите в статью &lt;a href="http://localhost:1313/zmk/keymap-editor/"&gt;Настройка клавиатуры в ZMK keymap-editor&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Режим Ruen&lt;span class="hx:absolute hx:-mt-20" id="режим-ruen"&gt;&lt;/span&gt;
+&lt;a href="#%d1%80%d0%b5%d0%b6%d0%b8%d0%bc-ruen" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Пожалуйста перейдите в статью &lt;a href="http://localhost:1313/zmk/zmk-ruen/"&gt;RuEn раскладка для беспроводных клавиатур&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Обновление прошивки&lt;span class="hx:absolute hx:-mt-20" id="обновление-прошивки"&gt;&lt;/span&gt;
+&lt;a href="#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b8" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" &gt;
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90"&gt;
+&lt;strong class="hx:text-lg"&gt;Прошивка для клавиатуры без Ergohaven&amp;rsquo;s Qube&lt;/strong&gt;
+&lt;/summary&gt;
+&lt;div class="hx:p-2 hx:overflow-hidden"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Скачайте &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/settings_reset-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;reset прошивку&lt;/a&gt; и актуальные прошивки для &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_left-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;левой&lt;/a&gt; и &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_right-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;правой&lt;/a&gt; половинок&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Выключите обе половинки переключателем с обратной стороны клавиатуры&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Подключите USB кабель питания в левую половинку, дважды нажмите кнопку Reset с обратной стороны клавиатуры&lt;/li&gt;
+&lt;li&gt;Дождитесь когда контроллер перейдёт в режим загрузчика и откроется папка-хранилище (если на вашем устройстве отключен автозапуск подключаемых дисков, то перейдите в папку-хранилище вручную)&lt;/li&gt;
+&lt;li&gt;Скопируйте или перетащите Uf2 файл &amp;ldquo;reset прошивки&amp;rdquo;, после чего контроллер должен моментально перезагрузиться.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Reset прошивка нужна для затирания внутренней памяти клавиатуры. Она сбрасывает настройки профилей подключения и синхронизации половинок&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;Снова дважды нажмите кнопку Reset с обратной стороны клавиатуры и дождитесь когда контроллер перейдёт в режим загрузчика (откроется папка-хранилище)&lt;/li&gt;
+&lt;li&gt;Скопируйте или перетащите Uf2 файл прошивки для левой половинки, после чего контроллер должен моментально перезагрузиться&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Повторите 1-5 шаги для правой половинки&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Включите обе половинки переключателем с обратной стороны клавиатуры&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Одновременно зажмите на половинках кнопки Reset с обратной стороны клавиатуры и отожмите, это синхронизирует половинки между собой&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Подключите клавиатуру к вашему устройству&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+&lt;details class="hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group" &gt;
+&lt;summary class="hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[''] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90"&gt;
+&lt;strong class="hx:text-lg"&gt;Прошивка для клавиатуры с Ergohaven&amp;rsquo;s Qube&lt;/strong&gt;
+&lt;/summary&gt;
+&lt;div class="hx:p-2 hx:overflow-hidden"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Скачайте &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/settings_reset-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;reset прошивку&lt;/a&gt; и актуальные прошивки для &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_qube-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;Qube&lt;/a&gt;, &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_left_qube-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;левой&lt;/a&gt; и &lt;a href="https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_right-ergohaven-zmk.uf2"target="_blank" rel="noopener"&gt;правой&lt;/a&gt; половинок&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Выключите обе половинки переключателем с обратной стороны клавиатуры&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Подключите USB кабель питания в Qube, дважды нажмите кнопку Reset с обратной стороны Qube&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Дождитесь когда контроллер перейдёт в режим загрузчика и откроется папка-хранилище (если на вашем устройстве откючен автозапуск подключаемых дисков, то перейдите в папку-хранилище вручную)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Скопируйте или перетащите Uf2 файл &amp;ldquo;reset прошивки&amp;rdquo;, после чего контроллер должен моментально перезагрузиться&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Reset прошивка нужна для затирания внутренней памяти Qube и клавиатуры. Она сбрасывает настройки синхронизации половинок и Qube&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Снова дважды нажмите кнопку &amp;ldquo;Reset&amp;rdquo; с обратной стороны Qube и дождитесь когда контроллер перейдёт в режим загрузчика (откроется папка-хранилище)&lt;/li&gt;
+&lt;li&gt;Скопируйте или перетащите Uf2 файл прошивки для Qube, после чего контроллер должен моментально перезагрузиться&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Подключите USB кабель питания в левую половинку, дважды нажмите кнопку Reset с обратной стороны клавиатуры&lt;/li&gt;
+&lt;li&gt;Дождитесь когда контроллер перейдёт в режим загрузчика и откроется папка-хранилище (если на вашем устройстве откючен автозапуск подключаемых дисков, то перейдите в папку-хранилище вручную)&lt;/li&gt;
+&lt;li&gt;Скопируйте или перетащите Uf2 файл &amp;ldquo;reset прошивки&amp;rdquo;, после чего контроллер должен моментально перезагрузиться&lt;/li&gt;
+&lt;li&gt;Снова дважды нажмите кнопку &amp;ldquo;Reset&amp;rdquo; с обратной стороны клавиатуры и дождитесь когда контроллер перейдёт в режим загрузчика (откроется папка-хранилище)&lt;/li&gt;
+&lt;li&gt;Скопируйте или перетащите Uf2 файл прошивки для левой половинки, после чего контроллер должен моментально перезагрузиться&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Повторите 1-5 шаги для правой половинки&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Подключите Qube к вашему устройству, дождитесь загрузки Qube&lt;/li&gt;
+&lt;li&gt;Включите левую половинку переключателем с обратной стороны клавиатуры, дождитесь синхронизации половинки с Qube&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Важно соблюдать последовательность подключения левой и правой половинок к Qube, так как он синхронизируется поочередно сначала с левой, а затем с правой половинкой&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Включите правую половинку переключателем с обратной стороны клавиатуры, дождитесь синхронизации половинки с Qube&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/details&gt;</description></item><item><title>K:03 – Wireless Edition</title><link>http://localhost:1313/wireless/k03-we/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/wireless/k03-we/</guid><description/></item><item><title>Qube</title><link>http://localhost:1313/wireless/qube/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/wireless/qube/</guid><description>
+&lt;p&gt;В этом руководстве мы подробно разберем процесс полной настройки и прошивки сплит-клавиатуры Ergohaven с использованием донгла Qube. Вы узнаете, как подготовить файлы, выполнить полный сброс и правильно прошить все компоненты для стабильной работы.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ergohaven&amp;rsquo;s Qube&lt;/strong&gt; — это универсальный девайс создан для того, чтобы стать незаменимым помощником для беспроводных клавиатур. Работает как донгл, отображает полезную информацию, а также снижает энергопотребление вашей клавиатуры&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/qube/qubes.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Шаг 1: Подготовка прошивки&lt;span class="hx:absolute hx:-mt-20" id="шаг-1-подготовка-прошивки"&gt;&lt;/span&gt;
+&lt;a href="#%d1%88%d0%b0%d0%b3-1-%d0%bf%d0%be%d0%b4%d0%b3%d0%be%d1%82%d0%be%d0%b2%d0%ba%d0%b0-%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b8" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Прежде чем начать, вам нужно получить актуальные файлы прошивки. Файл прошивки — это, по сути, «мозг» вашей клавиатуры, который определяет, как она работает.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Если у вас есть форк (копия) репозитория на GitHub:&lt;/strong&gt; Синхронизируйте ваш форк с основным репозиторием ZMK, чтобы получить последние обновления. После этого соберите (скомпилируйте) прошивку и скачайте получившиеся &lt;code&gt;*.uf2&lt;/code&gt; файлы: по одному для левой и правой половинок, и один для донгла Qube.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Если у вас нет своего форка:&lt;/strong&gt; Скачайте готовую стандартную прошивку из репозитория &lt;a href="https://github.com/ergohaven/keymap_hub" target="_blank"&gt;ergohaven/keymap_hub&lt;/a&gt; Вам также понадобятся три &lt;code&gt;.uf2&lt;/code&gt; файла.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Дополнительно вам потребуется &lt;strong&gt;Reset прошивка&lt;/strong&gt; (&lt;code&gt;settings_reset-ergohaven-zmk.uf2&lt;/code&gt;). Обычно её можно найти там же, где и основную прошивку, или у нас в &lt;a href="https://github.com/ergohaven/keymap_hub" target="_blank"&gt;keymap_hub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/qube/keymap_hub.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Шаг 2: Полный сброс настроек&lt;span class="hx:absolute hx:-mt-20" id="шаг-2-полный-сброс-настроек"&gt;&lt;/span&gt;
+&lt;a href="#%d1%88%d0%b0%d0%b3-2-%d0%bf%d0%be%d0%bb%d0%bd%d1%8b%d0%b9-%d1%81%d0%b1%d1%80%d0%be%d1%81-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b5%d0%ba" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Этот шаг необходим для «чистой» установки и для того, чтобы избежать конфликтов между старой и новой прошивками. Мы последовательно установим прошивку-сброса на все три устройства.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Отключите питание на обеих половинках клавиатуры.&lt;/strong&gt; Для этого используйте физические переключатели на нижней части корпуса.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/qube/buttons.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;&lt;strong&gt;Прошейте Reset прошивкой.&lt;/strong&gt; Подключите по очереди каждое из трёх устройств (левая половинка, правая половинка, Qube) к компьютеру. После подключения, дважды быстро нажмите кнопку сброса Reset на задней поверхности, для перевода его в режим загрузчика. Устройство появится в системе как съёмный USB-накопитель. Перетащите файл прошивки-сброса (&lt;code&gt;settings_reset-ergohaven-zmk.uf2&lt;/code&gt;) на этот накопитель. После копирования устройство автоматически перезагрузится.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Уведомление об ошибке при копировании файла прошивки или некорректном извлечении устройства - это нормально. Файл успешно передаётся, но накопитель отключается до того, как операционная система успевает подтвердить завершение операции.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Шаг 3: Прошивка&lt;span class="hx:absolute hx:-mt-20" id="шаг-3-прошивка"&gt;&lt;/span&gt;
+&lt;a href="#%d1%88%d0%b0%d0%b3-3-%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Теперь, когда все устройства сброшены, можно устанавливать основную прошивку. &lt;strong&gt;Порядок здесь важен!&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Прошейте Qube.&lt;/strong&gt; Подключите донгл к компьютеру, переведите его в режим загрузчика и скопируйте на него соответствующий файл прошивки (&lt;code&gt;op36_qube-ergohaven-zmk.uf2&lt;/code&gt; или аналогичный).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Отключите Qube от компьютера.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Прошейте левую половинку.&lt;/strong&gt; Подключите левую половинку клавиатуры, переведите её в режим загрузчика и скопируйте на неё файл прошивки для левой стороны (&lt;code&gt;op36_left_qube-ergohaven-zmk.uf2&lt;/code&gt;).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Для прошивки левой половинки клавиатуры используйте исключительно файл прошивки с названием &lt;code&gt;&lt;b&gt;left_qube&lt;/b&gt;-ergohaven-zmk.uf2&lt;/code&gt;. Исключением является Velvet UI - у него для левой половинки прошивка: &lt;code&gt;&lt;b&gt;ui_left&lt;/b&gt;-ergohaven-zmk.uf2&lt;/code&gt;, а для правой: &lt;code&gt;&lt;b&gt;ui_right_qube&lt;/b&gt;-ergohaven-zmk.uf2&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;&lt;strong&gt;Отключите левую половинку от компьютера.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Прошейте правую половинку.&lt;/strong&gt; Подключите правую половинку, переведите в режим загрузчика и скопируйте на неё её файл прошивки (&lt;code&gt;op36_right-ergohaven-zmk.uf2&lt;/code&gt;).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Шаг 4: Первое включение и синхронизация&lt;span class="hx:absolute hx:-mt-20" id="шаг-4-первое-включение-и-синхронизация"&gt;&lt;/span&gt;
+&lt;a href="#%d1%88%d0%b0%d0%b3-4-%d0%bf%d0%b5%d1%80%d0%b2%d0%be%d0%b5-%d0%b2%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b8-%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Все компоненты прошиты. Теперь их нужно правильно запустить.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Используя Type-C кабель подключите Ergohaven&amp;rsquo;s Qube к компьютеру.&lt;/strong&gt; Он будет действовать как приёмник.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Включите питание на левой половинке клавиатуры.&lt;/strong&gt; Она должна автоматически подключиться к Qube.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Включите питание на правой половинке.&lt;/strong&gt; Она также подключится к Qube, завершая настройку.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Подождите несколько секунд. Попробуйте напечатать что-нибудь. Если всё сделано правильно, ваша клавиатура готова к работе!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Если ничего не происходит, то нажмите один раз на кнопку сброса на Qube.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/qube/op36_qube.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Как обновлять раскладку в будущем?&lt;span class="hx:absolute hx:-mt-20" id="как-обновлять-раскладку-в-будущем"&gt;&lt;/span&gt;
+&lt;a href="#%d0%ba%d0%b0%d0%ba-%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d1%8f%d1%82%d1%8c-%d1%80%d0%b0%d1%81%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d1%83-%d0%b2-%d0%b1%d1%83%d0%b4%d1%83%d1%89%d0%b5%d0%bc" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;В этом заключается одно из главных преимуществ использования Ergohaven&amp;rsquo;s Qube. Вся логика раскладки клавиатуры хранится именно в нём.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Если вы изменили свою раскладку (поменяли клавиши местами, добавили макрос) и собрали новую прошивку, вам &lt;strong&gt;не нужно&lt;/strong&gt; заново прошивать половинки клавиатуры.
+Достаточно перепрошить только донгл! Просто подключите его к компьютеру, переведите его в режим загрузчика и скопируйте на него новый файл прошивки. Половинки клавиатуры трогать не нужно. Это делает процесс обновления быстрым и удобным.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Поздравляем! Ваша клавиатура полностью настроена и готова к работе.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Trackball Mini</title><link>http://localhost:1313/wireless/tb-mini/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/wireless/tb-mini/</guid><description>
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/hero.jpg" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Trackball Mini V3&lt;/strong&gt; - обновленная ревизия компактного трекбола, теперь подключающегося к любым устройствам без проводов, с помощью Bluetooth, и имеющего 2 многофункциональные клавиши. Клавиши позволяют выполнять как базовые клики мыши, так и переключать режимы использования трекбола. В данном руководстве описаны все возможности трекбола, его режимы и процесс настройки.&lt;/p&gt;
+&lt;h2&gt;Подключение трекбола&lt;span class="hx:absolute hx:-mt-20" id="подключение-трекбола"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d1%82%d1%80%d0%b5%d0%ba%d0%b1%d0%be%d0%bb%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Шаг 1. Включаем Bluetooth на девайсе, к которому подключаете трекбол.&lt;/p&gt;
+&lt;p&gt;Шаг 2. Включаем трекбол, переведя переключатель питания на нижней крышке трекбола в положение ВКЛ.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/controls.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;После этого шага трекбол перейдёт в режим сопряжения и отобразится в списке доступных для подключения, подключаем. Трекбол готов к использованию!&lt;/p&gt;
+&lt;h2&gt;Клавиши на базовом слое трекбола&lt;span class="hx:absolute hx:-mt-20" id="клавиши-на-базовом-слое-трекбола"&gt;&lt;/span&gt;
+&lt;a href="#%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d1%88%d0%b8-%d0%bd%d0%b0-%d0%b1%d0%b0%d0%b7%d0%be%d0%b2%d0%be%d0%bc-%d1%81%d0%bb%d0%be%d0%b5-%d1%82%d1%80%d0%b5%d0%ba%d0%b1%d0%be%d0%bb%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/keys.jpg" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;Две новые клавиши на трекболе позволяют использовать его полностью автономно от программируемых клавиатур, ведь все действия, выполняемые с помощью мыши, доступны с помощью нажатия клавиш и нужда в отдельном слое мыши на клавиатуре полностью отпала.&lt;/p&gt;
+&lt;p&gt;Рассмотрим что клавиши умеют поподробнее.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Левая клавиша&lt;/strong&gt; трекбола выполняет роль левой кнопки мыши (ЛКМ);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Правая клавиша&lt;/strong&gt; трекбола &lt;strong&gt;при кратковременном нажатии&lt;/strong&gt; выполнит клик правой кнопкой мыши (ПКМ), а &lt;strong&gt;при удержании&lt;/strong&gt; клавиши нажатой активируется &amp;ldquo;снайперский&amp;rdquo; режим, в котором скорость перемещения курсора замедляется, позволяя наводиться курсором более точно;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Одновременное нажатие обеих клавиш&lt;/strong&gt; производит клик средней кнопкой мыши (СКМ);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Удержание обеих клавиш&lt;/strong&gt; переводит трекбол в режим скролла, кручение трекбола при этом будет производить прокрутку. Прокрутка происходит как по вертикали, так и по горизонтали, в зависимости от направления кручения трекбола.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/base-layout.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Слой настроек&lt;span class="hx:absolute hx:-mt-20" id="слой-настроек"&gt;&lt;/span&gt;
+&lt;a href="#%d1%81%d0%bb%d0%be%d0%b9-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b5%d0%ba" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Трекбол третьей версии, как и другие девайсы на ZMK, может быть привязан к 6 устройствам, и после привязки трекбол можно переключать между ними нажатием пары клавиш. Для подключения трекбола к дополнительным устройствам потребуется использовать &lt;em&gt;слой настроек&lt;/em&gt;. Чтобы попасть на этот слой, одновременно нажмите обе клавиши трекбола два раза подряд.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Для индикации нахождения на &lt;em&gt;слое настроек&lt;/em&gt;, курсор на нем перемещается значительно медленнее&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Краткая сводка о действиях, доступных при нахождении на &lt;em&gt;слое настроек&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Нажатие &lt;strong&gt;левой клавиши&lt;/strong&gt; выберет 0 профиль подключения (первого подключенного устройства);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Нажатие &lt;strong&gt;правой клавиши&lt;/strong&gt; переключит на следующий профиль подключения (всего доступно 6 профилей, счет ведется начиная с 0, заканчивая 5);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Двойное нажатие &lt;strong&gt;левой кнопки&lt;/strong&gt; очистит текущий профиль, сделав его доступным для подключения к новому устройству;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Двойное нажатие &lt;strong&gt;правой кнопки&lt;/strong&gt; очистит все профили, сделав их доступными для подключения к новым устройствам;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Одновременное нажатие &lt;strong&gt;левой и правой кнопок&lt;/strong&gt; произведет выход из &lt;em&gt;слоя настроек&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Подробнее о подключении к нескольким устройствам, и для чего использовать перечисленные функции, вы можете узнать в руководстве &lt;a href="https://journey.ergohaven.xyz/pages/docs/zmk-keyboards#подключение-к-нескольким-устройствам/" target="_blank"&gt;Первые шаги с клавиатурой на ZMK&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/adjust-layout.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Настройка клавиш трекбола&lt;span class="hx:absolute hx:-mt-20" id="настройка-клавиш-трекбола"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d1%88-%d1%82%d1%80%d0%b5%d0%ba%d0%b1%d0%be%d0%bb%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;На клавиши трекбола можно назначить любое &lt;strong&gt;поведение&lt;/strong&gt; с помощью &lt;a href="https://journey.ergohaven.xyz/pages/docs/keymap-editor/" target="_blank"&gt;keymap editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Например, если вам не часто пригождается снайперский режим, но при этом вы очень часто используете режим скролла, то можно поменять их активацию местами - режим скролла активировать удержанием правой клавиши, а снайперский удержанием обеих клавиш.&lt;br&gt;
+Или, если вы часто пользуетесь приложениями, где используется зажатие СКМ, то можете убрать действие при удержании комбо &lt;em&gt;ЛКМ + ПКМ&lt;/em&gt;, назначив на него &lt;code&gt;&amp;amp;mkp MB3&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/base-layer.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Прошивка, мониторинг заряда&lt;span class="hx:absolute hx:-mt-20" id="прошивка-мониторинг-заряда"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b0-%d0%bc%d0%be%d0%bd%d0%b8%d1%82%d0%be%d1%80%d0%b8%d0%bd%d0%b3-%d0%b7%d0%b0%d1%80%d1%8f%d0%b4%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Прошивка и мониторинг заряда происходят аналогично &lt;a href="https://journey.ergohaven.xyz/pages/docs/keymap-editor/" target="_blank"&gt;беспроводным клавиатурам на ZMK&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Переключение режимов&lt;span class="hx:absolute hx:-mt-20" id="переключение-режимов"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%be%d0%b2" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Режимы скролла и снайпера активируются на заданных в конфигурации слоях, по умолчанию &lt;strong&gt;1&lt;/strong&gt; и &lt;strong&gt;2&lt;/strong&gt; соответственно, и если вы хотите использовать эти слои с какой-то другой целью, то можно перенести активацию этих режимов на любой другой слой. О том, как изменить номера слоев для режимов, рассказано в &lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b0-%d1%81%d0%ba%d1%80%d0%be%d0%bb%d0%bb%d0%b0"&gt;Настройки режима скролла&lt;/a&gt; и &lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%81%d0%bd%d0%b0%d0%b9%d0%bf%d0%b5%d1%80%d1%81%d0%ba%d0%be%d0%b3%d0%be-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b0"&gt;Настройки снайперского режима&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;В раскладке по умолчанию режимы переключаются с помощью поведения &lt;code&gt;&amp;amp;mo&lt;/code&gt;, но переключать режимы можно и любым другим поведением, активирующим слои. Если не хочется удерживать кнопку режим скролла нажатой, то для включения режима можно использовать поведение &lt;code&gt;&amp;amp;tog 1&lt;/code&gt;, тогда при однократном нажатии включится 1 слой вместе с режимом скролла, а при повторном нажатии 1 слой и режим скролла деактивируются.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/scroll-combo.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Конфигурирование трекбола&lt;span class="hx:absolute hx:-mt-20" id="конфигурирование-трекбола"&gt;&lt;/span&gt;
+&lt;a href="#%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%82%d1%80%d0%b5%d0%ba%d0%b1%d0%be%d0%bb%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Все режимы трекбола можно настроить в файле &lt;code&gt;config/trackball.keymap&lt;/code&gt;, это быстро и удобно можно сделать в веб-интерфейсе GitHub, нажав кнопку &lt;strong&gt;Edit this file&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/edit-github.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;Открываем файл в вашем форке и скроллим в самый низ, ищем строки:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;amp;trackball { cpi = &amp;lt;1000&amp;gt;; };
+&amp;amp;trackball_listener {
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;;
+scroller {
+layers = &amp;lt;1&amp;gt;;
+input-processors =
+&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_to_scroll_mapper&amp;gt;;
+};
+sniper {
+layers = &amp;lt;2&amp;gt;;
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;;
+};
+adjust {
+layers = &amp;lt;3&amp;gt;;
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 1 8&amp;gt;;
+};
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Скопировать код"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Рассмотрим все доступные настройки.&lt;/p&gt;
+&lt;h3&gt;Чувствительность курсора в обычном режиме&lt;span class="hx:absolute hx:-mt-20" id="чувствительность-курсора-в-обычном-режиме"&gt;&lt;/span&gt;
+&lt;a href="#%d1%87%d1%83%d0%b2%d1%81%d1%82%d0%b2%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%ba%d1%83%d1%80%d1%81%d0%be%d1%80%d0%b0-%d0%b2-%d0%be%d0%b1%d1%8b%d1%87%d0%bd%d0%be%d0%bc-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b5" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Изменить чувствительность курсора в обычном режиме можно в строке &lt;code&gt;&amp;amp;trackball { cpi = &amp;lt;1000&amp;gt;; };&lt;/code&gt;, значение &lt;code&gt;cpi&lt;/code&gt; задается с шагом в &lt;em&gt;200&lt;/em&gt;, и должно быть не больше &lt;em&gt;3200&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Дополнительно к параметру &lt;code&gt;cpi&lt;/code&gt; также применяется множитель &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;&lt;/code&gt;, означающий что итоговая чувствительность будет равна девяти двадцатых от изначального значения &lt;code&gt;cpi&lt;/code&gt;. Это значение также можно изменять.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;amp;trackball_listener {
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Скопировать код"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Подробнее о доступных &lt;code&gt;input-processors&lt;/code&gt; можно почитать в документации ZMK: &lt;a href="https://zmk.dev/docs/keymaps/input-processors"target="_blank" rel="noopener"&gt;https://zmk.dev/docs/keymaps/input-processors&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Настройки режима скролла&lt;span class="hx:absolute hx:-mt-20" id="настройки-режима-скролла"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b0-%d1%81%d0%ba%d1%80%d0%be%d0%bb%d0%bb%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Для режима скролла доступны следующие настройки:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;scroller {
+layers = &amp;lt;1&amp;gt;;
+input-processors =
+&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_to_scroll_mapper&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Скопировать код"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;layers = &amp;lt;1&amp;gt;;&lt;/code&gt; - слои, на которых будет активен режим скролла. После изменения номера слоя надо также поменять и поведение, переключающее на слой с режимом скролла.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;&lt;/code&gt; - инвертирование скроллинга, можно инвертировать как по оси &lt;strong&gt;Y&lt;/strong&gt;, так и по оси &lt;strong&gt;X&lt;/strong&gt; (&lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_X_INVERT&amp;gt;&lt;/code&gt;), или даже инвертировать обе оси, перечислив параметры через запятую: &lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;, &amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_X_INVERT&amp;gt;,&lt;/code&gt;.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;&lt;/code&gt; - скорость прокрутки задается в виде отношения, по умолчанию скорость равна одной тридцать второй. Можно как замедлить прокрутку, изменив значение, например на &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 64&amp;gt;&lt;/code&gt;, так и ускорить прокрутку &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 2 32&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Настройки снайперского режима&lt;span class="hx:absolute hx:-mt-20" id="настройки-снайперского-режима"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%81%d0%bd%d0%b0%d0%b9%d0%bf%d0%b5%d1%80%d1%81%d0%ba%d0%be%d0%b3%d0%be-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Для снайперского режима доступны следующие настройки:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;sniper {
+layers = &amp;lt;2&amp;gt;;
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Скопировать код"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;layers = &amp;lt;2&amp;gt;;&lt;/code&gt; - слои, на которых будет активен снайперский режим. После изменения номера слоя надо также поменять и поведение, переключающее на слой с снайперским режимом.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;&lt;/code&gt; - множитель скорости для режима снайпера. По умолчанию в режиме снайпера скорость трекбола уменьшается до одной четвертой.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Аналогичным образом настраивается и замедление курсора на слое настроек (&lt;code&gt;adjust&lt;/code&gt;).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/tb-mini-v3/final.jpg" alt="image" loading="lazy" /&gt;&lt;/p&gt;</description></item><item><title>Velvet v3 – Wireless and UI Edition</title><link>http://localhost:1313/wireless/velvet-ui/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/wireless/velvet-ui/</guid><description>
+&lt;p&gt;&lt;img src="http://localhost:1313/images/layouts/velvet_ui_ru.png" alt="Velvet v3 UI" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Velvet v3 – Ultimate Interface Edition&lt;/strong&gt; - клавиатура, уменьшающая необходимость перемещения кисти до минимума за счет изогнутого расположения клавиш и наличия трекбола под большим пальцем. Благодаря изогнутости клавиатуры перемещение пальцев между рядами клавиш происходит заметно проще, а функциональный трекбол, всегда доступный под большим пальцем, практически полностью убирает необходимость перемещения руки к мышке.&lt;/p&gt;
+&lt;h2&gt;Управление курсором&lt;span class="hx:absolute hx:-mt-20" id="управление-курсором"&gt;&lt;/span&gt;
+&lt;a href="#%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d1%83%d1%80%d1%81%d0%be%d1%80%d0%be%d0%bc" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="http://localhost:1313/images/velvet-ui/trackball.jpg" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;Главная особенность Velvet UI - встроенный трекбол, находящийся под большим пальцем, при поворотах трекбола перемещается курсор мыши и временно активируется специальный слой с клавишами мыши.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/velvet-ui/layer.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;На слое мыши находятся клавиши для работы с курсором: левая кнопка мыши (&lt;strong&gt;MB1&lt;/strong&gt;), правая кнопка мыши (&lt;strong&gt;MB2&lt;/strong&gt;), клик колесом мыши (&lt;strong&gt;MB3&lt;/strong&gt;), а также переключение на режимы скролла (&lt;strong&gt;&amp;amp;mo 5&lt;/strong&gt;) и снайпера (&lt;strong&gt;&amp;amp;mo 6&lt;/strong&gt;).&lt;br&gt;
+Слой мыши активируется при перемещении курсора трекболом, и если в течение 500 милисекунд трекбол находится в неподвижном состоянии, то слой автоматически выключится.&lt;/p&gt;
+&lt;p&gt;В режиме скролла при кручении трекбола вместо перемещения курсора происходит скроллинг страницы, как по вертикали, так и по горизонтали.&lt;/p&gt;
+&lt;p&gt;&lt;video
+autoplay
+loop
+muted
+style="max-width: 100%"&gt;
+&lt;source src="http://localhost:1313/video/velvet-ui/scroll.mp4" type="video/mp4"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Снайперский режим уменьшает скорость перемещения курсора, позволяя более точно его наводить.&lt;/p&gt;
+&lt;p&gt;&lt;video
+autoplay
+loop
+muted
+style="max-width: 100%"&gt;
+&lt;source src="http://localhost:1313/video/velvet-ui/sniper.mp4" type="video/mp4"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;Переключение режимов&lt;span class="hx:absolute hx:-mt-20" id="переключение-режимов"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%be%d0%b2" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Режимы скролл и снайпер активируются на заданных в конфигурации слоях, по умолчанию &lt;strong&gt;5&lt;/strong&gt; и &lt;strong&gt;6&lt;/strong&gt; соответственно, и если вы хотите использовать эти слои с какой-то другой целью, то можно перенести активацию этих режимов на любой другой слой. О том, как изменить номера слоев для режимов, рассказано в &lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b0-%d1%81%d0%ba%d1%80%d0%be%d0%bb%d0%bb%d0%b0"&gt;Настройки режима скролла&lt;/a&gt; и &lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%81%d0%bd%d0%b0%d0%b9%d0%bf%d0%b5%d1%80%d1%81%d0%ba%d0%be%d0%b3%d0%be-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b0"&gt;Настройки снайперского режима&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;В раскладке по умолчанию режимы переключаются с помощью поведения &lt;code&gt;&amp;amp;mo&lt;/code&gt;, но переключать режимы можно и любым другим поведением, активирующим слои. Если не хочется удерживать кнопку режим скролла нажатой, то для включения режима можно использовать поведение &lt;code&gt;&amp;amp;tog 5&lt;/code&gt;, тогда при однократном нажатии включится 5 слой вместе с режимом скролла, а при повторном нажатии 5 слой и режим скролла деактивируются.&lt;/p&gt;
+&lt;p&gt;Также можно сделать и гибридное &lt;a href="https://journey.ergohaven.xyz/pages/docs/keymap-editor/#custom-behaviors" target="_blank"&gt;кастомное поведение&lt;/a&gt;, которое при удержании будет включать слой поведением &lt;code&gt;&amp;amp;mo&lt;/code&gt;, а при кратковременном нажатии переключать его поведением &lt;code&gt;&amp;amp;tog&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/velvet-ui/mode-behavior.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;h2&gt;Конфигурирование трекбола&lt;span class="hx:absolute hx:-mt-20" id="конфигурирование-трекбола"&gt;&lt;/span&gt;
+&lt;a href="#%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%82%d1%80%d0%b5%d0%ba%d0%b1%d0%be%d0%bb%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Все режимы трекбола, включая автоматическое переключение на слой мыши, можно настроить в файле &lt;code&gt;config/velvet_v3_ui.keymap&lt;/code&gt;, это быстро и удобно можно сделать в веб-интерфейсе GitHub, нажав кнопку &lt;strong&gt;Edit this file&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://localhost:1313/images/velvet-ui/github-edit.png" alt="image" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;Открываем файл в вашем форке и скроллим в самый низ, ищем строки:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;amp;trackball { cpi = &amp;lt;1000&amp;gt;; };
+&amp;amp;trackball_listener {
+input-processors = &amp;lt;&amp;amp;zip_auto_mouse 4 500&amp;gt;, &amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;;
+scroller {
+layers = &amp;lt;5&amp;gt;;
+input-processors =
+&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_to_scroll_mapper&amp;gt;;
+};
+sniper {
+layers = &amp;lt;6&amp;gt;;
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;;
+};
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Скопировать код"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Рассмотрим все доступные настройки.&lt;/p&gt;
+&lt;h3&gt;Чувствительность курсора в обычном режиме&lt;span class="hx:absolute hx:-mt-20" id="чувствительность-курсора-в-обычном-режиме"&gt;&lt;/span&gt;
+&lt;a href="#%d1%87%d1%83%d0%b2%d1%81%d1%82%d0%b2%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%ba%d1%83%d1%80%d1%81%d0%be%d1%80%d0%b0-%d0%b2-%d0%be%d0%b1%d1%8b%d1%87%d0%bd%d0%be%d0%bc-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b5" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Изменить чувствительность курсора в обычном режиме можно в строке &lt;code&gt;&amp;amp;trackball { cpi = &amp;lt;1000&amp;gt;; };&lt;/code&gt;, значение &lt;code&gt;cpi&lt;/code&gt; задается с шагом в &lt;em&gt;200&lt;/em&gt;, и должно быть не больше &lt;em&gt;3200&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Дополнительно к параметру &lt;code&gt;cpi&lt;/code&gt; также применяется множитель &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;&lt;/code&gt;, означающий что итоговая чувствительность будет равна девяти двадцатых от изначального значения &lt;code&gt;cpi&lt;/code&gt;. Это значение также можно изменять.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;&amp;amp;trackball_listener {
+input-processors = &amp;lt;&amp;amp;zip_auto_mouse 4 500&amp;gt;, &amp;lt;&amp;amp;zip_xy_scaler 9 20&amp;gt;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Скопировать код"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Подробнее о доступных &lt;code&gt;input-processors&lt;/code&gt; можно почитать в документации ZMK: &lt;a href="https://zmk.dev/docs/keymaps/input-processors"target="_blank" rel="noopener"&gt;https://zmk.dev/docs/keymaps/input-processors&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Настройка переключения на слой мыши&lt;span class="hx:absolute hx:-mt-20" id="настройка-переключения-на-слой-мыши"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bd%d0%b0-%d1%81%d0%bb%d0%be%d0%b9-%d0%bc%d1%8b%d1%88%d0%b8" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Фрагмент &lt;code&gt;&amp;lt;&amp;amp;zip_auto_mouse 4 500&amp;gt;&lt;/code&gt; отвечает за автоматическую активацию слоя мыши, рассмотрим доступные настройки:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 - номер автоматически активируемого слоя, если вы измените раскладку слой мыши окажется с другим порядковым номером, то просто измените это значение;&lt;/li&gt;
+&lt;li&gt;500 - время, на которое активируется слой мыши.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Если вы хотите выключить автоматическую активацию слоя мыши, то просто удалите фрагмент &lt;code&gt;&amp;lt;&amp;amp;zip_auto_mouse 4 500&amp;gt;,&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Чтобы избежать случайных активаций слоя мыши при печати, в течение 800 милисекунд после нажатия клавиш слой мыши активироваться не будет, это время также можно настроить в фрагменте, находящемся выше в файле &lt;code&gt;config/velvet_v3_ui.keymap&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt; zip_auto_mouse: zip_auto_mouse {
+compatible = &amp;#34;zmk,input-processor-temp-layer&amp;#34;;
+#input-processor-cells = &amp;lt;2&amp;gt;;
+require-prior-idle-ms = &amp;lt;800&amp;gt;;
+excluded-positions = &amp;lt;&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Скопировать код"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Если хотите увеличить или уменьшить этот порог, отредактируйте значение &lt;code&gt;require-prior-idle-ms&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Подробнее о настройках автоматической активации слоя мыши можно почитать в &lt;a href="https://zmk.dev/docs/keymaps/input-processors/temp-layer"target="_blank" rel="noopener"&gt;документации ZMK&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Настройки режима скролла&lt;span class="hx:absolute hx:-mt-20" id="настройки-режима-скролла"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b0-%d1%81%d0%ba%d1%80%d0%be%d0%bb%d0%bb%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Для режима скролла доступны следующие настройки:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;scroller {
+layers = &amp;lt;5&amp;gt;;
+input-processors =
+&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;,
+&amp;lt;&amp;amp;zip_xy_to_scroll_mapper&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Скопировать код"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;layers = &amp;lt;5&amp;gt;;&lt;/code&gt; - слои, на которых будет активен режим скролла. После изменения номера слоя надо также поменять и поведение, переключающее на слой с режимом скролла.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;&lt;/code&gt; - инвертирование скроллинга, можно инвертировать как по оси &lt;strong&gt;Y&lt;/strong&gt;, так и по оси &lt;strong&gt;X&lt;/strong&gt; (&lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_X_INVERT&amp;gt;&lt;/code&gt;), или даже инвертировать обе оси, перечислив параметры через запятую: &lt;code&gt;&amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_Y_INVERT&amp;gt;, &amp;lt;&amp;amp;zip_xy_transform INPUT_TRANSFORM_X_INVERT&amp;gt;,&lt;/code&gt;.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 32&amp;gt;&lt;/code&gt; - скорость прокрутки задается в виде отношения, по умолчанию скорость равна одной тридцать второй. Можно как замедлить прокрутку, изменив значение, например на &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 64&amp;gt;&lt;/code&gt;, так и ускорить прокрутку &lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 2 32&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Настройки снайперского режима&lt;span class="hx:absolute hx:-mt-20" id="настройки-снайперского-режима"&gt;&lt;/span&gt;
+&lt;a href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d1%81%d0%bd%d0%b0%d0%b9%d0%bf%d0%b5%d1%80%d1%81%d0%ba%d0%be%d0%b3%d0%be-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b0" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Для снайперского режима доступны следующие настройки:&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;sniper {
+layers = &amp;lt;6&amp;gt;;
+input-processors = &amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Скопировать код"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;layers = &amp;lt;6&amp;gt;;&lt;/code&gt; - слои, на которых будет активен снайперский режим. После изменения номера слоя надо также поменять и поведение, переключающее на слой с снайперским режимом.
+&lt;code&gt;&amp;lt;&amp;amp;zip_xy_scaler 1 4&amp;gt;&lt;/code&gt; - множитель скорости для режима снайпера. По умолчанию в режиме снайпера скорость трекбола уменьшается до одной четвертой.&lt;/p&gt;</description></item></channel></rss>
