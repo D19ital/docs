@@ -35,18 +35,12 @@ title: Решение частых проблем
 Переустановите драйвер USB или Bluetooth на вашем устройстве (ПК, ноутбук и т.д).
 
 {{< callout type="info" >}}
-  Встроенные драйвера Windows не всегда корректно работают на устройстах USB и Bluetooth, используйте драйвера от производителя устройства
+  Встроенные драйвера Windows не всегда корректно работают на устройстах USB и Bluetooth, используйте драйвера от производителя устройства.
 {{< /callout >}}
 
 {{% /steps %}}
 
-## Неполадки при нажатии клавиш
-
-{{< details title="Залипание или несрабатывание отдельных клавиш" closed="true" >}}
-
-Поменяйте местами свитчи с дефектного места и исправного, тем самым вы исключите сам свитч. Если после смены свитча проблема сохраняется, а сам свитч исправен на другом месте, то необходима диагностика самой платы устройства. 
-
-{{< /details >}}
+## Софтовые проблемы
 
 ## Неполадки трекболов
 
@@ -54,11 +48,12 @@ title: Решение частых проблем
 
 {{< callout type="info" >}}
 
-**Повышенная точность указателя** (также известна как акселерация мыши) — это функция, которая изменяет скорость перемещения курсора в зависимости от скорости движения мыши. При использовании трекбола её часто отключают, чтобы получить предсказуемое линейное перемещение
+**Повышенная точность указателя** (также известна как акселерация мыши) — это функция, которая изменяет скорость перемещения курсора в зависимости от скорости движения мыши. При использовании трекбола её часто отключают, чтобы получить предсказуемое линейное перемещение.
   
 {{< /callout >}}
 
-{{< details title="Windows 10 и Windows 11" closed="true" >}}
+{{< tabs items="Windows,macOS,Linux" >}}
+  {{< tab >}}
 
 В Windows эта функция называется **«Включить повышенную точность указателя»**. Чтобы её отключить:
 
@@ -71,9 +66,8 @@ title: Решение частых проблем
 
 > **Примечание:** Изменения вступают в силу сразу. При необходимости вы можете отрегулировать ползунок **Скорость движения указателя** там же.
 
-{{< /details >}}
-
-{{< details title="macOS" closed="true" >}}
+  {{< /tab >}}
+  {{< tab >}}
 
 Способ отключения зависит от версии операционной системы.
 
@@ -89,31 +83,89 @@ title: Решение частых проблем
    ```bash
    defaults write .GlobalPreferences com.apple.mouse.scaling -1
    ```
-и нажмите Enter.
-3. Выйдите из системы или перезагрузите компьютер для применения изменений.   
-{{< /details >}}
+   и нажмите Enter.
+3. Выйдите из системы или перезагрузите компьютер для применения изменений.
 
-{{< details title="Linux" closed="true" >}}
+  {{< /tab >}}
+  {{< tab >}}
 
 ### Для GNOME (Ubuntu, Fedora и др.):
 1. Откройте **Терминал**.
 2. Введите команду для отключения акселерации:
-   ```
-   bash
+   ```bash
    gsettings set org.gnome.desktop.peripherals.mouse accel-profile flat
    ```
-Для проверки выполните:
-```
-bash
-gsettings get org.gnome.desktop.peripherals.mouse accel-profile
-```
-В ответ должно появиться значение flat.
+3. Для проверки выполните:
+   ```bash
+   gsettings get org.gnome.desktop.peripherals.mouse accel-profile
+   ```
+   В ответ должно появиться значение `flat`.
 
-Для KDE Plasma:
-Откройте **Системные настройки** → **Устройства ввода** → **Мышь**
+### Для KDE Plasma:
+Откройте **Системные настройки** → **Устройства ввода** → **Мышь** и в пункте **Профиль акселерации** выберите значение **Плоский**.
 
-Найдите пункт **Профиль акселерации** и выберите значение **Плоский**.
+  {{< /tab >}}
+{{< /tabs >}}
+
+{{< /details >}}
+
+<!--
+## Неполадки по моделям
+
+{{< details title="Imperial44" closed="true" >}}
 
 {{< /details >}}
 
+{{< details title="Imperial44 – Wireless Edition" closed="true" >}}
+
 {{< /details >}}
+
+{{< details title="K:03" closed="true" >}}
+
+{{< /details >}}
+
+{{< details title="K:03 – Wireless Edition" closed="true" >}}
+
+{{< /details >}}
+
+{{< details title="Velvet" closed="true" >}}
+
+{{< /details >}}
+
+{{< details title="Velvet v3 – Wireless and UI Edition" closed="true" >}}
+
+{{< /details >}}
+
+{{< details title="Space Mission 30" closed="true" >}}
+
+{{< /details >}}
+
+{{< details title="High Plains Drifter v2" closed="true" >}}
+
+{{< /details >}}
+
+{{< details title="Macropad" closed="true" >}}
+
+{{< /details >}}
+
+{{< details title="Qube" closed="true" >}}
+
+{{< /details >}}
+
+{{< details title="Trackball Mini" closed="true" >}}
+
+{{< /details >}}
+
+{{< details title="Trackball Royale" closed="true" >}}
+
+{{< /details >}}
+-->
+
+## Если ничего не помогло
+
+Обратитесь в поддержку Ergohaven — напишите [@iD1gital](https://t.me/iD1gital) с описанием проблемы и, если возможно, фотографией или видео. Для гарантийных случаев потребуется номер заказа.
+
+{{< cards >}}
+  {{< card link="https://t.me/iD1gital" title="Поддержка Ergohaven" subtitle="Написать @iD1gital в Telegram" icon="chat" >}}
+  {{< card link="https://t.me/c/1464748383/7588" title="Сообщество" subtitle="Топик «Устранение неполадок» в Telegram-группе" icon="user-group" >}}
+{{< /cards >}}
