@@ -11,7 +11,7 @@ sidebar:
 
 ## Overview
 
-![image](/images/tb-royale/tb_royale_down_ru.png)
+![image](/images/tb-royale/tb_royale_down_en.png)
 
 1. Power switch  
 2. Button: single press — switch BT profile (0–5 in a cycle), double press (quickly) — clear current BT profile  
