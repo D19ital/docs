@@ -44,6 +44,8 @@
 <img src="https://images.dip8.ru/m/2cebc8aad66e951e9da454e98e458d1e.jpg" alt="Контроллер RP2040-Zero" />
 </details>
 
+---
+
 <details>
 <summary><strong>2. USB Type-C разъём — 2 шт.</strong></summary>
 
@@ -53,6 +55,8 @@
 
 **Изображение:** добавить позже.
 </details>
+
+---
 
 <details>
 <summary><strong>3. Диоды 1N4148 — 60 шт.</strong></summary>
@@ -64,6 +68,8 @@
 **Изображение:** добавить позже.
 </details>
 
+---
+
 <details>
 <summary><strong>4. Hot-swap сокеты — 60 шт.</strong></summary>
 
@@ -73,6 +79,8 @@
 
 **Изображение:** добавить позже.
 </details>
+
+---
 
 <details>
 <summary><strong>5. Свитчи — 60 шт.</strong></summary>
@@ -84,6 +92,8 @@
 **Изображение:** добавить позже.
 </details>
 
+---
+
 <details>
 <summary><strong>6. Провода — моток ~0,5 м</strong></summary>
 
@@ -93,6 +103,8 @@
 
 **Изображение:** добавить позже.
 </details>
+
+---
 
 <details>
 <summary><strong>7. Резисторы от 1 до 100 кОм — 2 шт.</strong></summary>
