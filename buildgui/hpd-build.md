@@ -42,6 +42,8 @@
 Важно не перепутать с другими платами похожего размера — нужен именно **RP2040-Zero**.
 
 <img src="https://images.dip8.ru/m/2cebc8aad66e951e9da454e98e458d1e.jpg" alt="Контроллер RP2040-Zero" />
+
+*Фото 1. Контроллер RP2040-Zero*
 </details>
 
 ---
@@ -149,9 +151,15 @@
 
 <img src="https://raw.githubusercontent.com/NiPoRIX/docs/main/static/images/hpd-build/prep-1.png" alt="Hot-swap сокет и свитч перед установкой" />
 
+*Фото 2. Hot-swap сокет и свитч — до установки*
+
 <img src="https://raw.githubusercontent.com/NiPoRIX/docs/main/static/images/hpd-build/prep-2.png" alt="Свитчи установлены в корпус" />
 
+*Фото 3. Свитчи вставлены в корпус*
+
 <img src="https://raw.githubusercontent.com/NiPoRIX/docs/main/static/images/hpd-build/prep-3.png" alt="Hot-swap сокеты установлены на свитчи в корпусе" />
+
+*Фото 4. Сокеты надеты на свитчи — готово к пайке*
 </details>
 
 <details>
@@ -170,11 +178,19 @@
 
 <img src="https://raw.githubusercontent.com/NiPoRIX/docs/main/static/images/hpd-build/columns-rows-1.png" alt="Подготовка hot-swap сокетов перед пайкой столбцов и строк" />
 
+*Фото 5. Залуженные сокеты — готовы к пайке столбцов*
+
 <img src="https://raw.githubusercontent.com/NiPoRIX/docs/main/static/images/hpd-build/columns-rows-2.png" alt="Припайка подготовленных штырьков к левым контактам hot-swap сокетов" />
+
+*Фото 6. Штырьки от диодов припаяны к левым контактам сокетов*
 
 <img src="https://raw.githubusercontent.com/NiPoRIX/docs/main/static/images/hpd-build/columns-rows-3.png" alt="Пайка диодов по строкам справа налево" />
 
+*Фото 7. Диоды припаяны по строкам справа налево*
+
 <img src="https://raw.githubusercontent.com/NiPoRIX/docs/main/static/images/hpd-build/columns-rows-4.png" alt="Нюанс соединения катодов между собой" />
+
+*Фото 8. Катоды соединены между собой — строка замкнута*
 </details>
 
 <details>
@@ -253,19 +269,35 @@ RP2040-Zero — это мозг клавиатуры. Сейчас нужно с
 
 <img src="https://raw.githubusercontent.com/D19ital/docs/main/static/images/hpd-build/rp-zero-pinout.png" alt="Распиновка RP2040-Zero — номера пинов" />
 
+*Фото 9. Распиновка RP2040-Zero — какой пин за что отвечает*
+
 <img src="https://raw.githubusercontent.com/D19ital/docs/main/static/images/hpd-build/rp-zero-wires-start.png" alt="Начало пайки проводов к контроллеру" />
+
+*Фото 10. Первые провода припаяны к контроллеру*
 
 <img src="https://raw.githubusercontent.com/D19ital/docs/main/static/images/hpd-build/rp-zero-wires-keyboard.png" alt="Провода подключены к столбцам и рядам" />
 
+*Фото 11. Все провода столбцов и рядов подключены*
+
 <img src="https://raw.githubusercontent.com/D19ital/docs/main/static/images/hpd-build/rp-zero-installed.png" alt="Контроллер установлен в корпус" />
+
+*Фото 12. Контроллер размещён в корпусе*
 
 <img src="https://raw.githubusercontent.com/D19ital/docs/main/static/images/hpd-build/usb-c-adapter.png" alt="USB Type-C адаптер — вид до пайки" />
 
+*Фото 13. USB Type-C адаптер до подключения проводов*
+
 <img src="https://raw.githubusercontent.com/D19ital/docs/main/static/images/hpd-build/usb-c-wires.png" alt="Провода припаяны к USB Type-C адаптеру" />
+
+*Фото 14. Провода VCC, GND, D−, D+ припаяны к USB адаптеру*
 
 <img src="https://raw.githubusercontent.com/D19ital/docs/main/static/images/hpd-build/usb-c-rp-zero-connected.png" alt="USB адаптер подключён к контроллеру" />
 
+*Фото 15. USB адаптер подключён к RP-ZERO*
+
 <img src="https://raw.githubusercontent.com/D19ital/docs/main/static/images/hpd-build/rp-zero-resistor-complete.png" alt="Итоговый вид: резистор и все провода припаяны" />
+
+*Фото 16. Готово: резистор и все провода на месте*
 
 </details>
 
@@ -306,7 +338,11 @@ RP2040-Zero — это мозг клавиатуры. Сейчас нужно с
 
 <img src="https://raw.githubusercontent.com/D19ital/docs/main/static/images/hpd-build/firmware-test-bare.jpg" alt="Обе половинки клавиатуры без кейкапов перед тестом" />
 
+*Фото 17. Обе половинки без кейкапов — готовы к тесту*
+
 <img src="https://raw.githubusercontent.com/D19ital/docs/main/static/images/hpd-build/firmware-test-wired.jpg" alt="Обе половинки с подключёнными проводами во время теста" />
+
+*Фото 18. Подключено к компьютеру — идёт проверка клавиш*
 
 </details>
 
