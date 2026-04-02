@@ -4,13 +4,13 @@ sidebar:
   exclude: true
 ---
 
-![image](/images/layouts/K03WE_ru.png)
+![image](/images/layouts/K03WE_en.png)
 
 **K:03 – Wireless Edition** is a wireless, ergonomic, mechanical split keyboard with a hot-swap system for quick replacement of MX-compatible switches and the ability to install up to 3 hot-swap encoders on each half.
 
 ## Overview
 
-![image](/images/k03_we/k03_we_ru.png)
+![image](/images/k03_we/k03_we.png)
 
 1. Button: single press — reset, double press (quickly) — bootloader
 2. Integrated MagSafe ring for wireless charging
@@ -142,8 +142,4 @@ Firmware update is complete — you can now connect the keyboard to your device!
 
 The keyboard comes with a *3-year warranty and service support*.
 
-If you have any questions about setup, firmware, or operation, please reach out via the Ergohaven Telegram groups or the [knowledge base](https://docs.ergohaven.xyz/en/):
-- [Help for beginners](https://t.me/c/1464748383/65975) — any questions related to using Ergohaven products
-- [Troubleshooting](https://t.me/c/1464748383/7588) — issues related to Ergohaven product malfunctions
-- [ZMK and QMK firmware](https://t.me/c/1464748383/37027) — questions related to Ergohaven firmware
-- [Layouts](https://t.me/c/1464748383/7597) — to discuss your layouts and how to improve them
+If you have any questions about setup, firmware, or operation, please contact [the Ergohaven Telegram group](https://t.me/c/1464748383/8323) or [knowledge base](https://docs.ergohaven.xyz/en/)
