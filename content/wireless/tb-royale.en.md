@@ -197,8 +197,4 @@ Flashing is complete — you can now connect the trackball to your device!
 
 Trackball Royale comes with a *3-year warranty and service support*.
 
-If you have any questions about setup, firmware, or operation, reach out via the Ergohaven Telegram groups or the [knowledge base](https://docs.ergohaven.xyz/):
-- [Help for beginners](https://t.me/c/1464748383/65975) — any questions related to using Ergohaven products
-- [Troubleshooting](https://t.me/c/1464748383/7588) — issues with Ergohaven product functionality
-- [ZMK and QMK firmware](https://t.me/c/1464748383/37027) — firmware-related questions
-- [Layouts](https://t.me/c/1464748383/7597) — discuss your layouts and how to improve them
+If you have any questions about setup, firmware, or operation, please contact [the Ergohaven Telegram group](https://t.me/c/1464748383/8323) or [knowledge base](https://docs.ergohaven.xyz/en/)
