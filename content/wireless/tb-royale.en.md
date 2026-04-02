@@ -4,7 +4,7 @@ sidebar:
   exclude: true
 ---
 
-![image](/images/layouts/tb_royale_ru.png)
+![image](/images/layouts/tb_royale.png)
 
 
 **Trackball Royale** is a wireless ergonomic pointing device with four programmable buttons. The trackball's body is designed for a more natural hand position, helping to reduce strain during long computer sessions. The case is manufactured using high-precision SLA printing.
