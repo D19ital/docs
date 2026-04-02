@@ -10,7 +10,7 @@ sidebar:
 
 ## Overview
 
-![image](/images/k03_we/k03_we.png)
+![image](/images/k03_we/k03_we_en.png)
 
 1. Button: single press — reset, double press (quickly) — bootloader
 2. Integrated MagSafe ring for wireless charging
