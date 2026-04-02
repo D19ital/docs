@@ -191,9 +191,9 @@ Open **System Settings** → **Input Devices** → **Mouse** and set **Accelerat
 
 ## If Nothing Helped
 
-Contact Ergohaven support — write to [@iD1gital](https://t.me/iD1gital) with a description of the issue and, if possible, a photo or video. For warranty cases, an order number will be required.
+Contact Ergohaven support — write to [@Andrey_ergohaven](https://t.me/Andrey_ergohaven) with a description of the issue and, if possible, a photo or video. For warranty cases, an order number will be required.
 
 {{< cards >}}
-  {{< card link="https://t.me/iD1gital" title="Ergohaven Support" subtitle="Message @iD1gital on Telegram" icon="chat" >}}
-  {{< card link="https://t.me/c/1464748383/7588" title="Community" subtitle="Troubleshooting topic in the Telegram group" icon="user-group" >}}
+  {{< card link="https://t.me/Andrey_ergohaven" title="Ergohaven Support" subtitle="Message @Andrey_ergohaven on Telegram" icon="chat" >}}
+  {{< card link="https://t.me/c/1464748383/8323" title="Community" subtitle="English chat in the Telegram group" icon="user-group" >}}
 {{< /cards >}}
