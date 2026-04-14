@@ -102,7 +102,7 @@ The halves are connected to each other via a **USB-C** cable, and one half conne
   {{< tab >}}
 The halves communicate **wirelessly**, with the computer connection via Bluetooth. Up to **5 device profiles**. Requires periodic charging (~2 hours, lasts several weeks on a charge).
 
-**Firmware:** ZMK. **Configuration:** [Keymap Editor](https://docs.ergohaven.xyz/zmk/keymap-editor/) (web browser).
+**Firmware:** ZMK. **Configuration:** [Keymap Editor](https://docs.ergohaven.xyz/en/zmk/keymap-editor/) (web browser).
   {{< /tab >}}
 {{< /tabs >}}
 
