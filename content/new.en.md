@@ -111,7 +111,7 @@ The halves communicate **wirelessly**, with the computer connection via Bluetoot
 | Firmware | Configurator | Supported devices |
 |----------|--------------|-------------------|
 | **QMK** | [Vial](https://eh.industries/vial) (desktop) | All wired Ergohaven models |
-| **ZMK** | [Keymap Editor](https://docs.ergohaven.xyz/zmk/keymap-editor/) (web) | All wireless Ergohaven models |
+| **ZMK** | [Keymap Editor](https://docs.ergohaven.xyz/en/zmk/keymap-editor/) (web) | All wireless Ergohaven models |
 
 Both configurators require no programming knowledge — just a mouse and a browser.
 
