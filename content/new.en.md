@@ -97,7 +97,7 @@ The case is **raised on the inner side**, mimicking the neutral hand position. R
   {{< tab >}}
 The halves are connected to each other via a **USB-C** cable, and one half connects to the computer. Minimal latency, no charging required.
 
-**Firmware:** QMK. **Configuration:** [Vial](https://eh.works/vial).
+**Firmware:** QMK. **Configuration:** [Vial](https://eh.industries/vial).
   {{< /tab >}}
   {{< tab >}}
 The halves communicate **wirelessly**, with the computer connection via Bluetooth. Up to **5 device profiles**. Requires periodic charging (~2 hours, lasts several weeks on a charge).
@@ -110,7 +110,7 @@ The halves communicate **wirelessly**, with the computer connection via Bluetoot
 
 | Firmware | Configurator | Supported devices |
 |----------|--------------|-------------------|
-| **QMK** | [Vial](https://eh.works/vial) (desktop) | All wired Ergohaven models |
+| **QMK** | [Vial](https://eh.industries/vial) (desktop) | All wired Ergohaven models |
 | **ZMK** | [Keymap Editor](https://docs.ergohaven.xyz/zmk/keymap-editor/) (web) | All wireless Ergohaven models |
 
 Both configurators require no programming knowledge — just a mouse and a browser.
@@ -159,9 +159,9 @@ For split keyboard beginners, starting with the **60% format** is recommended. I
 {{< /callout >}}
 
 {{< cards >}}
-  {{< card link="https://eh.works/k03" title="K:03" subtitle="60%, wired or wireless. The optimal choice to start." icon="star" >}}
-  {{< card link="https://eh.works/hpd" title="High Plains Drifter" subtitle="60%, wired, curved case, modular system. For those who want maximum ergonomics right away." icon="adjustments" >}}
-  {{< card link="https://eh.works/imperial44" title="Imperial44" subtitle="40%, wired or wireless. For those ready for compactness." icon="chip" >}}
+  {{< card link="https://eh.industries/k03" title="K:03" subtitle="60%, wired or wireless. The optimal choice to start." icon="star" >}}
+  {{< card link="https://eh.industries/hpd" title="High Plains Drifter" subtitle="60%, wired, curved case, modular system. For those who want maximum ergonomics right away." icon="adjustments" >}}
+  {{< card link="https://eh.industries/imperial44" title="Imperial44" subtitle="40%, wired or wireless. For those ready for compactness." icon="chip" >}}
 {{< /cards >}}
 
 ### Step 3: Choose your switches
@@ -188,11 +188,11 @@ flowchart TD;
     I44 --> Q5(Need even fewer keys?)
     Q5 -- Yes --> OP36(Omega Point 36)
 
-    click K03 "https://eh.works/k03" _blank
-    click HPD "https://eh.works/hpd" _blank
-    click I44 "https://eh.works/imperial44" _blank
-    click V "https://eh.works/velvet" _blank
-    click OP36 "https://eh.works/op36" _blank
+    click K03 "https://eh.industries/k03" _blank
+    click HPD "https://eh.industries/hpd" _blank
+    click I44 "https://eh.industries/imperial44" _blank
+    click V "https://eh.industries/velvet" _blank
+    click OP36 "https://eh.industries/op36" _blank
 ```
 
 ---
@@ -204,6 +204,6 @@ A **split keyboard** is not just a different input device. It is a rethinking of
 Ergohaven designs devices where ergonomics, quality, and customization options come together in one package. Every model comes with a **3-year warranty** and community support.
 
 {{< cards >}}
-  {{< card link="https://eh.works/shop" title="Ergohaven Shop" subtitle="Choose and order a keyboard" icon="shopping-bag" >}}
+  {{< card link="https://eh.industries/shop" title="Ergohaven Shop" subtitle="Choose and order a keyboard" icon="shopping-bag" >}}
   {{< card link="https://t.me/c/1464748383/65975" title="Help for beginners" subtitle="Ergohaven community on Telegram" icon="chat" >}}
 {{< /cards >}}
