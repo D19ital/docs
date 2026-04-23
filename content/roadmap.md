@@ -7,11 +7,12 @@ layout: landing
 
 - [x] Trackball Royale
 - [ ] Project "Modular minds"                                          
-- [ ] Expo                                                               
 - [ ] New switches                                              
-- [ ] Planeta v3                                                                               
-- [ ] Project "freemove"                                          
-- [ ] Project "Sprawl"                                          
+- [x] Sculpt
+- [ ] Entropy
+- [ ] Phenom
+- [ ] Sprawl
+- [ ] Expo                                                               
 
 ## 2025
 
