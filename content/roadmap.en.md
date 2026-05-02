@@ -10,7 +10,7 @@ layout: landing
 - [ ] New switches                                              
 - [x] Sculpt
 - [ ] Entropy
-- [ ] Phenom
+- [x] Phenom
 - [ ] Sprawl
 - [ ] Expo                                                               
 
