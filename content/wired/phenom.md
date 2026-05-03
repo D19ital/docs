@@ -4,7 +4,7 @@ sidebar:
   exclude: true
 ---
 
-![image](/images/layouts/HPD_Phenom_Ru.png)
+![image](layouts/HPD_Phenom_Ru.png)
 
 **Phenom** — эргономичная, программируемая, механическая сплит-клавиатура с модульной системой и хотсвап-системой для быстрой замены MX-совместимых свитчей
 
