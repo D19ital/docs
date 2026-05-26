@@ -27,4 +27,5 @@ toc: false
   {{< card link="qmk" title="Софт для проводных девайсов" icon="qmk" >}}
   {{< card link="zmk" title="Софт для беспроводных девайсов" icon="zmk" >}}
   {{< card link="troubleshooting" title="Устранение неполадок" icon="tools" >}}
+  {{< card link="accessories" title="Аксессуары" icon="" >}}
 {{< /cards >}}
