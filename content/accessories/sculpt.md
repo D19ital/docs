@@ -18,7 +18,7 @@ Sculpt поставляется в виде набора кейкапов для
 
 ### Расположение кейкапов на клавиатуре
 
-![Sculpt](/images/sculpt/sculpt-ru.png)
+<img src="/images/sculpt/sculpt-ru.png" alt="Расположение кейкапов на клавиатуре" width="" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(2)'" onmouseout="this.style.transform='scale(1)'">
 
 ## Устранение неполадок
 
