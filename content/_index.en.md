@@ -25,4 +25,5 @@ toc: false
   {{< card link="qmk" title="Soft for wireled devices" icon="user" >}}
   {{< card link="zmk" title="Soft for wireless devices" icon="user" >}}
   {{< card link="troubleshooting" title="Troubleshooting" icon="tools" >}}
+  {{< card link="accessories" title="Accessories" icon="accessories" >}}
 {{< /cards >}}
