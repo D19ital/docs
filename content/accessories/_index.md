@@ -11,4 +11,3 @@ sidebar:
 {{< cards cols="1" >}}
   {{< card link="sculpt" title="Sculpt" >}}
 {{< /cards >}}
-
