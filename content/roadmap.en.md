@@ -8,11 +8,12 @@ layout: landing
 - [x] Trackball Royale
 - [ ] Project "Modular minds"                                          
 - [ ] New switches                                              
-- [x] Sculpt
+- [x] Sculpt keycaps
 - [ ] Entropy
 - [x] Phenom
+- [x] Phenom Mini
+- [x] Phenom Micro
 - [ ] Sprawl
-- [ ] Expo                                                               
 
 ## 2025
 
