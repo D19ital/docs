@@ -6,21 +6,21 @@ sidebar:
 
 Sculpt — sculptural keycaps for ergonomic split keyboards
 
-![Sculpt_example](/images/sculpt/scupt_phenom.jpeg)
+![Sculpt_example](/images/sculpt/scupt_01.jpg)
 
 ## Installation
 
 Sculpt comes as a set of keycaps for self-assembly on your keyboard. All keycaps are marked with index labels on the keycap itself in the form "XY", where X is the letter of the row (top to bottom), Y is the sequential number of the column from left to right
 
-![Sculpt](/images/sculpt/cap_index.png)
+![Sculpt](/images/sculpt/cap_index.jpg)
 
 {{< callout type="warning" >}} Correct keycap installation — the edge with the index label must be on top {{< /callout >}}
 
 ### Keycap placement on the keyboard
 
-![Keycap placement on the keyboard](/images/sculpt/sculpt_en_01.png)
+![Keycap placement on the keyboard](/images/layouts/sculpt_layout_en_01.png)
 
-![Keycap placement on the keyboard](/images/sculpt/sculpt_en_02.png)
+![Keycap placement on the keyboard](/images/layouts/sculpt_layout_en_02.png)
 
 ## Troubleshooting
 
@@ -30,7 +30,7 @@ Sculpt comes as a set of keycaps for self-assembly on your keyboard. All keycaps
 - Check that the keycap index matches its correct placement on the keyboard
 - Check the keycap stem for foreign objects, such as support remnants. Clean the stem with a thin object
 
-![Sculpt](/images/sculpt/cap_clear.png)
+![Sculpt](/images/sculpt/cap_clear.jpg)
 
 {{< /details >}}
 
