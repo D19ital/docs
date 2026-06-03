@@ -25,4 +25,4 @@ Detailed information on setting up keyboard is in [documentation](/qmk).
 No, we do not deal with such orders.
 
 ### Which countries do you ship?
-We ship mostly worldwide. More information about shipping you can find [here](https://ergohaven.xyz/shipping).
+We ship mostly worldwide. More information about shipping you can find [here](https://eh.industries/shipping).
