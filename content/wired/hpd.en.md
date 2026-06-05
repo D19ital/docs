@@ -4,7 +4,7 @@ sidebar:
   exclude: true
 ---
 
-![image](/images/layouts/HPD2_en.png)  
+![image](/images/layouts/hpd_layout_en.png)  
 
 ## Connection
 - The High Plains Drifter keyboard works with devices running Windows, macOS, Linux, Android, and iOS.
@@ -20,23 +20,23 @@ On the trackball and touchpad modules, you can adjust cursor movement sensitivit
 
 
 {{% details title="Changing DPI in Vial" closed="true" %}}
-  1. Download and open the Ergohaven fork of [Vial](https://ru.ergohaven.xyz/vial).
-  2. In the top menu, go to the Layouts tab.
+  1. Download and open [Vial](https://docs.ergohaven.xyz/en/qmk/vial/).
+  2. In the top menu, go to the **Layouts** tab.
   3. Select the desired DPI value from the dropdown next to DPI.
 
 ![image](/images/hpd/hpd_dpi.gif) 
 
 In this tab you can also configure:
-- Acceleration - enable/disable cursor acceleration
-- Invert scroll - enable/disable inverted scrolling
-- Sniper sens - adjust cursor sensitivity for Sniper Mode
-- Scroll sens - adjust cursor sensitivity for Scroll Mode
-- Text sens - adjust cursor sensitivity for Text Mode
+- **Acceleration** - enable/disable cursor acceleration
+- **Invert scroll** - enable/disable inverted scrolling
+- **Sniper sens** - adjust cursor sensitivity for Sniper Mode
+- **Scroll sens** - adjust cursor sensitivity for Scroll Mode
+- **Text sens** - adjust cursor sensitivity for Text Mode
 {{% /details %}}
 
 {{% details title="Configuring Auto mouse in Vial" closed="true" %}}
-  1. Download and open the Ergohaven fork of [Vial](https://ru.ergohaven.xyz/vial).
-  2. In the top menu, go to the QMK Settings tab.
+  1. Download and open [Vial](https://docs.ergohaven.xyz/en/qmk/vial/).
+  2. In the top menu, go to the **QMK Settings** tab.
   3. Then select the Auto mouse tab.
   4. Enable automatic mouse layer activation by checking Enable auto mouse layer feature.
   5. Click Save in the bottom-right corner to save the changes.
@@ -44,9 +44,9 @@ In this tab you can also configure:
 ![image](/images/hpd/hpd_auto_mouse.gif)  
 
 In this tab you can also configure:
-- Index of layer to use as default target layer - choose the layer that will be activated when Auto mouse is enabled (by default, this is layer 4 in Ergohaven’s stock firmware).
-- Time layer remains active after activation - set how long (in milliseconds) the mouse layer stays active after activation; the higher this value, the longer the mouse layer remains active.
-- Time delay from last activation to next update - set the polling interval (in milliseconds) for mouse-layer activation.
+- **Index of layer to use as default target layer** - choose the layer that will be activated when Auto mouse is enabled (by default, this is layer 4 in Ergohaven’s stock firmware).
+- **Time layer remains active after activation** - set how long (in milliseconds) the mouse layer stays active after activation; the higher this value, the longer the mouse layer remains active.
+- **Time delay from last activation to next update** - set the polling interval (in milliseconds) for mouse-layer activation.
 {{% /details %}}
 
 ## Firmware update
@@ -91,8 +91,7 @@ HPD v2 modules require reflashing after replacing one module with another (for e
 {{< /callout >}}
 
 ### HPD v2 firmware files and descriptions
-- [no modules](https://github.com/ergohaven/vial-qmk/releases/latest) - firmware for a configuration with no modules
-- [encoder/trackball](https://github.com/ergohaven/vial-qmk/releases/latest) - firmware for the left-half encoder module with indicator lighting, or the right-half trackball module, or using both modules together
-- [encoder/touch](https://github.com/ergohaven/vial-qmk/releases/latest) - firmware for the left-half encoder module with indicator lighting, or the right-half touchpad module, or using both modules together
-- [encoder/joystick](https://github.com/ergohaven/vial-qmk/releases/latest) - firmware for the left-half encoder module with indicator lighting, or the right-half joystick module, or using both modules together
-- [encoder/encoder](https://github.com/ergohaven/vial-qmk/releases/latest) - firmware for the left-half encoder module with indicator lighting, or the right-half encoder module with indicator lighting, or using both modules together
+- **no modules** - firmware for a configuration with no modules
+- **encoder/trackball** - firmware for the left-half encoder module with indicator lighting, or the right-half trackball module, or using both modules together
+- **encoder/touch** - firmware for the left-half encoder module with indicator lighting, or the right-half touchpad module, or using both modules together
+- **encoder/joystick** - firmware for the left-half encoder module with indicator lighting, or the right-half joystick module, or using both modules together
