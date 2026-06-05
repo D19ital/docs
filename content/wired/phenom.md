@@ -4,9 +4,29 @@ sidebar:
   exclude: true
 ---
 
-![image](/images/layouts/HPD_Phenom_Ru.png)
+{{< details title="Phenom" closed="true" >}}
+
+![image](/images/layouts/phenom_layout_ru.png)
 
 **Phenom** — эргономичная программируемая сплит-клавиатура с 3D-корпусом, модульной хотсвап-системой, 58 настраиваемыми клавишами и поддержкой трекбола, тачпада или энкодера на любой половинке
+
+{{< /details >}}
+
+{{< details title="Phenom Mini" closed="true" >}}
+
+![image](/images/layouts/phenom_mini_layout_ru.png)
+
+**Phenom Mini** — компактная версия эргономичной сплит-клавиатуры Phenom c 46 настраиваемыми клавишами и поддержкой трекбола, тачпада или энкодера на любой половинке
+
+{{< /details >}}
+
+{{< details title="Phenom Micro" closed="true" >}}
+
+![image](/images/layouts/phenom_micro_layout_ru.png)
+
+**Phenom Micro** — это ультракомпактная версия клавиатуры Phenom, с всего лишь 40 настраиваемыми клавишами и поддержкой трекбола, тачпада или энкодера на любой половинке
+
+{{< /details >}}
 
 ## Подключение
 

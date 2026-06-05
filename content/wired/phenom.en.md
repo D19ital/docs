@@ -4,9 +4,29 @@ sidebar:
   exclude: true
 ---
 
-![image](/images/layouts/HPD_Phenom_En.png)  
+{{< details title="Phenom" closed="true" >}}
+
+![image](/images/layouts/phenom_layout_en.png)
 
 **Phenom** — an ergonomic programmable split keyboard with a 3D case, modular hot-swap system, 58 customizable keys, and support for a trackball, touchpad, or encoder on either half
+
+{{< /details >}}
+
+{{< details title="Phenom Mini" closed="true" >}}
+
+![image](/images/layouts/phenom_mini_layout_en.png)
+
+**Phenom Mini** — a compact version of the ergonomic split-keyboard Phenom with 46 customizable keys and support for a trackball, touchpad, or encoder on either half
+
+{{< /details >}}
+
+{{< details title="Phenom Micro" closed="true" >}}
+
+![image](/images/layouts/phenom_micro_layout_en.png)
+
+**Phenom Micro** - an ultra-compact version of the Phenom keyboard, with just 40 customizable keys and support for a trackball, touchpad, or encoder on either half.
+
+{{< /details >}}
 
 ## Connection
 
