@@ -1,5 +1,5 @@
 ---
-title: "Phenom"
+title: "Phenom Series"
 sidebar:
   exclude: true
 ---
@@ -74,7 +74,7 @@ Phenom поддерживает модульную систему для обе�
 - каждый модуль настраивается отдельно, а активный слой отображается индикаторной подсветкой
 
 ## Настройка
-Пожалуйста перейдите в [статью о программе Vial](https://docs.ergohaven.xyz/qmk/vial/) 
+Для переназначения клавиш и настройки клавиатуры используйте графические конфигураторы [Entropy](https://github.com/ergohaven/entropy), [Vial](https://eh.works/vial)
 
 ## Режим Ruen  
 Перейдите в статью [Режим RuEn](https://docs.ergohaven.xyz/qmk/ruen/)
