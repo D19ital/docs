@@ -79,21 +79,18 @@ Phenom supports a modular system for both halves of the keyboard
 ### Modular system connection features
 - modules support **hot swapping**
 - modules can be installed in the connectors on either half without reflashing
-- when replacing one module with another, the configuration in Vial is preserved
+- when replacing one module with another, the configuration is preserved
 - identical modules can be used on both halves
 - if no module is installed, the connector is covered with a neat plug
 - each module is configured separately, and the active layer is shown by indicator lighting
 
 ## Configuration
-To remap keys and configure the keyboard, use the graphical configurators [Entropy](https://github.com/ergohaven/entropy) or [Vial](https://eh.industries/vial)
-
-## RuEn Mode
-Go to the [RuEn Mode](https://docs.ergohaven.xyz/en/qmk/ruen/) article
+To remap keys and configure the keyboard, use the graphical configurator [Entropy](https://github.com/ergohaven/entropy)
 
 ## Firmware Reflashing/Update
 ### Preparation:
 - Download the latest firmware version [here](http://github.com/ergohaven/keymap_hub)
-- Save your layout in Vial by opening the **"File"** menu, then selecting **"Save current layout"**
+- Save your layout in the [Entropy](https://github.com/ergohaven/entropy) by opening the **"Layout"** menu, then selecting **"Export layout"**
 
 ### Installation
 To reflash/update the firmware, the keypad must be put into bootloader mode. This can be done in several ways. Choose one:
@@ -107,7 +104,7 @@ To reflash/update the firmware, the keypad must be put into bootloader mode. Thi
     - Wait until the controller enters bootloader mode and the storage folder opens
 
 - Copy or drag and drop the UF2 file, after which the controller should immediately reboot and start working in normal mode
-- Import the layout into Vial by opening the **"File"** menu, then selecting **"Load saved layout"**
+- Import the layout in the [Entropy](https://github.com/ergohaven/entropy) by opening the **"Layout"** menu, then selecting **"Import layout"**
 
 ## Care and Maintenance
 
