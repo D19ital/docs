@@ -90,7 +90,7 @@ To remap keys and configure the keyboard, use the graphical configurator [Entrop
 ## Firmware Reflashing/Update
 ### Preparation:
 - Download the latest firmware version [here](http://github.com/ergohaven/keymap_hub)
-- Save your layout in the configurator by opening the **"File"** menu, then selecting **"Save current layout"**
+- Save your layout in the [Entropy](https://github.com/ergohaven/entropy) by opening the **"Layout"** menu, then selecting **"Export layout"**
 
 ### Installation
 To reflash/update the firmware, the keypad must be put into bootloader mode. This can be done in several ways. Choose one:
@@ -104,7 +104,7 @@ To reflash/update the firmware, the keypad must be put into bootloader mode. Thi
     - Wait until the controller enters bootloader mode and the storage folder opens
 
 - Copy or drag and drop the UF2 file, after which the controller should immediately reboot and start working in normal mode
-- Import the layout in the configurator by opening the **"File"** menu, then selecting **"Load saved layout"**
+- Import the layout in the [Entropy](https://github.com/ergohaven/entropy) by opening the **"Layout"** menu, then selecting **"Import layout"**
 
 ## Care and Maintenance
 
