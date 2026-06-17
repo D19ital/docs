@@ -165,8 +165,8 @@ params:
       path: images/eh-full.svg
       dark: images/eh-full-white.svg
       link: /
-      width: 200
-      height: 100
+      width: 150
+      height: auto
 
   footer:
     displayCopyright: false
