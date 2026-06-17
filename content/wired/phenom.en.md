@@ -85,10 +85,10 @@ Phenom supports a modular system for both halves of the keyboard
 - each module is configured separately, and the active layer is shown by indicator lighting
 
 ## Configuration
-To remap keys and configure the keyboard, use the graphical configurators [Entropy](https://github.com/ergohaven/entropy) or [Vial](https://eh.works/vial)
+To remap keys and configure the keyboard, use the graphical configurators [Entropy](https://github.com/ergohaven/entropy) or [Vial](https://eh.industries/vial)
 
 ## RuEn Mode
-Go to the [RuEn Mode](https://docs.ergohaven.xyz/qmk/ruen/) article
+Go to the [RuEn Mode](https://docs.ergohaven.xyz/en/qmk/ruen/) article
 
 ## Firmware Reflashing/Update
 ### Preparation:
@@ -130,8 +130,4 @@ To reflash/update the firmware, the keypad must be put into bootloader mode. Thi
 
 The keyboard comes with a *3-year warranty and service support*.
 
-If you have any questions about configuring, flashing, or using the device, contact the relevant Ergohaven Telegram groups or visit the [knowledge base](https://docs.ergohaven.xyz/)
-- [Help for beginners](https://t.me/c/1464748383/65975) - any questions related to using Ergohaven products
-- [Troubleshooting](https://t.me/c/1464748383/7588) - questions related to problems with Ergohaven products
-- [ZMK and QMK firmware](https://t.me/c/1464748383/37027) - questions related to firmware for Ergohaven products
-- [Layouts](https://t.me/c/1464748383/7597) - for discussing your layouts and how they can be improved
+If you have any questions about setup, firmware, or operation, please contact [the Ergohaven Telegram group](https://t.me/c/1464748383/8323) or [knowledge base](https://docs.ergohaven.xyz/en/)
