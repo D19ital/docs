@@ -93,7 +93,7 @@ To remap keys and configure the keyboard, use the graphical configurator [Entrop
 - Save your layout in the [Entropy](https://github.com/ergohaven/entropy) by opening the **"Layout"** menu, then selecting **"Export layout"**
 
 ### Installation
-To reflash/update the firmware, the keypad must be put into bootloader mode. This can be done in several ways. Choose one:
+To reflash/update the firmware, the keyboard must be put into bootloader mode. This can be done in several ways. Choose one:
 
 1. **Using the RESET button:**
     - Connect the USB power cable and quickly press the RESET button twice on the bottom of the keyboard
