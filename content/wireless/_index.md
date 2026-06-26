@@ -9,6 +9,7 @@ sidebar:
 Беспроводные девайсы работают на прошивке ZMK и настраиваются через keymap-editor
 
 {{< cards cols="1" >}}
+  {{< card link="k04" title="K:04 Series" >}}
   {{< card link="k03-we" title="K:03 Wireless Edition" >}}
   {{< card link="imperial44-we" title="Imperial44 Wireless Edition" >}}
   {{< card link="qube" title="Qube" >}}
