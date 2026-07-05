@@ -2,76 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/software/vial/</loc>
+    <loc>http://localhost:1313/en/software/qmk/vial/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://localhost:1313/software/vial/"
+                href="http://localhost:1313/software/qmk/vial/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/software/vial/"
+                href="http://localhost:1313/en/software/qmk/vial/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/zmk/zmk-keyboards/</loc>
+    <loc>http://localhost:1313/en/software/zmk/zmk-keyboards/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://localhost:1313/zmk/zmk-keyboards/"
+                href="http://localhost:1313/software/zmk/zmk-keyboards/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/zmk/zmk-keyboards/"
+                href="http://localhost:1313/en/software/zmk/zmk-keyboards/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/zmk/keymap-editor/</loc>
+    <loc>http://localhost:1313/en/software/zmk/keymap-editor/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://localhost:1313/zmk/keymap-editor/"
+                href="http://localhost:1313/software/zmk/keymap-editor/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/zmk/keymap-editor/"
+                href="http://localhost:1313/en/software/zmk/keymap-editor/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/software/ruen/</loc>
+    <loc>http://localhost:1313/en/software/qmk/ruen/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://localhost:1313/software/ruen/"
+                href="http://localhost:1313/software/qmk/ruen/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/software/ruen/"
+                href="http://localhost:1313/en/software/qmk/ruen/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/zmk/fork-sync/</loc>
+    <loc>http://localhost:1313/en/software/zmk/fork-sync/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://localhost:1313/zmk/fork-sync/"
+                href="http://localhost:1313/software/zmk/fork-sync/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/zmk/fork-sync/"
+                href="http://localhost:1313/en/software/zmk/fork-sync/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/zmk/zmk-ruen/</loc>
+    <loc>http://localhost:1313/en/software/zmk/zmk-ruen/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://localhost:1313/zmk/zmk-ruen/"
+                href="http://localhost:1313/software/zmk/zmk-ruen/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/zmk/zmk-ruen/"
+                href="http://localhost:1313/en/software/zmk/zmk-ruen/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/</loc>
@@ -242,16 +242,16 @@
                 href="http://localhost:1313/en/device/archive/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/software/</loc>
+    <loc>http://localhost:1313/en/software/qmk/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://localhost:1313/software/"
+                href="http://localhost:1313/software/qmk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/software/"
+                href="http://localhost:1313/en/software/qmk/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/device/archive/qube/</loc>
@@ -276,6 +276,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/accessories/sculpt/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/software/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://localhost:1313/software/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/software/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/device/sm30/</loc>
@@ -374,16 +386,16 @@
                 href="http://localhost:1313/en/new/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/zmk/</loc>
+    <loc>http://localhost:1313/en/software/zmk/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://localhost:1313/zmk/"
+                href="http://localhost:1313/software/zmk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/zmk/"
+                href="http://localhost:1313/en/software/zmk/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/accessories/</loc>

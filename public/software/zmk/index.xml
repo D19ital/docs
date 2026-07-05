@@ -1,0 +1,728 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ergohaven docs – Прошивка ZMK</title>
+    <link>http://localhost:1313/software/zmk/</link>
+    <description>Recent content in Прошивка ZMK on ergohaven docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    
+	  <atom:link href="http://localhost:1313/software/zmk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Первые шаги с клавиатурой на ZMK</title>
+      <link>http://localhost:1313/software/zmk/zmk-keyboards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/software/zmk/zmk-keyboards/</guid>
+      <description>
+        
+        
+        &lt;p&gt;В статье содержится руководство, которое поможет сделать первые шаги в освоении клавиатуры на ZMK. Прочитав статью пользователь научится: управлять питанием клавиатуры, подключать клавиатуру к нескольким устройствам и обновлять прошивку.&lt;/p&gt;
+&lt;h2&gt;Подключение клавиатуры&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;подключение-клавиатуры&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
+  &lt;p&gt;Если при подключении клавиатуры к вашему устройству возникли какие-то неполадки, попробуйте перезагрузить Bluetooth на вашем устройстве и пройти все описанные ниже шаги заново.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Шаг 1. Для начала включаем её, переключив физический тумблер в положение &amp;ldquo;On&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/buttons.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Шаг 2. Далее половинки надо соединить между собой, для этого одновременно на обоих половинках нажимаем кнопку &amp;ldquo;Reset&amp;rdquo;, находящуюся на дне.&lt;/p&gt;
+&lt;p&gt;Шаг 3. Когда клавиатура включена и половинки соединены можно переходить к подключению. Для начала стоит убедиться, что текущий профиль подключения очищен, нажав &lt;code&gt;&amp;amp;BT_CLR&lt;/code&gt; (в раскладке по умолчанию клавиши управления профилем расположены на 3 слое, переключиться на него можно, зажав клавиши переключения на слои 1 и 2), это сбросит привязанные к профилю устройства.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/sel_clr.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Шаг 4. Далее, для подключения к устройству по Bluetooth надо нажать клавишу выбора профиля, например &lt;code&gt;&amp;amp;BT_SEL 0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Шаг 5. После нажатия клавиатура перейдёт в режим сопряжения и отобразится в списке доступных для подключения, выбираем её, и, вуаля, всё работает!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/connect.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt; Если клавиатура работает некорректно, например, с одной половинки нажатия клавиш не доходят до устройства, то стоит повторно провести процедуру соединения половинок, одновременно нажав клавишу &lt;code&gt;Reset&lt;/code&gt; на обоих.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h2&gt;Подключение к нескольким устройствам&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;подключение-к-нескольким-устройствам&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba-%d0%bd%d0%b5%d1%81%d0%ba%d0%be%d0%bb%d1%8c%d0%ba%d0%b8%d0%bc-%d1%83%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%81%d1%82%d0%b2%d0%b0%d0%bc&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Для беспроводного подключения клавиатура может запомнить до 5 устройств, каждое подключенное устройство привязывается к выбранному &amp;ldquo;профилю&amp;rdquo; после подключения.&lt;/p&gt;
+&lt;p&gt;Для подключения ко второму устройству надо нажать клавишу &lt;code&gt;&amp;amp;BT_SEL 1&lt;/code&gt;, клавиатура станет доступна для сопряжения, подключаемся к ней с устройства.&lt;/p&gt;
+&lt;p&gt;Чтобы снова подключиться к первому устройству нажимаем &lt;code&gt;&amp;amp;BT_SEL 0&lt;/code&gt;, устройство автоматически увидит клавиатуру и подключится к ней. Аналогично можно подключить устройства к профилям 3, 4, 5.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Для отвязки клавиатуры от вашего устройства на текущем профиле выполните следующие шаги:&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;очистить профиль на клавиатуре нажатием &lt;code&gt;&amp;amp;BT_CLR&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;затем в параметрах Bluetooth на вашем устройстве отвязать клавиатуру,&lt;/li&gt;
+&lt;li&gt;и перезапустить Bluetooth на вашем устройстве.
+После выполнения этих шагов клавиатура должна быть полностью отвязана от вашего устройства на текущем профиле.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/sel.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Зарядка батареи&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;зарядка-батареи&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%b7%d0%b0%d1%80%d1%8f%d0%b4%d0%ba%d0%b0-%d0%b1%d0%b0%d1%82%d0%b0%d1%80%d0%b5%d0%b8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Для зарядки устройства переключатель снизу устройства должен быть в положении &lt;strong&gt;I&lt;/strong&gt; (вкл)&lt;/li&gt;
+&lt;li&gt;Используйте стандартный &lt;strong&gt;кабель USB-C&lt;/strong&gt; (идет в комплекте)&lt;/li&gt;
+&lt;li&gt;Заряжайте устройство через USB порт ПК (продолжительность зарядки ~2 часа), либо можете использовать блок питания на &lt;strong&gt;5В&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Во время зарядки так же можно пользоваться устройством&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Состояние батареи&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;состояние-батареи&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%81%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%b8%d0%b5-%d0%b1%d0%b0%d1%82%d0%b0%d1%80%d0%b5%d0%b8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Текущий заряд главной (правая для Velvet v3 UI edition, левая для OP36 и Velvet v3) половинки отображается в ОС, в списке подключеных Bluetooth устройств. Заряд второстепенной половинки в нормальных условиях тратится медленнее главной, точный зяряд можно увидеть только с помощью дополнительного софта. Есть несколько вариантов софта под разные ОС:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kot149/zmk-battery-center&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ZMK Battery Center&lt;/a&gt; - доступно на Windows, MacOS;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/codyd51/Mighty-Mitts&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mighty-Mitts&lt;/a&gt; - доступно только на MacOS;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Maksim-Isakau/zmk-split-battery&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ZMK Split Battery&lt;/a&gt; - доступно только на Windows;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mh4x0f/zmkBATx&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;zmkBATx&lt;/a&gt; - доступно только на Linux.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/power_level.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Выключение клавиатуры&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;выключение-клавиатуры&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%b2%d1%8b%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Выключить клавиатуру можно &lt;a href=&#34;#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b&#34;&gt;переключателем на задней стороне клавиатуры&lt;/a&gt;, переведя его в положение Off, а также выключение можно настроить непосредственно на клавишу клавиатуры, назначив на неё &lt;code&gt;&amp;amp;SOFT_OFF&lt;/code&gt;. При нажатии на эту клавишу обе половинки клавиатуры переведутся в выключенное состояние, чтобы пробудить её, надо нажать кнопку &lt;code&gt;Reset&lt;/code&gt; на нижней стороне клавиатуры.&lt;/p&gt;
+&lt;h2&gt;Переход в состояние сна&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;переход-в-состояние-сна&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4-%d0%b2-%d1%81%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%b8%d0%b5-%d1%81%d0%bd%d0%b0&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Спустя 10 минут бездействия клавиатура переходит в режим сна для экономии заряда. Для пробуждения из сна достаточно нажать любую клавишу, и клавиатура проснётся через пару секунд.&lt;/p&gt;
+&lt;h2&gt;Подключение по проводу&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;подключение-по-проводу&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d0%be-%d0%bf%d1%80%d0%be%d0%b2%d0%be%d0%b4%d1%83&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;При подключении клавиатуры к устройству проводом, клавиатура автоматически начинает передавать данные по проводу. После отключения провода клавиатура вернётся в режим передачи данных по Bluetooth.&lt;/p&gt;
+&lt;p&gt;В ситуациях, когда клавиатура подзаряжается от одного устройства, но необходимо передавать данные в другое, можно нажать клавишу &lt;code&gt;&amp;amp;OUT_BLE&lt;/code&gt;, это принудительно переведет клавиатуру в режим передачи по Bluetooth и данные будут отправляться в устройство, привязанное к текущему профилю.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/cables.jpg&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Прошивка клавиатуры&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;прошивка-клавиатуры&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b0-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Обновление прошивки клавиатуры происходит следующим образом:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Подключаем половинку клавиатуры по проводу;&lt;/li&gt;
+&lt;li&gt;Дважды нажимаем клавишу &lt;code&gt;Reset&lt;/code&gt; на нижней стороне клавиатуры (пауза между нажатиями должна быть минимальной);&lt;/li&gt;
+&lt;li&gt;Аналогично с прошивкой клавиатур на QMK, в ПК определяется новый съемный диск, в него надо положить файл прошивки;&lt;/li&gt;
+&lt;li&gt;Отсоедините кабель;&lt;/li&gt;
+&lt;li&gt;Но обоих половинках одновременно нажмите кнопки &lt;code&gt;Reset&lt;/code&gt;, находящиеся на дне, чтобы соединить половинки.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Важно!&lt;/strong&gt; Прошивки половинок имеют различия, и прошивать левую половинку надо файлом, название которого оканчивается на &lt;code&gt;left.uf2&lt;/code&gt;, а правую половинку файлом, оканчивающимся на  &lt;code&gt;right.uf2&lt;/code&gt;. В большинстве случаев достаточно прошивать только главную половинку (правую для Velvet v3 UI edition, левую для OP36 и Velvet v3) так как раскладка хранится в ней.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Переводить клавиатуру в режим прошивки можно не только двойным нажатием &lt;code&gt;Reset&lt;/code&gt;, это также можно делать нажатием клавиши &lt;code&gt;&amp;amp;bootloader&lt;/code&gt;. Нажатие &lt;code&gt;&amp;amp;bootloader&lt;/code&gt; переводит в режим прошивки только ту половинку, на которой была нажата.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Больше информации в документации ZMK: &lt;a href=&#34;https://zmk.dev/docs&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://zmk.dev/docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/velvet.jpg&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Настройка клавиатуры в ZMK keymap-editor</title>
+      <link>http://localhost:1313/software/zmk/keymap-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/software/zmk/keymap-editor/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/editor.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keymap-editor&lt;/strong&gt; — это мощный инструмент для настройки клавиатуры на ZMK, позволяющий удобно и быстро воплотить идею в готовую раскладку.
+В статье описана процедура подключения keymap-editor и основные возможности с точки зрения как нового пользователя, только начинающего погружение в мир сплит-клавиатур, так и уже знакомого с сплит-клавиатурами и настройкой раскладки в Vial.&lt;/p&gt;
+&lt;h2&gt;Начало работы с keymap-editor&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;начало-работы-с-keymap-editor&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bd%d0%b0%d1%87%d0%b0%d0%bb%d0%be-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b-%d1%81-keymap-editor&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Keymap-editor является веб-приложением, он доступен из браузера по адресу &lt;a href=&#34;https://nickcoutsos.github.io/keymap-editor/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nickcoutsos.github.io/keymap-editor/&lt;/a&gt;.
+Чтобы им воспользоваться, требуется выполнить несколько условий:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Пользователь должен быть зарегистрирован на &lt;a href=&#34;https://github.com/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Пользователю нужен форк репозитория &lt;a href=&#34;https://github.com/ergohaven/ergohaven-zmk-config&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/ergohaven/ergohaven-zmk-config&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/fork.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;В форке надо включить GitHub Actions для автоматической сборки прошивки после внесения изменений в раскладку, переходим на вкладку &lt;strong&gt;Actions&lt;/strong&gt; и нажимаем кнопку &lt;strong&gt;I understand my workflows, go ahead and enable Actions&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Переходим на страницу &lt;a href=&#34;https://nickcoutsos.github.io/keymap-editor/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nickcoutsos.github.io/keymap-editor/&lt;/a&gt;, на открывшейся странице выбираем GitHub, авторизуемся и предоставляем доступ к созданному форку для Keymap Editor.
+Для предоставления доступа отмечаем опцию &lt;em&gt;Only select repositories&lt;/em&gt;, и выбраем Ваш форк репозитория &lt;code&gt;/ergohaven/ergohaven-zmk-config&lt;/code&gt;. Далее нажимаем &lt;strong&gt;Save&lt;/strong&gt; для сохранения настроек доступа.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/access.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Когда описанные выше шаги выполнены, раскладка готова к внесению изменений, ура!
+Переходим на страницу &lt;a href=&#34;https://nickcoutsos.github.io/keymap-editor/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nickcoutsos.github.io/keymap-editor/&lt;/a&gt; и видим раскладку по умолчанию.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/default.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Переназначение клавиш&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;переназначение-клавиш&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d0%bd%d0%b0%d0%b7%d0%bd%d0%b0%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d1%88&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Чтобы переназначить какую-то клавишу, кликаем на нее, и откроется окно выбора нового Поведения этой клавиши.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/kp.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;В окне надо выбрать Behavior (далее &lt;em&gt;Поведение&lt;/em&gt;) для этой клавиши. &lt;em&gt;Поведение&lt;/em&gt; — это сущность в ZMK, определяющая какое именно действие будет произведено при нажатии клавиши, например &lt;code&gt;&amp;amp;kp&lt;/code&gt; (Key Press) просто отправляет в ОС нажатие клавиши. Каждый &lt;code&gt;&amp;amp;kp&lt;/code&gt; имеет параметр &lt;code&gt;Key Code&lt;/code&gt;, в котором мы указываем какая конкретно клавиша будет нажата, на скриншоте выше в этом параметре указана клавиша &lt;em&gt;Q&lt;/em&gt;. Если мы хотим назначить вместо &lt;em&gt;Q&lt;/em&gt;, например, &lt;em&gt;Z&lt;/em&gt;, то надо кликнуть на поле &lt;code&gt;Key Code&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/kp_params.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Окно разворачивается и в правой части отображается список доступных для назначения кей-кодов. В поисковую строку доступных кей-кодов вводим &lt;em&gt;Z&lt;/em&gt;, выбираем &lt;em&gt;Z&lt;/em&gt; среди отфильтрованных кодов, нажимаем &lt;strong&gt;Okay&lt;/strong&gt; и готово, клавиша заменена!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/key_codes.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Над списком кейкодов есть чекбоксы с модификаторами &lt;code&gt;Shift&lt;/code&gt;, &lt;code&gt;Alt&lt;/code&gt;, &lt;code&gt;Ctrl&lt;/code&gt; и &lt;code&gt;Gui&lt;/code&gt;, с префиксами &amp;ldquo;L&amp;rdquo; и &amp;ldquo;R&amp;rdquo;, обозначающими левый или правый модификатор. Если отметить один из чекбоксов модификаторов, то в ОС отправится сочетание клавиш с отмеченным модификатором. Например, если бы в окне выше мы отметили чекбокс &lt;code&gt;LCtrl&lt;/code&gt;, то при нажатии на клавишу сразу отправилось бы сочетание &lt;code&gt;LCtrl + Z&lt;/code&gt;. Удобно, нажатием одной клавиши сразу делаем сочетание клавиш!&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Далее внесенные изменения надо сохранить, нажимаем &lt;strong&gt;Save&lt;/strong&gt; в левом верхнем углу, при желании можно дать название внесенному изменению чтобы при просмотре истории было понятно какие изменения в раскладку были внесены, или оставить поле пустым и нажать &lt;strong&gt;Commit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Прошивка автоматически начала собираться, обычно этот процесс занимает около двух минут. Нажмём на синюю кнопку с статусом сборки.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/build_status.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;На открывшейся странице отображены статусы всех этапов сборки. После выполнения всех этапов появится раздел &lt;code&gt;Artifacts&lt;/code&gt;, содержащий архив &lt;code&gt;firmware&lt;/code&gt;, кликаем на него для скачивания.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/firmware.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;После скачивания архива &lt;code&gt;firmware&lt;/code&gt; прошиваем файлами из него клавиатуру по шагам, описанным в &lt;a href=&#34;https://docs.ergohaven.xyz/en/zmk/zmk-keyboards/#прошивка-клавиатуры&#34; target=&#34;_blank&#34;&gt;первых шагах с клавиатурой на ZMK&lt;/a&gt; (см. раздел «Прошивка клавиатуры»).&lt;/p&gt;
+&lt;p&gt;Изменения в раскладку внесены!&lt;/p&gt;
+&lt;h2&gt;Слои&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;слои&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%81%d0%bb%d0%be%d0%b8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;В сплит-клавиатурах используются слои, это своего рода дополнительные модификаторы, как &lt;em&gt;Shift&lt;/em&gt; или &lt;em&gt;Control&lt;/em&gt;, и переключив клавиатуру на другой слой, нажатия клавиш будут регистрировать уже другие символы или функции, назначенные на эту клавишу на этом слое.&lt;br&gt;
+Звучит сложно, надо рассмотреть на примере:&lt;br&gt;
+Если нажать и не отпускать красную клавишу на левой половинке, то клавиатура переключится на 1 слой, и нажав, например, клавишу &lt;em&gt;W&lt;/em&gt;, в ОС отправится нажатие клавиши &lt;em&gt;2&lt;/em&gt;, т.к. в раскладке по умолчанию она назначена на позицию &lt;em&gt;W&lt;/em&gt; на 1-м слое.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/layer1.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Переименование слоёв&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;переименование-слоёв&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d0%b8%d0%bc%d0%b5%d0%bd%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81%d0%bb%d0%be%d1%91%d0%b2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;blockquote&gt;
+  &lt;p&gt;Слоям можно изменять названия, это может облегчить конфигурирование раскладки, для этого наводим курсор на название слоя и нажимаем кнопку &lt;strong&gt;Edit&lt;/strong&gt; с иконкой карандаша.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/layer_name.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Переключение слоёв&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;переключение-слоёв&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%bb%d0%be%d1%91%d0%b2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;В ZMK для переключения слоев есть несколько &lt;em&gt;Поведений&lt;/em&gt;:&lt;/p&gt;
+&lt;h4&gt;&amp;amp;mo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;amp;mo&lt;/code&gt; — активирует указанный слой при удержании клавиши нажатой. Именно это &lt;em&gt;Поведение&lt;/em&gt; используется в стандартной раскладке, на красной клавише назначено &lt;code&gt;&amp;amp;mo 1&lt;/code&gt;, и при удержании её зажатой активируется 1-й слой.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/mo.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;&amp;amp;lt&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;lt&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lt&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;amp;lt&lt;/code&gt; — гибридное &lt;em&gt;Поведение&lt;/em&gt; стандартного нажатия на клавишу (&lt;code&gt;&amp;amp;kp&lt;/code&gt;) и активации слоя при удержании клавиши нажатой (&lt;code&gt;&amp;amp;mo&lt;/code&gt;).
+Например, на красную клавишу, на которой в стандартной раскладке &lt;code&gt;&amp;amp;mo 1&lt;/code&gt;, назначим &lt;code&gt;&amp;amp;lt&lt;/code&gt;, передав в параметры: 1-й слой и кей-код &lt;em&gt;Space&lt;/em&gt;, и тогда при нажатии на нее будет печататься пробел, а при удержании будет происходить изменение слоя, чистая магия!&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Стоит заметить, что таким образом мы сократили количество занятых клавиш на 0-м слое, ведь изначально &lt;code&gt;&amp;amp;kp Space&lt;/code&gt; и &lt;code&gt;&amp;amp;mo 1&lt;/code&gt; были на двух отдельных клавишах, нажимаемых большим пальцем, а теперь мы объединили их в одну, и теперь можно расположить на месте &lt;code&gt;&amp;amp;kp Space&lt;/code&gt; какое-нибудь другое &lt;em&gt;Поведение&lt;/em&gt;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/lt.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;&amp;amp;tog&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tog&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tog&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;amp;tog&lt;/code&gt; — при нажатии переключает состояние слоя, то есть включает указанный слой, если он выключен, и наоборот, выключает его, если он включен. &lt;em&gt;(аналог TG() из Vial)&lt;/em&gt; &lt;br&gt;
+При использовании этого &lt;em&gt;Поведения&lt;/em&gt; стоит помнить что &lt;strong&gt;активным&lt;/strong&gt; на данный момент является &lt;strong&gt;включенный&lt;/strong&gt; слой с самым большим номером, то есть, включив слой нажатием &lt;code&gt;&amp;amp;tog 2&lt;/code&gt;, невозможно переключиться на 1-й слой нажатием &lt;code&gt;&amp;amp;mo&lt;/code&gt; или &lt;code&gt;&amp;amp;tog&lt;/code&gt;, ведь он имеет меньший номер, и несмотря на то что нажатие &lt;code&gt;&amp;amp;tog 1&lt;/code&gt; &lt;strong&gt;включит&lt;/strong&gt; 1 слой, &lt;strong&gt;активным&lt;/strong&gt; всё равно останется 2-й слой т.к. он имеет больший номер. Чтобы переключиться на слои с номером ниже на 2-м слое надо расположить клавишу &lt;code&gt;&amp;amp;tog 2&lt;/code&gt;.&lt;br&gt;
+Для закрепления пошагово разберем сценарий работы с &lt;code&gt;&amp;amp;tog&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Находясь на 0-м слое нажат &lt;code&gt;&amp;amp;tog 2&lt;/code&gt; — слой 2 включен, переключиться на 1-й слой нажатием &lt;code&gt;&amp;amp;tog 1&lt;/code&gt; или &lt;code&gt;&amp;amp;mo 1&lt;/code&gt; не получится;&lt;/li&gt;
+&lt;li&gt;Находясь на 2-м слое нажат &lt;code&gt;&amp;amp;tog 2&lt;/code&gt; — слой 2 выключен, клавиатура вернулась на 0-й слой, и мы можем переключаться на 1-й слой.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/tog.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;&amp;amp;to&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;to&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#to&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;amp;to&lt;/code&gt; — при нажатии включает слой, указанный в параметре, и выключает все остальные активные слои.&lt;br&gt;
+Это &lt;em&gt;Поведение&lt;/em&gt; очень удобно для переключения на слой по нажатию, ведь в отличие от &lt;code&gt;&amp;amp;tog&lt;/code&gt;, &lt;em&gt;Поведение&lt;/em&gt; &lt;code&gt;&amp;amp;to&lt;/code&gt; выключает все активные слои, и нет необходимости отдельно выключать текущий активный слой. &lt;br&gt;
+Пример: находясь на 0-м слое нажат &lt;code&gt;&amp;amp;to 2&lt;/code&gt; — слой 2 включается, мы можем переключиться на 1-й слой нажатием &lt;code&gt;&amp;amp;to 1&lt;/code&gt;, ведь это поведение помимо &lt;strong&gt;включения&lt;/strong&gt; слоя 1, &lt;strong&gt;выключает&lt;/strong&gt; все остальные активные слои, в данном случае 2-й.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/to.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;&amp;amp;sl&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;sl&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sl&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;amp;sl&lt;/code&gt; — при нажатии включает слой, указанный в параметре, но лишь на одно нажатие. &lt;em&gt;(аналог OSL() из Vial)&lt;/em&gt;&lt;br&gt;
+Удобно использовать это &lt;em&gt;Поведение&lt;/em&gt; для переключения на слой с функциональными клавишами, ведь чаще всего их требуется нажать 1 раз. Нажали &lt;code&gt;&amp;amp;sl 3&lt;/code&gt; (на этом слое в раскладке по умолчанию F1-12 клавиши), слой включился, нажали клавишу &lt;em&gt;F1&lt;/em&gt;, и слой сразу же автоматически выключился.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Также важно упомянуть, что если после переключения на слой через &lt;code&gt;&amp;amp;sl&lt;/code&gt; в течение 1 секунды не произойдет нажатия, то слой автоматически выключится. Этот таймаут конфигурируется в разделе Behaviors -&amp;gt; Reconfiguration, подробнее в разделе &lt;a href=&#34;#вкладка-behaviors&#34; target=&#34;_blank&#34;&gt;Behaviors&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/sl.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Перемещение слоёв&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;перемещение-слоёв&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d0%bc%d0%b5%d1%89%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d0%bb%d0%be%d1%91%d0%b2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Иногда при настройке раскладки возникает необходимость перемещения целого слоя на другую позицию, в keymap-editor это реализовано очень удобно, достаточно просто перетащить слой на нужную позицию.&lt;/p&gt;
+&lt;video 
+  autoplay
+  loop
+  muted
+  style=&#34;max-width: 100%&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/video/keymap-editor/layer-move.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;p&gt;При перемещении слоя таким образом, keymap-editor автоматически подстраивает параметры всех &lt;em&gt;Поведений&lt;/em&gt;, ранее активировавших этот слой, например, в раскладке есть &lt;code&gt;&amp;amp;mo 2&lt;/code&gt;, если переместить 2-й слой на позицию 1-го слоя, то назначенная клавиша &lt;code&gt;&amp;amp;mo 2&lt;/code&gt; автоматически изменится на &lt;code&gt;&amp;amp;mo 1&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Копирование слоёв&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;копирование-слоёв&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%ba%d0%be%d0%bf%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81%d0%bb%d0%be%d1%91%d0%b2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Еще одной полезной возможностью управления слоями является их копирование.&lt;br&gt;
+Чтобы сделать копию надо нажать на кнопку &lt;strong&gt;&amp;hellip;&lt;/strong&gt; рядом с названием слоя и выбрать &lt;strong&gt;Duplicate Layer&lt;/strong&gt;. После нажатия будет создана полная копия слоя.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/duplicate.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Быстрое назначение клавиш&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;быстрое-назначение-клавиш&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%b1%d1%8b%d1%81%d1%82%d1%80%d0%be%d0%b5-%d0%bd%d0%b0%d0%b7%d0%bd%d0%b0%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d1%88&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;На любом слое можно быстро переназначить клавиши, нажав на кнопку &lt;strong&gt;&amp;hellip;&lt;/strong&gt; рядом с названием слоя и выбрав &lt;strong&gt;Quick &amp;amp;kp Assignment&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;video 
+  autoplay
+  loop
+  muted
+  style=&#34;max-width: 100%&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/video/keymap-editor/quick-assign.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;em&gt;В открывшемся окне удобно назначать нажатия цифр, букв, и функциональных клавиш&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Несколько полезных Behaviors&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;несколько-полезных-behaviors&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bd%d0%b5%d1%81%d0%ba%d0%be%d0%bb%d1%8c%d0%ba%d0%be-%d0%bf%d0%be%d0%bb%d0%b5%d0%b7%d0%bd%d1%8b%d1%85-behaviors&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;code&gt;&amp;amp;mt&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mt&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mt&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;em&gt;Поведение&lt;/em&gt; Mod/Tap позволяет назначить определённое &lt;em&gt;Поведение&lt;/em&gt; на &lt;strong&gt;короткое нажатие&lt;/strong&gt; (&lt;em&gt;TAP&lt;/em&gt;) клавиши, и другое &lt;em&gt;Поведение&lt;/em&gt; на &lt;strong&gt;зажатие&lt;/strong&gt; (&lt;em&gt;HOLD&lt;/em&gt;) клавиши. &lt;em&gt;(Аналог клавиш LShift_T, LCtrl_T и т.д. с вкладки Quantum из Vial)&lt;/em&gt;&lt;br&gt;
+По умолчанию &lt;strong&gt;коротким нажатием&lt;/strong&gt; считается нажатие, длящееся менее 200 миллисекунд, если зажали дольше, то регистрируется &lt;strong&gt;зажатие&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/mt.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Если настроить &lt;em&gt;Поведение&lt;/em&gt; как на скриншоте выше, то при &lt;strong&gt;коротком нажатии&lt;/strong&gt; клавиши напечатается буква &lt;em&gt;D&lt;/em&gt;, а при &lt;strong&gt;зажатии&lt;/strong&gt; — будет зажат левый Shift.&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;&amp;amp;sk&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;sk&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sk&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;При &lt;strong&gt;нажатии&lt;/strong&gt; Sticky Key задерживает клавишу нажатой, и отпускает её после следующего нажатия любой другой клавиши. &lt;em&gt;(Аналог OSM из Vial)&lt;/em&gt;&lt;br&gt;
+Удобно использовать с модификаторами, назначив &lt;code&gt;&amp;amp;sk LShift&lt;/code&gt;, не надо зажимать клавишу &lt;em&gt;Shift&lt;/em&gt;, чтобы напечатать заглавную букву, а просто один раз &lt;strong&gt;нажать&lt;/strong&gt; &lt;code&gt;&amp;amp;sk LShift&lt;/code&gt; и сразу отпустить, следующая буква уже будет заглавной&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/sk.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Вкладка Behaviors&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;вкладка-behaviors&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%b2%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0-behaviors&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;На вкладке Behaviors можно создать свои кастомные &lt;em&gt;Поведения&lt;/em&gt; и настроить стандартные. Начнем с настройки стандартных.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/behaviors.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Reconfigurations&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;reconfigurations&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#reconfigurations&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Здесь мы можем изменить свойства стандартных &lt;em&gt;Поведений&lt;/em&gt;, например тех, которые были описаны в разделе &lt;a href=&#34;#слои&#34; target=&#34;_blank&#34;&gt;Слои&lt;/a&gt;.&lt;br&gt;
+Нажмём кнопку &lt;strong&gt;Add Behavior Reconfiguration&lt;/strong&gt;, в открывшемся меню выберем, например &lt;code&gt;&amp;amp;sl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/reconfiguration.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;В открывшемся окне &lt;em&gt;Reconfigure &lt;code&gt;&amp;amp;sl&lt;/code&gt;&lt;/em&gt; видим ряд стандартных свойств, которые мы можем изменить. Давайте увеличим таймаут для &lt;code&gt;&amp;amp;sl&lt;/code&gt;, чтобы слой оставался активным не 1 секунду, а 3, для этого в строке свойства &lt;code&gt;release-after-ms&lt;/code&gt; кликаем кнопку &lt;strong&gt;Override&lt;/strong&gt; и в появившемся поле вводим 3000 (единицы измерения в поле — миллисекунды), и нажимаем &lt;strong&gt;Okay&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/reconfigured.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;В разделе Reconfigure появилась запись &lt;code&gt;&amp;amp;sl&lt;/code&gt; с переопределёнными свойствами.
+Для просмотра свойств надо нажать кнопку &lt;strong&gt;Edit&lt;/strong&gt;. Чтобы полностью вернуть свойствам стандартные значения нажмите кнопку &lt;strong&gt;Delete&lt;/strong&gt;.&lt;br&gt;
+Подробная информация о всех свойствах &lt;em&gt;Поведений&lt;/em&gt; в &lt;a href=&#34;https://zmk.dev/docs/config/behaviors#sticky-key&#34; target=&#34;_blank&#34;&gt;документации ZMK&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Custom Behaviors&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;custom-behaviors&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#custom-behaviors&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;В этом разделе мы можем создать своё кастомное &lt;em&gt;Поведение&lt;/em&gt;, основанное на стандартных. Создадим &lt;em&gt;Поведение&lt;/em&gt;, с которым будет удобно реализовать &lt;em&gt;Home Row Mods&lt;/em&gt; (далее HRM), популярный подход к дизайну раскладки, основная идея которого состоит в том, что на клавиши &lt;em&gt;домашнего ряда&lt;/em&gt; (A, S, D, F и J, K, L, ;), при удержании нажатыми, активируют модификаторы &lt;em&gt;Shift&lt;/em&gt;, &lt;em&gt;Ctrl&lt;/em&gt;, &lt;em&gt;Gui&lt;/em&gt; или &lt;em&gt;Alt&lt;/em&gt;.&lt;br&gt;
+Нажмём &lt;strong&gt;Add New Behavior&lt;/strong&gt;, в открывшемся окне выберем &lt;em&gt;Hold or Tap behavior&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/hrm.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;В этом окне надо описать шаблон того, какие &lt;em&gt;Поведения&lt;/em&gt; будут выполнены при нажатии и удержании, а также несколько свойств. Заполним свойства:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Bind&lt;/code&gt;: &amp;ldquo;hrm&amp;rdquo;. Название поведения, именно по нему мы можем найти &lt;em&gt;Поведение&lt;/em&gt; при назначении на клавишу;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bindings — HOLD&lt;/code&gt;: &lt;code&gt;&amp;amp;kp&lt;/code&gt;. При удержании клавиши нажатой будет нажиматься клавиша с модификатором, для этого подойдет обычный &lt;code&gt;&amp;amp;kp&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bindings — TAP&lt;/code&gt;: &lt;code&gt;&amp;amp;kp&lt;/code&gt;. Действие при кратковременном нажатии, для того чтобы нажать клавишу с буквой также подойдет &lt;code&gt;&amp;amp;kp&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tapping-term-ms&lt;/code&gt;: 200. Если клавиша будет нажата &lt;strong&gt;менее чем 200 миллисекунд&lt;/strong&gt;, то клавиатура зарегистрирует TAP и нажмётся клавиша, например &lt;em&gt;D&lt;/em&gt;, если клавиша будет удержана нажатой &lt;strong&gt;более чем 200 миллисекунд&lt;/strong&gt;, то зарегистрируется HOLD и нажмётся указанный в параметрах модификатор, например &lt;em&gt;Ctrl&lt;/em&gt;.;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flavor&lt;/code&gt;: balanced. Есть несколько алгоритмов, позволяющих пользоваться HRM не завязываясь строго на тайминг из &lt;code&gt;tapping-term-ms&lt;/code&gt;, &lt;em&gt;balanced&lt;/em&gt; это как раз один из них, он подразумевает, что если HRM клавиша была нажата менее чем 200 миллисекунд, но за время нажатия HRM клавиши была &lt;strong&gt;нажата и отпущена&lt;/strong&gt; другая клавиша, то надо зарегистрировать действие HOLD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;В &lt;a href=&#34;https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=home_row_mods#custom-hold-tap-examples&#34; target=&#34;_blank&#34;&gt;документации ZMK&lt;/a&gt; есть пример создания HRM, не зависящего от таймингов полностью, не мешая технике печати и перекатам по клавишам. Идея состоит в том, что модификаторы строго нажимаются на одной половинке, а клавиша с буквой на другой половинке. В примере описаны свойства в виде кода, но в keymap-editor все свойства имеют такие же наименования и их легко адаптировать.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;После заполнения свойств нажимаем &lt;strong&gt;Okay&lt;/strong&gt;, и видим что наше кастомное &lt;em&gt;Поведение&lt;/em&gt; было успешно создано.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/custom.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Далее перейдём на вкладку Layers, и назначим созданное поведение на клавишу &lt;em&gt;D&lt;/em&gt;. В окне назначения &lt;em&gt;Поведения&lt;/em&gt; нам надо найти и выбрать созданный &lt;code&gt;&amp;amp;hrm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/hrm2.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Заполним параметры:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;В &lt;em&gt;Parameters — HOLD&lt;/em&gt; надо указать кей-код желаемого модификатора, укажем &lt;em&gt;Ctrl&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;В &lt;em&gt;Parameters — TAP&lt;/em&gt; надо указать кей-код клавиши, отправляемой по тапу, выберем &lt;em&gt;D&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/hrm3.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Интересной идеей может быть назначение HRM модификатора &lt;em&gt;Ctrl&lt;/em&gt; на клавишу &lt;em&gt;S&lt;/em&gt;, ведь тогда нажимать очень часто используемые сочетания &lt;em&gt;Ctrl + C&lt;/em&gt; и &lt;em&gt;Ctrl + V&lt;/em&gt; очень удобно одной рукой, попробуйте!&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;После заполнения параметров жмём &lt;strong&gt;Okay&lt;/strong&gt; и наш первый &lt;em&gt;Home Row Mod&lt;/em&gt; назначен!&lt;br&gt;
+Аналогичным образом назначаем HRM модификаторы на все остальные клавиши, и все модификаторы уже лежат под пальцами, чтобы их достать больше не надо смещать руку.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/hrm4.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Совет&lt;/em&gt;: можно создать несколько &lt;em&gt;Поведений&lt;/em&gt; с разным Tapping Term для разных пальцев. Например, для мизинца (который слабее указательного) стоит задать большее значение Tapping Term, чтобы случайные нажатия не регистрировались как HOLD.&lt;/p&gt;
+&lt;h2&gt;Полезные кастомные Behaviors&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;полезные-кастомные-behaviors&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%be%d0%bb%d0%b5%d0%b7%d0%bd%d1%8b%d0%b5-%d0%ba%d0%b0%d1%81%d1%82%d0%be%d0%bc%d0%bd%d1%8b%d0%b5-behaviors&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Для создания клавиш с перечисленными ниже &lt;em&gt;Поведениями&lt;/em&gt; надо создать новое кастомное &lt;em&gt;Поведение&lt;/em&gt; с соответствующим типом.&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;&amp;amp;td&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;td&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#td&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Tap Dance назначает разное &lt;em&gt;Поведение&lt;/em&gt; в зависимости от того, сколько раз подряд клавиша была нажата.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/td.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Если назначить Tap Dance со скриншота на клавишу, то при однократном нажатии напечатается буква &lt;em&gt;Q&lt;/em&gt;, а при двукратном нажмётся &lt;em&gt;Esc&lt;/em&gt;.&lt;br&gt;
+С помощью комбинации этого поведения и &lt;code&gt;&amp;amp;mt&lt;/code&gt; возможно сделать клавишу, аналогичную Tap Dance из Vial.&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;&amp;amp;mod-morph&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mod-morph&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mod-morph&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Mod Morph позволяет добавить свою кастомную обработку нажатия клавиши, если она нажата с активными модификаторами &lt;em&gt;Shift&lt;/em&gt;, &lt;em&gt;Ctrl&lt;/em&gt;, &lt;em&gt;Alt&lt;/em&gt; или &lt;em&gt;Gui&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/morph.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Если назначить Mod Morph со скриншота на клавишу, то при &lt;strong&gt;нажатии&lt;/strong&gt; без модификаторов нажмётся &lt;em&gt;Q&lt;/em&gt;, а при зажатом модификаторе &lt;em&gt;Alt&lt;/em&gt; — &lt;em&gt;Esc&lt;/em&gt;. Вместо &lt;em&gt;Esc&lt;/em&gt; может быть любое &lt;em&gt;Поведение&lt;/em&gt;, например изменение слоя, или макрос!&lt;br&gt;
+Это поведение является более гибким аналогом Key Overrides из Vial.&lt;/p&gt;
+&lt;h2&gt;Комбо&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;комбо&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%ba%d0%be%d0%bc%d0%b1%d0%be&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;em&gt;Комбо&lt;/em&gt; позволяет назначить &lt;em&gt;Поведение&lt;/em&gt; на одновременное нажатие нескольких клавиш. Например, можно назначить на одновременное нажатие клавиш &lt;em&gt;C&lt;/em&gt; и &lt;em&gt;V&lt;/em&gt; переключение раскладки клавиатуры, или какой-нибудь макрос, часто это удобнее назначения клавиши в слое.&lt;/p&gt;
+&lt;p&gt;Для создания &lt;em&gt;Комбо&lt;/em&gt; перейдем на вкладку Combos и нажмём &lt;strong&gt;Add New Combo&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/combo0.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Рассмотрим пример с &lt;em&gt;Комбо&lt;/em&gt; клавиш &lt;em&gt;C&lt;/em&gt; и &lt;em&gt;V&lt;/em&gt; для изменения языка раскладки.
+В открывшемся окне нам надо выбрать позиции клавиш, нажатие на которые приведет к активации комбо, для этого просто кликаем на позиции, которых находятся клавиши &lt;em&gt;C&lt;/em&gt; и &lt;em&gt;V&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/combo1.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Заполняем название комбо (на скриншоте &amp;ldquo;lang&amp;rdquo;), и выбираем &lt;em&gt;Поведение&lt;/em&gt; при активации комбо, для изменения языка раскладки подойдет &lt;code&gt;&amp;amp;kp&lt;/code&gt;, нажимающий &lt;em&gt;Space&lt;/em&gt; с зажатым модификатором &lt;em&gt;GUI&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/combo2.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Нажимаем на кнопку &lt;strong&gt;Create&lt;/strong&gt; и комбо готово к использованию!&lt;/p&gt;
+&lt;p&gt;Нажав на кнопку с гаечным ключом мы можем внести дополнительные настройки для &lt;em&gt;Комбо&lt;/em&gt;, например изменить таймаут срабатывания, или указать на каких конкретно слоях &lt;em&gt;Комбо&lt;/em&gt; будет работать (по умолчанию комбо работают на всех слоях). Подробнее о этих настройках можно почитать в &lt;a href=&#34;https://zmk.dev/docs/config/combos&#34; target=&#34;_blank&#34;&gt;документации ZMK&lt;/a&gt;.
+&lt;img src=&#34;http://localhost:1313/images/keymap-editor/combo3.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Макросы&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;макросы&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bc%d0%b0%d0%ba%d1%80%d0%be%d1%81%d1%8b&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;С помощью &lt;em&gt;Макросов&lt;/em&gt; можно сохранить какую-то часто используемую последовательность сочетаний клавиш и вызывать эту последовательность нажатием всего одной клавиши, например сделать &lt;em&gt;Макрос&lt;/em&gt;, печатающий различные шаблоны, вроде такого:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;в конце макрос может еще и переместить курсор в середину этого шаблона, экономит очень много нажатий!&lt;/p&gt;
+&lt;p&gt;Создание такого &lt;em&gt;Макроса&lt;/em&gt; и разберем для примера.&lt;br&gt;
+Переходим на вкладку Macros, и нажимаем &lt;strong&gt;Add New Macro&lt;/strong&gt;. В открывшемся окне вводим название &lt;em&gt;Макроса&lt;/em&gt;, для примера введём &amp;ldquo;template&amp;rdquo; и нажмём &lt;strong&gt;Create&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro0.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Далее нам надо составить действия, которые выполнит &lt;em&gt;Макрос&lt;/em&gt;. Чтобы макрос трижды напечатал символ &lt;strong&gt;`&lt;/strong&gt;, трижды используем &lt;em&gt;Поведение&lt;/em&gt; &lt;code&gt;&amp;amp;kp&lt;/code&gt;. При создании макроса ячейка под одно &lt;em&gt;Поведение&lt;/em&gt; сразу добавляется, добавим еще 2, дважды нажав кнопку &lt;strong&gt;Add Key Binding&lt;/strong&gt;, и во всех трёх ячейках назначим &lt;code&gt;&amp;amp;kp `&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro1.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Далее нам надо дважды сделать перенос на новую строку, снова трижды написать символ &lt;strong&gt;`&lt;/strong&gt; и последним шагом нажать клавишу &lt;em&gt;↑&lt;/em&gt;, чтобы перенести курсор в центр шаблона.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro2.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Итого получается 9 нажатий, целых 9 нажатий сокращается до всего 1!&lt;br&gt;
+По умолчанию ZMK будет нажимать каждую клавишу 30 мс, и между каждым нажатием будет происходить пауза 15 мс, чтобы ОС успевала обрабатывать каждое нажатие. Чтобы действия точно сработали (во всяких тормозных корпоративных мессенджерах, удалённых рабочих столах и джирах), а также чтобы совершаемые &lt;em&gt;Макросом&lt;/em&gt; действия были немного читаемее, разделим их на группы добавив дополнительную паузу в 10 мс, для этого нажмём &lt;strong&gt;Add Control Binding&lt;/strong&gt; и перенесём появившийся &lt;code&gt;&amp;amp;macro_press&lt;/code&gt; после первых трёх нажатий &lt;strong&gt;`&lt;/strong&gt;. Теперь надо не забыть поменять &lt;code&gt;&amp;amp;macro_press&lt;/code&gt; на &lt;code&gt;&amp;amp;macro_wait_time&lt;/code&gt;, для этого кликнем на него и выберем &lt;code&gt;&amp;amp;macro_wait_time&lt;/code&gt;, в параметре &lt;em&gt;Raw Value&lt;/em&gt; укажем 10, это количество миллисекунд, которое подождет макрос.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro3.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Такой задержки может не хватить при работе на удаленных рабочих столах, и если так случится, то можно увеличить время каждого нажатия и задержку в параметрах макроса, они открываются при нажатии на кнопку с иконкой гаечного ключа.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Выглядит уже читаемее, добавим такие же &lt;code&gt;&amp;amp;macro_wait_time&lt;/code&gt; после двух нажатий &lt;em&gt;Enter&lt;/em&gt; и после второй группы нажатий &lt;strong&gt;`&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro4.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Красота, теперь наглядно понятно, что &lt;em&gt;Макрос&lt;/em&gt; делает.&lt;br&gt;
+Нам осталось только назначить &lt;em&gt;Макрос&lt;/em&gt; на клавишу или &lt;em&gt;Комбо&lt;/em&gt;, и можно использовать!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro5.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Макрос&lt;/em&gt; является &lt;em&gt;Поведением&lt;/em&gt;, и выбирать его надо именно в поле Behavior.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3&gt;Цикл выполнения макроса&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;цикл-выполнения-макроса&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%86%d0%b8%d0%ba%d0%bb-%d0%b2%d1%8b%d0%bf%d0%be%d0%bb%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bc%d0%b0%d0%ba%d1%80%d0%be%d1%81%d0%b0&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Макросы в ZMK выполняются в 2 шага:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Действия при &lt;strong&gt;нажатии&lt;/strong&gt; макроса,&lt;/li&gt;
+&lt;li&gt;Действия при &lt;strong&gt;отпускании&lt;/strong&gt; макроса.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Изначально это не заметно, ведь без определённого &lt;em&gt;Control Binding&lt;/em&gt; все действия выполняются сразу при нажатии. Чтобы научиться разграничивать эти 2 шага нам пригодятся следующие &lt;em&gt;Control Bindings&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_press&lt;/code&gt; — для последующих нажатий устанавливает режим, при котором указанная клавиша будет &lt;strong&gt;нажата&lt;/strong&gt;, но не будет &lt;strong&gt;отпущена&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_release&lt;/code&gt; — для последующих нажатий устанавливает режим, при котором указанная клавиша будет &lt;strong&gt;отпущена&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_tap&lt;/code&gt; — для последующих нажатий устанавливает режим, при котором указанная клавиша будет &lt;strong&gt;нажата&lt;/strong&gt;, и по прошествии времени, указанном в &lt;em&gt;tap_time&lt;/em&gt;, будет &lt;strong&gt;отпущена&lt;/strong&gt; (режим по умолчанию);&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_tap_time&lt;/code&gt; — задаёт время между &lt;strong&gt;нажатием&lt;/strong&gt; и &lt;strong&gt;отпусканием&lt;/strong&gt; каждой клавиши в макросе (по умолчанию 30 мс);&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_pause_for_release&lt;/code&gt; — на этом месте &lt;em&gt;Макрос&lt;/em&gt; остановит своё выполнение до момента, когда клавиша &lt;em&gt;Макроса&lt;/em&gt; будет &lt;strong&gt;отпущена&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Применив перечисленные &lt;em&gt;Control Bindings&lt;/em&gt; можно составить макрос, который при &lt;strong&gt;нажатии&lt;/strong&gt; переключает слой, нажимает определенный модификатор, затем ожидает &lt;strong&gt;отпускания&lt;/strong&gt; макроса, и после этого уже возвращает слой обратно и отпускает модификатор. Получается клавиша, объединяющая &lt;code&gt;&amp;amp;mo&lt;/code&gt; и &lt;code&gt;&amp;amp;kp&lt;/code&gt;, два в одном!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro6.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Параметризованные макросы&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;параметризованные-макросы&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%b0%d1%80%d0%b0%d0%bc%d0%b5%d1%82%d1%80%d0%b8%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%bd%d1%8b%d0%b5-%d0%bc%d0%b0%d0%ba%d1%80%d0%be%d1%81%d1%8b&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;У &lt;em&gt;Макросов&lt;/em&gt; в ZMK есть интересная особенность, их можно сделать параметризованными. Для использования параметров надо применить один или несколько из перечисленных &lt;em&gt;Control Bindings&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_param_1to1&lt;/code&gt; — следующему &lt;em&gt;Поведению&lt;/em&gt; в макросе, в качестве параметра 1 будет передано значение из параметра 1 &lt;em&gt;Макроса&lt;/em&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_param_1to2&lt;/code&gt; — следующему &lt;em&gt;Поведению&lt;/em&gt; в макросе, в качестве параметра 2 будет передано значение из параметра 1 &lt;em&gt;Макроса&lt;/em&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_param_2to1&lt;/code&gt; — следующему &lt;em&gt;Поведению&lt;/em&gt; в макросе, в качестве параметра 1 будет передано значение из параметра 2 &lt;em&gt;Макроса&lt;/em&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_param_2to2&lt;/code&gt; — следующему &lt;em&gt;Поведению&lt;/em&gt; в макросе, в качестве параметра 2 будет передано значение из параметра 2 &lt;em&gt;Макроса&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Рассмотрим на примере, реализовав &lt;em&gt;Макрос&lt;/em&gt;, который при &lt;strong&gt;нажатии&lt;/strong&gt; активирует переданный в параметре слой, нажимает переданный в параметре модификатор, ждёт &lt;strong&gt;отпускания&lt;/strong&gt; клавиши, а затем выключает переданный слой и отпускает переданный в параметре модификатор.&lt;br&gt;
+Назовём &lt;em&gt;Макрос&lt;/em&gt; &lt;code&gt;&amp;amp;ml&lt;/code&gt; (mod-layer), он будет выглядеть вот так:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro7.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Выбраны &lt;code&gt;&amp;amp;macro_param_1&lt;strong&gt;to1&lt;/strong&gt;&lt;/code&gt; и &lt;code&gt;&amp;amp;macro_param_2&lt;strong&gt;to1&lt;/strong&gt;&lt;/code&gt; так как используемые &lt;em&gt;Поведения&lt;/em&gt; &lt;code&gt;&amp;amp;mo&lt;/code&gt; и &lt;code&gt;&amp;amp;kp&lt;/code&gt; имеют по одному входному параметру.&lt;/p&gt;
+&lt;p&gt;Стоит обратить внимание на то, как &lt;em&gt;Макрос&lt;/em&gt; назначается в раскладке. В списке Behavior находим созданный &lt;em&gt;Макрос&lt;/em&gt; &lt;code&gt;&amp;amp;ml&lt;/code&gt;, выбрав его нам необходимо заполнить параметры:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Layer&lt;/em&gt; — это слой, который передастся в качестве параметра для &lt;code&gt;&amp;amp;mo&lt;/code&gt;, выберем 2;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Key Code&lt;/em&gt; — это клавиша, передаваемая в &lt;code&gt;&amp;amp;kp&lt;/code&gt;, она будет нажата одновременно с &lt;code&gt;&amp;amp;mo&lt;/code&gt;, мы планировали использовать модификатор, так что выберем &lt;em&gt;LShift&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Всё, макрос готов к использованию! Прелесть такого макроса в том, что его можно использовать в нескольких местах раскладки, указывая любой слой, на который надо переключиться, и любой модификатор.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;При создании кастомного &lt;em&gt;Hold or Tap behavior&lt;/em&gt;, в &lt;code&gt;bindings — HOLD&lt;/code&gt; и &lt;code&gt;TAP&lt;/code&gt; можно указать любые &lt;em&gt;Поведения&lt;/em&gt;, даже параметризованные макросы — это очень гибко, ведь при &lt;strong&gt;удержании&lt;/strong&gt; клавиши выполнятся любые действия, какие только в голову придут, например в &lt;a href=&#34;https://zmk.dev/docs/keymaps/behaviors/macros#layer-activation--more&#34; target=&#34;_blank&#34;&gt;документации ZMK&lt;/a&gt; есть вот такая идея: параметризованный макрос, в котором при активации слоя одновременно меняется и цвет RGB-подсветки на заданный в параметре, то есть, вероятно, после переезда K:03 и Imperial на рельсы ZMK будет доступен выбор цвета светодиода для разных слоев! А ведь можно скомбинировать это не только со слоями, а с чем угодно, даже с модификаторами!&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Синхронизация форка ergohaven-zmk-config в GitHub</title>
+      <link>http://localhost:1313/software/zmk/fork-sync/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/software/zmk/fork-sync/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Прошивки клавиатур постоянно дорабатываются и обновляются, и если доработки имеют общий характер и вносились в главный репозиторий &lt;strong&gt;ZMK&lt;/strong&gt;, то эти обновления автоматически подтянутся при следующей сборке прошивки, например после изменения раскладки, но также периодически обновляется и репозиторий &lt;strong&gt;ergohaven-zmk-config&lt;/strong&gt;, содержащий в себе раскладки и конфигурационные файлы клавиатур. Обновления могут содержать в себе, например, файлы, необходимые для сборки прошивок под новые девайсы, или же какие-то доработки в уже выпущенных устройствах, и в отличие от обновлений в &lt;strong&gt;ZMK&lt;/strong&gt;, обновления в &lt;strong&gt;ergohaven-zmk-config&lt;/strong&gt; автоматически не применяются, чтобы внести их в Ваш форк, необходимо провести процедуру синхронизации. О том, как провести процедуру синхронизации и будет рассказано в этом руководстве.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Приложение GitHub является сторонним софтом, каких-то деталей его функционала автор может не знать, а также какой-то функционал с течением времени может измениться. При возникновении каких-либо вопросов или проблем пишите в &lt;a href=&#34;https://t.me/&amp;#43;E-mlq11c97AyZmY6&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;сообщество Ergohaven в Telegram&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h2&gt;Синхронизация форка&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;синхронизация-форка&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%84%d0%be%d1%80%d0%ba%d0%b0&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;О необходимости синхронизировать форк вы можете узнать по появлению ссылки с текстом &lt;em&gt;&amp;ldquo;commits behind&amp;rdquo;&lt;/em&gt; на вкладке &lt;strong&gt;Code&lt;/strong&gt; форка, в обычных условиях при этом также должна появиться кнопка &lt;strong&gt;Sync fork&lt;/strong&gt;, если ее нет, то перейдите к разделу &lt;a href=&#34;#%d0%ba%d0%bd%d0%be%d0%bf%d0%ba%d0%b0-sync-fork-%d0%bd%d0%b5-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%b8%d0%bb%d0%b0%d1%81%d1%8c&#34;&gt;Кнопка Sync Fork не отобразилась&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/sync-fork.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Для синхронизации нажмите кнопку &lt;strong&gt;Sync fork&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/update-branch.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;В появившемся окне нажмите кнопку &lt;strong&gt;Update branch&lt;/strong&gt; и все, форк успешно синхронизирован, все изменения из основного репозитория уже в вашем форке.&lt;/p&gt;
+&lt;p&gt;Если после нажатия &lt;strong&gt;Sync fork&lt;/strong&gt; отобразилось окно с заголовком &lt;em&gt;&amp;ldquo;This branch has conflicts that must be resolved&amp;rdquo;&lt;/em&gt;, то есть 2 варианта синхронизации:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Отбросить все внесенные Вами в форк изменения, &lt;strong&gt;ВНИМАНИЕ&lt;/strong&gt; при этом раскладка в Вашем форке вернется к стандартной, так что делайте это, только если уверены, что можете без проблем восстановить все свои изменения. Для отбрасывания изменений с синхронизацией форка нажмите &lt;strong&gt;Discard commits&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Решить конфликты слияния. Решение конфликтов описано в разделе &lt;a href=&#34;#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f&#34;&gt;Синхронизация с конфликтами слияния&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/has-conflicts.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Кнопка Sync Fork не отобразилась&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;кнопка-sync-fork-не-отобразилась&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%ba%d0%bd%d0%be%d0%bf%d0%ba%d0%b0-sync-fork-%d0%bd%d0%b5-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%b8%d0%bb%d0%b0%d1%81%d1%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Чтобы начать процедуру синхронизации нажмите на ссылку с текстом &lt;em&gt;&amp;ldquo;commits behind&amp;rdquo;&lt;/em&gt; на вкладке &lt;strong&gt;Code&lt;/strong&gt; форка.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/commits-behind.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Откроется страница &amp;ldquo;Comparing changes&amp;rdquo;, обратите внимание на выбранные по умолчанию значения:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;base repository&lt;/em&gt; - по умолчанию должно быть выбрано &lt;em&gt;&amp;quot;{Ваш ник на GitHub}/ergohaven-zmk-config&amp;quot;&lt;/em&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;base&lt;/em&gt; - по умолчанию должно быть выбрано &lt;em&gt;&amp;ldquo;main&amp;rdquo;&lt;/em&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;head repository&lt;/em&gt; - по умолчанию должно быть выбрано &lt;em&gt;&amp;ldquo;ergohaven/ergohaven-zmk-config&amp;rdquo;&lt;/em&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;compare&lt;/em&gt; - по умолчанию должно быть выбрано &lt;em&gt;&amp;ldquo;main&amp;rdquo;&lt;/em&gt;;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/comparing-changes.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Если какие-то из значений отличаются, выберите значение, которое должно быть по-умолчанию.&lt;br&gt;
+Далее нажмите кнопку &lt;strong&gt;Create pull request&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/create-pull-request.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Введите название пулл-реквеста, если оно не было заполнено автоматически, и нажмите кнопку &lt;strong&gt;Create pull request&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/pr-name.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Если в нижней части пулл-реквеста отобразилось сообщение &lt;em&gt;&amp;ldquo;No conflicts with base branch&amp;rdquo;&lt;/em&gt;, то нажмите кнопку &lt;strong&gt;Merge pull request&lt;/strong&gt; и ветка успешно обновлена! Можете перейти на вкладку &lt;strong&gt;Actions&lt;/strong&gt;, сборка обновленной прошивки уже запущена.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/no-conflicts.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Если в нижней части пулл-реквеста отобразилось сообщение &lt;em&gt;&amp;ldquo;This branch has conflicts that must be resolved&amp;rdquo;&lt;/em&gt;, то закройте созданный пулл-реквест нажатием &lt;strong&gt;Close pull request&lt;/strong&gt; в нижней части страницы и перейдите к разделу &lt;a href=&#34;#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f&#34;&gt;Синхронизация с конфликтами слияния&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/merge-conflicts.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Синхронизация с конфликтами слияния&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;синхронизация-с-конфликтами-слияния&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Если в основном репозитории были внесены изменения в файлы, которые Вы также изменяли в своем форке, например файлы &lt;code&gt;.keymap&lt;/code&gt;, в которых хранятся раскладки клавиатур, то при обновлении форка могут возникнуть конфликты слияния, далее описаны шаги для их решения.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;На вкладке &lt;strong&gt;Code&lt;/strong&gt; нажмите кнопку &lt;strong&gt;Branches&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/branches.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Нажмите &lt;strong&gt;New branch&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/new-branch.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;В появившемся окне введите название ветки, например &lt;em&gt;&amp;ldquo;sync&amp;rdquo;&lt;/em&gt;, затем в выпадающем списке выберите репозиторий &lt;em&gt;&amp;ldquo;ergohaven/ergohaven-zmk-config&amp;rdquo;&lt;/em&gt;, по умолчанию должна быть выбрана ветка &lt;em&gt;&amp;ldquo;main&amp;rdquo;&lt;/em&gt;, и нажмите &lt;strong&gt;Create new branch&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/create-new-branch.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Далее в строке созданной ветки нажмите &lt;strong&gt;•••&lt;/strong&gt; и в открывшемся выпадающем списке выберите &lt;strong&gt;New pull request&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/new-pull-request.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Нажмите на &lt;em&gt;base repository&lt;/em&gt; и выберите в выпадающем списке форк &lt;em&gt;&amp;quot;{Ваш ник на GitHub}/ergohaven-zmk-config&amp;quot;&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/new-pull-request.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;На открывшейся странице &amp;ldquo;Comparing changes&amp;rdquo; нажмите кнопку &lt;strong&gt;Create pull request&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/create-pull-request-again.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;В зависимости от количества синхронизируемых коммитов кнопка &lt;strong&gt;Resolve conflicts&lt;/strong&gt; может быть не видна сразу, пролистайте до нее и нажмите.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/resolve-conflicts.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Откроется инструмент для разрешения конфликтов, в левой части страницы отображена панель с списком файлов, конфликты в которых надо разрешить, а в правой части содержимое файлов с отмеченными местами конфликтов.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/resolve-conflicts.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;Между &lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; sync&lt;/code&gt; (&lt;em&gt;&amp;ldquo;sync&amp;rdquo;&lt;/em&gt; в данном примере это название созданной ветки) и &lt;code&gt;=======&lt;/code&gt; находятся изменения из основного репозитория &lt;em&gt;&amp;ldquo;ergohaven/ergohaven-zmk-config&amp;rdquo;&lt;/em&gt;, вызвавшие конфликт. Между &lt;code&gt;=======&lt;/code&gt; и &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; main&lt;/code&gt; находятся изменения, внесенные Вами в раскладку.&lt;br&gt;
+Далее необходимо внимательно рассмотреть каждый конфликт и решить, хотите ли вы внести в свою раскладку изменения, предложенные из &lt;em&gt;&amp;ldquo;ergohaven/ergohaven-zmk-config&amp;rdquo;&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Если Вы понимаете, что изменение из основного репозитория Вам &lt;strong&gt;не нужно&lt;/strong&gt;, то удалите строки, начиная с &lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; sync&lt;/code&gt; и заканчивая &lt;code&gt;=======&lt;/code&gt;, затем пролистайте файл до строки &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; main&lt;/code&gt;, означающей окончание данного конфликта, и также сотрите эту строку. Конфликт разрешен.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;video 
+  autoplay
+  loop
+  muted
+  style=&#34;max-width: 100%&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/video/fork-sync/remove-incoming.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Если Вы понимаете, что изменение из основного репозитория Вам &lt;strong&gt;нужно&lt;/strong&gt;, то удалите строку &lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; sync&lt;/code&gt;, строку &lt;code&gt;=======&lt;/code&gt; и строку &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; main&lt;/code&gt;, тем самым добавляя изменение из основного репозитория к раскладке. Конфликт разрешен.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;video 
+  autoplay
+  loop
+  muted
+  style=&#34;max-width: 100%&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/video/fork-sync/accept-incoming.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Если Вы &lt;strong&gt;не понимаете&lt;/strong&gt;, или &lt;strong&gt;не уверены&lt;/strong&gt;, что делает какое-то изменение из основного репозитория, то обратитесь за помощью с разрешением конфликта в &lt;a href=&#34;https://t.me/&amp;#43;E-mlq11c97AyZmY6&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Сообщество Ergohaven в Telegram&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;После разрешения всех конфликтов в файле станет доступна кнопка &lt;strong&gt;Mark as resolved&lt;/strong&gt;, нажмите ее чтобы завершить разрешение конфликтов в файле.&lt;/li&gt;
+&lt;li&gt;После разрешения конфликтов во всех файлах отобразится кнопка &lt;strong&gt;Commit merge&lt;/strong&gt;, нажмите ее для завершения.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/commit-merge.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;12&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Пролистайте страницу до кнопки &lt;strong&gt;Merge pull request&lt;/strong&gt;, нажмите ее, и затем нажмите &lt;strong&gt;Confirm merge&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Последним шагом для того, чтобы удостовериться, что все конфликты разрешены перейдите на вкладку &lt;strong&gt;Actions&lt;/strong&gt;, дождитесь завершения сборки прошивки. Если конфликты разрешены корректно, то сборка прошивки успешно завершится.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>RuEn раскладка для беспроводных клавиатур</title>
+      <link>http://localhost:1313/software/zmk/zmk-ruen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/software/zmk/zmk-ruen/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Если вы хотя бы раз задавались вопросом, почему на русском и английском языках такие частые символы как точка и запятая расположены на разных клавишах, или почему на русском нельзя напечатать фигурную скобку, подход &lt;strong&gt;RuEn&lt;/strong&gt; позволяет решить это недоразумение, унифицируя положение символов на русской и английской раскладке.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Расположить символы можно одинаково и на любом другом языке, русским и английским языками подход не ограничен.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h2&gt;Основная идея&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;основная-идея&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%be%d1%81%d0%bd%d0%be%d0%b2%d0%bd%d0%b0%d1%8f-%d0%b8%d0%b4%d0%b5%d1%8f&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;В целом печать какого либо символа работает так: клавиатура отправляет информацию, что была нажата клавиша в определенной позиции, а ОС принимает это нажатие, и в зависимости от того, какая сейчас раскладка в ОС, напечатает нужный символ. Рассмотрим на примерах.&lt;br&gt;
+&lt;strong&gt;На клавиатуре нажата клавиша &amp;ldquo;KC_Q&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;если в ОС выбрана стандартная английская раскладка, то напечатается буква &amp;ldquo;Q&amp;rdquo;;&lt;/li&gt;
+&lt;li&gt;если в ОС выбрана стандартная русская раскладка, то напечатается буква &amp;ldquo;Й&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Наличие разных букв в разных раскладках по большей части привычное дело, хотя существуют и фонетические раскладки, при которых, например букву &amp;ldquo;О&amp;rdquo; располагают в русском и английском на одном месте, это позволяет снизить когнитивную нагрузку на запоминание разных раскладок, но слова в русском и английском строятся по-разному, и в удобстве печати фонетическая раскладка будет уступать.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;На клавиатуре нажата клавиша &amp;ldquo;SLASH&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;если в ОС выбрана стандартная английская раскладка, то напечатается слэш &amp;ldquo;/&amp;rdquo;;&lt;/li&gt;
+&lt;li&gt;если в ОС выбрана стандартная русская раскладка, то напечатается точка &amp;ldquo;.&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;На клавиатуре нажата клавиша &amp;ldquo;DOT&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;если в ОС выбрана стандартная английская раскладка, то напечатается точка &amp;ldquo;.&amp;rdquo;;&lt;/li&gt;
+&lt;li&gt;если в ОС выбрана стандартная русская раскладка, то напечатается буква &amp;ldquo;Ю&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;На клавиатуре нажата клавиша &amp;ldquo;LEFT_BRACE&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;если в ОС выбрана стандартная английская раскладка, то напечатается символ &amp;ldquo;{&amp;rdquo;;&lt;/li&gt;
+&lt;li&gt;если в ОС выбрана стандартная русская раскладка, то напечатается буква &amp;ldquo;Х&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Проблематика обозначена - в стандартных раскладках ОС точка, и многие другие символы, печатаются совсем разными клавишами, а некоторых символов, как например &amp;ldquo;{&amp;rdquo; в русской раскладке нет вовсе. Рассмотрим возможные решения задачи унификации расположения символов. Решить можно двумя способами:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;на стороне ОС, установив на компьютер раскладку, в которой символы находятся на одной клавише, например &lt;a href=&#34;https://github.com/braindefender/universal-layout&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/braindefender/universal-layout&lt;/a&gt;, но тут стоит учитывать, что устанавливать раскладку надо на каждый компьютер, также как и на удаленные рабочие столы к которым подключаетесь;&lt;/li&gt;
+&lt;li&gt;на стороне клавиатуры, настроив раскладку с использованием подхода &lt;strong&gt;RuEn&lt;/strong&gt;, тут также есть минус в том, что эти настройки находятся именно в клавиатуре и на встроенной клавиатуре ноутбука символы на разных языках будут находиться на разных клавишах.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Далее в статье рассказано о способе решения задачи на стороне клавиатуры с использованием подхода &lt;strong&gt;RuEn&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;С чего начать&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;с-чего-начать&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%81-%d1%87%d0%b5%d0%b3%d0%be-%d0%bd%d0%b0%d1%87%d0%b0%d1%82%d1%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Для клавиатур &lt;em&gt;Ergohaven&lt;/em&gt; подготовлены раскладки, содержащие в себе нужные для настройки макросы, эти раскладки имеют постфикс &lt;code&gt;_ruen&lt;/code&gt; в названии.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/layout-name.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Можно взять &lt;code&gt;ruen&lt;/code&gt; раскладку за основу, или если у вас уже есть много наработок в своей раскладке, просто создать в ней такие же макросы и создать отдельные слои для каждого языка.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;При переносе макросов в свою раскладку обратите внимание также на параметры макросов, отображаемые при нажатии на кнопку с иконкой гаечного ключа, важно не забыть перенести настройки &lt;code&gt;Wait (ms)&lt;/code&gt; и &lt;code&gt;Tap (ms)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Макросы в раскладке &lt;code&gt;ruen&lt;/code&gt; ориентированы на использование сочетаний для безусловного переключения языка, &lt;code&gt;Ctrl + Shift + 1&lt;/code&gt; для включения английского языка, и &lt;code&gt;Ctrl + Shift + 2&lt;/code&gt; для включения русского языка (аналог режима RuEn M1M2 из Vial). Такой подход требует дополнительной настройки на стороне ОС, но при этом сильно упрощает синхронизацию языка в клавиатуре с языком в ОС. Если же такой подход переключения языка Вам по какой-то причине не подходит, подход &lt;code&gt;ruen&lt;/code&gt; неплохо уживается и со стандартным сочетанием клавиш &lt;code&gt;GUI + Space&lt;/code&gt;, подробнее описано в разделе &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d1%8f%d0%b7%d1%8b%d0%ba%d0%b0-%d0%bf%d0%be-%d0%bc%d0%be%d0%b4%d0%b5%d0%bb%d0%b8-%d1%82%d0%be%d0%b3%d0%b3%d0%bb&#34;&gt;Переключение языка по модели тоггл&lt;/a&gt; (аналог режимов RuEn M0 и RuEn Default из Vial).&lt;/p&gt;
+&lt;h2&gt;Как работает RuEn&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;как-работает-ruen&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%ba%d0%b0%d0%ba-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d0%b5%d1%82-ruen&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Поделим символы на 2 группы и разберем отдельно каждую.&lt;/p&gt;
+&lt;h3&gt;Символы, которые встречаются в обоих языках&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;символы-которые-встречаются-в-обоих-языках&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%81%d0%b8%d0%bc%d0%b2%d0%be%d0%bb%d1%8b-%d0%ba%d0%be%d1%82%d0%be%d1%80%d1%8b%d0%b5-%d0%b2%d1%81%d1%82%d1%80%d0%b5%d1%87%d0%b0%d1%8e%d1%82%d1%81%d1%8f-%d0%b2-%d0%be%d0%b1%d0%be%d0%b8%d1%85-%d1%8f%d0%b7%d1%8b%d0%ba%d0%b0%d1%85&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Первая группа - символы, которые встречаются в обоих языках, но расположены на разных клавишах, как например точка или знак вопроса.
+Для объединения расположения таких символов нам нужно каким-то образом дать клавиатуре понять, какой сейчас язык в ОС, чтобы клавиатура нажала соответствующую языку клавишу. Например, если мы хотим унифицировать положение &lt;strong&gt;точки&lt;/strong&gt;, то на русском языке клавиатуре надо отправить в ОС нажатие клавиши &lt;code&gt;SLASH&lt;/code&gt;, а на английском &lt;code&gt;DOT&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Для решения этой задачи отлично подходит функционал слоев, мы можем настроить так, чтобы одновременно с переключенем языка в ОС, переключался и слой в клавиатуре, и тогда он будет выполнять функцию переменной, в зависимости от этой переменной и отправится код нужной клавиши.
+В качестве описанной ранее переменной, в раскладке &lt;code&gt;ruen&lt;/code&gt; имеются 2 отдельных слоя &lt;strong&gt;en&lt;/strong&gt; и &lt;strong&gt;ru&lt;/strong&gt;. Чтобы расположить &lt;strong&gt;точку&lt;/strong&gt; на одну и ту же клавишу делаем следующие действия:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;На слое &lt;strong&gt;en&lt;/strong&gt; назначаем на нужную клавишу поведение &lt;code&gt;&amp;amp;kp DOT&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/en-dot.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;На слое &lt;strong&gt;ru&lt;/strong&gt; на эту же позицию назначаем поведение &lt;code&gt;&amp;amp;kp SLASH&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/ru-dot.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Для переключения языка надо использовать только макросы &lt;code&gt;&amp;amp;layer_en&lt;/code&gt; и &lt;code&gt;&amp;amp;layer_ru&lt;/code&gt;. Макрос &lt;code&gt;&amp;amp;layer_ru&lt;/code&gt; отправит в ОС сочетание клавиш &lt;code&gt;Ctrl + Shift + 2&lt;/code&gt;, таким образом ОС переключится на русский язык и одновременно с этим клавиатура переключится на слой &lt;strong&gt;ru&lt;/strong&gt;, таким образом ОС и клавиатура будут синхронно находиться на русской раскладке, аналогично макрос &lt;code&gt;&amp;amp;layer_en&lt;/code&gt; отправит в ОС сочетание &lt;code&gt;Ctrl + Shift + 1&lt;/code&gt; для включения английской раскладки, и переключит клавиатуру на слой &lt;strong&gt;en&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/layer-macro.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;В раскладке &lt;code&gt;ruen&lt;/code&gt; по умолчанию эти макросы назначены на комбо клавиш &amp;ldquo;E&amp;rdquo; + &amp;ldquo;R&amp;rdquo;. Находясь на &lt;strong&gt;ru&lt;/strong&gt; слое нажатие комбо &amp;ldquo;E&amp;rdquo; + &amp;ldquo;R&amp;rdquo; переключит язык в ОС на английский и сменит слой на &lt;strong&gt;en&lt;/strong&gt;, а находясь на &lt;strong&gt;en&lt;/strong&gt; слое при нажатии комбо произойдет обратное, язык в ОС переключится на русский, слой сменится на &lt;strong&gt;ru&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/default-combo.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Макросы &lt;code&gt;&amp;amp;layer_en&lt;/code&gt; и &lt;code&gt;&amp;amp;layer_ru&lt;/code&gt; можно назначить на любое место в раскладке, например на две разные клавиши или два разных комбо &amp;ldquo;E&amp;rdquo; + &amp;ldquo;R&amp;rdquo; и &amp;ldquo;U&amp;rdquo; + &amp;ldquo;I&amp;rdquo;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Цель достигнута, теперь &lt;strong&gt;точка&lt;/strong&gt; печатается на обоих языках нажатием одной и той же клавиши.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/ruen-dot.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Символы, которые встречаются только в одном из языков&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;символы-которые-встречаются-только-в-одном-из-языков&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%81%d0%b8%d0%bc%d0%b2%d0%be%d0%bb%d1%8b-%d0%ba%d0%be%d1%82%d0%be%d1%80%d1%8b%d0%b5-%d0%b2%d1%81%d1%82%d1%80%d0%b5%d1%87%d0%b0%d1%8e%d1%82%d1%81%d1%8f-%d1%82%d0%be%d0%bb%d1%8c%d0%ba%d0%be-%d0%b2-%d0%be%d0%b4%d0%bd%d0%be%d0%bc-%d0%b8%d0%b7-%d1%8f%d0%b7%d1%8b%d0%ba%d0%be%d0%b2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Вторая группа - символы, которые есть в раскладке только одного из языков, например символ &amp;ldquo;&amp;amp;&amp;rdquo; есть только на английской раскладке.
+Чтобы напечатать символ из этой группы, находясь на русской раскладке, надо сделать следующие действия:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Переключить язык в ОС на английский нажатием &lt;code&gt;Ctrl + Shift + 1&lt;/code&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Нажать сочетание клавиш для печати символа, в случае с символом &lt;code&gt;&amp;amp;&lt;/code&gt;, это сочетание клавиш &lt;code&gt;Shift + 7&lt;/code&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Переключить язык в ОС обратно на русский нажатием &lt;code&gt;Ctrl + Shift + 2&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Все эти действия содержит в себе параметризованный макрос &lt;code&gt;&amp;amp;en&lt;/code&gt; из &lt;code&gt;ruen&lt;/code&gt; раскладки. Просто назначаем макрос на клавишу на слое &lt;strong&gt;ru&lt;/strong&gt;, и в качестве параметра указываем кейкод &lt;code&gt;AMPS&lt;/code&gt;, либо сочетание клавиш &lt;code&gt;Shift + 7&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;В некоторых ситуациях может оказаться полезным удержать клавишу с символом нажатой, и макрос &lt;code&gt;&amp;amp;en&lt;/code&gt; из &lt;code&gt;ruen&lt;/code&gt; раскладки корректно обработает это нажатие, зажав символ в английской раскладке.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/en-macro.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Но что делать, если сейчас включен английский язык, ведь если мы используем этот макрос на нем, то напечатается символ &amp;ldquo;&amp;amp;&amp;rdquo; и последним шагом язык переключится на русский? С решением этой проблемы нас снова выручает функционал слоев в клавиатуре. Находясь на английском языке для того чтобы напечатать этот символ нет необходимости в переключении на другой язык, и мы просто можем назначить стандартное поведение &lt;code&gt;&amp;amp;kp AMPS&lt;/code&gt; на нужную клавишу.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Символов, которые есть только на русской раскладке, не очень много, и макроса под них в раскладке &lt;code&gt;ruen&lt;/code&gt; нет, но если вдруг Вы хотели бы печатать символ &amp;ldquo;№&amp;rdquo; на любой раскладке, то можете создать макрос &lt;code&gt;&amp;amp;ru&lt;/code&gt; скопировав макрос &lt;code&gt;&amp;amp;en&lt;/code&gt; и поменяв местами сочетания клавиш для переключения языка в ОС.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3&gt;Символьный слой&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;символьный-слой&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%81%d0%b8%d0%bc%d0%b2%d0%be%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%81%d0%bb%d0%be%d0%b9&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;На базовых слоях &lt;strong&gt;ru&lt;/strong&gt; и &lt;strong&gt;en&lt;/strong&gt; кнопок под все нужные символы конечно же не хватит, да и в целом символы может быть удобнее расположить на отдельном &lt;strong&gt;символьном&lt;/strong&gt; слое, чтобы применить подход &lt;code&gt;ruen&lt;/code&gt; для создания отдельного символьного слоя потребуется создать 2 отдельных слоя, один для печати символов, находясь на русском языке, и второй, для печати символов, находясь на английском языке. В раскладке &lt;code&gt;ruen&lt;/code&gt; по умолчанию это слои &lt;strong&gt;sym_en&lt;/strong&gt; и &lt;strong&gt;sym_ru&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/sym-layers.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Чтобы соблюсти синхронизацию языков в ОС и клавиатуре переход на &lt;strong&gt;sym_ru&lt;/strong&gt; должен происходить с слоя &lt;strong&gt;ru&lt;/strong&gt;, а на &lt;strong&gt;sym_en&lt;/strong&gt; с слоя &lt;strong&gt;en&lt;/strong&gt;, таким образом клавиатура будет понимать, какой сейчас активен язык, и для печати символа будет отправлять соответствующие текущему языку действия.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/mo-sym.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Для переключения на языковые символьные слои также отлично подойдет поведение &lt;code&gt;&amp;amp;sl&lt;/code&gt;, активирующее символьный слой на одно нажатие, и после возвращает пользователя на предыдущий активный слой, при необходимости такую клавишу можно зажать и она будет работать как обычный &lt;code&gt;&amp;amp;mo&lt;/code&gt;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3&gt;Отображение кириллицы в keymap-editor&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;отображение-кириллицы-в-keymap-editor&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%b8%d1%80%d0%b8%d0%bb%d0%bb%d0%b8%d1%86%d1%8b-%d0%b2-keymap-editor&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Для удобства модификации раскладки в прошивке &lt;code&gt;ruen&lt;/code&gt; добавлены кейкоды алиасы, такие как &lt;code&gt;RU_COMMA&lt;/code&gt; или &lt;code&gt;RU_CYRILLIC_TSE&lt;/code&gt;, отображающие на раскладке символы русской раскладки, при этом при нажатии &lt;code&gt;RU_COMMA&lt;/code&gt; в ОС передастся скан-код &lt;code&gt;SC_SLASH&lt;/code&gt; так как в стандартной раскладке ЙЦУКЕН точка находится на клавише слэш.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/ru-layer.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Эти кейкоды облегчают визуальное понимание раскладки, при этом &lt;code&gt;RU_COMMA&lt;/code&gt; это просто алиас для кейкода &lt;code&gt;SLASH&lt;/code&gt;, и если при нажатии &lt;code&gt;RU_COMMA&lt;/code&gt; в ОС включена английская раскладка, то напечатается буква слэш.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;С этими кейкодами-алиасами очень удобно настраивать раскладки, отличные от ЙЦУКЕН.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/ru-dot.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Переключение языка по модели тоггл&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;переключение-языка-по-модели-тоггл&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d1%8f%d0%b7%d1%8b%d0%ba%d0%b0-%d0%bf%d0%be-%d0%bc%d0%be%d0%b4%d0%b5%d0%bb%d0%b8-%d1%82%d0%be%d0%b3%d0%b3%d0%bb&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Полноценной работы &lt;strong&gt;RuEn&lt;/strong&gt; можно добиться и используя стандартные сочетания клавиш для переключения языка в ОС, такие как &lt;code&gt;GUI + Space&lt;/code&gt;, &lt;code&gt;Ctrl + Space&lt;/code&gt;. Чтобы этого достичь при нажатии сочетания клавиш переключения языка мы также должны и переключать слой в клавиатуре.&lt;/p&gt;
+&lt;p&gt;Как это реализовать рассмотрим на примере с сочетанием &lt;code&gt;GUI + Space&lt;/code&gt;.&lt;br&gt;
+Первым шагом создадим макрос &lt;code&gt;&amp;amp;lg_tog&lt;/code&gt;, состоящий из двух действий - нажатия &lt;code&gt;GUI + Space&lt;/code&gt; и &lt;code&gt;&amp;amp;tog 1&lt;/code&gt;. &lt;code&gt;&amp;amp;tog 1&lt;/code&gt; включит слой &lt;strong&gt;ru&lt;/strong&gt;, если мы находимся на слое &lt;strong&gt;en&lt;/strong&gt;, и обратно, включит &lt;strong&gt;en&lt;/strong&gt;, если сейчас активен &lt;strong&gt;ru&lt;/strong&gt;. Таким макросом мы одновременно тогглим и язык в ОС, и слой в клавиатуре.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/lg-tog.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Далее, чтобы выходить из ситуаций, когда на клавиатуре включен слой &lt;strong&gt;ru&lt;/strong&gt;, а в ОС английский язык, нам нужен способ синхронизации состояния языков. Для этого Вы можете назначить на одну из клавиш поведение &lt;code&gt;&amp;amp;tog 1&lt;/code&gt;, и когда произошла рассинхронизация - просто нажмите эту клавишу и состояния снова синхронизируются.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Подход по модели тоггл не является предпочтительным как раз из-за необходимости отдельно синхронизировать состояния языка ОС с клавиатурой. Имея 2 отдельных сочетания клавиш для языков, синхронизация происходит регулярно, при нажатии &lt;code&gt;&amp;amp;layer_en&lt;/code&gt; или &lt;code&gt;&amp;amp;layer_ru&lt;/code&gt;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Следующим шагом сделаем так, чтобы при нажатии на клавиатуре сочетания &lt;code&gt;GUI + Space&lt;/code&gt;, срабатывал созданный ранее макрос &lt;code&gt;&amp;amp;lg_tog&lt;/code&gt;, для этого нам пригодится поведение &lt;strong&gt;mod-morph&lt;/strong&gt; из ZMK.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Создадим новое &lt;a href=&#34;http://localhost:1313/content/ru/pages/docs/keymap-editor.md#custom-behaviors&#34; target=&#34;_blank&#34;&gt;кастомное поведение&lt;/a&gt; типа &lt;strong&gt;Mod Morph Behavior&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;Назовем его &amp;ldquo;lg_space&amp;rdquo;;&lt;/li&gt;
+&lt;li&gt;При нажатии &lt;code&gt;&amp;amp;lg_space&lt;/code&gt; без модификатора &amp;ldquo;LGUI&amp;rdquo; сработает действие &lt;code&gt;NORMAL&lt;/code&gt; и нажмется &lt;code&gt;&amp;amp;kp SPACE&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;Если при нажатии &lt;code&gt;&amp;amp;lg_space&lt;/code&gt; был зажат модификатор &amp;ldquo;LGUI&amp;rdquo;, то сработает &lt;code&gt;MODIFIED&lt;/code&gt; и вызовется макрос &lt;code&gt;&amp;amp;lg_tog&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/lg-space.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Также нам необходимо изменить сочетание клавиш смены языка в макросах &lt;code&gt;&amp;amp;to_ru&lt;/code&gt; и &lt;code&gt;&amp;amp;to_en&lt;/code&gt;, так как эти макросы задействованы в макросе &lt;code&gt;&amp;amp;en&lt;/code&gt;, используемом для печати символов.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/to-ru-en-space.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Последним шагом назначаем созданный &lt;strong&gt;mod-morph&lt;/strong&gt; вместо обычного пробела на нужных слоях, и все, состояние языков в ОС и клавиатуре будет синхронно переключаться.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;На Android устройствах для переключения языка также используется сочетание клавиш &lt;code&gt;GUI + Space&lt;/code&gt;, если выберете этот способ переключения, то &lt;strong&gt;ruen&lt;/strong&gt; будет работать также на телефоне и планшете.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3&gt;Переключение по GUI + Space без необходимости синхронизации&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;переключение-по-gui--space-без-необходимости-синхронизации&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d0%be-gui--space-%d0%b1%d0%b5%d0%b7-%d0%bd%d0%b5%d0%be%d0%b1%d1%85%d0%be%d0%b4%d0%b8%d0%bc%d0%be%d1%81%d1%82%d0%b8-%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d0%b8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Избавиться от необходимости ручной синхронизации языков при использовании переключения по нажатию &lt;code&gt;GUI + Space&lt;/code&gt; возможно с помощью гибрида переключения по модели тоггл и переключения отдельными сочетаниями клавиш, как это сделано с комбо в раскладке &lt;code&gt;ruen&lt;/code&gt; по умолчанию, все еще потребуется настроить отдельные сочетания в ОС, но для переключения языка можно будет нажимать привычное сочетание клавиш.&lt;/p&gt;
+&lt;p&gt;Настраиваем в ОС сочетания клавиш &lt;code&gt;Ctrl + Shift + 1&lt;/code&gt; для включения английского языка, и &lt;code&gt;Ctrl + Shift + 2&lt;/code&gt; для включения русского и создаем два &lt;strong&gt;mod-morph&lt;/strong&gt; поведения:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;en_space&lt;/code&gt;: без модификаторов нажатие &lt;code&gt;&amp;amp;kp Space&lt;/code&gt;, с модификатором &lt;code&gt;LGUI&lt;/code&gt; вызов макроса &lt;code&gt;&amp;amp;layer_en&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;ru_space&lt;/code&gt;: без модификаторов нажатие &lt;code&gt;&amp;amp;kp Space&lt;/code&gt;, с модификатором &lt;code&gt;LGUI&lt;/code&gt; вызов макроса &lt;code&gt;&amp;amp;layer_ru&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/mod-morph.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Далее назначаем на &lt;strong&gt;en&lt;/strong&gt; слое вместо &lt;code&gt;&amp;amp;kp Space&lt;/code&gt; поведение &lt;code&gt;&amp;amp;ru_space&lt;/code&gt;, на &lt;strong&gt;ru&lt;/strong&gt; слое вместо &lt;code&gt;&amp;amp;kp Space&lt;/code&gt; поведение &lt;code&gt;&amp;amp;en_space&lt;/code&gt;. Теперь при нажатии &lt;code&gt;GUI + Space&lt;/code&gt; язык будет переключаться в ОС и одновременно производиться синхронизация языка в клавиатуре.&lt;/p&gt;
+&lt;h2&gt;Комбо&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;комбо&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%ba%d0%be%d0%bc%d0%b1%d0%be&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Реализовать печать символов с любого языка в комбо нам поможет настройка слоев, на которых это комбо активно.&lt;br&gt;
+Создадим комбо, печатающее символ &amp;ldquo;#&amp;rdquo;, при нажатии на клавиши &amp;ldquo;N&amp;rdquo; + &amp;ldquo;M&amp;rdquo;.&lt;br&gt;
+Чтобы реализовать &lt;code&gt;ruen&lt;/code&gt; поведение в случае с символом &amp;ldquo;#&amp;rdquo; нам потребуется создать 2 отдельных комбо: одно будет описывать действия, необходимые для печати символа если сейчас активен русский язык, второе комбо будет описывать действия, в случае если сейчас активен английский язык.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Комбо для русского языка&lt;/strong&gt;. Для печати символа &amp;ldquo;#&amp;rdquo; на русском языке нам потребуется макрос &lt;code&gt;&amp;amp;en&lt;/code&gt; так как &amp;ldquo;#&amp;rdquo; нет на русской раскладке, выберем макрос и в параметре передадим кейкод &lt;code&gt;HASH&lt;/code&gt;. Чтобы задать слои, на которых комбо активно, надо нажать кнопку с иконкой гаечного ключа, нажмем ее и выберем слои &lt;strong&gt;ru&lt;/strong&gt; и &lt;strong&gt;sym_ru&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/combo-ru-hash.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Комбо для английского языка&lt;/strong&gt;. Символ &amp;ldquo;#&amp;rdquo; есть в английской раскладке, в качестве действия для комбо назначим обычны &lt;code&gt;&amp;amp;kp HASH&lt;/code&gt;. Также настроим чтобы комбо было активно только на слоях &lt;strong&gt;en&lt;/strong&gt; и &lt;strong&gt;sym_en&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/combo-en-hash.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Макросы&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;макросы&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bc%d0%b0%d0%ba%d1%80%d0%be%d1%81%d1%8b&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Макросы также отлично сочетаются с подходом &lt;code&gt;ruen&lt;/code&gt;, позволяя печатать символьные конструкции, или шаблоны из текста независимо от текущего языка.
+Рассмотрим на примере макроса, который напечатает две фигурные скобки {}, и нажмёт стрелку влево для перемещения курсора между скобками.
+Чтобы печатать фигурные скобки независимо от языка, нам потребуется создать два отдельных макроса под каждый язык.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/braces-macro.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Вызов макроса назначим на комбо клавиш &amp;ldquo;J&amp;rdquo; + &amp;ldquo;L&amp;rdquo;, такое расположение будет несложно запомнить, ведь фигурные скобки на символьном слое находятся на этих же местах.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/macro-placement.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Если использование комбо неудобно, Вы можете просто назначить эти макросы на подходящие клавиши на соответствующих языковых слоях.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Создаем комбо, настраиваем слои, на которых это комбо активно, и все, фигурные скобки доступны на любом языке на базовом слое!&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Также удобным может оказаться использование аналогичных комбо для квадратных скобок, круглых скобок (круглые скобки находятся на одинаковых местах в обоих языках и не требуют создания 2 макросов) и двойных кавычек.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/combo-braces.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Caps Word на русской раскладке&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caps-word-на-русской-раскладке&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#caps-word-%d0%bd%d0%b0-%d1%80%d1%83%d1%81%d1%81%d0%ba%d0%be%d0%b9-%d1%80%d0%b0%d1%81%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d0%b5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;В ZMK есть встроенное поведение Caps Word, на данный момент оно отлично работает на английском языке, но, к сожалению, с русскими буквами возникают проблемы, ведь буква &amp;ldquo;Б&amp;rdquo; расположена на клавише &lt;code&gt;DOT&lt;/code&gt;, и хоть мы и можем настроить, чтобы Caps Word не прерывался после нажатия этой буквы, но заглавную &amp;ldquo;Б&amp;rdquo; с штатны Caps Word напечатать не получится. Однако есть возможность имитировать эту функцию с помощью слоёв.&lt;/p&gt;
+&lt;p&gt;Для воссоздания поведения Caps Word потребуется:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Продублировать слой &lt;strong&gt;ru&lt;/strong&gt;, удобнее всего это сделать в &lt;strong&gt;keymap-editor&lt;/strong&gt;, нажав &lt;strong&gt;•••&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Duplicate layer&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/duplicate-layer.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Всем клавишам, печатающим буквы, добавить модификатор &lt;code&gt;LShift&lt;/code&gt;. Таким образом, попав на этот слой, все напечатанные буквы будут заглавными.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/cw-lshift.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;В примере рассмотрим активацию режима Caps Word по нажатию комбо клавиш &amp;ldquo;C&amp;rdquo; + &amp;ldquo;V&amp;rdquo;. Для слоя &lt;strong&gt;en&lt;/strong&gt; создадим комбо со стандартным поведением &lt;code&gt;&amp;amp;caps_word&lt;/code&gt;, комбо должно активироваться только на слое &lt;strong&gt;en&lt;/strong&gt;. Для слоя &lt;strong&gt;ru&lt;/strong&gt; создадим комбо с поведением &lt;code&gt;&amp;amp;tog 2&lt;/code&gt; (2 - номер слоя &lt;strong&gt;cw_ru&lt;/strong&gt;), на клавиши &amp;ldquo;C&amp;rdquo; + &amp;ldquo;V&amp;rdquo;, ограничим чтобы это комбо срабатывало только на слоях &lt;strong&gt;ru&lt;/strong&gt; и &lt;strong&gt;cw_ru&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/cw-combo.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Для воссоздания активации Caps Word по нажатию &lt;code&gt;LShift&lt;/code&gt; + &lt;code&gt;RShift&lt;/code&gt;, как в проводных клавиатурах на QMK, можно воспользоваться поведением &lt;strong&gt;mod-morph&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Далее сделаем так, чтобы после нажатия пробела слой &lt;strong&gt;cw_ru&lt;/strong&gt; выключался, для этого создадим параметризованный макрос &lt;code&gt;&amp;amp;cw_off&lt;/code&gt;. Первым действием макрос вернет клавиатуру на слой &lt;strong&gt;ru&lt;/strong&gt; нажатием &lt;code&gt;&amp;amp;to 1&lt;/code&gt;, вторым действием нажмет переданный в параметре символ.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/cw-off.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Назначаем на слое &lt;strong&gt;cw_ru&lt;/strong&gt; на место &lt;code&gt;&amp;amp;kp SPACE&lt;/code&gt; созданный макрос &lt;code&gt;&amp;amp;cw_off&lt;/code&gt;, указав в параметре пробел, и все, мы воссоздали поведение Caps Word для русского языка.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Аналогичным образом можно воссоздать и фичу &lt;code&gt;RuEn word&lt;/code&gt; из реализации &lt;strong&gt;RuEn&lt;/strong&gt; в QMK, просто создаем отдельный слой для этой фичи, выделяем клавишу для переключения на этот слой, и также клавишу, которая этот слой выключит. Также можно реализовать, например, &lt;code&gt;Num Word&lt;/code&gt; для ввода нескольких цифр и переключения обратно на буквенный слой, может пригодиться, если часто вводите IP-адреса, ведь можно настроить так, чтобы слой &lt;code&gt;Num Word&lt;/code&gt; не выключался при нажатии точек.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

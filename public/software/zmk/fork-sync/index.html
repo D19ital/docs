@@ -8,31 +8,33 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>Софт – ergohaven docs</title>
-  <meta name="description" content=" Прошивка QMK Прошивка ZMK " /><link rel="canonical" href="http://localhost:1313/software/" itemprop="url" />
+<title>Синхронизация форка ergohaven-zmk-config в GitHub – ergohaven docs</title>
+  <meta name="description" content="Прошивки клавиатур постоянно дорабатываются и обновляются, и если доработки имеют общий характер и вносились в главный репозиторий ZMK, то эти обновления автоматически подтянутся при следующей сборке прошивки, например после изменения раскладки, но также периодически обновляется и репозиторий ergohaven-zmk-config, содержащий в себе раскладки и конфигурационные файлы клавиатур. Обновления могут содержать в себе, например, файлы, необходимые для сборки прошивок под новые девайсы, или же какие-то доработки в уже выпущенных устройствах, и в отличие от обновлений в ZMK, обновления в ergohaven-zmk-config автоматически не применяются, чтобы внести их в Ваш форк, необходимо провести процедуру синхронизации. О том, как провести процедуру синхронизации и будет рассказано в этом руководстве." /><link rel="canonical" href="http://localhost:1313/software/zmk/fork-sync/" itemprop="url" />
 
-<meta property="og:title" content="Софт">
+<meta property="og:title" content="Синхронизация форка ergohaven-zmk-config в GitHub">
 <meta
   property="og:description"
   content="
     
-      
+      Прошивки клавиатур постоянно дорабатываются и обновляются, и если доработки имеют общий характер и вносились в главный репозиторий ZMK, то эти обновления автоматически подтянутся при следующей сборке прошивки, например после изменения раскладки, но также периодически обновляется и репозиторий ergohaven-zmk-config, содержащий в себе раскладки и конфигурационные файлы клавиатур. Обновления могут содержать в себе, например, файлы, необходимые для сборки прошивок под новые девайсы, или же какие-то доработки в уже выпущенных устройствах, и в отличие от обновлений в ZMK, обновления в ergohaven-zmk-config автоматически не применяются, чтобы внести их в Ваш форк, необходимо провести процедуру синхронизации. О том, как провести процедуру синхронизации и будет рассказано в этом руководстве.
     
   ">
 <meta
   property="og:type"
   content="
-    website
+    article
   ">
-<meta property="og:url" content="http://localhost:1313/software/">
+<meta property="og:url" content="http://localhost:1313/software/zmk/fork-sync/"><meta property="article:section" content="software">
 
 
-	<meta itemprop="name" content="Софт">
-	<meta itemprop="description" content="Прошивка QMK Прошивка ZMK">
-	<meta itemprop="wordCount" content="4">
+
+
+	<meta itemprop="name" content="Синхронизация форка ergohaven-zmk-config в GitHub">
+	<meta itemprop="description" content="Прошивки клавиатур постоянно дорабатываются и обновляются, и если доработки имеют общий характер и вносились в главный репозиторий ZMK, то эти обновления автоматически подтянутся при следующей сборке прошивки, например после изменения раскладки, но также периодически обновляется и репозиторий ergohaven-zmk-config, содержащий в себе раскладки и конфигурационные файлы клавиатур. Обновления могут содержать в себе, например, файлы, необходимые для сборки прошивок под новые девайсы, или же какие-то доработки в уже выпущенных устройствах, и в отличие от обновлений в ZMK, обновления в ergohaven-zmk-config автоматически не применяются, чтобы внести их в Ваш форк, необходимо провести процедуру синхронизации. О том, как провести процедуру синхронизации и будет рассказано в этом руководстве.">
+	<meta itemprop="wordCount" content="854">
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Софт">
-	<meta name="twitter:description" content="Прошивка QMK Прошивка ZMK">
+	<meta name="twitter:title" content="Синхронизация форка ergohaven-zmk-config в GitHub">
+	<meta name="twitter:description" content="Прошивки клавиатур постоянно дорабатываются и обновляются, и если доработки имеют общий характер и вносились в главный репозиторий ZMK, то эти обновления автоматически подтянутся при следующей сборке прошивки, например после изменения раскладки, но также периодически обновляется и репозиторий ergohaven-zmk-config, содержащий в себе раскладки и конфигурационные файлы клавиатур. Обновления могут содержать в себе, например, файлы, необходимые для сборки прошивок под новые девайсы, или же какие-то доработки в уже выпущенных устройствах, и в отличие от обновлений в ZMK, обновления в ergohaven-zmk-config автоматически не применяются, чтобы внести их в Ваш форк, необходимо провести процедуру синхронизации. О том, как провести процедуру синхронизации и будет рассказано в этом руководстве.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -127,7 +129,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/software/"
+            href="/software/zmk/fork-sync/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Русский<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
@@ -136,7 +138,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/en/software/"
+            href="/en/software/zmk/fork-sync/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >English</a>
@@ -318,7 +320,7 @@
               
             </li></ul>
       </div></li>
-            <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+            <li class="open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:ltr:pr-8 hx:rtl:pl-8
       hx:hextra-focus-visible-inset
@@ -328,7 +330,7 @@
     >
       <span class="hx:min-w-0 [word-break:break-word]">Прошивка ZMK</span>
     </a>
-      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="Переключить раздел" aria-expanded="false"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
+      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="Переключить раздел" aria-expanded="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
   </div><div class="hextra-sidebar-children hx:ltr:pr-0 hx:rtl:pl-0 hx:overflow-hidden">
         <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
@@ -354,11 +356,11 @@
     </a>
   </div>
               
-            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+            </li><li class="hx:flex hx:flex-col open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
       hx:hextra-focus-visible-inset
-        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+        hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
       href="/software/zmk/fork-sync/"
       
     >
@@ -407,7 +409,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/software/"
+            href="/software/zmk/fork-sync/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Русский<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
@@ -416,7 +418,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/en/software/"
+            href="/en/software/zmk/fork-sync/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >English</a>
@@ -487,32 +489,176 @@
 </div>
 </div></aside>
     
-<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Содержание"></nav>
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Содержание">
+    <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">На этой странице</p><ul>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%84%d0%be%d1%80%d0%ba%d0%b0">Синхронизация форка
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d0%ba%d0%bd%d0%be%d0%bf%d0%ba%d0%b0-sync-fork-%d0%bd%d0%b5-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%b8%d0%bb%d0%b0%d1%81%d1%8c">Кнопка Sync Fork не отобразилась
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f">Синхронизация с конфликтами слияния
+        </a>
+      </li></ul>
+      <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400"><a class="hx:inline-block hx:rounded-sm hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50 hx:hextra-focus-visible-inset" href="https://github.com/ergohaven/docs/edit/main/content/software/zmk/fork-sync.md" target="_blank" rel="noreferrer">Отредактировать страницу на GitHub →</a>
+        <button id="backToTop" tabindex="-1" onClick="scrollUp();" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+          <span>Прокрутить к началу</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
 
     <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
       <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
-        
-        <div class="content">
-          <h1>Софт</h1>
-          <div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 1;">
-  <a
-    class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="qmk"
-      ><div>
-      <span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">Прошивка QMK
-      </span></div></a>
-  <a
-    class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="zmk"
-      ><div>
-      <span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">Прошивка ZMK
-      </span></div></a>
-</div>
+        <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current">
+        <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
+          <a href="/software/" class="hx:inline-block hx:rounded-sm hx:hextra-focus-visible-inset">Софт</a>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
+          <a href="/software/zmk/" class="hx:inline-block hx:rounded-sm hx:hextra-focus-visible-inset">Прошивка ZMK</a>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">Синхронизация форка ergohaven-zmk-config в GitHub</div>
+  </div>
 
+        <div class="content">
+          
+          <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:sm:justify-between hx:gap-4 hx:mb-4">
+            <h1 class="hx:mb-0">Синхронизация форка ergohaven-zmk-config в GitHub</h1>
+            
+          </div>
+          
+          <p>Прошивки клавиатур постоянно дорабатываются и обновляются, и если доработки имеют общий характер и вносились в главный репозиторий <strong>ZMK</strong>, то эти обновления автоматически подтянутся при следующей сборке прошивки, например после изменения раскладки, но также периодически обновляется и репозиторий <strong>ergohaven-zmk-config</strong>, содержащий в себе раскладки и конфигурационные файлы клавиатур. Обновления могут содержать в себе, например, файлы, необходимые для сборки прошивок под новые девайсы, или же какие-то доработки в уже выпущенных устройствах, и в отличие от обновлений в <strong>ZMK</strong>, обновления в <strong>ergohaven-zmk-config</strong> автоматически не применяются, чтобы внести их в Ваш форк, необходимо провести процедуру синхронизации. О том, как провести процедуру синхронизации и будет рассказано в этом руководстве.</p>
+<blockquote>
+  <p>Приложение GitHub является сторонним софтом, каких-то деталей его функционала автор может не знать, а также какой-то функционал с течением времени может измениться. При возникновении каких-либо вопросов или проблем пишите в <a href="https://t.me/&#43;E-mlq11c97AyZmY6"target="_blank" rel="noopener">сообщество Ergohaven в Telegram</a>.</p>
+
+</blockquote>
+<h2>Синхронизация форка<span class="hx:absolute hx:-mt-20" id="синхронизация-форка"></span>
+    <a href="#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%84%d0%be%d1%80%d0%ba%d0%b0" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><p>О необходимости синхронизировать форк вы можете узнать по появлению ссылки с текстом <em>&ldquo;commits behind&rdquo;</em> на вкладке <strong>Code</strong> форка, в обычных условиях при этом также должна появиться кнопка <strong>Sync fork</strong>, если ее нет, то перейдите к разделу <a href="#%d0%ba%d0%bd%d0%be%d0%bf%d0%ba%d0%b0-sync-fork-%d0%bd%d0%b5-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%b8%d0%bb%d0%b0%d1%81%d1%8c">Кнопка Sync Fork не отобразилась</a>.</p>
+<p><img src="/images/fork-sync/sync-fork.png" alt="image"  loading="lazy" /></p>
+<p>Для синхронизации нажмите кнопку <strong>Sync fork</strong>.</p>
+<p><img src="/images/fork-sync/update-branch.png" alt="image"  loading="lazy" /></p>
+<p>В появившемся окне нажмите кнопку <strong>Update branch</strong> и все, форк успешно синхронизирован, все изменения из основного репозитория уже в вашем форке.</p>
+<p>Если после нажатия <strong>Sync fork</strong> отобразилось окно с заголовком <em>&ldquo;This branch has conflicts that must be resolved&rdquo;</em>, то есть 2 варианта синхронизации:</p>
+<ol>
+<li>Отбросить все внесенные Вами в форк изменения, <strong>ВНИМАНИЕ</strong> при этом раскладка в Вашем форке вернется к стандартной, так что делайте это, только если уверены, что можете без проблем восстановить все свои изменения. Для отбрасывания изменений с синхронизацией форка нажмите <strong>Discard commits</strong>.</li>
+<li>Решить конфликты слияния. Решение конфликтов описано в разделе <a href="#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f">Синхронизация с конфликтами слияния</a>.</li>
+</ol>
+<p><img src="/images/fork-sync/has-conflicts.png" alt="image"  loading="lazy" /></p>
+<h2>Кнопка Sync Fork не отобразилась<span class="hx:absolute hx:-mt-20" id="кнопка-sync-fork-не-отобразилась"></span>
+    <a href="#%d0%ba%d0%bd%d0%be%d0%bf%d0%ba%d0%b0-sync-fork-%d0%bd%d0%b5-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%b8%d0%bb%d0%b0%d1%81%d1%8c" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><p>Чтобы начать процедуру синхронизации нажмите на ссылку с текстом <em>&ldquo;commits behind&rdquo;</em> на вкладке <strong>Code</strong> форка.</p>
+<p><img src="/images/fork-sync/commits-behind.png" alt="image"  loading="lazy" /></p>
+<p>Откроется страница &ldquo;Comparing changes&rdquo;, обратите внимание на выбранные по умолчанию значения:</p>
+<ul>
+<li><em>base repository</em> - по умолчанию должно быть выбрано <em>&quot;{Ваш ник на GitHub}/ergohaven-zmk-config&quot;</em>;</li>
+<li><em>base</em> - по умолчанию должно быть выбрано <em>&ldquo;main&rdquo;</em>;</li>
+<li><em>head repository</em> - по умолчанию должно быть выбрано <em>&ldquo;ergohaven/ergohaven-zmk-config&rdquo;</em>;</li>
+<li><em>compare</em> - по умолчанию должно быть выбрано <em>&ldquo;main&rdquo;</em>;</li>
+</ul>
+<p><img src="/images/fork-sync/comparing-changes.png" alt="image"  loading="lazy" /></p>
+<p>Если какие-то из значений отличаются, выберите значение, которое должно быть по-умолчанию.<br>
+Далее нажмите кнопку <strong>Create pull request</strong>.</p>
+<p><img src="/images/fork-sync/create-pull-request.png" alt="image"  loading="lazy" /></p>
+<p>Введите название пулл-реквеста, если оно не было заполнено автоматически, и нажмите кнопку <strong>Create pull request</strong>.</p>
+<p><img src="/images/fork-sync/pr-name.png" alt="image"  loading="lazy" /></p>
+<p>Если в нижней части пулл-реквеста отобразилось сообщение <em>&ldquo;No conflicts with base branch&rdquo;</em>, то нажмите кнопку <strong>Merge pull request</strong> и ветка успешно обновлена! Можете перейти на вкладку <strong>Actions</strong>, сборка обновленной прошивки уже запущена.</p>
+<p><img src="/images/fork-sync/no-conflicts.png" alt="image"  loading="lazy" /></p>
+<p>Если в нижней части пулл-реквеста отобразилось сообщение <em>&ldquo;This branch has conflicts that must be resolved&rdquo;</em>, то закройте созданный пулл-реквест нажатием <strong>Close pull request</strong> в нижней части страницы и перейдите к разделу <a href="#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f">Синхронизация с конфликтами слияния</a>.</p>
+<p><img src="/images/fork-sync/merge-conflicts.png" alt="image"  loading="lazy" /></p>
+<h2>Синхронизация с конфликтами слияния<span class="hx:absolute hx:-mt-20" id="синхронизация-с-конфликтами-слияния"></span>
+    <a href="#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><p>Если в основном репозитории были внесены изменения в файлы, которые Вы также изменяли в своем форке, например файлы <code>.keymap</code>, в которых хранятся раскладки клавиатур, то при обновлении форка могут возникнуть конфликты слияния, далее описаны шаги для их решения.</p>
+<ol>
+<li>На вкладке <strong>Code</strong> нажмите кнопку <strong>Branches</strong>.</li>
+</ol>
+<p><img src="/images/fork-sync/branches.png" alt="image"  loading="lazy" /></p>
+<ol start="2">
+<li>Нажмите <strong>New branch</strong>.</li>
+</ol>
+<p><img src="/images/fork-sync/new-branch.png" alt="image"  loading="lazy" /></p>
+<ol start="3">
+<li>В появившемся окне введите название ветки, например <em>&ldquo;sync&rdquo;</em>, затем в выпадающем списке выберите репозиторий <em>&ldquo;ergohaven/ergohaven-zmk-config&rdquo;</em>, по умолчанию должна быть выбрана ветка <em>&ldquo;main&rdquo;</em>, и нажмите <strong>Create new branch</strong>.</li>
+</ol>
+<p><img src="/images/fork-sync/create-new-branch.png" alt="image"  loading="lazy" /></p>
+<ol start="4">
+<li>Далее в строке созданной ветки нажмите <strong>•••</strong> и в открывшемся выпадающем списке выберите <strong>New pull request</strong>.</li>
+</ol>
+<p><img src="/images/fork-sync/new-pull-request.png" alt="image"  loading="lazy" /></p>
+<ol start="5">
+<li>Нажмите на <em>base repository</em> и выберите в выпадающем списке форк <em>&quot;{Ваш ник на GitHub}/ergohaven-zmk-config&quot;</em>.</li>
+</ol>
+<p><img src="/images/fork-sync/new-pull-request.png" alt="image"  loading="lazy" /></p>
+<ol start="6">
+<li>На открывшейся странице &ldquo;Comparing changes&rdquo; нажмите кнопку <strong>Create pull request</strong>.</li>
+</ol>
+<p><img src="/images/fork-sync/create-pull-request-again.png" alt="image"  loading="lazy" /></p>
+<ol start="7">
+<li>В зависимости от количества синхронизируемых коммитов кнопка <strong>Resolve conflicts</strong> может быть не видна сразу, пролистайте до нее и нажмите.</li>
+</ol>
+<p><img src="/images/fork-sync/resolve-conflicts.png" alt="image"  loading="lazy" /></p>
+<ol start="8">
+<li>Откроется инструмент для разрешения конфликтов, в левой части страницы отображена панель с списком файлов, конфликты в которых надо разрешить, а в правой части содержимое файлов с отмеченными местами конфликтов.</li>
+</ol>
+<p><img src="/images/fork-sync/resolve-conflicts.png" alt="image"  loading="lazy" /></p>
+<ol start="9">
+<li>Между <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; sync</code> (<em>&ldquo;sync&rdquo;</em> в данном примере это название созданной ветки) и <code>=======</code> находятся изменения из основного репозитория <em>&ldquo;ergohaven/ergohaven-zmk-config&rdquo;</em>, вызвавшие конфликт. Между <code>=======</code> и <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; main</code> находятся изменения, внесенные Вами в раскладку.<br>
+Далее необходимо внимательно рассмотреть каждый конфликт и решить, хотите ли вы внести в свою раскладку изменения, предложенные из <em>&ldquo;ergohaven/ergohaven-zmk-config&rdquo;</em>.</li>
+</ol>
+<ul>
+<li>Если Вы понимаете, что изменение из основного репозитория Вам <strong>не нужно</strong>, то удалите строки, начиная с <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; sync</code> и заканчивая <code>=======</code>, затем пролистайте файл до строки <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; main</code>, означающей окончание данного конфликта, и также сотрите эту строку. Конфликт разрешен.</li>
+</ul>
+<p><video 
+  autoplay
+  loop
+  muted
+  style="max-width: 100%">
+  <source src="/video/fork-sync/remove-incoming.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br /></p>
+<ul>
+<li>Если Вы понимаете, что изменение из основного репозитория Вам <strong>нужно</strong>, то удалите строку <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; sync</code>, строку <code>=======</code> и строку <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; main</code>, тем самым добавляя изменение из основного репозитория к раскладке. Конфликт разрешен.</li>
+</ul>
+<p><video 
+  autoplay
+  loop
+  muted
+  style="max-width: 100%">
+  <source src="/video/fork-sync/accept-incoming.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br /></p>
+<ul>
+<li>Если Вы <strong>не понимаете</strong>, или <strong>не уверены</strong>, что делает какое-то изменение из основного репозитория, то обратитесь за помощью с разрешением конфликта в <a href="https://t.me/&#43;E-mlq11c97AyZmY6"target="_blank" rel="noopener">Сообщество Ergohaven в Telegram</a>.</li>
+</ul>
+<ol start="10">
+<li>После разрешения всех конфликтов в файле станет доступна кнопка <strong>Mark as resolved</strong>, нажмите ее чтобы завершить разрешение конфликтов в файле.</li>
+<li>После разрешения конфликтов во всех файлах отобразится кнопка <strong>Commit merge</strong>, нажмите ее для завершения.</li>
+</ol>
+<p><img src="/images/fork-sync/commit-merge.png" alt="image"  loading="lazy" /></p>
+<ol start="12">
+<li>
+<p>Пролистайте страницу до кнопки <strong>Merge pull request</strong>, нажмите ее, и затем нажмите <strong>Confirm merge</strong>.</p>
+</li>
+<li>
+<p>Последним шагом для того, чтобы удостовериться, что все конфликты разрешены перейдите на вкладку <strong>Actions</strong>, дождитесь завершения сборки прошивки. Если конфликты разрешены корректно, то сборка прошивки успешно завершится.</p>
+</li>
+</ol>
 
         </div>
-        <div class="hx:mt-16"></div>
-        <div class="hx:mt-16"></div>
-        
+        <div class="hx:mt-16"></div><div class="hx:mb-8 hx:flex hx:items-center hx:border-t hx:pt-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-neutral-400 hx:dark:contrast-more:border-neutral-400 hx:print:hidden"><a
+        href="/software/zmk/keymap-editor/"
+        title="Настройка клавиатуры в ZMK keymap-editor"
+        class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:pr-4 hx:rtl:pl-4"
+      ><svg class="hx:inline hx:h-5 hx:shrink-0 hx:ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Настройка клавиатуры в ZMK keymap-editor</a><a
+        href="/software/zmk/zmk-ruen/"
+        title="RuEn раскладка для беспроводных клавиатур"
+        class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:ml-auto hx:ltr:pl-4 hx:ltr:text-right hx:rtl:mr-auto hx:rtl:pr-4 hx:rtl:text-left"
+      >RuEn раскладка для беспроводных клавиатур<svg class="hx:inline hx:h-5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
       </main>
     </article>
   </div>

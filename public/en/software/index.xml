@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ergohaven docs – QMK Firmware Documentation</title>
+    <title>ergohaven docs – Software</title>
     <link>http://localhost:1313/en/software/</link>
-    <description>Recent content in QMK Firmware Documentation on ergohaven docs</description>
+    <description>Recent content in Software on ergohaven docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     

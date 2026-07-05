@@ -1,0 +1,721 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ergohaven docs – ZMK firmware</title>
+    <link>http://localhost:1313/en/software/zmk/</link>
+    <description>Recent content in ZMK firmware on ergohaven docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/en/software/zmk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>First steps with a Keyboard on ZMK</title>
+      <link>http://localhost:1313/en/software/zmk/zmk-keyboards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/software/zmk/zmk-keyboards/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This article provides a guide to help you take your first steps in mastering a keyboard on ZMK. After reading the article, the user will learn how to: manage the keyboard&amp;rsquo;s power, connect the keyboard to multiple devices, and update the firmware.&lt;/p&gt;
+&lt;h2&gt;Connecting the keyboard&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;connecting-the-keyboard&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#connecting-the-keyboard&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
+  &lt;p&gt;If you have encountered any issues with connecting keyboard to your device, try to reboot bluetooth on your device and repeat all steps.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Step 1. First, turn it on by switching the physical toggle to the &amp;ldquo;On&amp;rdquo; position.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/buttons.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Step 2. Next, the halves need to be connected to each other. To do this, simultaneously press the &amp;ldquo;Reset&amp;rdquo; button on the bottom of both halves.&lt;/p&gt;
+&lt;p&gt;Step 3. Once the keyboard is turned on and the halves are connected, you can proceed to connect it to device. First, make sure that the current connection profile is cleared by pressing &lt;code&gt;&amp;amp;BT_CLR&lt;/code&gt; (in the default layout, the profile control keys are located on layer 3; you can switch to it by holding down the layer 1 and 2 switch keys). This will reset the devices bound to the profile.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/sel_clr-en.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Step 4. Next, to connect to a device via Bluetooth, you need to press the profile selection key, for example, &lt;code&gt;&amp;amp;BT_SEL 0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Step 5. After pressing, the keyboard will enter pairing mode and appear in the list of available devices for connection. Select it, and voila, everything works!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/connect.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt; If the keyboard is not working correctly, for example, key presses from one half do not reach the device, you should repeat the procedure of connecting the halves by simultaneously pressing the &lt;code&gt;Reset&lt;/code&gt; key on both.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h2&gt;Connecting to multiple devices&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;connecting-to-multiple-devices&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#connecting-to-multiple-devices&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;For wireless connection, the keyboard can remember up to 5 devices. Each connected device is bound to the selected &amp;ldquo;profile&amp;rdquo; after connection.&lt;/p&gt;
+&lt;p&gt;To connect to the second device, press the &lt;code&gt;&amp;amp;BT_SEL 1&lt;/code&gt; key, the keyboard will become available for pairing, connect to it from the device.&lt;/p&gt;
+&lt;p&gt;To reconnect to the first device, press &lt;code&gt;&amp;amp;BT_SEL 0&lt;/code&gt;, the device will automatically see the keyboard and connect to it. Similarly, you can connect devices to profiles 3, 4, 5.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;To unbind the keyboard from your device on the current profile, follow these steps:&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;clear the profile on the keyboard by pressing &lt;code&gt;&amp;amp;BT_CLR&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;then unbind the keyboard in the Bluetooth settings on your device,&lt;/li&gt;
+&lt;li&gt;and restart Bluetooth on your device.
+After performing these steps, the keyboard should be completely unhooked from your device on the current profile.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/sel-en.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Battery status&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;battery-status&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#battery-status&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The current charge of the master (left by default) half is displayed in the OS, in the list of connected Bluetooth devices. Under normal conditions the charge of the secondary half is spent slower than the master half, the exact charge can be seen only with the help of additional software. There are several variants of software for different OS:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kot149/zmk-battery-center&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ZMK Battery Center&lt;/a&gt; - available on Windows, MacOS;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/codyd51/Mighty-Mitts&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mighty-Mitts&lt;/a&gt; - available on MacOS;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Maksim-Isakau/zmk-split-battery&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ZMK Split Battery&lt;/a&gt; - available on Windows;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mh4x0f/zmkBATx&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;zmkBATx&lt;/a&gt; - available on Linux.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/power_level.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Turning off the keyboard&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;turning-off-the-keyboard&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#turning-off-the-keyboard&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;You can turn off the keyboard with the &lt;a href=&#34;#connecting-the-keyboard&#34;&gt;switch on the back of the keyboard&lt;/a&gt; by switching it to the &amp;ldquo;Off&amp;rdquo; position, and you can also configure the shutdown directly on the keyboard key by assigning &lt;code&gt;&amp;amp;SOFT_OFF&lt;/code&gt; to it. When this key is pressed, both halves of the keyboard will be switched to the &amp;ldquo;Soft off&amp;rdquo; state. To wake it up, you need to press the &lt;code&gt;Reset&lt;/code&gt; button on the bottom of the keyboard.&lt;/p&gt;
+&lt;h2&gt;Entering sleep state&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;entering-sleep-state&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#entering-sleep-state&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;After 10 minutes of inactivity, the keyboard enters sleep mode to save power. To wake it up from sleep, simply press any key, and the keyboard will wake up in a couple of seconds.&lt;/p&gt;
+&lt;h2&gt;Wired connection&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;wired-connection&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#wired-connection&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;When the keyboard is connected to a device with a USB cable, the keyboard automatically starts transmitting data via the USB cable. After disconnecting the USB cable, the keyboard will return to Bluetooth data transmission mode.&lt;/p&gt;
+&lt;p&gt;In situations where the keyboard is being charged from one device, but it is necessary to transmit data to another, you can press the &lt;code&gt;&amp;amp;OUT_BLE&lt;/code&gt; key. This will forcibly switch the keyboard to Bluetooth transmission mode, and data will be sent to the device bound to the current profile.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/cables.jpg&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Keyboard firmware&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;keyboard-firmware&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#keyboard-firmware&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Updating the keyboard firmware is done as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Connect half of the keyboard with a USB cable;&lt;/li&gt;
+&lt;li&gt;Double-click the &lt;code&gt;Reset&lt;/code&gt; key on the bottom of the keyboard (the pause between clicks should be minimal);&lt;/li&gt;
+&lt;li&gt;Similar to flashing keyboards on QMK, a new removable disk is detected in the PC, and the firmware file must be placed in it;&lt;/li&gt;
+&lt;li&gt;Unplug a USB cable;&lt;/li&gt;
+&lt;li&gt;Reconnect halves by simultaneously pressing the &amp;ldquo;Reset&amp;rdquo; button on the bottom of both halves.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Important!&lt;/strong&gt; The firmware of the halves have differences, and the left half must be flashed with a file whose name ends in &lt;code&gt;left.uf2&lt;/code&gt;, and the right half with a file ending in &lt;code&gt;right.uf2&lt;/code&gt;. In most cases you can just flash only the master halve (right one for Velvet v3 UI edition, and left for OP36 and Velvet v3) as it stores the keymap.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;You can switch the keyboard to firmware mode not only by double-clicking &lt;code&gt;Reset&lt;/code&gt;, but also by pressing the &lt;code&gt;&amp;amp;bootloader&lt;/code&gt; key. Pressing &lt;code&gt;&amp;amp;bootloader&lt;/code&gt; switches only the half on which it was pressed to firmware mode.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;More information in the ZMK documentation: &lt;a href=&#34;https://zmk.dev/docs&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://zmk.dev/docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/velvet.jpg&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Keyboard configuration in ZMK keymap-editor</title>
+      <link>http://localhost:1313/en/software/zmk/keymap-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/software/zmk/keymap-editor/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/editor.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keymap-editor&lt;/strong&gt; is a powerful tool for configuring keyboards on ZMK, allowing you to conveniently and quickly turn an idea into a ready-made layout.
+This article describes the procedure for connecting keymap-editor and its main features from the perspective of both a new user, just beginning to delve into the world of split keyboards, and someone already familiar with split keyboards and configuring layouts in Vial.&lt;/p&gt;
+&lt;h2&gt;Getting started with keymap-editor&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;getting-started-with-keymap-editor&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#getting-started-with-keymap-editor&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Keymap-editor is a web application, accessible from a browser at &lt;a href=&#34;https://nickcoutsos.github.io/keymap-editor/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nickcoutsos.github.io/keymap-editor/&lt;/a&gt;.
+To use it, you need to meet several conditions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The user must be registered on &lt;a href=&#34;https://github.com/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The user needs a fork of the repository &lt;a href=&#34;https://github.com/ergohaven/ergohaven-zmk-config&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/ergohaven/ergohaven-zmk-config&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/fork.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;In the fork, you need to enable GitHub Actions to automatically build the firmware after making changes to the layout. Go to the &lt;strong&gt;Actions&lt;/strong&gt; tab and click the &lt;strong&gt;I understand my workflows, go ahead and enable Actions&lt;/strong&gt; button.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to &lt;a href=&#34;https://nickcoutsos.github.io/keymap-editor/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nickcoutsos.github.io/keymap-editor/&lt;/a&gt;, on the opened page, select GitHub, authorize, and grant access to the created fork for Keymap Editor.
+To grant access, check the &lt;em&gt;Only select repositories&lt;/em&gt; option, and select your fork of the &lt;code&gt;/ergohaven/ergohaven-zmk-config&lt;/code&gt; repository. Then click &lt;strong&gt;Save&lt;/strong&gt; to commit the access settings changes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/access.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Once the steps described above are completed, the layout is ready for changes, hooray!
+Go to &lt;a href=&#34;https://nickcoutsos.github.io/keymap-editor/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://nickcoutsos.github.io/keymap-editor/&lt;/a&gt; and you will see the default layout.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/default.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Remapping keys&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;remapping-keys&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#remapping-keys&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To remap a key, click on it, and a window will open to select a new &lt;em&gt;Behavior&lt;/em&gt; for this key.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/kp.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In the window, you need to select a &lt;em&gt;Behavior&lt;/em&gt; for this key. &lt;em&gt;Behavior&lt;/em&gt; is an entity in ZMK that determines what action will be performed when the key is pressed, for example, &lt;code&gt;&amp;amp;kp&lt;/code&gt; (Key Press) simply sends a key press to the OS. Each &lt;code&gt;&amp;amp;kp&lt;/code&gt; has a &lt;code&gt;Key Code&lt;/code&gt; parameter, in which we specify which specific key will be pressed. In the screenshot above, the &lt;em&gt;Q&lt;/em&gt; key is specified in this parameter. If we want to assign &lt;em&gt;Z&lt;/em&gt; instead of &lt;em&gt;Q&lt;/em&gt;, for example, we need to click on the &lt;code&gt;Key Code&lt;/code&gt; field.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/kp_params.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The window expands and the right side displays a list of key codes available for assignment. In the search bar for available key codes, enter &lt;em&gt;Z&lt;/em&gt;, select &lt;em&gt;Z&lt;/em&gt; among the filtered codes, click &lt;strong&gt;Okay&lt;/strong&gt; and it&amp;rsquo;s done, the key has been replaced!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/key_codes.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Above the list of keycodes are checkboxes with modifiers &lt;code&gt;Shift&lt;/code&gt;, &lt;code&gt;Alt&lt;/code&gt;, &lt;code&gt;Ctrl&lt;/code&gt;, and &lt;code&gt;Gui&lt;/code&gt;, with prefixes &amp;ldquo;L&amp;rdquo; and &amp;ldquo;R&amp;rdquo; indicating the left or right modifier. If you check one of the modifier checkboxes, a key combination with the checked modifier will be sent to the OS. For example, if we checked the &lt;code&gt;LCtrl&lt;/code&gt; checkbox in the window above, pressing the key would immediately send the &lt;code&gt;LCtrl + Z&lt;/code&gt; combination. Convenient, we make a key combination with one key press!&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Next, the changes must be saved. Click &lt;strong&gt;Save&lt;/strong&gt; in the upper left corner. If desired, you can give the change a name to remind you which changes to keymap were made, or leave the field blank and click &lt;strong&gt;Commit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The firmware has automatically started building, this process usually takes about two minutes. Click on the blue button with the build status.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/build_status.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The opened page displays the statuses of all build stages. After all stages are completed, an &lt;code&gt;Artifacts&lt;/code&gt; section will appear, containing the &lt;code&gt;firmware&lt;/code&gt; archive. Click on it to download.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/firmware.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;After downloading the &lt;code&gt;firmware&lt;/code&gt; archive, flash the keyboard with the files from it, following the steps described in the &lt;a href=&#34;https://docs.ergohaven.xyz/en/zmk/zmk-keyboards/#keyboard-firmware&#34; target=&#34;_blank&#34;&gt;First steps with a Keyboard on ZMK&lt;/a&gt; (see the &amp;ldquo;Keyboard firmware&amp;rdquo; section).&lt;/p&gt;
+&lt;p&gt;Changes to the layout have been made!&lt;/p&gt;
+&lt;h2&gt;Layers&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;layers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#layers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Split keyboards use layers, which are a kind of additional modifiers, like &lt;em&gt;Shift&lt;/em&gt; or &lt;em&gt;Control&lt;/em&gt;. By switching the keyboard to another layer, pressing the keys will register other symbols or functions assigned to that key on that layer.
+Sounds complicated, let&amp;rsquo;s look at an example:
+If you press and hold the red key on the left half, the keyboard will switch to layer 1, and pressing, for example, the &lt;em&gt;W&lt;/em&gt; key will send the &lt;em&gt;2&lt;/em&gt; key press to the OS, because in the default layout it is assigned to the &lt;em&gt;W&lt;/em&gt; position on the 1st layer.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/layer1-en.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Renaming layers&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;renaming-layers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#renaming-layers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;blockquote&gt;
+  &lt;p&gt;You can change the names of layers, this can make it easier to configure the layout. To do this, hover the cursor over the layer name and click the &lt;strong&gt;Edit&lt;/strong&gt; button with the pencil icon.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/layer_name.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Switching layers&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;switching-layers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#switching-layers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In ZMK, there are several &lt;em&gt;Behaviors&lt;/em&gt; for switching layers:&lt;/p&gt;
+&lt;h4&gt;&amp;amp;mo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;amp;mo&lt;/code&gt; - enables the specified layer while the key is held down. This &lt;em&gt;Behavior&lt;/em&gt; is used in default layout, &lt;code&gt;&amp;amp;mo 1&lt;/code&gt; is assigned to the red key, and holding it down enables the 1st layer.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/mo.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;&amp;amp;lt&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;lt&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lt&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;amp;lt&lt;/code&gt; - a hybrid &lt;em&gt;Behavior&lt;/em&gt; of a standard key press (&lt;code&gt;&amp;amp;kp&lt;/code&gt;) and layer activation while the key is held down (&lt;code&gt;&amp;amp;mo&lt;/code&gt;).
+For example, on the red key, which has &lt;code&gt;&amp;amp;mo 1&lt;/code&gt; in the standard layout, we assign &lt;code&gt;&amp;amp;lt&lt;/code&gt;, passing the following parameters: 1st layer and the &lt;em&gt;Space&lt;/em&gt; key code. Then, pressing it will type a space, and holding it down will change the layer, pure magic!&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;It is worth noting that in this way we reduced the number of used keys on the 0th layer, because initially &lt;code&gt;&amp;amp;kp Space&lt;/code&gt; and &lt;code&gt;&amp;amp;mo 1&lt;/code&gt; were on two separate keys pressed with the thumb, we have combined them into one, and now you can place some other &lt;em&gt;Behavior&lt;/em&gt; in place of &lt;code&gt;&amp;amp;kp Space&lt;/code&gt;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/lt.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;&amp;amp;tog&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tog&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tog&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;amp;tog&lt;/code&gt; - when pressed, toggles the state of the layer, turns on the specified layer if it is off, and vice versa, turns it off if it is on. &lt;em&gt;(analog of TG() from Vial)&lt;/em&gt;
+When using this &lt;em&gt;Behavior&lt;/em&gt;, it is worth remembering that the &lt;strong&gt;active&lt;/strong&gt; layer at the moment is the &lt;strong&gt;enabled&lt;/strong&gt; layer with the highest number, by turning on layer 2 by pressing &lt;code&gt;&amp;amp;tog 2&lt;/code&gt;, it is impossible to switch to layer 1 by pressing &lt;code&gt;&amp;amp;mo&lt;/code&gt; or &lt;code&gt;&amp;amp;tog&lt;/code&gt;, because it has a lower number, and despite the fact that pressing &lt;code&gt;&amp;amp;tog 1&lt;/code&gt; will &lt;strong&gt;enable&lt;/strong&gt; layer 1, the &lt;strong&gt;active&lt;/strong&gt; layer will still be layer 2 because it has a higher number. To switch to layers with a number lower than the 2nd layer, you have to place the &lt;code&gt;&amp;amp;tog 2&lt;/code&gt; key on the 2nd layer.
+To consolidate, let&amp;rsquo;s analyze the scenario of working with &lt;code&gt;&amp;amp;tog&lt;/code&gt; step by step:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Being on the 0th layer, &lt;code&gt;&amp;amp;tog 2&lt;/code&gt; is pressed - layer 2 is enabled, it will not be possible to switch to the 1st layer by pressing &lt;code&gt;&amp;amp;tog 1&lt;/code&gt; or &lt;code&gt;&amp;amp;mo 1&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;Being on the 2nd layer, &lt;code&gt;&amp;amp;tog 2&lt;/code&gt; is pressed - layer 2 is disabled, the keyboard returned to the 0th layer, and we can switch to the 1st layer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/tog.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;&amp;amp;to&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;to&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#to&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;amp;to&lt;/code&gt; - when pressed, enables the layer specified in the parameter, and disables all other active layers.
+This &lt;em&gt;Behavior&lt;/em&gt; is very convenient for switching to a layer by pressing, because unlike &lt;code&gt;&amp;amp;tog&lt;/code&gt;, the &lt;code&gt;&amp;amp;to&lt;/code&gt; &lt;em&gt;Behavior&lt;/em&gt; turns off all active layers, and there is no need to separately disable the current active layer.
+Example: being on the 0th layer, &lt;code&gt;&amp;amp;to 2&lt;/code&gt; is pressed - layer 2 is enabled, we can switch to the 1st layer by pressing &lt;code&gt;&amp;amp;to 1&lt;/code&gt;, because this behavior, in addition to &lt;strong&gt;enabling&lt;/strong&gt; layer 1, &lt;strong&gt;disables&lt;/strong&gt; all other enabled layers, in this case the 2nd.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/to.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;&amp;amp;sl&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;sl&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sl&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;code&gt;&amp;amp;sl&lt;/code&gt; - when pressed, enables the layer specified in the parameter, but only for one press. &lt;em&gt;(analog of OSL() from Vial)&lt;/em&gt;
+It is convenient to use this &lt;em&gt;Behavior&lt;/em&gt; to switch to a layer with function keys, because most often they need to be pressed 1 time. Pressed &lt;code&gt;&amp;amp;sl 3&lt;/code&gt; (on this layer in the default layout are F1-12 keys), the layer turned on, pressed the &lt;em&gt;F1&lt;/em&gt; key, and the layer immediately turned off automatically.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;It is also important to mention that if no press occurs within 1 second after switching to a layer via &lt;code&gt;&amp;amp;sl&lt;/code&gt;, the layer will automatically turn off. This timeout is configured in the Behaviors -&amp;gt; Reconfiguration section, more details in the &lt;a href=&#34;#behaviors-tab&#34; target=&#34;_blank&#34;&gt;Behaviors&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/sl.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Moving layers&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;moving-layers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#moving-layers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Sometimes when configuring a layout, it becomes necessary to change the layer order number. In keymap-editor, this is implemented very conveniently, just drag the layer to the desired position.&lt;/p&gt;
+&lt;video 
+  autoplay
+  loop
+  muted
+  style=&#34;max-width: 100%&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/video/keymap-editor/layer-move.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;p&gt;When moving a layer in this way, keymap-editor automatically adjusts the parameters of all &lt;em&gt;Behaviors&lt;/em&gt; that previously activated this layer. For example, if the layout has &lt;code&gt;&amp;amp;mo 2&lt;/code&gt;, if you move the 2nd layer to the position of the 1st layer, the assigned key &lt;code&gt;&amp;amp;mo 2&lt;/code&gt; will automatically change to &lt;code&gt;&amp;amp;mo 1&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Copying layers&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;copying-layers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#copying-layers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Another useful layer management feature is copying them.
+To make a copy, click on the &lt;strong&gt;&amp;hellip;&lt;/strong&gt; button next to the layer name and select &lt;strong&gt;Duplicate Layer&lt;/strong&gt;. After clicking, a full copy of the layer will be created.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/duplicate.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Quick key assignment&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;quick-key-assignment&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#quick-key-assignment&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;On any layer, you can quickly remap keys by clicking on the &lt;strong&gt;&amp;hellip;&lt;/strong&gt; button next to the layer name and selecting &lt;strong&gt;Quick &amp;amp;kp Assignment&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;video 
+  autoplay
+  loop
+  muted
+  style=&#34;max-width: 100%&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/video/keymap-editor/quick-assign.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;em&gt;In the opened window, it is convenient to assign pressing numbers, letters, and function keys&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Several useful behaviors&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;several-useful-behaviors&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#several-useful-behaviors&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;code&gt;&amp;amp;mt&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mt&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mt&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The Mod/Tap &lt;em&gt;Behavior&lt;/em&gt; allows you to assign a specific &lt;em&gt;Behavior&lt;/em&gt; to a &lt;strong&gt;short press&lt;/strong&gt; (&lt;em&gt;TAP&lt;/em&gt;) of a key, and another &lt;em&gt;Behavior&lt;/em&gt; to a &lt;strong&gt;hold&lt;/strong&gt; (&lt;em&gt;HOLD&lt;/em&gt;) of a key. &lt;em&gt;(Analog of LShift_T, LCtrl_T, etc. keys from the Quantum tab in Vial)&lt;/em&gt;
+By default, a &lt;strong&gt;short press&lt;/strong&gt; is considered a press lasting less than 200 milliseconds. If you hold it longer, then a &lt;strong&gt;hold&lt;/strong&gt; is registered.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/mt.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If you configure the &lt;em&gt;Behavior&lt;/em&gt; as in the screenshot above, then when you &lt;strong&gt;short press&lt;/strong&gt; the key, the letter &lt;em&gt;D&lt;/em&gt; will be typed, and when you &lt;strong&gt;hold&lt;/strong&gt; it, the &lt;em&gt;Left Shift&lt;/em&gt; will be held down.&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;&amp;amp;sk&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;sk&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sk&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When you &lt;strong&gt;press&lt;/strong&gt; a Sticky Key, it holds the key down and releases it after the next press of any other key. &lt;em&gt;(Analog of OSM from Vial)&lt;/em&gt;
+It is convenient to use with modifiers, assigning &lt;code&gt;&amp;amp;sk LShift&lt;/code&gt;, you do not need to hold down the &lt;em&gt;Shift&lt;/em&gt; key to type a capital letter, but simply &lt;strong&gt;press&lt;/strong&gt; &lt;code&gt;&amp;amp;sk LShift&lt;/code&gt; once and immediately release it, the next letter will already be capitalized.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/sk.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Behaviors tab&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;behaviors-tab&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#behaviors-tab&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;On the Behaviors tab, you can create your own custom &lt;em&gt;Behaviors&lt;/em&gt; and configure standard ones. Let&amp;rsquo;s start with configuring standard ones.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/behaviors.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Reconfigurations&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;reconfigurations&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#reconfigurations&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Here we can change the properties of standard &lt;em&gt;Behaviors&lt;/em&gt;, such as those described in the &lt;a href=&#34;#layers&#34; target=&#34;_blank&#34;&gt;Layers&lt;/a&gt; section.
+Click the &lt;strong&gt;Add Behavior Reconfiguration&lt;/strong&gt; button, in the opened menu select, for example, &lt;code&gt;&amp;amp;sl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/reconfiguration.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In the opened &lt;em&gt;Reconfigure &lt;code&gt;&amp;amp;sl&lt;/code&gt;&lt;/em&gt; window, we see standard properties that we can change. Let&amp;rsquo;s increase the timeout for &lt;code&gt;&amp;amp;sl&lt;/code&gt; so that the layer remains active not for 1 second, but for 3. To do this, in the &lt;code&gt;release-after-ms&lt;/code&gt; property line, click the &lt;strong&gt;Override&lt;/strong&gt; button and enter 3000 in the appeared field (the units of measurement in the field are milliseconds), and click &lt;strong&gt;Okay&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/reconfigured.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;&amp;amp;sl&lt;/code&gt; entry with overridden properties appeared in the Reconfigure section.
+To view the properties, click the &lt;strong&gt;Edit&lt;/strong&gt; button. To completely return the properties to their default values, click the &lt;strong&gt;Delete&lt;/strong&gt; button.
+Detailed information about all properties of &lt;em&gt;Behaviors&lt;/em&gt; in the &lt;a href=&#34;https://zmk.dev/docs/config/behaviors#sticky-key&#34; target=&#34;_blank&#34;&gt;ZMK documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Custom Behaviors&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;custom-behaviors&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#custom-behaviors&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In this section, we can create our own custom &lt;em&gt;Behavior&lt;/em&gt; based on standard ones. Let&amp;rsquo;s create a &lt;em&gt;Behavior&lt;/em&gt; that will be convenient to implement &lt;em&gt;Home Row Mods&lt;/em&gt; (hereinafter HRM), a popular approach to layout design, the main idea of which is that the keys of the &lt;em&gt;home row&lt;/em&gt; (A, S, D, F and J, K, L, ;), when held down, activate the modifiers &lt;em&gt;Shift&lt;/em&gt;, &lt;em&gt;Ctrl&lt;/em&gt;, &lt;em&gt;Gui&lt;/em&gt; or &lt;em&gt;Alt&lt;/em&gt;.
+Click &lt;strong&gt;Add New Behavior&lt;/strong&gt;, in the opened window select &lt;em&gt;Hold or Tap behavior&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/hrm.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In this window, you need to describe the template of what &lt;em&gt;Behaviors&lt;/em&gt; will be performed when tapped and held, as well as several properties. Fill in the properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Bind&lt;/code&gt;: &amp;ldquo;hrm&amp;rdquo;. The name of the behavior, this is what we can use to find the &lt;em&gt;behavior&lt;/em&gt; when assigning it to a key;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bindings — HOLD&lt;/code&gt;: &lt;code&gt;&amp;amp;kp&lt;/code&gt;. When holding the key down, the key with the modifier will be pressed, an ordinary &lt;code&gt;&amp;amp;kp&lt;/code&gt; is suitable for this;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bindings — TAP&lt;/code&gt;: &lt;code&gt;&amp;amp;kp&lt;/code&gt;. Action for a short press, &lt;code&gt;&amp;amp;kp&lt;/code&gt; is also suitable for pressing a key with a letter;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tapping-term-ms&lt;/code&gt;: 200. If the key is pressed &lt;strong&gt;less than 200 milliseconds&lt;/strong&gt;, then the keyboard will register TAP and the key, for example &lt;em&gt;D&lt;/em&gt;, will be pressed. If the key is held down &lt;strong&gt;more than 200 milliseconds&lt;/strong&gt;, then HOLD will be registered and the modifier specified in the parameters, for example &lt;em&gt;Ctrl&lt;/em&gt;, will be pressed;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flavor&lt;/code&gt;: balanced. There are several algorithms that allow you to use HRM without strictly relying on the timing from &lt;code&gt;tapping-term-ms&lt;/code&gt;, &lt;em&gt;balanced&lt;/em&gt; is just one of them. It implies that if the HRM key was pressed for less than 200 milliseconds, but during the HRM key press another key was &lt;strong&gt;pressed and released&lt;/strong&gt;, then you need to register the HOLD action.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;In the &lt;a href=&#34;https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=home_row_mods#custom-hold-tap-examples&#34; target=&#34;_blank&#34;&gt;ZMK documentation&lt;/a&gt; there is an example of creating an HRM that does not depend on timings at all, without interfering with the typing technique and key rolls. The idea is that the modifiers are strictly pressed on one half, and the key with the letter on the other half. The example describes the properties in the form of code, but in keymap-editor all the properties have the same names and they are easy to adapt.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;After filling in the properties, click &lt;strong&gt;Okay&lt;/strong&gt;, and we see that our custom &lt;em&gt;Behavior&lt;/em&gt; has been successfully created.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/custom.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Next, go to the Layers tab, and assign the created behavior to the &lt;em&gt;D&lt;/em&gt; key. In the &lt;em&gt;Behavior&lt;/em&gt; assignment window, we need to find and select the created &lt;code&gt;&amp;amp;hrm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/hrm2.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Fill in the parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In &lt;em&gt;Parameters — HOLD&lt;/em&gt; you need to specify the key code of the desired modifier, specify &lt;em&gt;Ctrl&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;In &lt;em&gt;Parameters — TAP&lt;/em&gt; you need to specify the key code of the key sent by tap, select &lt;em&gt;D&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/hrm3.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;An interesting idea might be to assign the HRM modifier &lt;em&gt;Ctrl&lt;/em&gt; to the &lt;em&gt;S&lt;/em&gt; key, because then pressing the very frequently used combinations &lt;em&gt;Ctrl + C&lt;/em&gt; and &lt;em&gt;Ctrl + V&lt;/em&gt; is very convenient with one hand, try it!&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;After filling in the parameters, click &lt;strong&gt;Okay&lt;/strong&gt; and our first &lt;em&gt;Home Row Mod&lt;/em&gt; is assigned!
+Similarly, we assign HRM modifiers to all other keys, and all modifiers are already under the fingertips, you no longer have to move your hand to get them.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/hrm4.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Tip&lt;/em&gt;: you can create several &lt;em&gt;Behaviors&lt;/em&gt; with different Tapping Term for different fingers. For example, for the little finger (which is weaker than the index finger) it is worth setting a larger Tapping Term value so that accidental presses are not registered as HOLD.&lt;/p&gt;
+&lt;h2&gt;Useful custom behaviors&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;useful-custom-behaviors&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#useful-custom-behaviors&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To create keys with the &lt;em&gt;Behaviors&lt;/em&gt; listed below, you need to create a new custom &lt;em&gt;Behavior&lt;/em&gt; with the appropriate type.&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;&amp;amp;td&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;td&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#td&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Tap Dance assigns different &lt;em&gt;Behaviors&lt;/em&gt; depending on how many times in a row the key has been tapped.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/td.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If you assign the Tap Dance from the screenshot to a key, then pressing the key once will type the letter &lt;em&gt;Q&lt;/em&gt;, and pressing it twice will press &lt;em&gt;Esc&lt;/em&gt;.
+Using a combination of this behavior and &lt;code&gt;&amp;amp;mt&lt;/code&gt; it is possible to make a key similar to Tap Dance from Vial.&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;&amp;amp;mod-morph&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mod-morph&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mod-morph&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Mod Morph allows you to add your own custom key press processing if it is pressed with active modifiers &lt;em&gt;Shift&lt;/em&gt;, &lt;em&gt;Ctrl&lt;/em&gt;, &lt;em&gt;Alt&lt;/em&gt; or &lt;em&gt;Gui&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/morph.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If you assign the Mod Morph from the screenshot to a key, then when you press without modifiers, &lt;em&gt;Q&lt;/em&gt; will be typed, and when you hold down the &lt;em&gt;Alt&lt;/em&gt; modifier, &lt;em&gt;Esc&lt;/em&gt; will be typed. Instead of &lt;em&gt;Esc&lt;/em&gt; there can be any &lt;em&gt;Behavior&lt;/em&gt;, for example changing the layer, or a macro!
+This behavior is a more flexible analogue of Key Overrides from Vial.&lt;/p&gt;
+&lt;h2&gt;Combo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;combo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#combo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;em&gt;Combo&lt;/em&gt; allows you to assign a &lt;em&gt;Behavior&lt;/em&gt; to the simultaneous pressing of several keys. For example, you can assign the simultaneous pressing of the &lt;em&gt;C&lt;/em&gt; and &lt;em&gt;V&lt;/em&gt; keys to switch the keyboard layout, or some macro, often this is more convenient than assigning a key in a layer.&lt;/p&gt;
+&lt;p&gt;To create a &lt;em&gt;Combo&lt;/em&gt;, go to the Combos tab and click &lt;strong&gt;Add New Combo&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/combo0.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s consider an example with a &lt;em&gt;Combo&lt;/em&gt; of the &lt;em&gt;C&lt;/em&gt; and &lt;em&gt;V&lt;/em&gt; keys to change the layout language.
+In the opened window, we need to select the positions of the keys, pressing which will lead to the activation of the combo. To do this, simply click on the positions where the &lt;em&gt;C&lt;/em&gt; and &lt;em&gt;V&lt;/em&gt; keys are located.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/combo1.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Fill in the name of the combo (in the screenshot &amp;ldquo;lang&amp;rdquo;), and select the &lt;em&gt;Behavior&lt;/em&gt; when the combo is activated. &lt;code&gt;&amp;amp;kp&lt;/code&gt; pressing &lt;em&gt;Space&lt;/em&gt; with the &lt;em&gt;GUI&lt;/em&gt; modifier held down is suitable for changing the layout language.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/combo2.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Click on the &lt;strong&gt;Create&lt;/strong&gt; button and the combo is ready to use!&lt;/p&gt;
+&lt;p&gt;By clicking on the button with the wrench, we can make additional settings for the &lt;em&gt;Combo&lt;/em&gt;, for example, change the trigger timeout, or specify on which specific layers the &lt;em&gt;Combo&lt;/em&gt; will work (by default, combos work on all layers). You can read more about these settings in the &lt;a href=&#34;https://zmk.dev/docs/config/combos&#34; target=&#34;_blank&#34;&gt;ZMK documentation&lt;/a&gt;.
+&lt;img src=&#34;http://localhost:1313/images/keymap-editor/combo3.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Macros&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;macros&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#macros&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;With the help of &lt;em&gt;Macros&lt;/em&gt; you can save some frequently used sequence of key combinations and call this sequence by pressing just one key, for example, make a &lt;em&gt;Macro&lt;/em&gt; that types various templates, like this:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;at the end, the macro can also move the cursor to the middle of this template, saving a lot of presses!&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s analyze the creation of such a &lt;em&gt;Macro&lt;/em&gt; as an example.
+Go to the Macros tab, and click &lt;strong&gt;Add New Macro&lt;/strong&gt;. In the opened window, enter the name of the &lt;em&gt;Macro&lt;/em&gt;, for example, enter &amp;ldquo;template&amp;rdquo; and click &lt;strong&gt;Create&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro0.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Next, we need to compose the actions that the &lt;em&gt;Macro&lt;/em&gt; will perform. To make the macro type the symbol &lt;strong&gt;`&lt;/strong&gt; three times, we use the &lt;code&gt;&amp;amp;kp&lt;/code&gt; &lt;em&gt;Behavior&lt;/em&gt; three times. When creating a macro, a cell for one &lt;em&gt;Behavior&lt;/em&gt; is immediately added, let&amp;rsquo;s add 2 more by pressing the &lt;strong&gt;Add Key Binding&lt;/strong&gt; button twice, and assign &lt;code&gt;&amp;amp;kp `&lt;/code&gt; in all three cells.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro1.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Next, we need to make a line break twice, again write the symbol &lt;strong&gt;`&lt;/strong&gt; three times and as the last step press the &lt;em&gt;↑&lt;/em&gt; key to move the cursor to the center of the template.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro2.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In total, it turns out 9 presses, as many as 9 presses are reduced to just 1!
+By default, ZMK will press each key for 30 ms, and there will be a pause of 15 ms between each press so that the OS has time to process each press. To make the actions work for sure (in all sorts of slow corporate messengers, remote desktops and jiras), and also to make the actions performed by the &lt;em&gt;Macro&lt;/em&gt; a little more readable, we divide them into groups by adding an additional pause of 10 ms. To do this, click &lt;strong&gt;Add Control Binding&lt;/strong&gt; and move the appeared &lt;code&gt;&amp;amp;macro_press&lt;/code&gt; after the first three presses of &lt;strong&gt;`&lt;/strong&gt;. Now we must not forget to change &lt;code&gt;&amp;amp;macro_press&lt;/code&gt; to &lt;code&gt;&amp;amp;macro_wait_time&lt;/code&gt;. To do this, click on it and select &lt;code&gt;&amp;amp;macro_wait_time&lt;/code&gt;, in the &lt;em&gt;Raw Value&lt;/em&gt; parameter specify 10, this is the number of milliseconds that the macro will wait.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro3.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Such a delay may not be enough when working on remote desktops, and if this happens, you can increase the time of each press and the delay in the macro parameters, they are opened by clicking on the button with the wrench icon.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;It already looks more readable, let&amp;rsquo;s add the same &lt;code&gt;&amp;amp;macro_wait_time&lt;/code&gt; after two presses of &lt;em&gt;Enter&lt;/em&gt; and after the second group of presses of &lt;strong&gt;`&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro4.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Beauty, now it is visually clear what the &lt;em&gt;Macro&lt;/em&gt; does.
+We only have to assign the &lt;em&gt;Macro&lt;/em&gt; to a key or &lt;em&gt;Combo&lt;/em&gt;, and you can use it!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro5-en.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Macro&lt;/em&gt; is a &lt;em&gt;Behavior&lt;/em&gt;, and you need to select it in the Behavior field.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3&gt;Macro execution cycle&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;macro-execution-cycle&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#macro-execution-cycle&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Macros in ZMK are executed in 2 steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Actions when the macro is &lt;strong&gt;pressed&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;Actions when the macro is &lt;strong&gt;released&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Initially, this is not noticeable, because without a specific &lt;em&gt;Control Binding&lt;/em&gt;, all actions are performed immediately when pressed. To learn how to distinguish between these 2 steps, we will need the following &lt;em&gt;Control Bindings&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_press&lt;/code&gt; - for subsequent presses sets the mode in which the specified key will be &lt;strong&gt;pressed&lt;/strong&gt;, but will not be &lt;strong&gt;released&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_release&lt;/code&gt; - for subsequent presses sets the mode in which the specified key will be &lt;strong&gt;released&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_tap&lt;/code&gt; - for subsequent presses sets the mode in which the specified key will be &lt;strong&gt;pressed&lt;/strong&gt;, and after the time specified in &lt;em&gt;tap_time&lt;/em&gt;, will be &lt;strong&gt;released&lt;/strong&gt; (default mode);&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_tap_time&lt;/code&gt; - sets the time between &lt;strong&gt;pressing&lt;/strong&gt; and &lt;strong&gt;releasing&lt;/strong&gt; each key in the macro (30 ms by default);&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_pause_for_release&lt;/code&gt; - at this point, the &lt;em&gt;Macro&lt;/em&gt; will stop its execution until the &lt;em&gt;Macro&lt;/em&gt; key is &lt;strong&gt;released&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By applying the listed &lt;em&gt;Control Bindings&lt;/em&gt;, you can create a macro that, when &lt;strong&gt;pressed&lt;/strong&gt;, switches the layer, presses a certain modifier, then waits for the macro to be &lt;strong&gt;released&lt;/strong&gt;, and after that returns the layer back and releases the modifier. It turns out a key that combines &lt;code&gt;&amp;amp;mo&lt;/code&gt; and &lt;code&gt;&amp;amp;kp&lt;/code&gt;, two in one!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro6.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Parameterized macros&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;parameterized-macros&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#parameterized-macros&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;em&gt;Macros&lt;/em&gt; in ZMK have an interesting feature, they can be parameterized. To use parameters, you need to apply one or more of the listed &lt;em&gt;Control Bindings&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_param_1to1&lt;/code&gt; - to the next &lt;em&gt;Behavior&lt;/em&gt; in the macro, the value from parameter 1 of the &lt;em&gt;Macro&lt;/em&gt; will be passed as parameter 1;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_param_1to2&lt;/code&gt; - to the next &lt;em&gt;Behavior&lt;/em&gt; in the macro, the value from parameter 1 of the &lt;em&gt;Macro&lt;/em&gt; will be passed as parameter 2;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_param_2to1&lt;/code&gt; - to the next &lt;em&gt;Behavior&lt;/em&gt; in the macro, the value from parameter 2 of the &lt;em&gt;Macro&lt;/em&gt; will be passed as parameter 1;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;macro_param_2to2&lt;/code&gt; - to the next &lt;em&gt;Behavior&lt;/em&gt; in the macro, the value from parameter 2 of the &lt;em&gt;Macro&lt;/em&gt; will be passed as parameter 2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s consider an example, implementing a &lt;em&gt;Macro&lt;/em&gt; that, when &lt;strong&gt;pressed&lt;/strong&gt;, activates the layer passed in the parameter, presses the modifier passed in the parameter, waits for the key to be &lt;strong&gt;released&lt;/strong&gt;, and then turns off the passed layer and releases the modifier passed in the parameter.
+Let&amp;rsquo;s call the &lt;em&gt;Macro&lt;/em&gt; &lt;code&gt;&amp;amp;ml&lt;/code&gt; (mod-layer), it will look like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/macro7.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;amp;macro_param_1&lt;strong&gt;to1&lt;/strong&gt;&lt;/code&gt; and &lt;code&gt;&amp;amp;macro_param_2&lt;strong&gt;to1&lt;/strong&gt;&lt;/code&gt; are selected because the used &lt;em&gt;Behaviors&lt;/em&gt; &lt;code&gt;&amp;amp;mo&lt;/code&gt; and &lt;code&gt;&amp;amp;kp&lt;/code&gt; have one input parameter each.&lt;/p&gt;
+&lt;p&gt;It is worth paying attention to how the &lt;em&gt;Macro&lt;/em&gt; is assigned in the layout. In the Behavior list, find the created &lt;em&gt;Macro&lt;/em&gt; &lt;code&gt;&amp;amp;ml&lt;/code&gt;, after selecting it, we need to fill in the parameters:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Layer&lt;/em&gt; - this is the layer that will be passed as a parameter for &lt;code&gt;&amp;amp;mo&lt;/code&gt;, select 2;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Key Code&lt;/em&gt; - this is the key passed to &lt;code&gt;&amp;amp;kp&lt;/code&gt;, it will be pressed simultaneously with &lt;code&gt;&amp;amp;mo&lt;/code&gt;, we planned to use a modifier, so select &lt;em&gt;LShift&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&amp;rsquo;s it, the macro is ready to use! The beauty of such a macro is that it can be used in several places in the layout, specifying any layer to switch to, and any modifier.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;When creating a custom &lt;em&gt;Hold or Tap behavior&lt;/em&gt;, in &lt;code&gt;bindings — HOLD&lt;/code&gt; and &lt;code&gt;TAP&lt;/code&gt; you can specify any &lt;em&gt;Behaviors&lt;/em&gt;, even parameterized macros - this is very flexible, because when you &lt;strong&gt;hold&lt;/strong&gt; the key, any actions will be performed, whatever comes to mind. For example, in the &lt;a href=&#34;https://zmk.dev/docs/keymaps/behaviors/macros#layer-activation--more&#34; target=&#34;_blank&#34;&gt;ZMK documentation&lt;/a&gt; there is such an idea: a parameterized macro in which, when the layer is activated, the color of the RGB backlight also changes to the one specified in the parameter, that is, probably, after K:03 and Imperial move to the ZMK rails, it will be possible to select the LED color for different layers! And you can combine this not only with layers, but with anything, even with modifiers!&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Synchronizing the ergohaven-zmk-config Fork on GitHub</title>
+      <link>http://localhost:1313/en/software/zmk/fork-sync/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/software/zmk/fork-sync/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Keyboard firmwares are constantly being refined and updated, and if the improvements are general in nature and have been made to the main &lt;strong&gt;ZMK&lt;/strong&gt; repository, these updates will be automatically pulled in during the next firmware build, for example after changing the layout. However, the &lt;strong&gt;ergohaven-zmk-config&lt;/strong&gt; repository, which contains keyboard layouts and configuration files, is also periodically updated. Updates may contain, for example, files necessary for building firmware for new devices, or some improvements to already released devices. Unlike updates in &lt;strong&gt;ZMK&lt;/strong&gt;, updates in &lt;strong&gt;ergohaven-zmk-config&lt;/strong&gt; are not applied automatically. To incorporate them into your fork, you need to perform a synchronization procedure. This guide will explain how to perform the synchronization procedure.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The GitHub application is third-party software, and the author may not know some details of its functionality, and some functionality may change over time. If you have any questions or problems, please write to the &lt;a href=&#34;https://t.me/&amp;#43;E-mlq11c97AyZmY6&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ergohaven community on Telegram&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h2&gt;Synchronizing the Fork&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;synchronizing-the-fork&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#synchronizing-the-fork&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;You can find out about the need to synchronize the fork by the appearance of a link with the text &lt;em&gt;&amp;ldquo;commits behind&amp;rdquo;&lt;/em&gt; on the &lt;strong&gt;Code&lt;/strong&gt; tab of the fork. Under normal conditions, a &lt;strong&gt;Sync fork&lt;/strong&gt; button should also appear. If it is not there, go to the &lt;a href=&#34;#%d0%ba%d0%bd%d0%be%d0%bf%d0%ba%d0%b0-sync-fork-%d0%bd%d0%b5-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%b8%d0%bb%d0%b0%d1%81%d1%8c&#34;&gt;Sync Fork Button Not Displayed&lt;/a&gt; section.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/sync-fork.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;To synchronize, click the &lt;strong&gt;Sync fork&lt;/strong&gt; button.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/update-branch.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In the window that appears, click the &lt;strong&gt;Update branch&lt;/strong&gt; button and that&amp;rsquo;s it, the fork is successfully synchronized, all changes from the main repository are already in your fork.&lt;/p&gt;
+&lt;p&gt;If after clicking &lt;strong&gt;Sync fork&lt;/strong&gt; a window with the title &lt;em&gt;&amp;ldquo;This branch has conflicts that must be resolved&amp;rdquo;&lt;/em&gt; is displayed, there are 2 synchronization options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Discard all changes you have made to the fork. &lt;strong&gt;WARNING&lt;/strong&gt;, the layout in your fork will return to the default, so only do this if you are sure that you can easily restore all your changes. To discard changes while synchronizing the fork, click &lt;strong&gt;Discard commits&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Resolve merge conflicts. Resolving conflicts is described in the &lt;a href=&#34;#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f&#34;&gt;Synchronization with Merge Conflicts&lt;/a&gt; section.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/has-conflicts.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Sync Fork Button Not Displayed&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;sync-fork-button-not-displayed&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sync-fork-button-not-displayed&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To start the synchronization procedure, click on the link with the text &lt;em&gt;&amp;ldquo;commits behind&amp;rdquo;&lt;/em&gt; on the &lt;strong&gt;Code&lt;/strong&gt; tab of the fork.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/commits-behind.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;Comparing changes&amp;rdquo; page will open, pay attention to the default values:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;base repository&lt;/em&gt; - by default &lt;em&gt;&amp;quot;{Your GitHub nickname}/ergohaven-zmk-config&amp;quot;&lt;/em&gt; should be selected;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;base&lt;/em&gt; - by default &lt;em&gt;&amp;ldquo;main&amp;rdquo;&lt;/em&gt; should be selected;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;head repository&lt;/em&gt; - by default &lt;em&gt;&amp;ldquo;ergohaven/ergohaven-zmk-config&amp;rdquo;&lt;/em&gt; should be selected;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;compare&lt;/em&gt; - by default &lt;em&gt;&amp;ldquo;main&amp;rdquo;&lt;/em&gt; should be selected;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/comparing-changes.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If any of the values are different, select the value that should be the default.
+Next, click the &lt;strong&gt;Create pull request&lt;/strong&gt; button.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/create-pull-request.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Enter the name of the pull request, if it was not filled in automatically, and click the &lt;strong&gt;Create pull request&lt;/strong&gt; button.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/pr-name.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If the message &lt;em&gt;&amp;ldquo;No conflicts with base branch&amp;rdquo;&lt;/em&gt; is displayed at the bottom of the pull request, click the &lt;strong&gt;Merge pull request&lt;/strong&gt; button and the branch is successfully updated! You can go to the &lt;strong&gt;Actions&lt;/strong&gt; tab, the build of the updated firmware has already started.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/no-conflicts.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If the message &lt;em&gt;&amp;ldquo;This branch has conflicts that must be resolved&amp;rdquo;&lt;/em&gt; is displayed at the bottom of the pull request, close the created pull request by clicking &lt;strong&gt;Close pull request&lt;/strong&gt; at the bottom of the page and go to the &lt;a href=&#34;#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f&#34;&gt;Synchronization with Merge Conflicts&lt;/a&gt; section.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/merge-conflicts.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Synchronization with Merge Conflicts&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;synchronization-with-merge-conflicts&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#synchronization-with-merge-conflicts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;If changes have been made to the main repository in files that you have also changed in your fork, for example &lt;code&gt;.keymap&lt;/code&gt; files, which store keyboard layouts, then merge conflicts may occur when updating the fork. The following describes the steps to resolve them.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;On the &lt;strong&gt;Code&lt;/strong&gt; tab, click the &lt;strong&gt;Branches&lt;/strong&gt; button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/branches.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Click &lt;strong&gt;New branch&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/new-branch.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;In the window that appears, enter the name of the branch, for example &lt;em&gt;&amp;ldquo;sync&amp;rdquo;&lt;/em&gt;, then in the drop-down list select the repository &lt;em&gt;&amp;ldquo;ergohaven/ergohaven-zmk-config&amp;rdquo;&lt;/em&gt;, the &lt;em&gt;&amp;ldquo;main&amp;rdquo;&lt;/em&gt; branch should be selected by default, and click &lt;strong&gt;Create new branch&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/create-new-branch.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Next, in the line of the created branch, click &lt;strong&gt;•••&lt;/strong&gt; and in the opened drop-down list select &lt;strong&gt;New pull request&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/new-pull-request.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Click on &lt;em&gt;base repository&lt;/em&gt; and select the fork &lt;em&gt;&amp;quot;{Your GitHub nickname}/ergohaven-zmk-config&amp;quot;&lt;/em&gt; in the drop-down list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/new-pull-request.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;On the opened &amp;ldquo;Comparing changes&amp;rdquo; page, click the &lt;strong&gt;Create pull request&lt;/strong&gt; button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/create-pull-request-again.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Depending on the number of synchronized commits, the &lt;strong&gt;Resolve conflicts&lt;/strong&gt; button may not be visible immediately, scroll to it and click.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/resolve-conflicts.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;The conflict resolution tool will open, the left side of the page displays a panel with a list of files in which conflicts need to be resolved, and the right side displays the contents of the files with marked conflict locations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/resolve-conflicts.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;Between &lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; sync&lt;/code&gt; (&lt;em&gt;&amp;ldquo;sync&amp;rdquo;&lt;/em&gt; in this example is the name of the created branch) and &lt;code&gt;=======&lt;/code&gt; are the changes from the main repository &lt;em&gt;&amp;ldquo;ergohaven/ergohaven-zmk-config&amp;rdquo;&lt;/em&gt; that caused the conflict. Between &lt;code&gt;=======&lt;/code&gt; and &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; main&lt;/code&gt; are the changes you made to the layout.
+Next, you need to carefully consider each conflict and decide whether you want to make changes from &lt;em&gt;&amp;ldquo;ergohaven/ergohaven-zmk-config&amp;rdquo;&lt;/em&gt; to your layout.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;If you understand that the change from the main repository is &lt;strong&gt;not needed&lt;/strong&gt;, then delete the lines starting with &lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; sync&lt;/code&gt; and ending with &lt;code&gt;=======&lt;/code&gt;, then scroll the file to the line &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; main&lt;/code&gt;, which means the end of this conflict, and also erase this line. The conflict is resolved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;video 
+  autoplay
+  loop
+  muted
+  style=&#34;max-width: 100%&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/video/fork-sync/remove-incoming.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you understand that the change from the main repository is &lt;strong&gt;needed&lt;/strong&gt;, then delete the line &lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; sync&lt;/code&gt;, the line &lt;code&gt;=======&lt;/code&gt; and the line &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; main&lt;/code&gt;, thereby adding the change from the main repository to the layout. The conflict is resolved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;video 
+  autoplay
+  loop
+  muted
+  style=&#34;max-width: 100%&#34;&gt;
+  &lt;source src=&#34;http://localhost:1313/video/fork-sync/accept-incoming.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you &lt;strong&gt;do not understand&lt;/strong&gt;, or are &lt;strong&gt;not sure&lt;/strong&gt; what a change from the main repository does, then seek help with resolving the conflict in the &lt;a href=&#34;https://t.me/&amp;#43;E-mlq11c97AyZmY6&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ergohaven Community on Telegram&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;After resolving all conflicts in the file, the &lt;strong&gt;Mark as resolved&lt;/strong&gt; button will become available, click it to complete the resolution of conflicts in the file.&lt;/li&gt;
+&lt;li&gt;After resolving conflicts in all files, the &lt;strong&gt;Commit merge&lt;/strong&gt; button will be displayed, click it to complete.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/fork-sync/commit-merge.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;12&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Scroll the page to the &lt;strong&gt;Merge pull request&lt;/strong&gt; button, click it, and then click &lt;strong&gt;Confirm merge&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The last step to make sure that all conflicts are resolved is to go to the &lt;strong&gt;Actions&lt;/strong&gt; tab and wait for the firmware build to complete. If the conflicts are resolved correctly, the firmware build will complete successfully.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>RuEn Layout for Wireless Keyboards</title>
+      <link>http://localhost:1313/en/software/zmk/zmk-ruen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/software/zmk/zmk-ruen/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If you&amp;rsquo;ve ever wondered why common symbols like periods and commas are located on different keys in Russian and English, or why you can&amp;rsquo;t type a curly brace in Russian, the &lt;strong&gt;RuEn&lt;/strong&gt; approach solves this misunderstanding by unifying the position of symbols in the Russian and English layouts.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;You can arrange symbols the same way in any other language as well; the approach is not limited to Russian and English.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h2&gt;Main Idea&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;main-idea&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#main-idea&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In general, printing a symbol works like this: the keyboard sends information that a key in a specific position has been pressed, and the OS receives this press and prints the necessary symbol depending on the current layout in the OS. Let&amp;rsquo;s consider some examples.
+&lt;strong&gt;The &amp;ldquo;KC_Q&amp;rdquo; key is pressed on the keyboard&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if the standard English layout is selected in the OS, the letter &amp;ldquo;Q&amp;rdquo; will be printed;&lt;/li&gt;
+&lt;li&gt;if the standard Russian layout is selected in the OS, the letter &amp;ldquo;Й&amp;rdquo; will be printed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The presence of different letters in different layouts is mostly a familiar thing, although there are also phonetic layouts in which, for example, the letter &amp;ldquo;О&amp;rdquo; is placed in the same place in Russian and English, this reduces the cognitive load of memorizing different layouts, but words in Russian and English are constructed differently, and a phonetic layout will be less convenient for typing.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;The &amp;ldquo;SLASH&amp;rdquo; key is pressed on the keyboard&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if the standard English layout is selected in the OS, a slash &amp;ldquo;/&amp;rdquo; will be printed;&lt;/li&gt;
+&lt;li&gt;if the standard Russian layout is selected in the OS, a period &amp;ldquo;.&amp;rdquo; will be printed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;The &amp;ldquo;DOT&amp;rdquo; key is pressed on the keyboard&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if the standard English layout is selected in the OS, a period &amp;ldquo;.&amp;rdquo; will be printed;&lt;/li&gt;
+&lt;li&gt;if the standard Russian layout is selected in the OS, the letter &amp;ldquo;Ю&amp;rdquo; will be printed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;The &amp;ldquo;LEFT_BRACE&amp;rdquo; key is pressed on the keyboard&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if the standard English layout is selected in the OS, the symbol &amp;ldquo;{&amp;rdquo; will be printed;&lt;/li&gt;
+&lt;li&gt;if the standard Russian layout is selected in the OS, the letter &amp;ldquo;Х&amp;rdquo; will be printed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The problem is identified - in the standard OS layouts, the period, and many other symbols, are printed by completely different keys, and some symbols, such as &amp;ldquo;{&amp;rdquo; do not exist in the Russian layout at all. Let&amp;rsquo;s consider possible solutions to the problem of unifying the location of symbols. There are two ways to solve this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;on the OS side, by installing a layout on the computer in which the symbols are on the same key, for example &lt;a href=&#34;https://github.com/braindefender/universal-layout&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/braindefender/universal-layout&lt;/a&gt;, but here it is worth considering that the layout must be installed on each computer, as well as on remote desktops to which you connect;&lt;/li&gt;
+&lt;li&gt;on the keyboard side, by configuring the layout using the &lt;strong&gt;RuEn&lt;/strong&gt; approach, there is also a disadvantage here in that these settings are located specifically in the keyboard and on the built-in keyboard of the laptop, the symbols in different languages will be located on different keys.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The article below describes how to solve the problem on the keyboard side using the &lt;strong&gt;RuEn&lt;/strong&gt; approach.&lt;/p&gt;
+&lt;h2&gt;Getting Started&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;getting-started&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#getting-started&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;For &lt;em&gt;Ergohaven&lt;/em&gt; keyboards, layouts have been prepared that contain the macros necessary for configuration; these layouts have the &lt;code&gt;_ruen&lt;/code&gt; postfix in their name.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/layout-name.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You can take the &lt;code&gt;ruen&lt;/code&gt; layout as a basis, or if you already have a lot of developments in your layout, just create the same macros in it and create separate layers for each language.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;When transferring macros to your layout, also pay attention to the parameters of the macros displayed when you click on the button with the wrench icon, it is important not to forget to transfer the &lt;code&gt;Wait (ms)&lt;/code&gt; and &lt;code&gt;Tap (ms)&lt;/code&gt; settings.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;Macros in the &lt;code&gt;ruen&lt;/code&gt; layout are oriented towards using combinations for unconditional language switching, &lt;code&gt;Ctrl + Shift + 1&lt;/code&gt; to enable English, and &lt;code&gt;Ctrl + Shift + 2&lt;/code&gt; to enable Russian (similar to RuEn M1M2 mode from Vial). This approach requires additional configuration on the OS side, but it greatly simplifies the synchronization of the language in the keyboard with the language in the OS. If this language switching approach does not suit you for some reason, the &lt;code&gt;ruen&lt;/code&gt; approach gets along well with the standard key combination &lt;code&gt;GUI + Space&lt;/code&gt;, described in more detail in the &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d1%8f%d0%b7%d1%8b%d0%ba%d0%b0-%d0%bf%d0%be-%d0%bc%d0%be%d0%b4%d0%b5%d0%bb%d0%b8-%d1%82%d0%be%d0%b3%d0%b3%d0%bb&#34;&gt;Toggle Language Switching&lt;/a&gt; section (similar to RuEn M0 and RuEn Default modes from Vial).&lt;/p&gt;
+&lt;h2&gt;How RuEn Works&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-ruen-works&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-ruen-works&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Let&amp;rsquo;s divide the symbols into 2 groups and analyze each one separately.&lt;/p&gt;
+&lt;h3&gt;Symbols that appear in both languages&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;symbols-that-appear-in-both-languages&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#symbols-that-appear-in-both-languages&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The first group is symbols that appear in both languages, but are located on different keys, such as a period or a question mark.
+To combine the location of such symbols, we need to somehow let the keyboard know what language is currently in the OS, so that the keyboard presses the key corresponding to the language. For example, if we want to unify the position of the &lt;strong&gt;period&lt;/strong&gt;, then in Russian the keyboard needs to send the &lt;code&gt;SLASH&lt;/code&gt; key press to the OS, and in English &lt;code&gt;DOT&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The layer functionality is perfect for solving this problem, we can configure it so that the layer in the keyboard switches at the same time as the language in the OS, and then it will perform the function of a variable, depending on this variable, the code of the desired key will be sent.
+As the variable described earlier, the &lt;code&gt;ruen&lt;/code&gt; layout has 2 separate layers &lt;strong&gt;en&lt;/strong&gt; and &lt;strong&gt;ru&lt;/strong&gt;. To place the &lt;strong&gt;period&lt;/strong&gt; on the same key, we do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On the &lt;strong&gt;en&lt;/strong&gt; layer, assign the &lt;code&gt;&amp;amp;kp DOT&lt;/code&gt; behavior to the desired key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/en-dot.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On the &lt;strong&gt;ru&lt;/strong&gt; layer, assign the &lt;code&gt;&amp;amp;kp SLASH&lt;/code&gt; behavior to the same position&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/ru-dot.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To switch the language, you only need to use the &lt;code&gt;&amp;amp;layer_en&lt;/code&gt; and &lt;code&gt;&amp;amp;layer_ru&lt;/code&gt; macros. The &lt;code&gt;&amp;amp;layer_ru&lt;/code&gt; macro will send the key combination &lt;code&gt;Ctrl + Shift + 2&lt;/code&gt; to the OS, thus the OS will switch to the Russian language and at the same time the keyboard will switch to the &lt;strong&gt;ru&lt;/strong&gt; layer, thus the OS and the keyboard will be synchronously in the Russian layout, similarly the &lt;code&gt;&amp;amp;layer_en&lt;/code&gt; macro will send the combination &lt;code&gt;Ctrl + Shift + 1&lt;/code&gt; to the OS to enable the English layout, and switch the keyboard to the &lt;strong&gt;en&lt;/strong&gt; layer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/layer-macro.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;In the &lt;code&gt;ruen&lt;/code&gt; layout, these macros are assigned to the &amp;ldquo;E&amp;rdquo; + &amp;ldquo;R&amp;rdquo; key combo by default. Being on the &lt;strong&gt;ru&lt;/strong&gt; layer, pressing the &amp;ldquo;E&amp;rdquo; + &amp;ldquo;R&amp;rdquo; combo will switch the language in the OS to English and change the layer to &lt;strong&gt;en&lt;/strong&gt;, and being on the &lt;strong&gt;en&lt;/strong&gt; layer, pressing the combo will do the opposite, the language in the OS will switch to Russian, the layer will change to &lt;strong&gt;ru&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/default-combo.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The &lt;code&gt;&amp;amp;layer_en&lt;/code&gt; and &lt;code&gt;&amp;amp;layer_ru&lt;/code&gt; macros can be assigned to any place in the layout, for example to two different keys or two different combos &amp;ldquo;E&amp;rdquo; + &amp;ldquo;R&amp;rdquo; and &amp;ldquo;U&amp;rdquo; + &amp;ldquo;I&amp;rdquo;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;The goal has been achieved, now the &lt;strong&gt;period&lt;/strong&gt; is printed in both languages by pressing the same key.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/ruen-dot.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Symbols that appear in only one of the languages&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;symbols-that-appear-in-only-one-of-the-languages&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#symbols-that-appear-in-only-one-of-the-languages&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The second group is symbols that are only in the layout of one of the languages, for example the symbol &amp;ldquo;&amp;amp;&amp;rdquo; is only in the English layout.
+To print a symbol from this group while in the Russian layout, you need to do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Switch the language in the OS to English by pressing &lt;code&gt;Ctrl + Shift + 1&lt;/code&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press the key combination to print the symbol, in the case of the symbol &lt;code&gt;&amp;amp;&lt;/code&gt;, this key combination is &lt;code&gt;Shift + 7&lt;/code&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Switch the language in the OS back to Russian by pressing &lt;code&gt;Ctrl + Shift + 2&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All these actions are contained in the parameterized macro &lt;code&gt;&amp;amp;en&lt;/code&gt; from the &lt;code&gt;ruen&lt;/code&gt; layout. We simply assign the macro to a key on the &lt;strong&gt;ru&lt;/strong&gt; layer, and specify the keycode &lt;code&gt;AMPS&lt;/code&gt;, or the key combination &lt;code&gt;Shift + 7&lt;/code&gt; as a parameter.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;In some situations, it may be useful to hold down the key with the symbol, and the &lt;code&gt;&amp;amp;en&lt;/code&gt; macro from the &lt;code&gt;ruen&lt;/code&gt; layout will correctly handle this press, holding the symbol in the English layout.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/en-macro.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;But what if English is currently enabled, because if we use this macro on it, the symbol &amp;ldquo;&amp;amp;&amp;rdquo; will be printed and the last step will switch the language to Russian? The layer functionality in the keyboard helps us again with the solution to this problem. Being in English, in order to print this symbol, there is no need to switch to another language, and we can simply assign the standard behavior &lt;code&gt;&amp;amp;kp AMPS&lt;/code&gt; to the desired key.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;There are not very many symbols that are only in the Russian layout, and there is no macro for them in the &lt;code&gt;ruen&lt;/code&gt; layout, but if you suddenly wanted to print the symbol &amp;ldquo;№&amp;rdquo; in any layout, you can create a macro &lt;code&gt;&amp;amp;ru&lt;/code&gt; by copying the macro &lt;code&gt;&amp;amp;en&lt;/code&gt; and swapping the key combinations for switching the language in the OS.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3&gt;Symbol Layer&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;symbol-layer&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#symbol-layer&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;On the basic layers &lt;strong&gt;ru&lt;/strong&gt; and &lt;strong&gt;en&lt;/strong&gt;, there are certainly not enough buttons for all the necessary symbols, and in general it may be more convenient to place the symbols on a separate &lt;strong&gt;symbol&lt;/strong&gt; layer, to apply the &lt;code&gt;ruen&lt;/code&gt; approach to create a separate symbol layer, you will need to create 2 separate layers, one for printing symbols while in Russian, and the second for printing symbols while in English. In the &lt;code&gt;ruen&lt;/code&gt; layout, these are the &lt;strong&gt;sym_en&lt;/strong&gt; and &lt;strong&gt;sym_ru&lt;/strong&gt; layers by default.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/sym-layers.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;To maintain synchronization of languages in the OS and keyboard, the transition to &lt;strong&gt;sym_ru&lt;/strong&gt; must occur from the &lt;strong&gt;ru&lt;/strong&gt; layer, and to &lt;strong&gt;sym_en&lt;/strong&gt; from the &lt;strong&gt;en&lt;/strong&gt; layer, thus the keyboard will understand which language is currently active, and will send actions corresponding to the current language to print the symbol.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/mo-sym.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The &lt;code&gt;&amp;amp;sl&lt;/code&gt; behavior is also great for switching to language symbol layers, activating the symbol layer with one press, and then returning the user to the previous active layer, if necessary, such a key can be held down and it will work like a regular &lt;code&gt;&amp;amp;mo&lt;/code&gt;.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3&gt;Displaying Cyrillic in keymap-editor&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;displaying-cyrillic-in-keymap-editor&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#displaying-cyrillic-in-keymap-editor&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;For the convenience of modifying the layout in the firmware, the &lt;code&gt;ruen&lt;/code&gt; keycodes aliases, such as &lt;code&gt;RU_COMMA&lt;/code&gt; or &lt;code&gt;RU_CYRILLIC_TSE&lt;/code&gt;, have been added, displaying the symbols of the Russian layout on the layout, while pressing &lt;code&gt;RU_COMMA&lt;/code&gt; in the OS will transmit the scan code &lt;code&gt;SC_SLASH&lt;/code&gt; since in the standard QWERTY layout the period is located on the slash key.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/ru-layer.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;These keycodes facilitate visual understanding of the layout, while &lt;code&gt;RU_COMMA&lt;/code&gt; is simply an alias for the keycode &lt;code&gt;SLASH&lt;/code&gt;, and if the English layout is enabled in the OS when &lt;code&gt;RU_COMMA&lt;/code&gt; is pressed, a slash will be printed.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;It is very convenient to configure layouts other than QWERTY with these keycodes-aliases.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/ru-dot.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Toggle Language Switching&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;toggle-language-switching&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#toggle-language-switching&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Full &lt;strong&gt;RuEn&lt;/strong&gt; operation can also be achieved using standard key combinations for switching the language in the OS, such as &lt;code&gt;GUI + Space&lt;/code&gt;, &lt;code&gt;Ctrl + Space&lt;/code&gt;. To achieve this, when you press the language switching key combination, we must also switch the layer in the keyboard.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s consider how to implement this using the example of the &lt;code&gt;GUI + Space&lt;/code&gt; combination.
+The first step is to create a macro &lt;code&gt;&amp;amp;lg_tog&lt;/code&gt; consisting of two actions - pressing &lt;code&gt;GUI + Space&lt;/code&gt; and &lt;code&gt;&amp;amp;tog 1&lt;/code&gt;. &lt;code&gt;&amp;amp;tog 1&lt;/code&gt; will enable the &lt;strong&gt;ru&lt;/strong&gt; layer if we are on the &lt;strong&gt;en&lt;/strong&gt; layer, and vice versa, will enable &lt;strong&gt;en&lt;/strong&gt; if &lt;strong&gt;ru&lt;/strong&gt; is currently active. With this macro, we simultaneously toggle both the language in the OS and the layer in the keyboard.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/lg-tog.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Next, in order to get out of situations when the &lt;strong&gt;ru&lt;/strong&gt; layer is enabled on the keyboard, and English is in the OS, we need a way to synchronize the language states. To do this, you can assign the &lt;code&gt;&amp;amp;tog 1&lt;/code&gt; behavior to one of the keys, and when a desynchronization occurs - just press this key and the states will be synchronized again.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The toggle model approach is not preferred precisely because of the need to separately synchronize the OS language states with the keyboard. Having 2 separate key combinations for languages, synchronization occurs regularly, when &lt;code&gt;&amp;amp;layer_en&lt;/code&gt; or &lt;code&gt;&amp;amp;layer_ru&lt;/code&gt; is pressed.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;The next step is to make the macro &lt;code&gt;&amp;amp;lg_tog&lt;/code&gt; created earlier triggered when the &lt;code&gt;GUI + Space&lt;/code&gt; combination is pressed on the keyboard, for this we will need the &lt;strong&gt;mod-morph&lt;/strong&gt; behavior from ZMK.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a new &lt;a href=&#34;http://localhost:1313/content/ru/pages/docs/keymap-editor.md#custom-behaviors&#34; target=&#34;_blank&#34;&gt;custom behavior&lt;/a&gt; of the &lt;strong&gt;Mod Morph Behavior&lt;/strong&gt; type;&lt;/li&gt;
+&lt;li&gt;Name it &amp;ldquo;lg_space&amp;rdquo;;&lt;/li&gt;
+&lt;li&gt;When &lt;code&gt;&amp;amp;lg_space&lt;/code&gt; is pressed without the &amp;ldquo;LGUI&amp;rdquo; modifier, the &lt;code&gt;NORMAL&lt;/code&gt; action will be triggered and &lt;code&gt;&amp;amp;kp SPACE&lt;/code&gt; will be pressed;&lt;/li&gt;
+&lt;li&gt;If the &amp;ldquo;LGUI&amp;rdquo; modifier was held down when &lt;code&gt;&amp;amp;lg_space&lt;/code&gt; was pressed, then &lt;code&gt;MODIFIED&lt;/code&gt; will be triggered and the macro &lt;code&gt;&amp;amp;lg_tog&lt;/code&gt; will be called.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/lg-space.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We also need to change the key combination for changing the language in the &lt;code&gt;&amp;amp;to_ru&lt;/code&gt; and &lt;code&gt;&amp;amp;to_en&lt;/code&gt; macros, since these macros are used in the &lt;code&gt;&amp;amp;en&lt;/code&gt; macro, which is used for printing symbols.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/to-ru-en-space.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The last step is to assign the created &lt;strong&gt;mod-morph&lt;/strong&gt; instead of the regular space on the desired layers, and that&amp;rsquo;s it, the language states in the OS and keyboard will be switched synchronously.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Android devices also use the &lt;code&gt;GUI + Space&lt;/code&gt; key combination to switch the language, if you choose this switching method, then &lt;strong&gt;ruen&lt;/strong&gt; will also work on your phone and tablet.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3&gt;Switching via GUI + Space without the need for synchronization&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;switching-via-gui--space-without-the-need-for-synchronization&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#switching-via-gui--space-without-the-need-for-synchronization&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;It is possible to get rid of the need for manual language synchronization when using switching by pressing &lt;code&gt;GUI + Space&lt;/code&gt; using a hybrid of switching by the toggle model and switching by separate key combinations, as is done with the combo in the &lt;code&gt;ruen&lt;/code&gt; layout by default, you will still need to configure separate combinations in the OS, but you can press the usual key combination to switch the language.&lt;/p&gt;
+&lt;p&gt;We configure the key combinations &lt;code&gt;Ctrl + Shift + 1&lt;/code&gt; in the OS to enable English, and &lt;code&gt;Ctrl + Shift + 2&lt;/code&gt; to enable Russian and create two &lt;strong&gt;mod-morph&lt;/strong&gt; behaviors:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;en_space&lt;/code&gt;: without modifiers, pressing &lt;code&gt;&amp;amp;kp Space&lt;/code&gt;, with the &lt;code&gt;LGUI&lt;/code&gt; modifier, calling the macro &lt;code&gt;&amp;amp;layer_en&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;ru_space&lt;/code&gt;: without modifiers, pressing &lt;code&gt;&amp;amp;kp Space&lt;/code&gt;, with the &lt;code&gt;LGUI&lt;/code&gt; modifier, calling the macro &lt;code&gt;&amp;amp;layer_ru&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/mod-morph.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Next, we assign the &lt;code&gt;&amp;amp;ru_space&lt;/code&gt; behavior instead of &lt;code&gt;&amp;amp;kp Space&lt;/code&gt; on the &lt;strong&gt;en&lt;/strong&gt; layer, and the &lt;code&gt;&amp;amp;en_space&lt;/code&gt; behavior instead of &lt;code&gt;&amp;amp;kp Space&lt;/code&gt; on the &lt;strong&gt;ru&lt;/strong&gt; layer. Now, when you press &lt;code&gt;GUI + Space&lt;/code&gt;, the language will be switched in the OS and the language in the keyboard will be synchronized at the same time.&lt;/p&gt;
+&lt;h2&gt;Combo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;combo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#combo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Configuring the layers on which this combo is active will help us implement printing symbols from any language in the combo.
+Let&amp;rsquo;s create a combo that prints the symbol &amp;ldquo;#&amp;rdquo; when the &amp;ldquo;N&amp;rdquo; + &amp;ldquo;M&amp;rdquo; keys are pressed.
+To implement the &lt;code&gt;ruen&lt;/code&gt; behavior in the case of the symbol &amp;ldquo;#&amp;rdquo;, we will need to create 2 separate combos: one will describe the actions necessary to print the symbol if the Russian language is currently active, the second combo will describe the actions in the case if the English language is currently active.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Combo for the Russian language&lt;/strong&gt;. To print the symbol &amp;ldquo;#&amp;rdquo; in Russian, we will need the macro &lt;code&gt;&amp;amp;en&lt;/code&gt; since &amp;ldquo;#&amp;rdquo; is not in the Russian layout, we select the macro and pass the keycode &lt;code&gt;HASH&lt;/code&gt; in the parameter. To set the layers on which the combo is active, you need to click the button with the wrench icon, click it and select the &lt;strong&gt;ru&lt;/strong&gt; and &lt;strong&gt;sym_ru&lt;/strong&gt; layers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/combo-ru-hash.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Combo for the English language&lt;/strong&gt;. The symbol &amp;ldquo;#&amp;rdquo; is in the English layout, we assign the regular &lt;code&gt;&amp;amp;kp HASH&lt;/code&gt; as the action for the combo. We also configure the combo to be active only on the &lt;strong&gt;en&lt;/strong&gt; and &lt;strong&gt;sym_en&lt;/strong&gt; layers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/combo-en-hash.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Macros&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;macros&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#macros&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Macros also go well with the &lt;code&gt;ruen&lt;/code&gt; approach, allowing you to print symbolic constructions or text templates regardless of the current language.
+Let&amp;rsquo;s consider the example of a macro that will print two curly braces {}, and press the left arrow to move the cursor between the braces.
+To print curly braces regardless of the language, we will need to create two separate macros for each language.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/braces-macro.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We will assign the macro call to the &amp;ldquo;J&amp;rdquo; + &amp;ldquo;L&amp;rdquo; key combo, this arrangement will be easy to remember, because the curly braces on the symbol layer are in the same places.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/macro-placement.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;If using a combo is inconvenient, you can simply assign these macros to the appropriate keys on the corresponding language layers.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;We create a combo, configure the layers on which this combo is active, and that&amp;rsquo;s it, curly braces are available in any language on the base layer!&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;It may also be convenient to use similar combos for square brackets, parentheses (parentheses are in the same places in both languages and do not require the creation of 2 macros) and double quotes.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/combo-braces.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Caps Word in Russian Layout&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caps-word-in-russian-layout&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#caps-word-in-russian-layout&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;ZMK has a built-in Caps Word behavior, at the moment it works great in English, but, unfortunately, there are problems with Russian letters, because the letter &amp;ldquo;Б&amp;rdquo; is located on the &lt;code&gt;DOT&lt;/code&gt; key, and although we can configure Caps Word not to be interrupted after pressing this letter, it will not be possible to print a capital &amp;ldquo;Б&amp;rdquo; with the regular Caps Word. However, it is possible to simulate this function using layers.&lt;/p&gt;
+&lt;p&gt;To recreate the Caps Word behavior, you will need to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Duplicate the &lt;strong&gt;ru&lt;/strong&gt; layer, it is most convenient to do this in &lt;strong&gt;keymap-editor&lt;/strong&gt;, by clicking &lt;strong&gt;•••&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Duplicate layer&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/duplicate-layer.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Add the &lt;code&gt;LShift&lt;/code&gt; modifier to all keys that print letters. Thus, when you get to this layer, all printed letters will be capitalized.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/cw-lshift.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;In the example, we will consider activating the Caps Word mode by pressing the &amp;ldquo;C&amp;rdquo; + &amp;ldquo;V&amp;rdquo; key combo. For the &lt;strong&gt;en&lt;/strong&gt; layer, we will create a combo with the standard &lt;code&gt;&amp;amp;caps_word&lt;/code&gt; behavior, the combo should only be activated on the &lt;strong&gt;en&lt;/strong&gt; layer. For the &lt;strong&gt;ru&lt;/strong&gt; layer, we will create a combo with the &lt;code&gt;&amp;amp;tog 2&lt;/code&gt; behavior (2 is the number of the &lt;strong&gt;cw_ru&lt;/strong&gt; layer), on the &amp;ldquo;C&amp;rdquo; + &amp;ldquo;V&amp;rdquo; keys, we will limit this combo to only trigger on the &lt;strong&gt;ru&lt;/strong&gt; and &lt;strong&gt;cw_ru&lt;/strong&gt; layers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/cw-combo.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;To recreate the activation of Caps Word by pressing &lt;code&gt;LShift&lt;/code&gt; + &lt;code&gt;RShift&lt;/code&gt;, as in wired keyboards on QMK, you can use the &lt;strong&gt;mod-morph&lt;/strong&gt; behavior.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Next, we will make the &lt;strong&gt;cw_ru&lt;/strong&gt; layer turn off after pressing the spacebar, for this we will create a parameterized macro &lt;code&gt;&amp;amp;cw_off&lt;/code&gt;. The first action of the macro will return the keyboard to the &lt;strong&gt;ru&lt;/strong&gt; layer by pressing &lt;code&gt;&amp;amp;to 1&lt;/code&gt;, the second action will press the symbol passed in the parameter.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-ruen/cw-off.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We assign the created macro &lt;code&gt;&amp;amp;cw_off&lt;/code&gt; to the &lt;strong&gt;cw_ru&lt;/strong&gt; layer in place of &lt;code&gt;&amp;amp;kp SPACE&lt;/code&gt;, specifying a space in the parameter, and that&amp;rsquo;s it, we have recreated the Caps Word behavior for the Russian language.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Similarly, you can recreate the &lt;code&gt;RuEn word&lt;/code&gt; feature from the &lt;strong&gt;RuEn&lt;/strong&gt; implementation in QMK, we just create a separate layer for this feature, select a key to switch to this layer, and also a key that will turn off this layer. You can also implement, for example, &lt;code&gt;Num Word&lt;/code&gt; to enter several digits and switch back to the letter layer, it may be useful if you often enter IP addresses, because you can configure the &lt;code&gt;Num Word&lt;/code&gt; layer not to turn off when you press periods.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

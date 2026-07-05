@@ -8,31 +8,45 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>Софт – ergohaven docs</title>
-  <meta name="description" content=" Прошивка QMK Прошивка ZMK " /><link rel="canonical" href="http://localhost:1313/software/" itemprop="url" />
+<title>Первые шаги с клавиатурой на ZMK – ergohaven docs</title>
+  <meta name="description" content="В статье содержится руководство, которое поможет сделать первые шаги в освоении клавиатуры на ZMK. Прочитав статью пользователь научится: управлять питанием клавиатуры, подключать клавиатуру к нескольким устройствам и обновлять прошивку.
+Подключение клавиатуры Если при подключении клавиатуры к вашему устройству возникли какие-то неполадки, попробуйте перезагрузить Bluetooth на вашем устройстве и пройти все описанные ниже шаги заново.
+Шаг 1. Для начала включаем её, переключив физический тумблер в положение “On”." /><link rel="canonical" href="http://localhost:1313/software/zmk/zmk-keyboards/" itemprop="url" />
 
-<meta property="og:title" content="Софт">
+<meta property="og:title" content="Первые шаги с клавиатурой на ZMK">
 <meta
   property="og:description"
   content="
     
-      
+      В статье содержится руководство, которое поможет сделать первые шаги в освоении клавиатуры на ZMK. Прочитав статью пользователь научится: управлять питанием клавиатуры, подключать клавиатуру к нескольким устройствам и обновлять прошивку.
+Подключение клавиатуры
+    
+  Если при подключении клавиатуры к вашему устройству возникли какие-то неполадки, попробуйте перезагрузить Bluetooth на вашем устройстве и пройти все описанные ниже шаги заново.
+
+
+Шаг 1. Для начала включаем её, переключив физический тумблер в положение &ldquo;On&rdquo;.
     
   ">
 <meta
   property="og:type"
   content="
-    website
+    article
   ">
-<meta property="og:url" content="http://localhost:1313/software/">
+<meta property="og:url" content="http://localhost:1313/software/zmk/zmk-keyboards/"><meta property="article:section" content="software">
 
 
-	<meta itemprop="name" content="Софт">
-	<meta itemprop="description" content="Прошивка QMK Прошивка ZMK">
-	<meta itemprop="wordCount" content="4">
+
+
+	<meta itemprop="name" content="Первые шаги с клавиатурой на ZMK">
+	<meta itemprop="description" content="В статье содержится руководство, которое поможет сделать первые шаги в освоении клавиатуры на ZMK. Прочитав статью пользователь научится: управлять питанием клавиатуры, подключать клавиатуру к нескольким устройствам и обновлять прошивку.
+Подключение клавиатуры Если при подключении клавиатуры к вашему устройству возникли какие-то неполадки, попробуйте перезагрузить Bluetooth на вашем устройстве и пройти все описанные ниже шаги заново.
+Шаг 1. Для начала включаем её, переключив физический тумблер в положение “On”.">
+	<meta itemprop="wordCount" content="737">
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Софт">
-	<meta name="twitter:description" content="Прошивка QMK Прошивка ZMK">
+	<meta name="twitter:title" content="Первые шаги с клавиатурой на ZMK">
+	<meta name="twitter:description" content="В статье содержится руководство, которое поможет сделать первые шаги в освоении клавиатуры на ZMK. Прочитав статью пользователь научится: управлять питанием клавиатуры, подключать клавиатуру к нескольким устройствам и обновлять прошивку.
+Подключение клавиатуры Если при подключении клавиатуры к вашему устройству возникли какие-то неполадки, попробуйте перезагрузить Bluetooth на вашем устройстве и пройти все описанные ниже шаги заново.
+Шаг 1. Для начала включаем её, переключив физический тумблер в положение “On”.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -127,7 +141,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/software/"
+            href="/software/zmk/zmk-keyboards/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Русский<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
@@ -136,7 +150,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/en/software/"
+            href="/en/software/zmk/zmk-keyboards/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >English</a>
@@ -318,7 +332,7 @@
               
             </li></ul>
       </div></li>
-            <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+            <li class="open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:ltr:pr-8 hx:rtl:pl-8
       hx:hextra-focus-visible-inset
@@ -328,13 +342,13 @@
     >
       <span class="hx:min-w-0 [word-break:break-word]">Прошивка ZMK</span>
     </a>
-      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="Переключить раздел" aria-expanded="false"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
+      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="Переключить раздел" aria-expanded="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
   </div><div class="hextra-sidebar-children hx:ltr:pr-0 hx:rtl:pl-0 hx:overflow-hidden">
-        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
       hx:hextra-focus-visible-inset
-        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+        hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
       href="/software/zmk/zmk-keyboards/"
       
     >
@@ -407,7 +421,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/software/"
+            href="/software/zmk/zmk-keyboards/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Русский<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
@@ -416,7 +430,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/en/software/"
+            href="/en/software/zmk/zmk-keyboards/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >English</a>
@@ -487,32 +501,150 @@
 </div>
 </div></aside>
     
-<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Содержание"></nav>
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Содержание">
+    <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">На этой странице</p><ul>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b">Подключение клавиатуры
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba-%d0%bd%d0%b5%d1%81%d0%ba%d0%be%d0%bb%d1%8c%d0%ba%d0%b8%d0%bc-%d1%83%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%81%d1%82%d0%b2%d0%b0%d0%bc">Подключение к нескольким устройствам
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d0%b7%d0%b0%d1%80%d1%8f%d0%b4%d0%ba%d0%b0-%d0%b1%d0%b0%d1%82%d0%b0%d1%80%d0%b5%d0%b8">Зарядка батареи
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d1%81%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%b8%d0%b5-%d0%b1%d0%b0%d1%82%d0%b0%d1%80%d0%b5%d0%b8">Состояние батареи
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d0%b2%d1%8b%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b">Выключение клавиатуры
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4-%d0%b2-%d1%81%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%b8%d0%b5-%d1%81%d0%bd%d0%b0">Переход в состояние сна
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d0%be-%d0%bf%d1%80%d0%be%d0%b2%d0%be%d0%b4%d1%83">Подключение по проводу
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b0-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b">Прошивка клавиатуры
+        </a>
+      </li></ul>
+      <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400"><a class="hx:inline-block hx:rounded-sm hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50 hx:hextra-focus-visible-inset" href="https://github.com/ergohaven/docs/edit/main/content/software/zmk/zmk-keyboards.md" target="_blank" rel="noreferrer">Отредактировать страницу на GitHub →</a>
+        <button id="backToTop" tabindex="-1" onClick="scrollUp();" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+          <span>Прокрутить к началу</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
 
     <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
       <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
-        
-        <div class="content">
-          <h1>Софт</h1>
-          <div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 1;">
-  <a
-    class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="qmk"
-      ><div>
-      <span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">Прошивка QMK
-      </span></div></a>
-  <a
-    class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="zmk"
-      ><div>
-      <span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">Прошивка ZMK
-      </span></div></a>
-</div>
+        <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current">
+        <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
+          <a href="/software/" class="hx:inline-block hx:rounded-sm hx:hextra-focus-visible-inset">Софт</a>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
+          <a href="/software/zmk/" class="hx:inline-block hx:rounded-sm hx:hextra-focus-visible-inset">Прошивка ZMK</a>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">Первые шаги с клавиатурой на ZMK</div>
+  </div>
 
+        <div class="content">
+          
+          <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:sm:justify-between hx:gap-4 hx:mb-4">
+            <h1 class="hx:mb-0">Первые шаги с клавиатурой на ZMK</h1>
+            
+          </div>
+          
+          <p>В статье содержится руководство, которое поможет сделать первые шаги в освоении клавиатуры на ZMK. Прочитав статью пользователь научится: управлять питанием клавиатуры, подключать клавиатуру к нескольким устройствам и обновлять прошивку.</p>
+<h2>Подключение клавиатуры<span class="hx:absolute hx:-mt-20" id="подключение-клавиатуры"></span>
+    <a href="#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><blockquote>
+  <p>Если при подключении клавиатуры к вашему устройству возникли какие-то неполадки, попробуйте перезагрузить Bluetooth на вашем устройстве и пройти все описанные ниже шаги заново.</p>
+
+</blockquote>
+<p>Шаг 1. Для начала включаем её, переключив физический тумблер в положение &ldquo;On&rdquo;.</p>
+<p><img src="/images/zmk-keyboards/buttons.png" alt="image"  loading="lazy" /></p>
+<p>Шаг 2. Далее половинки надо соединить между собой, для этого одновременно на обоих половинках нажимаем кнопку &ldquo;Reset&rdquo;, находящуюся на дне.</p>
+<p>Шаг 3. Когда клавиатура включена и половинки соединены можно переходить к подключению. Для начала стоит убедиться, что текущий профиль подключения очищен, нажав <code>&amp;BT_CLR</code> (в раскладке по умолчанию клавиши управления профилем расположены на 3 слое, переключиться на него можно, зажав клавиши переключения на слои 1 и 2), это сбросит привязанные к профилю устройства.</p>
+<p><img src="/images/zmk-keyboards/sel_clr.png" alt="image"  loading="lazy" /></p>
+<p>Шаг 4. Далее, для подключения к устройству по Bluetooth надо нажать клавишу выбора профиля, например <code>&amp;BT_SEL 0</code>.</p>
+<p>Шаг 5. После нажатия клавиатура перейдёт в режим сопряжения и отобразится в списке доступных для подключения, выбираем её, и, вуаля, всё работает!</p>
+<p><img src="/images/zmk-keyboards/connect.png" alt="image"  loading="lazy" /></p>
+<blockquote>
+  <p><strong>P.S.</strong> Если клавиатура работает некорректно, например, с одной половинки нажатия клавиш не доходят до устройства, то стоит повторно провести процедуру соединения половинок, одновременно нажав клавишу <code>Reset</code> на обоих.</p>
+
+</blockquote>
+<h2>Подключение к нескольким устройствам<span class="hx:absolute hx:-mt-20" id="подключение-к-нескольким-устройствам"></span>
+    <a href="#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba-%d0%bd%d0%b5%d1%81%d0%ba%d0%be%d0%bb%d1%8c%d0%ba%d0%b8%d0%bc-%d1%83%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%81%d1%82%d0%b2%d0%b0%d0%bc" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><p>Для беспроводного подключения клавиатура может запомнить до 5 устройств, каждое подключенное устройство привязывается к выбранному &ldquo;профилю&rdquo; после подключения.</p>
+<p>Для подключения ко второму устройству надо нажать клавишу <code>&amp;BT_SEL 1</code>, клавиатура станет доступна для сопряжения, подключаемся к ней с устройства.</p>
+<p>Чтобы снова подключиться к первому устройству нажимаем <code>&amp;BT_SEL 0</code>, устройство автоматически увидит клавиатуру и подключится к ней. Аналогично можно подключить устройства к профилям 3, 4, 5.</p>
+<blockquote>
+  <p>Для отвязки клавиатуры от вашего устройства на текущем профиле выполните следующие шаги:</p>
+
+</blockquote>
+<ol>
+<li>очистить профиль на клавиатуре нажатием <code>&amp;BT_CLR</code>,</li>
+<li>затем в параметрах Bluetooth на вашем устройстве отвязать клавиатуру,</li>
+<li>и перезапустить Bluetooth на вашем устройстве.
+После выполнения этих шагов клавиатура должна быть полностью отвязана от вашего устройства на текущем профиле.</li>
+</ol>
+<p><img src="/images/zmk-keyboards/sel.png" alt="image"  loading="lazy" /></p>
+<h2>Зарядка батареи<span class="hx:absolute hx:-mt-20" id="зарядка-батареи"></span>
+    <a href="#%d0%b7%d0%b0%d1%80%d1%8f%d0%b4%d0%ba%d0%b0-%d0%b1%d0%b0%d1%82%d0%b0%d1%80%d0%b5%d0%b8" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><ul>
+<li>Для зарядки устройства переключатель снизу устройства должен быть в положении <strong>I</strong> (вкл)</li>
+<li>Используйте стандартный <strong>кабель USB-C</strong> (идет в комплекте)</li>
+<li>Заряжайте устройство через USB порт ПК (продолжительность зарядки ~2 часа), либо можете использовать блок питания на <strong>5В</strong></li>
+<li>Во время зарядки так же можно пользоваться устройством</li>
+</ul>
+<h2>Состояние батареи<span class="hx:absolute hx:-mt-20" id="состояние-батареи"></span>
+    <a href="#%d1%81%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%b8%d0%b5-%d0%b1%d0%b0%d1%82%d0%b0%d1%80%d0%b5%d0%b8" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><p>Текущий заряд главной (правая для Velvet v3 UI edition, левая для OP36 и Velvet v3) половинки отображается в ОС, в списке подключеных Bluetooth устройств. Заряд второстепенной половинки в нормальных условиях тратится медленнее главной, точный зяряд можно увидеть только с помощью дополнительного софта. Есть несколько вариантов софта под разные ОС:</p>
+<ul>
+<li><a href="https://github.com/kot149/zmk-battery-center"target="_blank" rel="noopener">ZMK Battery Center</a> - доступно на Windows, MacOS;</li>
+<li><a href="https://github.com/codyd51/Mighty-Mitts"target="_blank" rel="noopener">Mighty-Mitts</a> - доступно только на MacOS;</li>
+<li><a href="https://github.com/Maksim-Isakau/zmk-split-battery"target="_blank" rel="noopener">ZMK Split Battery</a> - доступно только на Windows;</li>
+<li><a href="https://github.com/mh4x0f/zmkBATx"target="_blank" rel="noopener">zmkBATx</a> - доступно только на Linux.</li>
+</ul>
+<p><img src="/images/zmk-keyboards/power_level.png" alt="image"  loading="lazy" /></p>
+<h2>Выключение клавиатуры<span class="hx:absolute hx:-mt-20" id="выключение-клавиатуры"></span>
+    <a href="#%d0%b2%d1%8b%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><p>Выключить клавиатуру можно <a href="#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b">переключателем на задней стороне клавиатуры</a>, переведя его в положение Off, а также выключение можно настроить непосредственно на клавишу клавиатуры, назначив на неё <code>&amp;SOFT_OFF</code>. При нажатии на эту клавишу обе половинки клавиатуры переведутся в выключенное состояние, чтобы пробудить её, надо нажать кнопку <code>Reset</code> на нижней стороне клавиатуры.</p>
+<h2>Переход в состояние сна<span class="hx:absolute hx:-mt-20" id="переход-в-состояние-сна"></span>
+    <a href="#%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4-%d0%b2-%d1%81%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%b8%d0%b5-%d1%81%d0%bd%d0%b0" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><p>Спустя 10 минут бездействия клавиатура переходит в режим сна для экономии заряда. Для пробуждения из сна достаточно нажать любую клавишу, и клавиатура проснётся через пару секунд.</p>
+<h2>Подключение по проводу<span class="hx:absolute hx:-mt-20" id="подключение-по-проводу"></span>
+    <a href="#%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d0%be-%d0%bf%d1%80%d0%be%d0%b2%d0%be%d0%b4%d1%83" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><p>При подключении клавиатуры к устройству проводом, клавиатура автоматически начинает передавать данные по проводу. После отключения провода клавиатура вернётся в режим передачи данных по Bluetooth.</p>
+<p>В ситуациях, когда клавиатура подзаряжается от одного устройства, но необходимо передавать данные в другое, можно нажать клавишу <code>&amp;OUT_BLE</code>, это принудительно переведет клавиатуру в режим передачи по Bluetooth и данные будут отправляться в устройство, привязанное к текущему профилю.</p>
+<p><img src="/images/zmk-keyboards/cables.jpg" alt="image"  loading="lazy" /></p>
+<h2>Прошивка клавиатуры<span class="hx:absolute hx:-mt-20" id="прошивка-клавиатуры"></span>
+    <a href="#%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b0-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d1%8b" class="subheading-anchor" aria-label="Постоянная ссылка на этот раздел"></a></h2><p>Обновление прошивки клавиатуры происходит следующим образом:</p>
+<ol>
+<li>Подключаем половинку клавиатуры по проводу;</li>
+<li>Дважды нажимаем клавишу <code>Reset</code> на нижней стороне клавиатуры (пауза между нажатиями должна быть минимальной);</li>
+<li>Аналогично с прошивкой клавиатур на QMK, в ПК определяется новый съемный диск, в него надо положить файл прошивки;</li>
+<li>Отсоедините кабель;</li>
+<li>Но обоих половинках одновременно нажмите кнопки <code>Reset</code>, находящиеся на дне, чтобы соединить половинки.</li>
+</ol>
+<p><strong>Важно!</strong> Прошивки половинок имеют различия, и прошивать левую половинку надо файлом, название которого оканчивается на <code>left.uf2</code>, а правую половинку файлом, оканчивающимся на  <code>right.uf2</code>. В большинстве случаев достаточно прошивать только главную половинку (правую для Velvet v3 UI edition, левую для OP36 и Velvet v3) так как раскладка хранится в ней.</p>
+<blockquote>
+  <p>Переводить клавиатуру в режим прошивки можно не только двойным нажатием <code>Reset</code>, это также можно делать нажатием клавиши <code>&amp;bootloader</code>. Нажатие <code>&amp;bootloader</code> переводит в режим прошивки только ту половинку, на которой была нажата.</p>
+
+</blockquote>
+<p>Больше информации в документации ZMK: <a href="https://zmk.dev/docs"target="_blank" rel="noopener">https://zmk.dev/docs</a></p>
+<p><img src="/images/zmk-keyboards/velvet.jpg" alt="image"  loading="lazy" /></p>
 
         </div>
-        <div class="hx:mt-16"></div>
-        <div class="hx:mt-16"></div>
-        
+        <div class="hx:mt-16"></div><div class="hx:mb-8 hx:flex hx:items-center hx:border-t hx:pt-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-neutral-400 hx:dark:contrast-more:border-neutral-400 hx:print:hidden"><a
+        href="/software/zmk/keymap-editor/"
+        title="Настройка клавиатуры в ZMK keymap-editor"
+        class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:ml-auto hx:ltr:pl-4 hx:ltr:text-right hx:rtl:mr-auto hx:rtl:pr-4 hx:rtl:text-left"
+      >Настройка клавиатуры в ZMK keymap-editor<svg class="hx:inline hx:h-5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
       </main>
     </article>
   </div>

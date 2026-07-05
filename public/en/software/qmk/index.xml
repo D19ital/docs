@@ -1,0 +1,364 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ergohaven docs – QMK Firmware Documentation</title>
+    <link>http://localhost:1313/en/software/qmk/</link>
+    <description>Recent content in QMK Firmware Documentation on ergohaven docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/en/software/qmk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>All about Vial</title>
+      <link>http://localhost:1313/en/software/qmk/vial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/software/qmk/vial/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Vial is an open-source cross-platform GUI and a QMK fork for configuring your keyboard in real time.&lt;/p&gt;
+&lt;p&gt;The program let&amp;rsquo;s you customize your keyboard with an easy and intuitive interface without any knowledge about programming.&lt;/p&gt;
+&lt;h2&gt;First use&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;first-use&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#first-use&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Download and install the &lt;a href=&#34;https://eh.industries/vial&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;latest version of the program&lt;/a&gt; or use the web version&lt;/li&gt;
+&lt;li&gt;Connect your keyboard and it will be automatically detected&lt;/li&gt;
+&lt;li&gt;Unlock the keyboard by clicking on the &lt;strong&gt;Security&lt;/strong&gt; menu and then &lt;strong&gt;Unlock&lt;/strong&gt;, and follow the instructions that will be displayed on the screen&lt;/li&gt;
+&lt;li&gt;Change any key you want and it will be instantly remapped, customize various options to your liking&lt;/li&gt;
+&lt;li&gt;Save the layout by clicking &lt;strong&gt;File &amp;gt; Save current layout&lt;/strong&gt; (optional)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vial/vial01.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Let&amp;rsquo;s now check what the main tabs do&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Keymap&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;keymap&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#keymap&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;As the name suggests, this is where you can view and customize your layout.
+Simply click on any key you want to change in the top menu, and then select the key to replace in the bottom menu.
+Your new key will be ready to use immediately.&lt;/p&gt;
+&lt;h2&gt;Layer&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;layer&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#layer&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Layers allow you to change the functionality of your entire keyboard depending on which &lt;strong&gt;layer&lt;/strong&gt; it is currently on. It&amp;rsquo;s best to think of the layers as if they were stacked on top of each other. The keys can be configured to switch between layers as needed, similar to the Shift key on the number row.
+You can view each available layer by clicking the corresponding number at the top of the interface. Layer 0 is your base/main layer.&lt;/p&gt;
+&lt;p&gt;Switching between layers can be done in several ways. From the bottom menu, select the layer tab to view all the different options.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MO(*) - instantly activates the layer. As soon as you release the key, the layer is deactivated&lt;/li&gt;
+&lt;li&gt;DF(*) - changes which layer is the default layer. This remains until you turn off the device&lt;/li&gt;
+&lt;li&gt;TG(*) - switches the layer, activating it if it is inactive, and vice versa&lt;/li&gt;
+&lt;li&gt;TT(*) - If you hold down the key, the layer is activated, and then deactivated when you release (like MO). If you tap it multiple times, the layer will be turned on or off (eg TG). This requires 5 clicks&lt;/li&gt;
+&lt;li&gt;OSL(*) - instantly activates the layer until the next key is pressed&lt;/li&gt;
+&lt;li&gt;LT layer (kc) - instantly activates the layer when held down, sends a key code when pressed. The key code can be defined like all other buttons, just select the smaller box inside&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Examples of using layers:&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;examples-of-using-layers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#examples-of-using-layers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;A separate layer for macros that help you quickly work with incoming mail&lt;/li&gt;
+&lt;li&gt;Another layer allows us to open the folders or applications we need in a fraction of seconds&lt;/li&gt;
+&lt;li&gt;The next layer is configured for operational work in the browser&lt;/li&gt;
+&lt;li&gt;You can place “pieces” of code on a separate layer&lt;/li&gt;
+&lt;li&gt;You can also set up a special layer for games&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The triangle symbol indicates a gap. This means that the action is the same as the layer below it. This is convenient because keys from different layers can be pressed simultaneously.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Now let&amp;rsquo;s look at the bottom menu tabs and check what they do&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic and ISO/JIS are standard ANSI, ISO, JIS keyboard layouts&lt;/li&gt;
+&lt;li&gt;Layers - see information about layers above&lt;/li&gt;
+&lt;li&gt;Quantum - specific key codes from the QMK firmware, hover over any key code of interest and a description will appear&lt;/li&gt;
+&lt;li&gt;Backlight - control RGB backlighting (if your keyboard comes with it) directly from the keyboard&lt;/li&gt;
+&lt;li&gt;App, Media and Mouse - additional keys to control applications and media playback, also here you can configure the keyboard to perform mouse actions&lt;/li&gt;
+&lt;li&gt;Tap Dance - Set up different actions depending on how the key is used. For example, the same key can be configured to activate a macro when pressed, or activate something else when held (see information below).&lt;/li&gt;
+&lt;li&gt;User - here you can find custom keys that we have programmed for your use, just like before, just hover over to find out what each function does&lt;/li&gt;
+&lt;li&gt;Macro - macros can be used to perform a pre-programmed sequence of actions (see information below)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Macros&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;macros&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#macros&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Macros allow you to send multiple keystrokes when only one key is pressed. They can do whatever you want: type entire sentences, repeat the same actions in games, or even help you program.&lt;/p&gt;
+&lt;h3&gt;Macros configuration&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;macros-configuration&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#macros-configuration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Open the Macros tab. All macros that can be configured will appear as separate tabs. Select the macro you want to configure.&lt;/p&gt;
+&lt;p&gt;The next step is to add actions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add action - manually adds an action to the list. Customize it to do exactly what you want. select one of the options - hold, press, release and hold.&lt;/li&gt;
+&lt;li&gt;Tap Enter - Many macros end with the &lt;strong&gt;Enter&lt;/strong&gt; key, so this button makes adding them easier.&lt;/li&gt;
+&lt;li&gt;Record macro - allows you to record a macro directly from the keyboard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Use these keys to add actions to the list. They will be executed in order when the macro is activated.
+Actions can be changed using the arrows on the left.
+When you are satisfied with the configuration of all macros, click &lt;strong&gt;Save&lt;/strong&gt; to save all changes. If you want to go back to what&amp;rsquo;s already on your device, click &lt;strong&gt;Revert&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Examples&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;examples&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#examples&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open the Taskbar on Windows by holding Ctrl+Shift and then pressing Esc:&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/vial/vial02.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Launch the program in Windows by opening the &lt;strong&gt;Start&lt;/strong&gt; menu, entering the program name and pressing Enter:&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/vial/vial03.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Entering an address:&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/images/vial/vial04.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;###Using Macros
+After setting up the macro, you can use it. Simply click on the key you want to use for the macro in your layout, then select it from the bottom menu under the &lt;strong&gt;Macro&lt;/strong&gt; tab&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vial/vial05.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;More information about the Macros feature can be found in the official &lt;a href=&#34;https://docs.qmk.fm/feature_macros&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QMK documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tap Dance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tap-dance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tap-dance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This function allows you to change the assignment of keys depending on how many times you press the key and whether you hold it down.
+For example, the &lt;strong&gt;X, C, V&lt;/strong&gt; keys can perform &lt;strong&gt;Cut&lt;/strong&gt;, &lt;strong&gt;Copy&lt;/strong&gt; and &lt;strong&gt;Paste&lt;/strong&gt; functions as long as you hold the key down for a short time - no modifiers required.
+Or press the semicolon key once, send a semicolon. Press twice, quickly - put a colon.&lt;/p&gt;
+&lt;h3&gt;Setting up Tap Dance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;setting-up-tap-dance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#setting-up-tap-dance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Click on the Tap Dance tab at the top and one of the available numbers below it.
+Each Tap Dance feature can be configured to perform different actions depending on how the button is pressed. In the below case, when the button is &lt;strong&gt;On tap&lt;/strong&gt;, the left GUI is pressed, but when the button is On hold, the button activates layer 1. The other two options are &lt;strong&gt;On double tap&lt;/strong&gt;. double press) and &lt;strong&gt;On tap + hold&lt;/strong&gt; (On tap + hold) can also be configured.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vial/vial06.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Tapping term represents the time during which the firmware distinguishes between actions. If the button is held longer than the press time, it is considered a hold. If the button is held down for less than the duration of the press, it is considered a press.
+When you are satisfied with the configuration, click &lt;strong&gt;Save&lt;/strong&gt; to save all changes. If you want to go back to what&amp;rsquo;s already on your device, click &lt;strong&gt;Revert&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Using Tap Dance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;using-tap-dance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#using-tap-dance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Once the tap dance function is configured and saved, it can be used. Simply click on the key you want to use for tap dance in the keymap and then select it from the bottom menu under the Tap Dance tab&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vial/vial07.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;More information about the Tap Dance feature can be found in the official &lt;a href=&#34;https://docs.qmk.fm/features/tap_dance&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QMK documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Combos&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;combos&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#combos&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This feature is a chord type solution for adding custom actions. Assign any two keys as one. When two keys are pressed simultaneously (for a certain amount of time), the third one is triggered.&lt;/p&gt;
+&lt;h3&gt;Combo setup&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;combo-setup&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#combo-setup&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Click the Combo tab at the top and one of the available numbers below it to display the settings for that specific combination. You can configure up to 4 key combinations to activate one action. Each key must be pressed within the combo&amp;rsquo;s duration. In the example below, pressing the +/= key and the Backspace key will instead cause the Delete key to be pressed&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vial/vial08.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Using Combo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;using-combo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#using-combo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Once the Combo is configured and saved, it can be used. There is no need to assign it to a specific key.&lt;/p&gt;
+&lt;p&gt;More information about the Combo feature can be found in the official &lt;a href=&#34;https://docs.qmk.fm/features/combo&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QMK documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Key overrides&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-overrides&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-overrides&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This feature allows you to reassign modifier keys when pressed together with any other key.&lt;/p&gt;
+&lt;h3&gt;Setting Key Overrides&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;setting-key-overrides&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#setting-key-overrides&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In the example below, pressing the key combination Left Ctrl + Backspace (two keys to be pressed without any specific time window) will be replaced by Delete&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vial/vial09.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Using key overrides&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;using-key-overrides&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#using-key-overrides&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;After setting up the key override function, you can use it immediately. No need to assign to a specific key.&lt;/p&gt;
+&lt;p&gt;More information about the Key Overrides feature can be found in the official QMK documentation&lt;/p&gt;
+&lt;h2&gt;QMK Settings&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;qmk-settings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#qmk-settings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This tab is needed to fine-tune the operation of QMK.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Magic - swap different modifier keys for convenience&lt;/li&gt;
+&lt;li&gt;Grave Escape - This feature allows you to use the Grave key (` and ~) with Escape&lt;/li&gt;
+&lt;li&gt;Tap-Hold - fine-tuning the tap hold function&lt;/li&gt;
+&lt;li&gt;Auto Shift - press the key with the letter and it will be printed. Press a key and hold it a little longer and you&amp;rsquo;ll get its title version.&lt;/li&gt;
+&lt;li&gt;Combo - fine tuning of the combo function&lt;/li&gt;
+&lt;li&gt;One Shot Keys - fine-tuning one shot keys&lt;/li&gt;
+&lt;li&gt;Mouse Keys - fine-tuning mouse keys&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Matrix Tester&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;matrix-tester&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#matrix-tester&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Here you can check the keystrokes on your keyboard.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/vial/vial10.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>RuEn mode</title>
+      <link>http://localhost:1313/en/software/qmk/ruen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/software/qmk/ruen/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This mode is designed to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;place punctuation marks in the same places for Russian and English languages,&lt;/li&gt;
+&lt;li&gt;enter characters from the English layout when printing in Russian,&lt;/li&gt;
+&lt;li&gt;switch the layout to English or Russian using separate keys.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This works due to the fact that the keyboard remembers the current layout, and if you need to enter a character that is not in the Russian layout, it automatically switches the layout, and after entering the character, it returns the layout back.&lt;/p&gt;
+&lt;p&gt;The main advantage of this approach is that there is no need to install additional software or non-standard layouts into the system.&lt;/p&gt;
+&lt;p&gt;The main disadvantage is the need to maintain the same layout state in the keyboard and in the system. More details on how to ensure this will be discussed below.&lt;/p&gt;
+&lt;p&gt;The RuEn mode keys can be found in the Vial program in the User tab. All keys in this mode begin with the word RuEn. To use them, you need to add them to your layout (in any convenient layer).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/ruen/ruen-all.png&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Presets&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;presets&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#presets&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Below are simple procedures for pre-configuring the operating system and keyboard for RuEn mode. These are the default settings, and if this is your first time setting up RuEn, it is recommended to go this route.&lt;/p&gt;
+&lt;p&gt;However, in some cases the default settings may not suit you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if your system uses a non-standard key combination to change the layout, see section &lt;a href=&#34;#ruen-m0&#34;&gt;RuEn M0&lt;/a&gt; and &lt;a href=&#34;#ruen-m1m2&#34;&gt;RuEn M1M2&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;if you work a lot with remote machines (for example, via RDP) and you often need to synchronize the remote machine’s layout with the keyboard layout, see section &lt;a href=&#34;#ruen-m1m2&#34;&gt;RuEn M1M2&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;if you need to have an individual layout for each window, or if for some reason you often experience desynchronization of the keyboard layout and the system, or it is very inconvenient for you to use the &lt;code&gt;RuEn Toggle&lt;/code&gt;, &lt;code&gt;RuEn En&lt;/code&gt;, &lt;code&gt;RuEn Ru&lt;/code&gt; keys for switching layouts, see section [Using the qmk-hid-host program](#using-qmk-hid-host program).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is still recommended to read this and the next section to get a general understanding of the RuEn mode, and then proceed to more complex settings.&lt;/p&gt;
+&lt;h3&gt;Windows&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;windows&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#windows&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;No special pre-configuration is required. Need to make sure that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;code&gt;Win+Space&lt;/code&gt; key combination actually switches the layout (for Windows 8 and newer this should be the default),&lt;/li&gt;
+&lt;li&gt;no individual layout is used for each window.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Linux&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;linux&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#linux&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Need to make sure that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;code&gt;Win+Space&lt;/code&gt; key combination actually switches the layout (for Ubuntu this is enabled by default, for other distributions it may require configuration),&lt;/li&gt;
+&lt;li&gt;no individual layout is used for each window.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Mac&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mac&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mac&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;You need to do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;install the Russian PC layout for Russian,&lt;/li&gt;
+&lt;li&gt;select the switching method &lt;code&gt;Ctrl+Space&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;enable Mac mode on the keyboard (by default, in place of the &lt;code&gt;B&lt;/code&gt; key in the yellow layer, also known as the &lt;code&gt;Toggle Ctl Gui&lt;/code&gt; button from the Quantum tab of the Vial program).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Synchronization and switching layouts&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;synchronization-and-switching-layouts&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#synchronization-and-switching-layouts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In order for the keyboard to switch layouts correctly, the keyboard layout must match the layout on the system. To do this, you need to follow two rules:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First you need to make sure that the layout of the system and the keyboard match; in other words, you need to synchronize the layout in the system and in the keyboard.&lt;/li&gt;
+&lt;li&gt;And then, so that the synchronization does not get lost, to switch the layout, use &lt;strong&gt;only&lt;/strong&gt; special keys: &lt;code&gt;RuEn Toggle&lt;/code&gt;, &lt;code&gt;RuEn Ru&lt;/code&gt;, &lt;code&gt;RuEn En&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can check your keyboard layout in the following ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the current keyboard layout can be seen on the screen (PlanetaV2, as well as K:02, K:03, Imperial44 when the Modern or Minimalistic screen mode is selected);&lt;/li&gt;
+&lt;li&gt;if there is no screen, then you can determine the layout experimentally: select the English layout in the system and press the &lt;code&gt;RuEn.&lt;/code&gt; key, if you go to &lt;code&gt;.&lt;/code&gt;, then the keyboard has an English layout, and if you go to &lt;code&gt;yu&lt;/code&gt;, then the keyboard has a Russian layout layout;&lt;/li&gt;
+&lt;li&gt;You can also use the following consideration: when turned on, the keyboard is set to the English layout.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the layout in the system and the keyboard do not match, it is necessary to synchronize. This can be done in various ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;press the &lt;code&gt;RuEn Sync&lt;/code&gt; key once; in this case, the keyboard will change the internal state without sending anything to the system;&lt;/li&gt;
+&lt;li&gt;change the layout in the system using the standard combination for changing the layout;&lt;/li&gt;
+&lt;li&gt;change the layout in the system by clicking the mouse on the layout icon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After you have made sure that the keyboard layout is the same as in the system, you need to check that the &lt;code&gt;RuEn Toggle&lt;/code&gt; key simultaneously switches the layout in both the system and the keyboard.&lt;/p&gt;
+&lt;p&gt;Also in RuEn mode there is a pair of keys for switching the layout directly to the desired language: &lt;code&gt;RuEn En&lt;/code&gt; and &lt;code&gt;RuEn Ru&lt;/code&gt;. The &lt;code&gt;RuEn En&lt;/code&gt; key switches to the English layout if the Russian layout is currently used and does not change anything if the English layout is already installed. The &lt;code&gt;RuEn Ru&lt;/code&gt; key does the same thing exactly the opposite: it turns on the Russian layout only if the English one is currently installed.&lt;/p&gt;
+&lt;p&gt;It is recommended to relearn how to use the &lt;code&gt;RuEn En&lt;/code&gt; / &lt;code&gt;RuEn Ru&lt;/code&gt; keys to switch layouts. In this case, before you start writing, you can immediately set the desired layout. Over time, this will be done automatically, and it is faster than looking at the layout indicator in the system or writing something, then deleting it, switching the layout, and typing it again.&lt;/p&gt;
+&lt;p&gt;At this point, the basic setup can be considered complete. What follows is background information about the RuEn mode keys and a description of advanced modes.&lt;/p&gt;
+&lt;h2&gt;Description of keys&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;description-of-keys&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#description-of-keys&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Layout switching keys&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;layout-switching-keys&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#layout-switching-keys&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;RuEn Sync&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ruen-sync&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ruen-sync&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Switches the state of the keyboard layout without sending any sequences to the system. A single press changes the state from English to Russian or from Russian to English.&lt;/p&gt;
+&lt;h4&gt;RuEn Toggle&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ruen-toggle&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ruen-toggle&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Switches the internal state and sends the layout change combination to the system.&lt;/p&gt;
+&lt;h4&gt;RuEn En&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ruen-en&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ruen-en&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;For the &lt;a href=&#34;#ruen-dflt&#34;&gt;RuEn Dflt&lt;/a&gt;, &lt;a href=&#34;#ruen-m0&#34;&gt;RuEn M0&lt;/a&gt; modes it works as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if the keyboard has a Russian layout, then it sends a combination to change the layout and changes the internal state to the English layout,&lt;/li&gt;
+&lt;li&gt;if the keyboard has an English layout, it does nothing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the &lt;a href=&#34;#ruen-m1m2&#34;&gt;RuEn M1M2&lt;/a&gt; mode, the operating logic changes slightly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if the keyboard has a Russian layout, then it sends a combination to change the layout to English (macro &lt;code&gt;M1&lt;/code&gt;) and changes the internal state to the English layout,&lt;/li&gt;
+&lt;li&gt;if the keyboard has an English layout, then it sends a combination to change the layout to English (macro &lt;code&gt;M1&lt;/code&gt;), the internal state remains on the English layout.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;RuEn Ru&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ruen-ru&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ruen-ru&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;For the &lt;a href=&#34;#ruen-dflt&#34;&gt;RuEn Dflt&lt;/a&gt;, &lt;a href=&#34;#ruen-m0&#34;&gt;RuEn M0&lt;/a&gt; modes it works as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if the keyboard has an English layout, it sends a combination to change the layout and changes the internal state to the Russian layout,&lt;/li&gt;
+&lt;li&gt;if the keyboard has a Russian layout, it does nothing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the &lt;a href=&#34;#ruen-m1m2&#34;&gt;RuEn M1M2&lt;/a&gt; mode, the operating logic changes slightly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if the keyboard has an English layout, then it sends a combination to change the layout to Russian (macro &lt;code&gt;M2&lt;/code&gt;) and changes the internal state to the Russian layout,&lt;/li&gt;
+&lt;li&gt;if the keyboard has a Russian layout, then it sends a combination to change the layout to Russian (macro &lt;code&gt;M2&lt;/code&gt;), the internal state remains on the Russian layout.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Layout switching mode settings&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;layout-switching-mode-settings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#layout-switching-mode-settings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;RuEn Dflt&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ruen-dflt&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ruen-dflt&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;When you press this key, the keyboard uses the &lt;code&gt;Win+Space&lt;/code&gt; combination to change the layout if Mac mode is not selected. In Mac mode (turned on by the &lt;code&gt;Toggle Ctl Gui&lt;/code&gt; key combination from the Quantum tab), the keyboard will send the &lt;code&gt;Ctl+Space&lt;/code&gt; combination to switch layouts.&lt;/p&gt;
+&lt;p&gt;This mode is enabled by default. Pressing the &lt;code&gt;RuEn Dflt&lt;/code&gt; key is necessary if another layout switching mode was previously enabled.&lt;/p&gt;
+&lt;h4&gt;RuEn M0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ruen-m0&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ruen-m0&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Allows you to change how the default layout is switched. To configure this mode, you need to perform the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Set in the &lt;code&gt;M0&lt;/code&gt; macro the necessary sequence for switching the layout. For testing, you can temporarily place the &lt;code&gt;M0&lt;/code&gt; macro in the current layout to check its operation.&lt;/li&gt;
+&lt;li&gt;Press the &lt;code&gt;RuEn M0&lt;/code&gt; key. After this, the keyboard will send the &lt;code&gt;M0&lt;/code&gt; macro instead of the default combination for switching layouts.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This switching method can be useful in different cases:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;switching the layout in the system does not coincide with the default one;&lt;/li&gt;
+&lt;li&gt;there are problems with the default switching: for example, Windows and Ubuntu, when switching, briefly shows a special window with a choice of layouts, which draws the focus to itself for a few milliseconds; experimentally, in the default method, delays were selected that were sufficient for the focus of this window to disappear; Unfortunately, there is no guarantee that your system will have enough of these delays;&lt;/li&gt;
+&lt;li&gt;or vice versa: the pop-up window with the layout in Windows is annoying and you want to make sure that the layout is switched using the &lt;code&gt;Shift+Alt&lt;/code&gt; combination.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;RuEn M1M2&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ruen-m1m2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ruen-m1m2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Allows you to set separate macros for switching layouts to English and Russian. To configure this mode, you need to perform the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Configure in the system a combination of keys to enable the English layout and a combination of keys to enable the Russian layout.&lt;/li&gt;
+&lt;li&gt;Set the combination to switch to the English layout in the &lt;code&gt;M1&lt;/code&gt; macro.&lt;/li&gt;
+&lt;li&gt;Set the combination to switch to the Russian layout in the &lt;code&gt;M2&lt;/code&gt; macro.&lt;/li&gt;
+&lt;li&gt;It is also advisable to temporarily place these macros on the current layout and debug their operation.&lt;/li&gt;
+&lt;li&gt;Press the &lt;code&gt;RuEn M1M2&lt;/code&gt; key. After this, the keyboard, instead of the default combination to switch the layout, will send the macro &lt;code&gt;M1&lt;/code&gt; to enable the English layout and the macro &lt;code&gt;M2&lt;/code&gt; to enable the Russian layout.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This mode is useful because the keyboard sends the language change combination regardless of the state of the internal layout. Thus, it turns out that there is no need to synchronize the internal state and the layout in the system: just press &lt;code&gt;RuEn Ru&lt;/code&gt; or &lt;code&gt;RuEn En&lt;/code&gt; once and the internal state will coincide with the layout in the system (the &lt;code&gt;RuEn Sync&lt;/code&gt; key is not needed in this case). The &lt;code&gt;RuEn Toggle&lt;/code&gt; key will also work, but take a closer look at the pair of &lt;code&gt;RuEn Ru&lt;/code&gt; and &lt;code&gt;RuEn En&lt;/code&gt; keys (believe me, it’s very convenient once you get used to it).&lt;/p&gt;
+&lt;p&gt;This mode can also be especially useful if you have to type text on remote machines, each of which may have its own layout state.&lt;/p&gt;
+&lt;h3&gt;Characters available in Russian and English layouts&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;characters-available-in-russian-and-english-layouts&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#characters-available-in-russian-and-english-layouts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When typing these characters, the layout does not switch, because they are available in both Russian and English layouts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;RuEn .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn ,&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn ;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn :&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn &amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn ?&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn /&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Characters from the English layout&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;characters-from-the-english-layout&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#characters-from-the-english-layout&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When typing these characters from the Russian layout, it automatically switches to the English layout, and after entering the character, it switches back to Russian. When typing these characters from the English layout, the layout is not switched.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;RuEn [&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn ]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn {&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn }&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn &amp;lt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn &amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn ` &lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn ~&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn @&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn #&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn $&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn ^&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn &amp;amp;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RuEn |&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Character from Russian layout&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;character-from-russian-layout&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#character-from-russian-layout&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The only character that is present in the Russian layout and is absent in the English one:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;RuEn №&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Entering this character works similarly to the previous point, only temporarily switches to the Russian layout if the current layout is English.&lt;/p&gt;
+&lt;h2&gt;Additional features&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;additional-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#additional-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Using the qmk-hid-host program&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;using-the-qmk-hid-host-program&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#using-the-qmk-hid-host-program&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This program runs on the computer and sends various information to the keyboard:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;current time,&lt;/li&gt;
+&lt;li&gt;current volume level,&lt;/li&gt;
+&lt;li&gt;information about the artist and the name of the playing media,&lt;/li&gt;
+&lt;li&gt;current window layout.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The program is available for Windows and Linux OS, you can download it from &lt;a href=&#34;https://github.com/ergohaven/qmk-hid-host/releases/tag/latest&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;. This is a fork that changes the default settings so that Ergohaven keyboards do not have to edit the settings file. Many thanks to the author of &lt;a href=&#34;https://github.com/zzeneg/qmk-hid-host&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the original program&lt;/a&gt; zzeneg (he is in our chat).&lt;/p&gt;
+&lt;p&gt;For the RuEn mode, the key here is that when using this program:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;the need to monitor the synchronization of the layout in the keyboard and in the system is eliminated&lt;/li&gt;
+&lt;li&gt;it becomes possible to use an individual layout for each window.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;CAPS WORD mode&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caps-word-mode&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#caps-word-mode&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The CAPS WORD mode (activated by the dedicated CAPS WORD key) allows you to enter one word in upper case and automatically exit this mode by pressing the character separating the words. In RuEn mode, CAPS WORD mode is supported: characters that are word separators in the English layout (such as &lt;code&gt;ZHEKHYOBYU&lt;/code&gt;) do not interrupt CAPS WORD mode if typed in the Russian layout.&lt;/p&gt;
+&lt;h3&gt;RuEn word mode&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ruen-word-mode&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ruen-word-mode&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This mode is somewhat similar to the CAPS WORD mode. It is useful when typing in the Russian keyboard, because&amp;hellip; provides the ability to enter one word in the English layout and after entering it automatically switch to the Russian layout.&lt;/p&gt;
+&lt;p&gt;The end of a word in RuEn word mode is determined by pressing Space, Enter, Escape, Minus.&lt;/p&gt;
+&lt;p&gt;In addition, if the Shift key was held down before pressing &lt;code&gt;RuEn word&lt;/code&gt;, the CAPS WORD mode is also enabled in RuEn word.&lt;/p&gt;
+&lt;p&gt;If you often have to type technical or mathematical texts in Russian, replete with English inserts, this mode can be a good help.&lt;/p&gt;
+&lt;p&gt;Examples of similar text&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;IP address, TCP/IP stack, OSI model
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;variable name &lt;span class=&#34;sb&#34;&gt;`helloWorld`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;LaTeX equations of the form $x^2+y^2=0$&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;RuEn Mod&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ruen-mod&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ruen-mod&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Switches the layout twice: when pressed and when released. Thus, by holding this key, you can enter characters and sequences from another layout.&lt;/p&gt;
+&lt;h3&gt;RuEn Store / RuEn Revert&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ruen-store--ruen-revert&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ruen-store--ruen-revert&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Sometimes you need to enter a macro in a specific layout and then return to the original layout. To do this, you need to insert &lt;code&gt;RuEn Store&lt;/code&gt; at the beginning of the macro, and insert &lt;code&gt;RuEn Revert&lt;/code&gt; at the end.&lt;/p&gt;
+&lt;h3&gt;Entering Unicode characters&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;entering-unicode-characters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#entering-unicode-characters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;em&gt;Expect in the next firmware.&lt;/em&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

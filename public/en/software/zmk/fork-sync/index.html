@@ -8,31 +8,33 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>Software – ergohaven docs</title>
-  <meta name="description" content=" QMK Firmware ZMK Firmware " /><link rel="canonical" href="http://localhost:1313/en/software/" itemprop="url" />
+<title>Synchronizing the ergohaven-zmk-config Fork on GitHub – ergohaven docs</title>
+  <meta name="description" content="Keyboard firmwares are constantly being refined and updated, and if the improvements are general in nature and have been made to the main ZMK repository, these updates will be automatically pulled in during the next firmware build, for example after changing the layout. However, the ergohaven-zmk-config repository, which contains keyboard layouts and configuration files, is also periodically updated. Updates may contain, for example, files necessary for building firmware for new devices, or some improvements to already released devices. Unlike updates in ZMK, updates in ergohaven-zmk-config are not applied automatically. To incorporate them into your fork, you need to perform a synchronization procedure. This guide will explain how to perform the synchronization procedure." /><link rel="canonical" href="http://localhost:1313/en/software/zmk/fork-sync/" itemprop="url" />
 
-<meta property="og:title" content="Software">
+<meta property="og:title" content="Synchronizing the ergohaven-zmk-config Fork on GitHub">
 <meta
   property="og:description"
   content="
     
-      
+      Keyboard firmwares are constantly being refined and updated, and if the improvements are general in nature and have been made to the main ZMK repository, these updates will be automatically pulled in during the next firmware build, for example after changing the layout. However, the ergohaven-zmk-config repository, which contains keyboard layouts and configuration files, is also periodically updated. Updates may contain, for example, files necessary for building firmware for new devices, or some improvements to already released devices. Unlike updates in ZMK, updates in ergohaven-zmk-config are not applied automatically. To incorporate them into your fork, you need to perform a synchronization procedure. This guide will explain how to perform the synchronization procedure.
     
   ">
 <meta
   property="og:type"
   content="
-    website
+    article
   ">
-<meta property="og:url" content="http://localhost:1313/en/software/">
+<meta property="og:url" content="http://localhost:1313/en/software/zmk/fork-sync/"><meta property="article:section" content="software">
 
 
-	<meta itemprop="name" content="Software">
-	<meta itemprop="description" content="QMK Firmware ZMK Firmware">
-	<meta itemprop="wordCount" content="4">
+
+
+	<meta itemprop="name" content="Synchronizing the ergohaven-zmk-config Fork on GitHub">
+	<meta itemprop="description" content="Keyboard firmwares are constantly being refined and updated, and if the improvements are general in nature and have been made to the main ZMK repository, these updates will be automatically pulled in during the next firmware build, for example after changing the layout. However, the ergohaven-zmk-config repository, which contains keyboard layouts and configuration files, is also periodically updated. Updates may contain, for example, files necessary for building firmware for new devices, or some improvements to already released devices. Unlike updates in ZMK, updates in ergohaven-zmk-config are not applied automatically. To incorporate them into your fork, you need to perform a synchronization procedure. This guide will explain how to perform the synchronization procedure.">
+	<meta itemprop="wordCount" content="1035">
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Software">
-	<meta name="twitter:description" content="QMK Firmware ZMK Firmware">
+	<meta name="twitter:title" content="Synchronizing the ergohaven-zmk-config Fork on GitHub">
+	<meta name="twitter:description" content="Keyboard firmwares are constantly being refined and updated, and if the improvements are general in nature and have been made to the main ZMK repository, these updates will be automatically pulled in during the next firmware build, for example after changing the layout. However, the ergohaven-zmk-config repository, which contains keyboard layouts and configuration files, is also periodically updated. Updates may contain, for example, files necessary for building firmware for new devices, or some improvements to already released devices. Unlike updates in ZMK, updates in ergohaven-zmk-config are not applied automatically. To incorporate them into your fork, you need to perform a synchronization procedure. This guide will explain how to perform the synchronization procedure.">
 <link href="/css/compiled/main.css" rel="stylesheet" />
     <link href="/css/variables.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
@@ -133,7 +135,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/software/"
+            href="/software/zmk/fork-sync/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Русский</a>
@@ -142,7 +144,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/en/software/"
+            href="/en/software/zmk/fork-sync/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >English<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
@@ -334,7 +336,7 @@
               
             </li></ul>
       </div></li>
-            <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+            <li class="open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:ltr:pr-8 hx:rtl:pl-8
       hx:hextra-focus-visible-inset
@@ -344,7 +346,7 @@
     >
       <span class="hx:min-w-0 [word-break:break-word]">ZMK firmware</span>
     </a>
-      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="Toggle section" aria-expanded="false"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
+      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="Toggle section" aria-expanded="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
   </div><div class="hextra-sidebar-children hx:ltr:pr-0 hx:rtl:pl-0 hx:overflow-hidden">
         <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
@@ -370,11 +372,11 @@
     </a>
   </div>
               
-            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+            </li><li class="hx:flex hx:flex-col open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
       hx:hextra-focus-visible-inset
-        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+        hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
       href="/en/software/zmk/fork-sync/"
       
     >
@@ -423,7 +425,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/software/"
+            href="/software/zmk/fork-sync/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Русский</a>
@@ -432,7 +434,7 @@
         
         <li role="none" class="hx:flex hx:flex-col">
           <a
-            href="/en/software/"
+            href="/en/software/zmk/fork-sync/"
             role="menuitem"
             class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >English<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
@@ -503,32 +505,176 @@
 </div>
 </div></aside>
     
-<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Table of contents"></nav>
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Table of contents">
+    <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">On this page</p><ul>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#synchronizing-the-fork">Synchronizing the Fork
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#sync-fork-button-not-displayed">Sync Fork Button Not Displayed
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#synchronization-with-merge-conflicts">Synchronization with Merge Conflicts
+        </a>
+      </li></ul>
+      <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400"><a class="hx:inline-block hx:rounded-sm hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50 hx:hextra-focus-visible-inset" href="https://github.com/ergohaven/docs/edit/main/content/software/zmk/fork-sync.en.md" target="_blank" rel="noreferrer">Edit this page on GitHub →</a>
+        <button id="backToTop" tabindex="-1" onClick="scrollUp();" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+          <span>Scroll to top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
 
     <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
       <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
-        
-        <div class="content">
-          <h1>Software</h1>
-          <div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 1;">
-  <a
-    class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="qmk"
-      ><div>
-      <span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">QMK Firmware
-      </span></div></a>
-  <a
-    class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="zmk"
-      ><div>
-      <span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">ZMK Firmware
-      </span></div></a>
-</div>
+        <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current">
+        <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
+          <a href="/en/software/" class="hx:inline-block hx:rounded-sm hx:hextra-focus-visible-inset">Software</a>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
+          <a href="/en/software/zmk/" class="hx:inline-block hx:rounded-sm hx:hextra-focus-visible-inset">ZMK firmware</a>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">Synchronizing the ergohaven-zmk-config Fork on GitHub</div>
+  </div>
 
+        <div class="content">
+          
+          <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:sm:justify-between hx:gap-4 hx:mb-4">
+            <h1 class="hx:mb-0">Synchronizing the ergohaven-zmk-config Fork on GitHub</h1>
+            
+          </div>
+          
+          <p>Keyboard firmwares are constantly being refined and updated, and if the improvements are general in nature and have been made to the main <strong>ZMK</strong> repository, these updates will be automatically pulled in during the next firmware build, for example after changing the layout. However, the <strong>ergohaven-zmk-config</strong> repository, which contains keyboard layouts and configuration files, is also periodically updated. Updates may contain, for example, files necessary for building firmware for new devices, or some improvements to already released devices. Unlike updates in <strong>ZMK</strong>, updates in <strong>ergohaven-zmk-config</strong> are not applied automatically. To incorporate them into your fork, you need to perform a synchronization procedure. This guide will explain how to perform the synchronization procedure.</p>
+<blockquote>
+  <p>The GitHub application is third-party software, and the author may not know some details of its functionality, and some functionality may change over time. If you have any questions or problems, please write to the <a href="https://t.me/&#43;E-mlq11c97AyZmY6"target="_blank" rel="noopener">Ergohaven community on Telegram</a>.</p>
+
+</blockquote>
+<h2>Synchronizing the Fork<span class="hx:absolute hx:-mt-20" id="synchronizing-the-fork"></span>
+    <a href="#synchronizing-the-fork" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>You can find out about the need to synchronize the fork by the appearance of a link with the text <em>&ldquo;commits behind&rdquo;</em> on the <strong>Code</strong> tab of the fork. Under normal conditions, a <strong>Sync fork</strong> button should also appear. If it is not there, go to the <a href="#%d0%ba%d0%bd%d0%be%d0%bf%d0%ba%d0%b0-sync-fork-%d0%bd%d0%b5-%d0%be%d1%82%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%b8%d0%bb%d0%b0%d1%81%d1%8c">Sync Fork Button Not Displayed</a> section.</p>
+<p><img src="/images/fork-sync/sync-fork.png" alt="image"  loading="lazy" /></p>
+<p>To synchronize, click the <strong>Sync fork</strong> button.</p>
+<p><img src="/images/fork-sync/update-branch.png" alt="image"  loading="lazy" /></p>
+<p>In the window that appears, click the <strong>Update branch</strong> button and that&rsquo;s it, the fork is successfully synchronized, all changes from the main repository are already in your fork.</p>
+<p>If after clicking <strong>Sync fork</strong> a window with the title <em>&ldquo;This branch has conflicts that must be resolved&rdquo;</em> is displayed, there are 2 synchronization options:</p>
+<ol>
+<li>Discard all changes you have made to the fork. <strong>WARNING</strong>, the layout in your fork will return to the default, so only do this if you are sure that you can easily restore all your changes. To discard changes while synchronizing the fork, click <strong>Discard commits</strong>.</li>
+<li>Resolve merge conflicts. Resolving conflicts is described in the <a href="#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f">Synchronization with Merge Conflicts</a> section.</li>
+</ol>
+<p><img src="/images/fork-sync/has-conflicts.png" alt="image"  loading="lazy" /></p>
+<h2>Sync Fork Button Not Displayed<span class="hx:absolute hx:-mt-20" id="sync-fork-button-not-displayed"></span>
+    <a href="#sync-fork-button-not-displayed" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>To start the synchronization procedure, click on the link with the text <em>&ldquo;commits behind&rdquo;</em> on the <strong>Code</strong> tab of the fork.</p>
+<p><img src="/images/fork-sync/commits-behind.png" alt="image"  loading="lazy" /></p>
+<p>The &ldquo;Comparing changes&rdquo; page will open, pay attention to the default values:</p>
+<ul>
+<li><em>base repository</em> - by default <em>&quot;{Your GitHub nickname}/ergohaven-zmk-config&quot;</em> should be selected;</li>
+<li><em>base</em> - by default <em>&ldquo;main&rdquo;</em> should be selected;</li>
+<li><em>head repository</em> - by default <em>&ldquo;ergohaven/ergohaven-zmk-config&rdquo;</em> should be selected;</li>
+<li><em>compare</em> - by default <em>&ldquo;main&rdquo;</em> should be selected;</li>
+</ul>
+<p><img src="/images/fork-sync/comparing-changes.png" alt="image"  loading="lazy" /></p>
+<p>If any of the values are different, select the value that should be the default.
+Next, click the <strong>Create pull request</strong> button.</p>
+<p><img src="/images/fork-sync/create-pull-request.png" alt="image"  loading="lazy" /></p>
+<p>Enter the name of the pull request, if it was not filled in automatically, and click the <strong>Create pull request</strong> button.</p>
+<p><img src="/images/fork-sync/pr-name.png" alt="image"  loading="lazy" /></p>
+<p>If the message <em>&ldquo;No conflicts with base branch&rdquo;</em> is displayed at the bottom of the pull request, click the <strong>Merge pull request</strong> button and the branch is successfully updated! You can go to the <strong>Actions</strong> tab, the build of the updated firmware has already started.</p>
+<p><img src="/images/fork-sync/no-conflicts.png" alt="image"  loading="lazy" /></p>
+<p>If the message <em>&ldquo;This branch has conflicts that must be resolved&rdquo;</em> is displayed at the bottom of the pull request, close the created pull request by clicking <strong>Close pull request</strong> at the bottom of the page and go to the <a href="#%d1%81%d0%b8%d0%bd%d1%85%d1%80%d0%be%d0%bd%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8f-%d1%81-%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82%d0%b0%d0%bc%d0%b8-%d1%81%d0%bb%d0%b8%d1%8f%d0%bd%d0%b8%d1%8f">Synchronization with Merge Conflicts</a> section.</p>
+<p><img src="/images/fork-sync/merge-conflicts.png" alt="image"  loading="lazy" /></p>
+<h2>Synchronization with Merge Conflicts<span class="hx:absolute hx:-mt-20" id="synchronization-with-merge-conflicts"></span>
+    <a href="#synchronization-with-merge-conflicts" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>If changes have been made to the main repository in files that you have also changed in your fork, for example <code>.keymap</code> files, which store keyboard layouts, then merge conflicts may occur when updating the fork. The following describes the steps to resolve them.</p>
+<ol>
+<li>On the <strong>Code</strong> tab, click the <strong>Branches</strong> button.</li>
+</ol>
+<p><img src="/images/fork-sync/branches.png" alt="image"  loading="lazy" /></p>
+<ol start="2">
+<li>Click <strong>New branch</strong>.</li>
+</ol>
+<p><img src="/images/fork-sync/new-branch.png" alt="image"  loading="lazy" /></p>
+<ol start="3">
+<li>In the window that appears, enter the name of the branch, for example <em>&ldquo;sync&rdquo;</em>, then in the drop-down list select the repository <em>&ldquo;ergohaven/ergohaven-zmk-config&rdquo;</em>, the <em>&ldquo;main&rdquo;</em> branch should be selected by default, and click <strong>Create new branch</strong>.</li>
+</ol>
+<p><img src="/images/fork-sync/create-new-branch.png" alt="image"  loading="lazy" /></p>
+<ol start="4">
+<li>Next, in the line of the created branch, click <strong>•••</strong> and in the opened drop-down list select <strong>New pull request</strong>.</li>
+</ol>
+<p><img src="/images/fork-sync/new-pull-request.png" alt="image"  loading="lazy" /></p>
+<ol start="5">
+<li>Click on <em>base repository</em> and select the fork <em>&quot;{Your GitHub nickname}/ergohaven-zmk-config&quot;</em> in the drop-down list.</li>
+</ol>
+<p><img src="/images/fork-sync/new-pull-request.png" alt="image"  loading="lazy" /></p>
+<ol start="6">
+<li>On the opened &ldquo;Comparing changes&rdquo; page, click the <strong>Create pull request</strong> button.</li>
+</ol>
+<p><img src="/images/fork-sync/create-pull-request-again.png" alt="image"  loading="lazy" /></p>
+<ol start="7">
+<li>Depending on the number of synchronized commits, the <strong>Resolve conflicts</strong> button may not be visible immediately, scroll to it and click.</li>
+</ol>
+<p><img src="/images/fork-sync/resolve-conflicts.png" alt="image"  loading="lazy" /></p>
+<ol start="8">
+<li>The conflict resolution tool will open, the left side of the page displays a panel with a list of files in which conflicts need to be resolved, and the right side displays the contents of the files with marked conflict locations.</li>
+</ol>
+<p><img src="/images/fork-sync/resolve-conflicts.png" alt="image"  loading="lazy" /></p>
+<ol start="9">
+<li>Between <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; sync</code> (<em>&ldquo;sync&rdquo;</em> in this example is the name of the created branch) and <code>=======</code> are the changes from the main repository <em>&ldquo;ergohaven/ergohaven-zmk-config&rdquo;</em> that caused the conflict. Between <code>=======</code> and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; main</code> are the changes you made to the layout.
+Next, you need to carefully consider each conflict and decide whether you want to make changes from <em>&ldquo;ergohaven/ergohaven-zmk-config&rdquo;</em> to your layout.</li>
+</ol>
+<ul>
+<li>If you understand that the change from the main repository is <strong>not needed</strong>, then delete the lines starting with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; sync</code> and ending with <code>=======</code>, then scroll the file to the line <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; main</code>, which means the end of this conflict, and also erase this line. The conflict is resolved.</li>
+</ul>
+<p><video 
+  autoplay
+  loop
+  muted
+  style="max-width: 100%">
+  <source src="/video/fork-sync/remove-incoming.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br /></p>
+<ul>
+<li>If you understand that the change from the main repository is <strong>needed</strong>, then delete the line <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; sync</code>, the line <code>=======</code> and the line <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; main</code>, thereby adding the change from the main repository to the layout. The conflict is resolved.</li>
+</ul>
+<p><video 
+  autoplay
+  loop
+  muted
+  style="max-width: 100%">
+  <source src="/video/fork-sync/accept-incoming.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br /></p>
+<ul>
+<li>If you <strong>do not understand</strong>, or are <strong>not sure</strong> what a change from the main repository does, then seek help with resolving the conflict in the <a href="https://t.me/&#43;E-mlq11c97AyZmY6"target="_blank" rel="noopener">Ergohaven Community on Telegram</a>.</li>
+</ul>
+<ol start="10">
+<li>After resolving all conflicts in the file, the <strong>Mark as resolved</strong> button will become available, click it to complete the resolution of conflicts in the file.</li>
+<li>After resolving conflicts in all files, the <strong>Commit merge</strong> button will be displayed, click it to complete.</li>
+</ol>
+<p><img src="/images/fork-sync/commit-merge.png" alt="image"  loading="lazy" /></p>
+<ol start="12">
+<li>
+<p>Scroll the page to the <strong>Merge pull request</strong> button, click it, and then click <strong>Confirm merge</strong>.</p>
+</li>
+<li>
+<p>The last step to make sure that all conflicts are resolved is to go to the <strong>Actions</strong> tab and wait for the firmware build to complete. If the conflicts are resolved correctly, the firmware build will complete successfully.</p>
+</li>
+</ol>
 
         </div>
-        <div class="hx:mt-16"></div>
-        <div class="hx:mt-16"></div>
-        
+        <div class="hx:mt-16"></div><div class="hx:mb-8 hx:flex hx:items-center hx:border-t hx:pt-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-neutral-400 hx:dark:contrast-more:border-neutral-400 hx:print:hidden"><a
+        href="/en/software/zmk/keymap-editor/"
+        title="Keyboard configuration in ZMK keymap-editor"
+        class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:pr-4 hx:rtl:pl-4"
+      ><svg class="hx:inline hx:h-5 hx:shrink-0 hx:ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Keyboard configuration in ZMK keymap-editor</a><a
+        href="/en/software/zmk/zmk-ruen/"
+        title="RuEn Layout for Wireless Keyboards"
+        class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:ml-auto hx:ltr:pl-4 hx:ltr:text-right hx:rtl:mr-auto hx:rtl:pr-4 hx:rtl:text-left"
+      >RuEn Layout for Wireless Keyboards<svg class="hx:inline hx:h-5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
       </main>
     </article>
   </div>
