@@ -6,14 +6,16 @@ layout: landing
 ## 2026
 
 - [x] Trackball Royale
-- [ ] Project "Modular minds"                                          
-- [ ] New switches                                              
+- [x] K:04 Series (Project "Modular minds")                                          
+- [x] New switches                                              
 - [x] Sculpt keycaps
-- [ ] Entropy
+- [x] Entropy
 - [x] Phenom
 - [x] Phenom Mini
 - [x] Phenom Micro
-- [ ] Sprawl
+- [ ] Project "Sprawl"
+- [ ] Project "Angled"
+
 
 ## 2025
 

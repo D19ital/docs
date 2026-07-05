@@ -22,10 +22,8 @@ toc: false
 <div class="hx:mt-6"></div>
 
 {{< cards >}}
-  {{< card link="wired" title="Проводные девайсы" icon="wired" >}}
-  {{< card link="wireless" title="Беспроводные девайсы" icon="wireless" >}}
-  {{< card link="qmk" title="Софт для проводных девайсов" icon="qmk" >}}
-  {{< card link="zmk" title="Софт для беспроводных девайсов" icon="zmk" >}}
-  {{< card link="troubleshooting" title="Устранение неполадок" icon="tools" >}}
+  {{< card link="device" title="Клавиатуры и другие девайсы" icon="device" >}}
   {{< card link="accessories" title="Аксессуары" icon="accessories" >}}
+  {{< card link="software" title="Софт" icon="soft" >}}
+  {{< card link="troubleshooting" title="Устранение неполадок" icon="tools" >}}
 {{< /cards >}}

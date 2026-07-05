@@ -1,0 +1,96 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ergohaven docs – Аксессуары</title>
+    <link>http://localhost:1313/accessories/</link>
+    <description>Recent content in Аксессуары on ergohaven docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    
+	  <atom:link href="http://localhost:1313/accessories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Sculpt</title>
+      <link>http://localhost:1313/accessories/sculpt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/accessories/sculpt/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sculpt — скульптурные кейкапы для эргономичных сплит-клавиатур&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/sculpt/scupt_01.jpg&#34; alt=&#34;Sculpt - внешний вид&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Установка&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;установка&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Sculpt поставляется в виде набора кейкапов для самостоятельной установки на вашу клавиатуру. Все кейкапы пронумерованы индексными метками на самом кейкапе в виде &amp;ldquo;XY&amp;rdquo;, где X - буквенное обозначение строки (сверху вниз), Y - сквозное цифровое обозначение ряда слева направо&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/sculpt/cap_index.jpg&#34; alt=&#34;Sculpt&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;Правильная установка кейкапа - грань с индексной меткой должна быть сверху&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Расположение кейкапов на клавиатуре&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;расположение-кейкапов-на-клавиатуре&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%80%d0%b0%d1%81%d0%bf%d0%be%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%b5%d0%b9%d0%ba%d0%b0%d0%bf%d0%be%d0%b2-%d0%bd%d0%b0-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8%d0%b0%d1%82%d1%83%d1%80%d0%b5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/layouts/sculpt_layout_ru_01.png&#34; alt=&#34;Расположение кейкапов на клавиатуре&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/layouts/sculpt_layout_ru_02.png&#34; alt=&#34;Расположение кейкапов на клавиатуре&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Устранение неполадок&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;устранение-неполадок&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%83%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bd%d0%b5%d0%bf%d0%be%d0%bb%d0%b0%d0%b4%d0%be%d0%ba&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;details class=&#34;hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group&#34; &gt;
+  &lt;summary class=&#34;hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[&#39;&#39;] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90&#34;&gt;
+    &lt;strong class=&#34;hx:text-lg&#34;&gt;Кейкап не соответсвует геометрии или высоте&lt;/strong&gt;
+  &lt;/summary&gt;
+  &lt;div class=&#34;hx:p-2 hx:overflow-hidden&#34;&gt;
+    &lt;ul&gt;
+&lt;li&gt;Проверьте установку свитча, свитч должен быть вставлен полностью&lt;/li&gt;
+&lt;li&gt;Проверьте соответствие индекса кейкапа и его правильное рассположению на клавиатуре&lt;/li&gt;
+&lt;li&gt;Проверьте стем кейкапа на наличие посторонних предметов, например, остатков поддержки. Очистите стем тонким предметом&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/sculpt/cap_clear.jpg&#34; alt=&#34;Sculpt&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;h2&gt;Уход и обслуживание&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;уход-и-обслуживание&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%83%d1%85%d0%be%d0%b4-%d0%b8-%d0%be%d0%b1%d1%81%d0%bb%d1%83%d0%b6%d0%b8%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-steps hx:ml-4 hx:mb-12 hx:ltr:border-l hx:rtl:border-r hx:border-gray-200 hx:ltr:pl-6 hx:rtl:pr-6 hx:dark:border-neutral-800 [counter-reset:step]&#34;&gt;
+&lt;h3&gt;Снимите кейкапы&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;снимите-кейкапы&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%81%d0%bd%d0%b8%d0%bc%d0%b8%d1%82%d0%b5-%d0%ba%d0%b5%d0%b9%d0%ba%d0%b0%d0%bf%d1%8b&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Используйте специальный пуллер, чтобы не поцарапать боковины&lt;/p&gt;
+&lt;h3&gt;Сделайте раствор&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;сделайте-раствор&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d0%b9%d1%82%d0%b5-%d1%80%d0%b0%d1%81%d1%82%d0%b2%d0%be%d1%80&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Налейте в емкость теплую воду (до 40°C) и добавьте пару капель мыла или средства для посуды&lt;/p&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;Не используйте кипяток - высокая температура деформирует стэм кейкапа, и он перестанет держаться на свитче&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Замочите&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;замочите&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%b7%d0%b0%d0%bc%d0%be%d1%87%d0%b8%d1%82%d0%b5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Оставьте кейкапы в воде на 10–15 минут&lt;/p&gt;
+&lt;h3&gt;Протрите&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;протрите&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d1%80%d0%be%d1%82%d1%80%d0%b8%d1%82%d0%b5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Используйте мягкую зубную щетку или микрофибру без сильного давления&lt;/p&gt;
+&lt;h3&gt;Промойте&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;промойте&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d1%80%d0%be%d0%bc%d0%be%d0%b9%d1%82%d0%b5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Сполосните кейкапы в чистой проточной воде&lt;/p&gt;
+&lt;h3&gt;Высушите&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;высушите&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%b2%d1%8b%d1%81%d1%83%d1%88%d0%b8%d1%82%d0%b5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Положите кейкапы стемом вниз на полотенце до полного высыхания&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;Не используйте агрессивные чистящие средства (ацетон, бензин, растворители (646, уайт-спирит), концентрированные кислоты и щелочи)!&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Полезные ссылки&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;полезные-ссылки&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d0%bf%d0%be%d0%bb%d0%b5%d0%b7%d0%bd%d1%8b%d0%b5-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Постоянная ссылка на этот раздел&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://eh.works/shop/tproduct/767494027-149767031692-sculpt&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sculpt - купить в интернет магазине&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ergohaven/Sculpt-keycaps&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sculpt – Parametric Keycap Generator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -18,64 +18,33 @@ languages:
         - identifier: docs
           name: Документация
           weight: 1
-
-        - identifier: wired
-          name: Проводные девайсы
-          pageRef: /wired
-          parent: docs
-          weight: 10
-        - identifier: wireless
-          name: Беспроводные девайсы
-          pageRef: /wireless
-          parent: docs
-          weight: 20
-        - identifier: qmk
-          name: QMK и Vial
-          pageRef: /qmk
-          parent: docs
-          weight: 30
-        - identifier: zmk
-          name: ZMK и keymap-editor
-          pageRef: /zmk
-          parent: docs
-          weight: 40
-        - identifier: fw
-          name: Файлы прошивки
-          url: "https://github.com/ergohaven/keymap_hub"
-          parent: docs
-          weight: 50
-
-        - identifier: blog
-          name: Блог
-          pageRef: /blog
-          weight: 2
-          
+        
         - identifier: roadmap
           name: Roadmap
           pageRef: /roadmap
-          weight: 3
+          weight: 2
         - identifier: faq
           name: FAQ
           pageRef: /faq
-          weight: 4
+          weight: 3
 
         - identifier: shop
           name: Магазин
-          weight: 5
+          weight: 4
           url: "https://eh.works/shop"
 
         - name: Search
-          weight: 6
+          weight: 5
           params:
             type: search
         - name: Language
-          weight: 7
+          weight: 6
           params:
             type: language-switch
             label: true     # опционально
             icon: "translate"  # опционально, иначе будет дефолтная иконка
         - name: Theme
-          weight: 8
+          weight: 7
           params:
               type: theme-toggle
               label: true   # опционально, по умолчанию false
@@ -87,32 +56,6 @@ languages:
         - identifier: docs
           name: Documentation
           weight: 1
-
-        - identifier: wired
-          name: Wired devices
-          pageRef: /wired
-          parent: docs
-          weight: 10
-        - identifier: wireless
-          name: Wireless devices
-          pageRef: /wireless
-          parent: docs
-          weight: 20
-        - identifier: qmk
-          name: QMK and Vial
-          pageRef: /qmk
-          parent: docs
-          weight: 30
-        - identifier: zmk
-          name: ZMK and keymap-editor
-          pageRef: /zmk
-          parent: docs
-          weight: 40
-        - identifier: fw
-          name: Firmware files
-          url: "https://github.com/ergohaven/keymap_hub"
-          parent: docs
-          weight: 50
 
         - identifier: blog
           name: Blog

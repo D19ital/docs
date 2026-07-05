@@ -1,0 +1,96 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ergohaven docs – Аксессуары</title>
+    <link>http://localhost:1313/en/accessories/</link>
+    <description>Recent content in Аксессуары on ergohaven docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/en/accessories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Sculpt</title>
+      <link>http://localhost:1313/en/accessories/sculpt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/accessories/sculpt/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Sculpt — sculptural keycaps for ergonomic split keyboards&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/sculpt/scupt_01.jpg&#34; alt=&#34;Sculpt_example&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Installation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;installation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#installation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Sculpt comes as a set of keycaps for self-assembly on your keyboard. All keycaps are marked with index labels on the keycap itself in the form &amp;ldquo;XY&amp;rdquo;, where X is the letter of the row (top to bottom), Y is the sequential number of the column from left to right&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/sculpt/cap_index.jpg&#34; alt=&#34;Sculpt&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;Correct keycap installation — the edge with the index label must be on top&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Keycap placement on the keyboard&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;keycap-placement-on-the-keyboard&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#keycap-placement-on-the-keyboard&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/layouts/sculpt_layout_en_01.png&#34; alt=&#34;Keycap placement on the keyboard&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/layouts/sculpt_layout_en_02.png&#34; alt=&#34;Keycap placement on the keyboard&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Troubleshooting&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;troubleshooting&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#troubleshooting&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;details class=&#34;hx:last-of-type:mb-0 hx:rounded-lg hx:bg-neutral-50 hx:dark:bg-neutral-800 hx:p-2 hx:mt-4 hx:group&#34; &gt;
+  &lt;summary class=&#34;hx:flex hx:items-center hx:cursor-pointer hx:select-none hx:list-none hx:p-1 hx:rounded-sm hx:transition-colors hx:hover:bg-gray-100 hx:dark:hover:bg-neutral-800 hx:before:mr-1 hx:before:inline-block hx:before:transition-transform hx:before:content-[&#39;&#39;] hx:dark:before:invert hx:rtl:before:rotate-180 hx:group-open:before:rotate-90&#34;&gt;
+    &lt;strong class=&#34;hx:text-lg&#34;&gt;Keycap does not match the geometry or height&lt;/strong&gt;
+  &lt;/summary&gt;
+  &lt;div class=&#34;hx:p-2 hx:overflow-hidden&#34;&gt;
+    &lt;ul&gt;
+&lt;li&gt;Check the switch installation, the switch must be fully inserted&lt;/li&gt;
+&lt;li&gt;Check that the keycap index matches its correct placement on the keyboard&lt;/li&gt;
+&lt;li&gt;Check the keycap stem for foreign objects, such as support remnants. Clean the stem with a thin object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/sculpt/cap_clear.jpg&#34; alt=&#34;Sculpt&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
+
+&lt;h2&gt;Care and maintenance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;care-and-maintenance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#care-and-maintenance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-steps hx:ml-4 hx:mb-12 hx:ltr:border-l hx:rtl:border-r hx:border-gray-200 hx:ltr:pl-6 hx:rtl:pr-6 hx:dark:border-neutral-800 [counter-reset:step]&#34;&gt;
+&lt;h3&gt;Remove the keycaps&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;remove-the-keycaps&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#remove-the-keycaps&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Use a special puller to avoid scratching the sides&lt;/p&gt;
+&lt;h3&gt;Make a solution&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;make-a-solution&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#make-a-solution&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Pour warm water (up to 40°C) into a container and add a couple drops of soap or dishwashing liquid&lt;/p&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;Do not use boiling water — high temperature will deform the keycap stem, and it will no longer hold on the switch&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Soak&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;soak&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#soak&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Leave the keycaps in water for 10–15 minutes&lt;/p&gt;
+&lt;h3&gt;Wipe&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;wipe&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#wipe&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Use a soft toothbrush or microfiber without applying strong pressure&lt;/p&gt;
+&lt;h3&gt;Rinse&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;rinse&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#rinse&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Rinse the keycaps in clean running water&lt;/p&gt;
+&lt;h3&gt;Dry&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dry&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dry&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Place the keycaps stem-down on a towel until completely dry&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-red-200 hx:bg-red-100 hx:text-red-900 hx:dark:border-red-200/30 hx:dark:bg-red-900/30 hx:dark:text-red-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;Do not use aggressive cleaning agents (acetone, gasoline, solvents (646, white spirit), concentrated acids and alkalis)!&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Useful links&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;useful-links&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#useful-links&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://eh.industries/shop/tproduct/767895441-590211854572-sculpt&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Product&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ergohaven/Sculpt-keycaps&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sculpt – Parametric Keycap Generator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
