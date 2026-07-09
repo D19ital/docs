@@ -189,16 +189,16 @@ flowchart TD;
     Q3 -- Нет --> K:04[K:04]
     Q3 -- Да --> Phenom[Phenom]
 
-    Q4 -- Нет --> K:04 Mini[K:04 Mini]
-    Q4 -- Да --> Phenom Mini[Phenom Mini]
+    Q4 -- Нет --> K:04_Mini[K:04 Mini]
+    Q4 -- Да --> Phenom_Mini[Phenom Mini]
 
     K:04 Mini --> Q5(Ещё меньше клавиш?)
-    Q5 -- Да --> K:04 Micro[K:04 Micro]
+    Q5 -- Да --> K:04_Micro[K:04 Micro]
 
     Phenom Mini --> Q6(Ещё меньше клавиш?)
-    Q6 -- Да --> Phenom Micro[K:04 Micro]
+    Q6 -- Да --> Phenom_Micro[K:04 Micro]
 
-    click K03K:04 "https://eh.works/shop/tproduct/767494027-753257791163-k04" _blank
+    click K:04 "https://eh.works/shop/tproduct/767494027-753257791163-k04" _blank
     click Phenom "https://eh.works/shop/tproduct/767494027-549625025652-phenom" _blank
     click K:04 Mini "https://eh.works/shop/tproduct/767494027-901597181103-k04-mini" _blank
     click Phenom Mini "https://eh.works/shop/tproduct/767494027-395786351472-phenom-mini" _blank
