@@ -192,10 +192,10 @@ flowchart TD;
     Q4 -- Нет --> K:04_Mini[K:04 Mini]
     Q4 -- Да --> Phenom_Mini[Phenom Mini]
 
-    K:04 Mini --> Q5(Ещё меньше клавиш?)
+    K:04_Mini --> Q5(Ещё меньше клавиш?)
     Q5 -- Да --> K:04_Micro[K:04 Micro]
 
-    Phenom Mini --> Q6(Ещё меньше клавиш?)
+    Phenom_Mini --> Q6(Ещё меньше клавиш?)
     Q6 -- Да --> Phenom_Micro[K:04 Micro]
 
     click K:04 "https://eh.works/shop/tproduct/767494027-753257791163-k04" _blank
