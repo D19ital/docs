@@ -1,5 +1,5 @@
 ---
-title: "Phenom Series"
+title: "Серия Phenom"
 sidebar:
   exclude: true
 ---
