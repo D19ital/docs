@@ -1,28 +1,31 @@
 ---
-title: Frequently asked questions 
+title: Frequently Asked Questions
 ---
 
 ### I'm a beginner, what's the best keyboard for me to start with?
-We recommend starting with 60% layout: K:03, HPD.
+We recommend starting with a 60% layout: **K:04**, **Phenom**.
 
-### You have different switches and keycaps to choose from, which is the best one for me to choose?
-The most common option is Brown switches (tactile) and XDA keycaps.
+### You have different switches and keycaps to choose from. Which ones should I choose?
+- For curved keyboards in the **Phenom** series: **Outemu Silent Tom** switches (tactile, silent) and **XDA** keycaps.
+- For the **K:04** series: **Gateron Brown KS-33 LP 3.0** switches (tactile, low-profile) and **low-profile** keycaps.
 
 ### I need a low profile keyboard, do you have one?
-You can choose all of our keyboards with mid-profile switches and low-profile keycaps, the mid-profile switches are slightly taller than the low-profile ones, but still have a standard MX connector, making them interchangeable with standard switches, and you most likely won't notice the difference in height.
+The **K:04** series uses low-profile switches and keycaps.
 
-### And what switches and keycaps are suitable for your keyboards if I want to purchase them elsewhere?
-Our keyboards are compatible with any switches that have MX legs/base; accordingly, keycaps must also have an MX connector.
+### Which switches and keycaps are suitable for your keyboards if I want to purchase them elsewhere?
+Our keyboards are compatible with any switches that have **MX pins/base**. Accordingly, keycaps must also have an MX mount.
 
 ### When choosing switches, there are 5 pin or 3 pin options, which should I choose?
-Both will fit.
-The only difference is that 5-pin switches has an additional pair of plastic legs for more support on pcb, but this doesn't matter that much for our keyboards since case will snuggle switches anyway.
+**Both versions will fit**. 5-pin switches have two additional plastic pins for better mounting in the PCB. For our keyboards, this does not make much difference because the switches are mounted in the case, not in the PCB.
 
-### How do I customize my keyboard? How to reassign keys?
-Detailed information on setting up keyboard is in [documentation](/qmk).
+### How do I configure my keyboard? How do I remap keys?
+Use the [Entropy](https://github.com/ergohaven/entropy) configurator to remap keys and configure your keyboard. Setup instructions are available in the [documentation](https://docs.ergohaven.xyz/).
+
+### How can I keep symbols in the same place regardless of the keyboard layout?
+Use **Universal Symbols** in the [Entropy](https://github.com/ergohaven/entropy) configurator.
 
 ### Can you make me a custom keyboard in a different color, different shape, etc.
-No, we do not deal with such orders.
+No, we do not take such orders.
 
-### Which countries do you ship?
-We ship mostly worldwide. More information about shipping you can find [here](https://eh.industries/shipping).
+### Which countries do you ship to?
+We ship mostly worldwide. You can find more information about shipping [here](https://eh.works/shipping).
