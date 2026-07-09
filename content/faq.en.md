@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions
+title: FAQ
 ---
 
 ### I'm a beginner, what's the best keyboard for me to start with?
