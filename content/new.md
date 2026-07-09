@@ -44,7 +44,7 @@ title: С чего начать?
 {{< details title="Профили кейкапов" >}}
 **Профиль** — это форма и высота кейкапа. В линейке Ergohaven доступны следующие варианты:
 
-- **Sculpt** — эргономичные параметрические кейкапы для сплит-клавиатур, созданные с учетом реального положения пальцев на каждой клавише
+- **Sculpt** — эргономичные параметрические кейкапы для сплит-клавиатур, созданные с учётом реального положения пальцев на каждой клавише
 - **XDA** — низкие, сферические, одинаковые на всех рядах. Удобны на сплитах, где нет привычного деления на ряды
 - **DSA** — схожи с XDA, чуть более скруглённые. Также универсальны по рядам
 - **Низкопрофильные** — специально подобранные кейкапы для низкопрофильных свитчей
@@ -117,7 +117,7 @@ title: С чего начать?
 | **QMK** | [Entropy](https://github.com/ergohaven/entropy) | Серия клавиатур Phenom |
 | **RMK** | [Entropy](https://github.com/ergohaven/entropy) | Серия клавиатур K:04 |
 
-**Entropy** - это настольное приложение с современным, минималистичным и интуитивно понятным интерфейсом для настройки программируемых устройств ввода под управлением прошивки Vial-QMK или Vial-RMK
+**Entropy** — это настольное приложение с современным, минималистичным и интуитивно понятным интерфейсом для настройки программируемых устройств ввода под управлением прошивки Vial-QMK или Vial-RMK
 
 ### Дополнительные модули
 
@@ -162,13 +162,12 @@ title: С чего начать?
 {{< /callout >}}
 
 {{< cards >}}
-  {{< card link="https://eh.works/shop/tproduct/767494027-753257791163-k04" title="K:04" subtitle="60%, беспроводная, модульная система - оптимальный выбор для старта" icon="star" >}}
-  {{< card link="https://eh.works/shop/tproduct/767494027-549625025652-phenom" title="Phenom" subtitle="60%, проводная, изогнутый корпус, модульная система - для тех, кто хочет максимум эргономики сразу" icon="adjustments" >}}
-  {{< card link="https://eh.works/shop/tproduct/767494027-901597181103-k04-mini" title="K:04 Mini" subtitle="40%, беспроводная, модульная система - для тех, кто готов к компактности" >}}
-  {{< card link="https://eh.works/shop/tproduct/767494027-395786351472-phenom-mini" title="Phenom Mini" subtitle="40%, проводная, изогнутый корпус, модульная система -  для энтузиастов, которые предпочитают 40% раскладку" >}}
-  {{< card link="https://eh.works/shop/tproduct/767494027-627218219263-k04-micro" title="K:04 Micro" subtitle="40%, беспроводная, модульная система - ультракомпактная версия K:04" >}}
-  {{< card link="https://eh.works/shop/tproduct/767494027-687509759292-phenom-micro" title="Phenom Micro" subtitle="40%, проводная, изогнутый корпус, модульная система -  ультракомпактная версия Phenom" >}}
-  
+  {{< card link="https://eh.works/shop/tproduct/767494027-753257791163-k04" title="K:04" subtitle="60%, беспроводная, модульная система — оптимальный выбор для старта" icon="star" >}}
+  {{< card link="https://eh.works/shop/tproduct/767494027-549625025652-phenom" title="Phenom" subtitle="60%, проводная, изогнутый корпус, модульная система — для тех, кто хочет максимум эргономики сразу" icon="adjustments" >}}
+  {{< card link="https://eh.works/shop/tproduct/767494027-901597181103-k04-mini" title="K:04 Mini" subtitle="40%, беспроводная, модульная система — для тех, кто готов к компактности" >}}
+  {{< card link="https://eh.works/shop/tproduct/767494027-395786351472-phenom-mini" title="Phenom Mini" subtitle="40%, проводная, изогнутый корпус, модульная система — для энтузиастов, которые предпочитают 40% раскладку" >}}
+  {{< card link="https://eh.works/shop/tproduct/767494027-627218219263-k04-micro" title="K:04 Micro" subtitle="30%, беспроводная, модульная система — ультракомпактная версия K:04" >}}
+  {{< card link="https://eh.works/shop/tproduct/767494027-687509759292-phenom-micro" title="Phenom Micro" subtitle="40%, проводная, изогнутый корпус, модульная система — ультракомпактная версия Phenom" >}}
 {{< /cards >}}
 
 ### Шаг 3: выберите свитчи
@@ -186,23 +185,23 @@ flowchart TD;
     Second(Хотите 40% или 60% раскладку?) -- 40% --> Q4(Хотите изогнутый вариант?)
     Second -- 60% --> Q3(Хотите изогнутый вариант?)
 
-    Q3 -- Нет --> K:04[K:04]
+    Q3 -- Нет --> K04[K:04]
     Q3 -- Да --> Phenom[Phenom]
 
-    Q4 -- Нет --> K:04_Mini[K:04 Mini]
+    Q4 -- Нет --> K04_Mini[K:04 Mini]
     Q4 -- Да --> Phenom_Mini[Phenom Mini]
 
-    K:04_Mini --> Q5(Ещё меньше клавиш?)
-    Q5 -- Да --> K:04_Micro[K:04 Micro]
+    K04_Mini --> Q5(Ещё меньше клавиш?)
+    Q5 -- Да --> K04_Micro[K:04 Micro]
 
     Phenom_Mini --> Q6(Ещё меньше клавиш?)
-    Q6 -- Да --> Phenom_Micro[K:04 Micro]
+    Q6 -- Да --> Phenom_Micro[Phenom Micro]
 
-    click K:04 "https://eh.works/shop/tproduct/767494027-753257791163-k04" _blank
+    click K04 "https://eh.works/shop/tproduct/767494027-753257791163-k04" _blank
     click Phenom "https://eh.works/shop/tproduct/767494027-549625025652-phenom" _blank
-    click K:04_Mini "https://eh.works/shop/tproduct/767494027-901597181103-k04-mini" _blank
+    click K04_Mini "https://eh.works/shop/tproduct/767494027-901597181103-k04-mini" _blank
     click Phenom_Mini "https://eh.works/shop/tproduct/767494027-395786351472-phenom-mini" _blank
-    click K:04_Micro "https://eh.works/shop/tproduct/767494027-627218219263-k04-micro" _blank
+    click K04_Micro "https://eh.works/shop/tproduct/767494027-627218219263-k04-micro" _blank
     click Phenom_Micro "https://eh.works/shop/tproduct/767494027-687509759292-phenom-micro" _blank
 ```
 
