@@ -162,12 +162,12 @@ For split keyboard beginners, starting with the **60% format** is recommended. I
 {{< /callout >}}
 
 {{< cards >}}
-  {{< card link="https://eh.industries/shop/tproduct/767494027-753257791163-k04" title="K:04" subtitle="60%, wireless, modular system — the optimal choice to start" icon="star" >}}
-  {{< card link="https://eh.industries/shop/tproduct/767494027-549625025652-phenom" title="Phenom" subtitle="60%, wired, curved case, modular system — for those who want maximum ergonomics right away" icon="adjustments" >}}
-  {{< card link="https://eh.industries/shop/tproduct/767494027-901597181103-k04-mini" title="K:04 Mini" subtitle="40%, wireless, modular system — for those ready for compactness" >}}
-  {{< card link="https://eh.industries/shop/tproduct/767494027-395786351472-phenom-mini" title="Phenom Mini" subtitle="40%, wired, curved case, modular system — for enthusiasts who prefer a 40% layout" >}}
-  {{< card link="https://eh.industries/shop/tproduct/767494027-627218219263-k04-micro" title="K:04 Micro" subtitle="30%, wireless, modular system — ultra-compact version of K:04" >}}
-  {{< card link="https://eh.industries/shop/tproduct/767494027-687509759292-phenom-micro" title="Phenom Micro" subtitle="40%, wired, curved case, modular system — ultra-compact version of Phenom" >}}
+  {{< card link="https://eh.industries/shop/tproduct/767895441-847074777793-k04" title="K:04" subtitle="60%, wireless, modular system — the optimal choice to start" icon="star" >}}
+  {{< card link="https://eh.industries/shop/tproduct/767895441-877046509012-phenom" title="Phenom" subtitle="60%, wired, curved case, modular system — for those who want maximum ergonomics right away" icon="adjustments" >}}
+  {{< card link="https://eh.industries/shop/tproduct/767895441-921976659883-k04-mini" title="K:04 Mini" subtitle="40%, wireless, modular system — for those ready for compactness" >}}
+  {{< card link="https://eh.industries/shop/tproduct/767895441-795571358602-phenom-mini" title="Phenom Mini" subtitle="40%, wired, curved case, modular system — for enthusiasts who prefer a 40% layout" >}}
+  {{< card link="https://eh.industries/shop" title="K:04 Micro" subtitle="30%, wireless, modular system — ultra-compact version of K:04" >}}
+  {{< card link="https://eh.industries/shop/tproduct/767895441-586488374072-phenom-micro" title="Phenom Micro" subtitle="40%, wired, curved case, modular system — ultra-compact version of Phenom" >}}
 {{< /cards >}}
 
 ### Step 3: Choose your switches
@@ -197,12 +197,12 @@ flowchart TD;
     Phenom_Mini --> Q6(Need even fewer keys?)
     Q6 -- Yes --> Phenom_Micro[Phenom Micro]
 
-    click K04 "https://eh.industries/shop/tproduct/767494027-753257791163-k04" _blank
-    click Phenom "https://eh.industries/shop/tproduct/767494027-549625025652-phenom" _blank
-    click K04_Mini "https://eh.industries/shop/tproduct/767494027-901597181103-k04-mini" _blank
-    click Phenom_Mini "https://eh.industries/shop/tproduct/767494027-395786351472-phenom-mini" _blank
-    click K04_Micro "https://eh.industries/shop/tproduct/767494027-627218219263-k04-micro" _blank
-    click Phenom_Micro "https://eh.industries/shop/tproduct/767494027-687509759292-phenom-micro" _blank
+    click K04 "https://eh.industries/shop/tproduct/767895441-847074777793-k04" _blank
+    click Phenom "https://eh.industries/shop/tproduct/767895441-877046509012-phenom" _blank
+    click K04_Mini "https://eh.industries/shop/tproduct/767895441-921976659883-k04-mini" _blank
+    click Phenom_Mini "https://eh.industries/shop/tproduct/767895441-795571358602-phenom-mini" _blank
+    click K04_Micro "https://eh.industries/shop" _blank
+    click Phenom_Micro "https://eh.industries/shop/tproduct/767895441-586488374072-phenom-micro" _blank
 ```
 
 ---
