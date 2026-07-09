@@ -24,8 +24,8 @@ Use the [Entropy](https://github.com/ergohaven/entropy) configurator to remap ke
 ### How can I keep symbols in the same place regardless of the keyboard layout?
 Use **Universal Symbols** in the [Entropy](https://github.com/ergohaven/entropy) configurator
 
-### Can you make me a custom keyboard in a different color, different shape, etc.
-No, we do not take such orders.
+### Can you make me a custom keyboard in a different color, different shape, etc?
+No, we do not take such orders
 
 ### Which countries do you ship to?
 We ship mostly worldwide. You can find more information about shipping [here](https://eh.industries/shipping)
