@@ -200,10 +200,10 @@ flowchart TD;
 
     click K:04 "https://eh.works/shop/tproduct/767494027-753257791163-k04" _blank
     click Phenom "https://eh.works/shop/tproduct/767494027-549625025652-phenom" _blank
-    click K:04 Mini "https://eh.works/shop/tproduct/767494027-901597181103-k04-mini" _blank
-    click Phenom Mini "https://eh.works/shop/tproduct/767494027-395786351472-phenom-mini" _blank
-    click K:04 Micro "https://eh.works/shop/tproduct/767494027-627218219263-k04-micro" _blank
-    click Phenom Micro "https://eh.works/shop/tproduct/767494027-687509759292-phenom-micro" _blank
+    click K:04_Mini "https://eh.works/shop/tproduct/767494027-901597181103-k04-mini" _blank
+    click Phenom_Mini "https://eh.works/shop/tproduct/767494027-395786351472-phenom-mini" _blank
+    click K:04_Micro "https://eh.works/shop/tproduct/767494027-627218219263-k04-micro" _blank
+    click Phenom_Micro "https://eh.works/shop/tproduct/767494027-687509759292-phenom-micro" _blank
 ```
 
 ---
