@@ -166,7 +166,7 @@ For split keyboard beginners, starting with the **60% format** is recommended. I
   {{< card link="https://eh.industries/shop/tproduct/767895441-877046509012-phenom" title="Phenom" subtitle="60%, wired, curved case, modular system — for those who want maximum ergonomics right away" icon="adjustments" >}}
   {{< card link="https://eh.industries/shop/tproduct/767895441-921976659883-k04-mini" title="K:04 Mini" subtitle="40%, wireless, modular system — for those ready for compactness" >}}
   {{< card link="https://eh.industries/shop/tproduct/767895441-795571358602-phenom-mini" title="Phenom Mini" subtitle="40%, wired, curved case, modular system — for enthusiasts who prefer a 40% layout" >}}
-  {{< card link="https://eh.industries/shop" title="K:04 Micro" subtitle="30%, wireless, modular system — ultra-compact version of K:04" >}}
+  {{< card link="https://eh.industries/shop/tproduct/767895441-396283406723-k04-micro" title="K:04 Micro" subtitle="30%, wireless, modular system — ultra-compact version of K:04" >}}
   {{< card link="https://eh.industries/shop/tproduct/767895441-586488374072-phenom-micro" title="Phenom Micro" subtitle="40%, wired, curved case, modular system — ultra-compact version of Phenom" >}}
 {{< /cards >}}
 
@@ -201,7 +201,7 @@ flowchart TD;
     click Phenom "https://eh.industries/shop/tproduct/767895441-877046509012-phenom" _blank
     click K04_Mini "https://eh.industries/shop/tproduct/767895441-921976659883-k04-mini" _blank
     click Phenom_Mini "https://eh.industries/shop/tproduct/767895441-795571358602-phenom-mini" _blank
-    click K04_Micro "https://eh.industries/shop" _blank
+    click K04_Micro "https://eh.industries/shop/tproduct/767895441-396283406723-k04-micro" _blank
     click Phenom_Micro "https://eh.industries/shop/tproduct/767895441-586488374072-phenom-micro" _blank
 ```
 
