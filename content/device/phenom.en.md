@@ -6,7 +6,7 @@ sidebar:
 
 {{< details title="Phenom" closed="true" >}}
 
-![Phenom layout](/images/layouts/phenom_layout_en.png)
+[<img src="/images/layouts/phenom_layout_en.svg" alt="Phenom layout" width="720">](/images/layouts/phenom_layout_en.svg)
 
 **Phenom** is an ergonomic programmable split keyboard with a 3D case, a modular hot-swap system, 58 customizable keys, and support for a trackball, touchpad, or encoder on either half
 
@@ -14,7 +14,7 @@ sidebar:
 
 {{< details title="Phenom Mini" closed="true" >}}
 
-![Phenom Mini layout](/images/layouts/phenom_mini_layout_en.png)
+[<img src="/images/layouts/phenom_mini_layout_en.svg" alt="Phenom Mini layout" width="720">](/images/layouts/phenom_mini_layout_en.svg)
 
 **Phenom Mini** is a compact version of the ergonomic Phenom split keyboard with 46 customizable keys and support for a trackball, touchpad, or encoder on either half
 
@@ -22,7 +22,7 @@ sidebar:
 
 {{< details title="Phenom Micro" closed="true" >}}
 
-![Phenom Micro layout](/images/layouts/phenom_micro_layout_en.png)
+[<img src="/images/layouts/phenom_micro_layout_en.svg" alt="Phenom Micro layout" width="720">](/images/layouts/phenom_micro_layout_en.svg)
 
 **Phenom Micro** is an ultra-compact version of the Phenom keyboard, with only 40 customizable keys and support for a trackball, touchpad, or encoder on either half
 
