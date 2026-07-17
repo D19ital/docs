@@ -1,17 +1,15 @@
 ---
 title: Прошивки
 ---
-| [Инструкция по прошивке][02] | [RMK Source code][05] | [QMK Source code][03] | [ZMK Source code][04] |
-| ---------------------------- | --------------------- | --------------------- | --------------------- |
 
-[02]: https://docs.ergohaven.xyz/
-[03]: https://github.com/ergohaven/vial-qmk
-[04]: https://github.com/ergohaven/ergohaven-zmk
-[05]: https://github.com/ergohaven/rmk-eh
+{{< cards >}}
+  {{< card link="https://github.com/ergohaven/rmk-eh" title="RMK Source code" icon="" >}}
+  {{< card link="https://github.com/ergohaven/vial-qmk" title="QMK Source code" icon="" >}}
+  {{< card link="https://github.com/ergohaven/ergohaven-zmk" title="ZMK Source code" icon="" >}}
+{{< /cards >}}
 
-
-## RMK (wireless)
-| Device       | Standard layout                                |
+## RMK (беспроводные устройства)
+| Устройство   | Стандартная раскладка                          |
 | ------------ | ---------------------------------------------- |
 | K:04         | [left][r01] [right][r02]                       |
 | K:04 Mini    | [left][r03] [right][r04]                       |
@@ -55,8 +53,8 @@ title: Прошивки
 [r92]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_imperial44_right.uf2
 
 
-## QMK (wired)
-| Previous devices                                    | Current devices                   |
+## QMK (проводные устройства)
+| Предыдущие модели                                   | Актуальные модели                 |
 | --------------------------------------------------- | --------------------------------- |
 |                                                     | [Phenom][q29]                     |
 |                                                     | [Phenom Mini][q30]                |
@@ -105,9 +103,9 @@ title: Прошивки
 [q30]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_mini_v1.uf2
 [q31]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_micro_v1.uf2
 
-{{< details title="ZMK (wireless)" closed="true" >}}
+{{< details title="ZMK (беспроводные)" closed="true" >}}
 
-| Device              | Standard layout                                | RuEn layout                          |
+| Устройство          | Стандартная раскладка                          | RuEn раскладка                       |
 | ------------------- | ---------------------------------------------- | ------------------------------------ |
 | K:03 v4             | [left][z80] [right][z82]                       | [left][z81] [right][z82]             |
 | K:03 v4 + Qube      | [left][z83] [right][z82] [qube][z84]           | [left][z83] [right][z82] [qube][z85] |
