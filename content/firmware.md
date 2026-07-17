@@ -2,11 +2,11 @@
 title: Прошивки
 ---
 
-{{< cards >}}
-  {{< card link="https://github.com/ergohaven/rmk-eh" title="RMK Source code" icon="" >}}
-  {{< card link="https://github.com/ergohaven/vial-qmk" title="QMK Source code" icon="" >}}
-  {{< card link="https://github.com/ergohaven/ergohaven-zmk" title="ZMK Source code" icon="" >}}
-{{< /cards >}}
+Актуальные прошивки для устройств ввода Ergohaven
+
+{{< callout type="info" >}}
+  Инструкцию по прошивке для вашего устройства смотрите в соответсвующей документации к вашему устройству
+{{< /callout >}}
 
 ## RMK (беспроводные устройства)
 | Устройство   | Стандартная раскладка                          |
@@ -52,6 +52,9 @@ title: Прошивки
 [r90]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_imperial44_left.uf2
 [r92]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_imperial44_right.uf2
 
+{{< cards >}}
+  {{< card link="https://github.com/ergohaven/rmk-eh" title="RMK Source code" icon="" >}}
+{{< /cards >}}
 
 ## QMK (проводные устройства)
 | Предыдущие модели                                   | Актуальные модели                 |
@@ -102,6 +105,10 @@ title: Прошивки
 [q29]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_v1.uf2
 [q30]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_mini_v1.uf2
 [q31]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_micro_v1.uf2
+
+{{< cards >}}
+  {{< card link="https://github.com/ergohaven/vial-qmk" title="QMK Source code" icon="" >}}
+{{< /cards >}}
 
 {{< details title="ZMK (беспроводные)" closed="true" >}}
 
@@ -163,5 +170,9 @@ title: Прошивки
 [z93]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left_qube-ergohaven-zmk.uf2
 [z94]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_qube-ergohaven-zmk.uf2
 [z95]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_qube_ruen-ergohaven-zmk.uf2
+
+{{< cards >}}
+  {{< card link="https://github.com/ergohaven/ergohaven-zmk" title="ZMK Source code" icon="" >}}
+{{< /cards >}}
 
 {{< /details >}}
