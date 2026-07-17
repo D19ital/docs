@@ -26,4 +26,5 @@ toc: false
   {{< card link="accessories" title="Аксессуары" icon="accessories" >}}
   {{< card link="software" title="Софт" icon="soft" >}}
   {{< card link="troubleshooting" title="Устранение неполадок" icon="tools" >}}
+  {{< card link="firmware" title="Прошивки" icon="tools" >}}
 {{< /cards >}}
