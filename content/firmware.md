@@ -1,11 +1,9 @@
 ---
 title: Прошивки
 ---
+| [Инструкция по прошивке][02] | [RMK Source code][05] | [QMK Source code][03] | [ZMK Source code][04] |
+| ---------------------------- | --------------------- | --------------------- | --------------------- |
 
-| [Firmware update guide][01]  | [Инструкция по прошивке][02] | [RMK Source code][05] | [QMK Source code][03] | [ZMK Source code][04] |
-| ---------------------------  | ---------------------------- | --------------------- | --------------------- | --------------------- |
-
-[01]: https://docs.ergohaven.xyz/en/
 [02]: https://docs.ergohaven.xyz/
 [03]: https://github.com/ergohaven/vial-qmk
 [04]: https://github.com/ergohaven/ergohaven-zmk
@@ -107,7 +105,8 @@ title: Прошивки
 [q30]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_mini_v1.uf2
 [q31]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_micro_v1.uf2
 
-## ZMK (wireless)
+{{< details title="ZMK (wireless)" closed="true" >}}
+
 | Device              | Standard layout                                | RuEn layout                          |
 | ------------------- | ---------------------------------------------- | ------------------------------------ |
 | K:03 v4             | [left][z80] [right][z82]                       | [left][z81] [right][z82]             |
@@ -166,3 +165,5 @@ title: Прошивки
 [z93]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left_qube-ergohaven-zmk.uf2
 [z94]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_qube-ergohaven-zmk.uf2
 [z95]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_qube_ruen-ergohaven-zmk.uf2
+
+{{< /details >}}
