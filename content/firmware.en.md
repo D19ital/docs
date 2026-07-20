@@ -2,17 +2,13 @@
 title: Firmware
 ---
 
-| [Firmware update guide][01]  | [Инструкция по прошивке][02] | [RMK Source code][05] | [QMK Source code][03] | [ZMK Source code][04] |
-| ---------------------------  | ---------------------------- | --------------------- | --------------------- | --------------------- |
+The latest firmware for Ergohaven input devices
 
-[01]: https://docs.ergohaven.xyz/en/
-[02]: https://docs.ergohaven.xyz/
-[03]: https://github.com/ergohaven/vial-qmk
-[04]: https://github.com/ergohaven/ergohaven-zmk
-[05]: https://github.com/ergohaven/rmk-eh
+{{< callout type="info" >}}
+  See the documentation for your device for firmware update instructions
+{{< /callout >}}
 
-
-## RMK (wireless)
+## RMK (wireless devices)
 | Device       | Standard layout                                |
 | ------------ | ---------------------------------------------- |
 | K:04         | [left][r01] [right][r02]                       |
@@ -56,9 +52,12 @@ title: Firmware
 [r90]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_imperial44_left.uf2
 [r92]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_imperial44_right.uf2
 
+{{< cards >}}
+  {{< card link="https://github.com/ergohaven/rmk-eh" title="RMK Source code" icon="" >}}
+{{< /cards >}}
 
-## QMK (wired)
-| Previous devices                                    | Current devices                   |
+## QMK (wired devices)
+| Previous models                                     | Current models                    |
 | --------------------------------------------------- | --------------------------------- |
 |                                                     | [Phenom][q29]                     |
 |                                                     | [Phenom Mini][q30]                |
@@ -107,7 +106,12 @@ title: Firmware
 [q30]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_mini_v1.uf2
 [q31]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_micro_v1.uf2
 
-## ZMK (wireless)
+{{< cards >}}
+  {{< card link="https://github.com/ergohaven/vial-qmk" title="QMK Source code" icon="" >}}
+{{< /cards >}}
+
+{{< details title="ZMK (wireless devices)" closed="true" >}}
+
 | Device              | Standard layout                                | RuEn layout                          |
 | ------------------- | ---------------------------------------------- | ------------------------------------ |
 | K:03 v4             | [left][z80] [right][z82]                       | [left][z81] [right][z82]             |
@@ -166,3 +170,9 @@ title: Firmware
 [z93]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left_qube-ergohaven-zmk.uf2
 [z94]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_qube-ergohaven-zmk.uf2
 [z95]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_qube_ruen-ergohaven-zmk.uf2
+
+{{< cards >}}
+  {{< card link="https://github.com/ergohaven/ergohaven-zmk" title="ZMK Source code" icon="" >}}
+{{< /cards >}}
+
+{{< /details >}}
