@@ -24,4 +24,5 @@ toc: false
   {{< card link="accessories" title="Accessories" icon="accessories" >}}
   {{< card link="software" title="Software" icon="soft" >}}
   {{< card link="troubleshooting" title="Troubleshooting" icon="tools" >}}
+  {{< card link="firmware" title="Firmware" icon="firmware" >}}
 {{< /cards >}}
