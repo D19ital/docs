@@ -16,7 +16,7 @@ title: Прошивки
 | K:04 Micro   | [левая][r05] [правая][r06]                     |
 | Trackball    | [mini v3.1][r41] [royale][r42]                 |
 
-{{< details title="Предыдущие релизы" closed="true" >}}
+{{< details title="Предыдущие устройства" closed="true" >}}
 
 | Устройство   | Стандартная раскладка                          |
 | ------------ | ---------------------------------------------- |
@@ -27,22 +27,7 @@ title: Прошивки
 | Velvet v3 UI | [левая][r70] [правая][r71]                     |
 | Trackball    | [mini v3.0][r40]                               |
 
-{{< /details >}}
-
-[Прошивка сброса настроек для RMK устройств][r00]
-
-[r00]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/rmk_settings_reset.uf2
-
-[r01]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_left.uf2
-[r02]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_right.uf2
-[r03]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_mini_left.uf2
-[r04]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_mini_right.uf2
-[r05]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_micro_left.uf2
-[r06]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_micro_right.uf2
-
 [r40]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_mini_v3.0.uf2
-[r41]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_mini_v3.1.uf2
-[r42]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_royale.uf2
 
 [r50]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_op36_left.uf2
 [r52]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_op36_right.uf2
@@ -59,6 +44,22 @@ title: Прошивки
 [r90]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_imperial44_left.uf2
 [r92]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_imperial44_right.uf2
 
+{{< /details >}}
+
+[Прошивка сброса настроек для RMK устройств][r00]
+
+[r00]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/rmk_settings_reset.uf2
+
+[r01]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_left.uf2
+[r02]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_right.uf2
+[r03]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_mini_left.uf2
+[r04]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_mini_right.uf2
+[r05]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_micro_left.uf2
+[r06]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_micro_right.uf2
+
+[r41]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_mini_v3.1.uf2
+[r42]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_royale.uf2
+
 {{< cards >}}
   {{< card link="https://github.com/ergohaven/rmk-eh" title="RMK Source code" icon="" >}}
 {{< /cards >}}
@@ -72,7 +73,7 @@ title: Прошивки
 | [M4CR0Pad v3][q27]                |
 | [SM30][q28]                       |
 
-{{< details title="Предыдущие релизы" closed="true" >}}
+{{< details title="Предыдущие устройства" closed="true" >}}
 
 | Предыдущие ревизии                                  | Актуальные ревизии               |
 | --------------------------------------------------- | --------------------------------- |
@@ -89,8 +90,6 @@ title: Прошивки
 |                                                     | [HPD v2 (encoder/joystick)][q26]  |
 | [K:02][q07]                                         |                                   |
 | [Remnant][q12]                                      |                                   |
-
-{{< /details >}}
 
 [q04]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v1.uf2
 [q05]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03_v1_v2.uf2
@@ -115,6 +114,9 @@ title: Прошивки
 [q24]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_imperial44_v3_v4.uf2
 [q25]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03pro_v2_v3.uf2
 [q26]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2_enc_joy.uf2
+
+{{< /details >}}
+
 [q27]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_macropad_v3.uf2
 [q28]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_sm30_v1.uf2
 [q29]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_v1.uf2
