@@ -11,18 +11,25 @@ title: Прошивки
 ## RMK (беспроводные устройства)
 | Устройство   | Стандартная раскладка                          |
 | ------------ | ---------------------------------------------- |
-| K:04         | [left][r01] [right][r02]                       |
-| K:04 Mini    | [left][r03] [right][r04]                       |
-| K:04 Micro   | [left][r05] [right][r06]                       |
-| K:03 v4      | [left][r80] [right][r82]                       |
-| Imperial44   | [left][r90] [right][r92]                       |
-| OP36         | [left][r50] [right][r52]                       |
-| Velvet v3    | [left][r60] [right][r62]                       |
-| Velvet v3 UI | [left][r70] [right][r71]                       |
-| Trackball    | [mini v3.0][r40] [mini v3.1][r41] [royale][r42] |
+| K:04         | [левая][r01] [правая][r02]                     |
+| K:04 Mini    | [левая][r03] [правая][r04]                     |
+| K:04 Micro   | [левая][r05] [правая][r06]                     |
+| Trackball    | [mini v3.1][r41] [royale][r42]                 |
 
+{{< details title="Предыдущие релизы" closed="true" >}}
 
-[Reset all settings for RMK device][r00]
+| Устройство   | Стандартная раскладка                          |
+| ------------ | ---------------------------------------------- |
+| K:03 v4      | [левая][r80] [правая][r82]                     |
+| Imperial44   | [левая][r90] [правая][r92]                     |
+| OP36         | [левая][r50] [правая][r52]                     |
+| Velvet v3    | [левая][r60] [правая][r62]                     |
+| Velvet v3 UI | [левая][r70] [правая][r71]                     |
+| Trackball    | [mini v3.0][r40]                               |
+
+{{< /details >}}
+
+[Прошивка сброса настроек для RMK устройств][r00]
 
 [r00]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/rmk_settings_reset.uf2
 
@@ -57,15 +64,22 @@ title: Прошивки
 {{< /cards >}}
 
 ## QMK (проводные устройства)
-| Предыдущие модели                                   | Актуальные модели                 |
+| Актуальные модели                 |
+| --------------------------------- |
+| [Phenom][q29]                     |
+| [Phenom Mini][q30]                |
+| [Phenom Micro][q31]               |
+| [M4CR0Pad v3][q27]                |
+| [SM30][q28]                       |
+
+{{< details title="Предыдущие релизы" closed="true" >}}
+
+| Предыдущие ревизии                                  | Актуальные ревизии               |
 | --------------------------------------------------- | --------------------------------- |
-|                                                     | [Phenom][q29]                     |
-|                                                     | [Phenom Mini][q30]                |
-|                                                     | [Phenom Micro][q31]               |
 | [K:03 v1/v2][q05]                                   | [K:03 v3/v4][q19]                 |
 | [Imperial44 v1/v2][q06]                             | [Imperial44 v3/v4][q24]           |
 | [Planeta v1][q08]                                   | [Planeta v2][q09]                 |
-| [M4CR0Pad v1][q10]</br>[M4CR0Pad v2][q11]           | [M4CR0Pad v3][q27]                |
+| [M4CR0Pad v1][q10]</br>[M4CR0Pad v2][q11]           |                                   |
 | [Velvet v1][q13]</br>[Velvet v2][q14]               | [Velvet v3][q17]                  |
 | [Trackball v1][q15]                                 | [Trackball v2][q20]               |
 | [K:03 PRO v1 43mm][q16]</br>[K:03 PRO v1 65mm][q18] | [K:03 PRO v2/v3][q25]             |
@@ -73,9 +87,10 @@ title: Прошивки
 |                                                     | [HPD v2 (encoder/trackball)][q22] |
 |                                                     | [HPD v2 (encoder/touch)][q23]     |
 |                                                     | [HPD v2 (encoder/joystick)][q26]  |
-|                                                     | [SM30][q28]                       |
 | [K:02][q07]                                         |                                   |
 | [Remnant][q12]                                      |                                   |
+
+{{< /details >}}
 
 [q04]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v1.uf2
 [q05]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03_v1_v2.uf2
@@ -114,20 +129,20 @@ title: Прошивки
 
 | Устройство          | Стандартная раскладка                          | RuEn раскладка                       |
 | ------------------- | ---------------------------------------------- | ------------------------------------ |
-| K:03 v4             | [left][z80] [right][z82]                       | [left][z81] [right][z82]             |
-| K:03 v4 + Qube      | [left][z83] [right][z82] [qube][z84]           | [left][z83] [right][z82] [qube][z85] |
-| Imperial44          | [left][z90] [right][z92]                       | [left][z91] [right][z92]             |
-| Imperial44 + Qube   | [left][z93] [right][z92] [qube][z94]           | [left][z93] [right][z92] [qube][z95] |
-| OP36                | [left][z50] [right][z52]                       | [left][z51] [right][z52]             |
-| OP36 + Qube         | [left][z53] [right][z52] [qube][z54]           | [left][z53] [right][z52] [qube][z55] |
-| Velvet v3           | [left][z60] [right][z62]                       | [left][z61] [right][z62]             |
-| Velvet v3 + Qube    | [left][z63] [right][z62] [qube][z64]           | [left][z63] [right][z62] [qube][z65] |
-| Velvet v3 UI        | [left][z70] [right][z71]                       | [left][z70] [right][z72]             |
-| Velvet v3 UI + Qube | [left][z70] [right][z73] [qube][z74]           | [left][z70] [right][z73] [qube][z75] |
+| K:03 v4             | [левая][z80] [правая][z82]                     | [левая][z81] [правая][z82]             |
+| K:03 v4 + Qube      | [левая][z83] [правая][z82] [qube][z84]         | [левая][z83] [правая][z82] [qube][z85] |
+| Imperial44          | [левая][z90] [правая][z92]                     | [левая][z91] [правая][z92]             |
+| Imperial44 + Qube   | [левая][z93] [правая][z92] [qube][z94]         | [левая][z93] [правая][z92] [qube][z95] |
+| OP36                | [левая][z50] [правая][z52]                     | [левая][z51] [правая][z52]             |
+| OP36 + Qube         | [левая][z53] [правая][z52] [qube][z54]         | [левая][z53] [правая][z52] [qube][z55] |
+| Velvet v3           | [левая][z60] [правая][z62]                     | [левая][z61] [правая][z62]             |
+| Velvet v3 + Qube    | [левая][z63] [правая][z62] [qube][z64]         | [левая][z63] [правая][z62] [qube][z65] |
+| Velvet v3 UI        | [левая][z70] [правая][z71]                     | [левая][z70] [правая][z72]             |
+| Velvet v3 UI + Qube | [левая][z70] [правая][z73] [qube][z74]         | [левая][z70] [правая][z73] [qube][z75] |
 | Trackball           | [mini v3.0][z40] [mini v3.1][z41] [royale][z42] |                                      |
 
 
-[Reset all settings for ZMK device][z00]
+[Прошивка сброса настроек для ZMK устройств][z00]
 
 [z00]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/settings_reset-ergohaven-zmk.uf2
 
