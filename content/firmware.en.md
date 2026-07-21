@@ -2,177 +2,24 @@
 title: Firmware
 ---
 
-The latest firmware for Ergohaven input devices
+The latest firmware for Ergohaven input devices.
 
 {{< callout type="info" >}}
-  See the documentation for your device for firmware update instructions
+  See the documentation for your device for firmware update instructions.
 {{< /callout >}}
 
-## RMK (wireless devices)
-| Device       | Standard layout                                |
-| ------------ | ---------------------------------------------- |
-| K:04         | [left][r01] [right][r02]                       |
-| K:04 Mini    | [left][r03] [right][r04]                       |
-| K:04 Micro   | [left][r05] [right][r06]                       |
-| K:03 v4      | [left][r80] [right][r82]                       |
-| Imperial44   | [left][r90] [right][r92]                       |
-| OP36         | [left][r50] [right][r52]                       |
-| Velvet v3    | [left][r60] [right][r62]                       |
-| Velvet v3 UI | [left][r70] [right][r71]                       |
-| Trackball    | [mini v3.0][r40] [mini v3.1][r41] [royale][r42] |
+Select the exact device model and revision. The available firmware files will appear after selection.
 
+{{< firmware-picker >}}
 
-[Reset all settings for RMK device][r00]
+{{< callout type="warning" >}}
+  Files for the left and right halves are not interchangeable. If several buttons are shown, download all files required for your device.
+{{< /callout >}}
 
-[r00]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/rmk_settings_reset.uf2
-
-[r01]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_left.uf2
-[r02]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_right.uf2
-[r03]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_mini_left.uf2
-[r04]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_mini_right.uf2
-[r05]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_micro_left.uf2
-[r06]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k04_micro_right.uf2
-
-[r40]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_mini_v3.0.uf2
-[r41]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_mini_v3.1.uf2
-[r42]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_royale.uf2
-
-[r50]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_op36_left.uf2
-[r52]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_op36_right.uf2
-
-[r60]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_velvet_left.uf2
-[r62]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_velvet_right.uf2
-
-[r70]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_velvet_ui_left.uf2
-[r71]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_velvet_ui_right.uf2
-
-[r80]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k03_left.uf2
-[r82]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k03_right.uf2
-
-[r90]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_imperial44_left.uf2
-[r92]: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_imperial44_right.uf2
+## Source code
 
 {{< cards >}}
-  {{< card link="https://github.com/ergohaven/rmk-eh" title="RMK Source code" icon="" >}}
+  {{< card link="https://github.com/ergohaven/rmk-eh" title="RMK" icon="github" >}}
+  {{< card link="https://github.com/ergohaven/vial-qmk" title="QMK" icon="github" >}}
+  {{< card link="https://github.com/ergohaven/ergohaven-zmk" title="ZMK" icon="github" >}}
 {{< /cards >}}
-
-## QMK (wired devices)
-| Previous models                                     | Current models                    |
-| --------------------------------------------------- | --------------------------------- |
-|                                                     | [Phenom][q29]                     |
-|                                                     | [Phenom Mini][q30]                |
-|                                                     | [Phenom Micro][q31]               |
-| [K:03 v1/v2][q05]                                   | [K:03 v3/v4][q19]                 |
-| [Imperial44 v1/v2][q06]                             | [Imperial44 v3/v4][q24]           |
-| [Planeta v1][q08]                                   | [Planeta v2][q09]                 |
-| [M4CR0Pad v1][q10]</br>[M4CR0Pad v2][q11]           | [M4CR0Pad v3][q27]                |
-| [Velvet v1][q13]</br>[Velvet v2][q14]               | [Velvet v3][q17]                  |
-| [Trackball v1][q15]                                 | [Trackball v2][q20]               |
-| [K:03 PRO v1 43mm][q16]</br>[K:03 PRO v1 65mm][q18] | [K:03 PRO v2/v3][q25]             |
-| [HPD v1][q04]                                       | [HPD v2 (no modules)][q21]        |
-|                                                     | [HPD v2 (encoder/trackball)][q22] |
-|                                                     | [HPD v2 (encoder/touch)][q23]     |
-|                                                     | [HPD v2 (encoder/joystick)][q26]  |
-|                                                     | [SM30][q28]                       |
-| [K:02][q07]                                         |                                   |
-| [Remnant][q12]                                      |                                   |
-
-[q04]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v1.uf2
-[q05]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03_v1_v2.uf2
-[q06]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_imperial44_v1_v2.uf2
-[q07]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k02_v1.uf2
-[q08]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_planeta_v1.uf2
-[q09]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_planeta_v2.uf2
-[q10]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_macropad_v1.uf2
-[q11]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_macropad_v2.uf2
-[q12]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_remnant_v1.uf2
-[q13]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_velvet_v1.uf2
-[q14]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_velvet_v2.uf2
-[q15]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_trackball_v1.uf2
-[q16]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03pro_43mm_v1.uf2
-[q17]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_velvet_v3.uf2
-[q18]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03pro_65mm_v1.uf2
-[q19]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03_v3_v4.uf2
-[q20]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_trackball_v2.uf2
-[q21]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2.uf2
-[q22]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2_enc_ball.uf2
-[q23]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2_enc_touch.uf2
-[q24]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_imperial44_v3_v4.uf2
-[q25]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03pro_v2_v3.uf2
-[q26]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2_enc_joy.uf2
-[q27]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_macropad_v3.uf2
-[q28]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_sm30_v1.uf2
-[q29]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_v1.uf2
-[q30]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_mini_v1.uf2
-[q31]: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_micro_v1.uf2
-
-{{< cards >}}
-  {{< card link="https://github.com/ergohaven/vial-qmk" title="QMK Source code" icon="" >}}
-{{< /cards >}}
-
-{{< details title="ZMK (wireless devices)" closed="true" >}}
-
-| Device              | Standard layout                                | RuEn layout                          |
-| ------------------- | ---------------------------------------------- | ------------------------------------ |
-| K:03 v4             | [left][z80] [right][z82]                       | [left][z81] [right][z82]             |
-| K:03 v4 + Qube      | [left][z83] [right][z82] [qube][z84]           | [left][z83] [right][z82] [qube][z85] |
-| Imperial44          | [left][z90] [right][z92]                       | [left][z91] [right][z92]             |
-| Imperial44 + Qube   | [left][z93] [right][z92] [qube][z94]           | [left][z93] [right][z92] [qube][z95] |
-| OP36                | [left][z50] [right][z52]                       | [left][z51] [right][z52]             |
-| OP36 + Qube         | [left][z53] [right][z52] [qube][z54]           | [left][z53] [right][z52] [qube][z55] |
-| Velvet v3           | [left][z60] [right][z62]                       | [left][z61] [right][z62]             |
-| Velvet v3 + Qube    | [left][z63] [right][z62] [qube][z64]           | [left][z63] [right][z62] [qube][z65] |
-| Velvet v3 UI        | [left][z70] [right][z71]                       | [left][z70] [right][z72]             |
-| Velvet v3 UI + Qube | [left][z70] [right][z73] [qube][z74]           | [left][z70] [right][z73] [qube][z75] |
-| Trackball           | [mini v3.0][z40] [mini v3.1][z41] [royale][z42] |                                      |
-
-
-[Reset all settings for ZMK device][z00]
-
-[z00]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/settings_reset-ergohaven-zmk.uf2
-
-[z40]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/trackball_v3.0-ergohaven-zmk.uf2
-[z41]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/trackball_v3.1-ergohaven-zmk.uf2
-[z42]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/trackball_royal-ergohaven-zmk.uf2
-
-[z50]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_left-ergohaven-zmk.uf2
-[z51]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_left_ruen-ergohaven-zmk.uf2
-[z52]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_right-ergohaven-zmk.uf2
-[z53]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_left_qube-ergohaven-zmk.uf2
-[z54]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_qube-ergohaven-zmk.uf2
-[z55]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_qube_ruen-ergohaven-zmk.uf2
-
-[z60]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_left-ergohaven-zmk.uf2
-[z61]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_left_ruen-ergohaven-zmk.uf2
-[z62]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_right-ergohaven-zmk.uf2
-[z63]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_left_qube-ergohaven-zmk.uf2
-[z64]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_qube-ergohaven-zmk.uf2
-[z65]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_qube_ruen-ergohaven-zmk.uf2
-
-[z70]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_left-ergohaven-zmk.uf2
-[z71]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_right-ergohaven-zmk.uf2
-[z72]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_right_ruen-ergohaven-zmk.uf2
-[z73]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_right_qube-ergohaven-zmk.uf2
-[z74]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_qube-ergohaven-zmk.uf2
-[z75]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_qube_ruen-ergohaven-zmk.uf2
-
-[z80]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_left-ergohaven-zmk.uf2
-[z81]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_left_ruen-ergohaven-zmk.uf2
-[z82]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_right-ergohaven-zmk.uf2
-[z83]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_left_qube-ergohaven-zmk.uf2
-[z84]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_qube-ergohaven-zmk.uf2
-[z85]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_qube_ruen-ergohaven-zmk.uf2
-
-[z90]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left-ergohaven-zmk.uf2
-[z90]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left-ergohaven-zmk.uf2
-[z91]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left_ruen-ergohaven-zmk.uf2
-[z92]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_right-ergohaven-zmk.uf2
-[z93]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left_qube-ergohaven-zmk.uf2
-[z94]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_qube-ergohaven-zmk.uf2
-[z95]: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_qube_ruen-ergohaven-zmk.uf2
-
-{{< cards >}}
-  {{< card link="https://github.com/ergohaven/ergohaven-zmk" title="ZMK Source code" icon="" >}}
-{{< /cards >}}
-
-{{< /details >}}

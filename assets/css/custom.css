@@ -88,3 +88,159 @@ html.dark .hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-tog
   height: 28px !important;
 }
 
+/* ==========================================================================
+   Firmware picker
+   ========================================================================== */
+
+.firmware-picker {
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border: 1px solid rgb(229 231 235);
+  border-radius: 0.75rem;
+  background: rgb(249 250 251);
+}
+
+html.dark .firmware-picker {
+  border-color: rgb(64 64 64);
+  background: rgb(23 23 23);
+}
+
+.firmware-picker__field,
+.firmware-picker__result {
+  padding: 1.25rem;
+}
+
+.firmware-picker__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.firmware-picker__select {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid rgb(209 213 219);
+  border-radius: 0.5rem;
+  background: white;
+  color: rgb(17 24 39);
+  font: inherit;
+  cursor: pointer;
+}
+
+.firmware-picker__select:focus-visible {
+  outline: 2px solid rgb(37 99 235);
+  outline-offset: 2px;
+}
+
+html.dark .firmware-picker__select {
+  border-color: rgb(82 82 82);
+  background: rgb(38 38 38);
+  color: rgb(245 245 245);
+}
+
+.firmware-picker .firmware-picker__hint {
+  margin: 0.625rem 0 0;
+  color: rgb(107 114 128);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+html.dark .firmware-picker .firmware-picker__hint {
+  color: rgb(163 163 163);
+}
+
+.firmware-picker__result {
+  border-top: 1px solid rgb(229 231 235);
+  background: white;
+}
+
+html.dark .firmware-picker__result {
+  border-color: rgb(64 64 64);
+  background: rgb(31 31 31);
+}
+
+.firmware-picker__result[hidden],
+.firmware-picker__device[hidden] {
+  display: none;
+}
+
+.firmware-picker .firmware-picker__group,
+.firmware-picker .firmware-picker__device-name {
+  margin: 0;
+}
+
+.firmware-picker .firmware-picker__group {
+  color: rgb(107 114 128);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+html.dark .firmware-picker .firmware-picker__group {
+  color: rgb(163 163 163);
+}
+
+.firmware-picker .firmware-picker__device-name {
+  margin-top: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.firmware-picker__downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin-top: 1rem;
+}
+
+.firmware-picker .firmware-picker__download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.5rem;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.5rem;
+  background: rgb(37 99 235);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.firmware-picker .firmware-picker__download:hover {
+  background: rgb(29 78 216);
+  color: white;
+  text-decoration: none;
+}
+
+.firmware-picker .firmware-picker__download:active {
+  transform: translateY(1px);
+}
+
+.firmware-picker .firmware-picker__download:focus-visible {
+  outline: 2px solid rgb(37 99 235);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .firmware-picker__field,
+  .firmware-picker__result {
+    padding: 1rem;
+  }
+
+  .firmware-picker__downloads {
+    flex-direction: column;
+  }
+
+  .firmware-picker .firmware-picker__download {
+    width: 100%;
+  }
+}
