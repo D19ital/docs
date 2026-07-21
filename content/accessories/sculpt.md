@@ -20,9 +20,23 @@ Sculpt поставляется в виде набора кейкапов для
 
 ### Расположение кейкапов на клавиатуре
 
-![Расположение кейкапов на клавиатуре](/images/layouts/sculpt_layout_ru_01.png)
+{{< details title="Серия K:04" closed="true" >}}
 
-![Расположение кейкапов на клавиатуре](/images/layouts/sculpt_layout_ru_02.png)
+[<img src="/images/layouts/sculpt_layout_ru_03.svg" alt="Раскладка - серия K:04" width="720">](/images/layouts/sculpt_layout_ru_03.svg)
+
+{{< /details >}}
+
+{{< details title="Серия Phenom, HPD" closed="true" >}}
+
+[<img src="/images/layouts/sculpt_layout_ru_01.svg" alt="Раскладка - серия Phnenom, HPD" width="720">](/images/layouts/sculpt_layout_ru_01.svg)
+
+{{< /details >}}
+
+{{< details title="K:03, Imperial44, Velvet, OP36" closed="true" >}}
+
+[<img src="/images/layouts/sculpt_layout_ru_02.svg" alt="Раскладка - K:03, Imperial44, Velvet, OP36" width="720">](/images/layouts/sculpt_layout_ru_02.svg)
+
+{{< /details >}}
 
 ## Устранение неполадок
 

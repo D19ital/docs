@@ -18,9 +18,23 @@ Sculpt comes as a set of keycaps for self-assembly on your keyboard. All keycaps
 
 ### Keycap placement on the keyboard
 
-![Keycap placement on the keyboard](/images/layouts/sculpt_layout_en_01.png)
+{{< details title="K:04 Series" closed="true" >}}
 
-![Keycap placement on the keyboard](/images/layouts/sculpt_layout_en_02.png)
+[<img src="/images/layouts/sculpt_layout_en_03.svg" alt="Keycap placement - серия K:04" width="720">](/images/layouts/sculpt_layout_en_03.svg)
+
+{{< /details >}}
+
+{{< details title="Phenom Series, HPD" closed="true" >}}
+
+[<img src="/images/layouts/sculpt_layout_en_01.svg" alt="Keycap placement - серия Phnenom, HPD" width="720">](/images/layouts/sculpt_layout_en_01.svg)
+
+{{< /details >}}
+
+{{< details title="K:03, Imperial44, Velvet, OP36" closed="true" >}}
+
+[<img src="/images/layouts/sculpt_layout_en_02.svg" alt="Keycap placement - K:03, Imperial44, Velvet, OP36" width="720">](/images/layouts/sculpt_layout_en_02.svg)
+
+{{< /details >}}
 
 ## Troubleshooting
 
