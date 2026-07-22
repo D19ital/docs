@@ -2,31 +2,27 @@ rmk_split:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Скачайте файлы прошивки для левой и правой половинок и служебную прошивку «RMK — сброс всех настроек»"
-      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на открывшийся диск файл сброса RMK"
-      - "Повторите сброс для правой половинки"
-      - "Снова переведите каждую половинку в режим загрузчика и скопируйте соответствующий файл: <code>left</code> для левой, <code>right</code> для правой"
+      - "Скачайте файлы прошивки для левой и правой половинок"
+      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на открывшийся диск файл <code>left</code>"
+      - "Повторите действия для правой половинки, используя файл <code>right</code>"
   en:
     title: How to update the firmware
     steps:
-      - "Download the firmware files for the left and right halves and the “RMK — reset all settings” service firmware"
-      - "Connect the left half via USB-C, quickly double-press <code>Reset</code>, and copy the RMK reset file to the drive that opens"
-      - "Repeat the reset for the right half"
-      - "Put each half into bootloader mode again and copy the matching file: <code>left</code> for the left half and <code>right</code> for the right half"
+      - "Download the firmware files for the left and right halves"
+      - "Connect the left half via USB-C, quickly double-press <code>Reset</code>, and copy the <code>left</code> file to the drive that opens"
+      - "Repeat these steps for the right half using the <code>right</code> file"
 
 rmk_single:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Скачайте прошивку устройства и служебную прошивку «RMK — сброс всех настроек»"
-      - "Подключите устройство по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на открывшийся диск файл сброса RMK"
-      - "После перезагрузки снова дважды нажмите <code>Reset</code> и скопируйте файл прошивки устройства"
+      - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
+      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
   en:
     title: How to update the firmware
     steps:
-      - "Download the device firmware and the “RMK — reset all settings” service firmware"
-      - "Connect the device via USB-C, quickly double-press <code>Reset</code>, and copy the RMK reset file to the drive that opens"
-      - "After the device restarts, double-press <code>Reset</code> again and copy the device firmware file"
+      - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
+      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
 
 qmk:
   ru:
@@ -44,6 +40,22 @@ qmk:
       - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
       - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
       - "If the keyboard has two halves, repeat these steps for the other half"
+      - "Import the saved layout after the update"
+
+qmk_single:
+  ru:
+    title: Как обновить прошивку
+    steps:
+      - "При необходимости сохраните текущую раскладку в Vial или Entropy"
+      - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
+      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
+      - "После обновления импортируйте сохранённую раскладку"
+  en:
+    title: How to update the firmware
+    steps:
+      - "Save the current layout in Vial or Entropy if needed"
+      - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
+      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
       - "Import the saved layout after the update"
 
 zmk_split:
@@ -66,16 +78,14 @@ zmk_qube:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Скачайте все показанные файлы и служебную прошивку «ZMK — сброс всех настроек»"
-      - "Для чистой установки по очереди подключите Qube, левую и правую половинки, дважды нажмите <code>Reset</code> на каждом устройстве и скопируйте файл сброса ZMK"
-      - "Снова переведите устройства в режим загрузчика и установите основные прошивки в порядке: Qube, левая половинка, правая половинка"
+      - "Скачайте все показанные файлы"
+      - "По очереди подключите устройства, дважды быстро нажмите <code>Reset</code> на каждом и установите прошивки в порядке: Qube, левая половинка, правая половинка"
       - "Используйте только соответствующие файлы <code>qube</code>, <code>left_qube</code> и <code>right</code>"
   en:
     title: How to update the firmware
     steps:
-      - "Download all displayed files and the “ZMK — reset all settings” service firmware"
-      - "For a clean installation, connect Qube, the left half, and the right half one at a time, double-press <code>Reset</code> on each device, and copy the ZMK reset file"
-      - "Put the devices into bootloader mode again and install the main firmware in this order: Qube, left half, right half"
+      - "Download all displayed files"
+      - "Connect each device in turn, quickly double-press <code>Reset</code> on each one, and install the firmware in this order: Qube, left half, right half"
       - "Use only the matching <code>qube</code>, <code>left_qube</code>, and <code>right</code> files"
 
 zmk_single:
@@ -84,27 +94,11 @@ zmk_single:
     steps:
       - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
       - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
-      - "Для возврата к заводским настройкам сначала установите служебную прошивку «ZMK — сброс всех настроек», затем повторно установите основную прошивку"
   en:
     title: How to update the firmware
     steps:
       - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
       - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
-      - "To restore factory settings, install the “ZMK — reset all settings” service firmware first, then install the main firmware again"
-
-zmk_single_reset:
-  ru:
-    title: Как обновить прошивку
-    steps:
-      - "Скачайте прошивку устройства и служебную прошивку «ZMK — сброс всех настроек»"
-      - "Подключите устройство по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на открывшийся диск файл сброса ZMK"
-      - "После перезагрузки снова дважды нажмите <code>Reset</code> и скопируйте файл прошивки устройства"
-  en:
-    title: How to update the firmware
-    steps:
-      - "Download the device firmware and the “ZMK — reset all settings” service firmware"
-      - "Connect the device via USB-C, quickly double-press <code>Reset</code>, and copy the ZMK reset file to the drive that opens"
-      - "After the device restarts, double-press <code>Reset</code> again and copy the device firmware file"
 
 service_rmk:
   ru:
