@@ -118,6 +118,8 @@
       .join("")
       .normalize("NFD")
       .replace(/\p{Diacritic}/gu, "")
+      .replace(/m4cr0pad/g, "macropad")
+      .replace(/m4kropad/g, "macropad")
       .replace(/0/g, "o")
       .replace(/ph/g, "f")
       .replace(/th/g, "t")
