@@ -110,6 +110,9 @@
                   <li>{{ . | safeHTML }}</li>
                 {{- end }}
               </ol>
+              {{- with .note }}
+                <p class="firmware-picker__instruction-note">{{ . | safeHTML }}</p>
+              {{- end }}
             </div>
           {{- end }}
         </section>

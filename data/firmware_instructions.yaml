@@ -3,14 +3,16 @@ rmk_split:
     title: Как обновить прошивку
     steps:
       - "Скачайте файлы прошивки для левой и правой половинок"
-      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на открывшийся диск файл <code>left</code>"
+      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> с обратной стороны корпуса и скопируйте на появившийся диск загрузчика файл <code>left</code>"
       - "Повторите действия для правой половинки, используя файл <code>right</code>"
+    note: "Если при копировании прошивки появляется окно с ошибкой копирования/извлечения диска, просто игнорируйте это сообщение"
   en:
     title: How to update the firmware
     steps:
       - "Download the firmware files for the left and right halves"
-      - "Connect the left half via USB-C, quickly double-press <code>Reset</code>, and copy the <code>left</code> file to the drive that opens"
+      - "Connect the left half via USB-C, quickly double-press <code>Reset</code> on the back of the case, and copy the <code>left</code> file to the bootloader drive that appears"
       - "Repeat these steps for the right half using the <code>right</code> file"
+    note: "If a copy or disk ejection error appears while copying the firmware, simply ignore the message"
 
 rmk_single:
   ru:
