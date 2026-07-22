@@ -322,6 +322,37 @@ html.dark .firmware-picker .firmware-picker__group {
   outline-offset: 2px;
 }
 
+.firmware-picker__instruction {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(229 231 235);
+}
+
+html.dark .firmware-picker__instruction {
+  border-color: rgb(64 64 64);
+}
+
+.firmware-picker .firmware-picker__instruction-title {
+  margin: 0;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.firmware-picker .firmware-picker__instruction-steps {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.firmware-picker .firmware-picker__instruction-steps li {
+  margin: 0.375rem 0;
+  line-height: 1.55;
+}
+
+.firmware-picker .firmware-picker__instruction-link {
+  margin: 0.875rem 0 0;
+  font-size: 0.875rem;
+}
+
 @media (max-width: 640px) {
   .firmware-picker__field,
   .firmware-picker__result {

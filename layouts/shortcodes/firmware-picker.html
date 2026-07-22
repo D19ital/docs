@@ -67,6 +67,53 @@
         {{- if and (eq $lang "en") .name_en -}}
           {{- $deviceName = .name_en -}}
         {{- end }}
+        {{- $deviceID := .id -}}
+        {{- $instructionKey := "qmk" -}}
+        {{- if strings.HasPrefix $deviceID "rmk-trackball" -}}
+          {{- $instructionKey = "rmk_single" -}}
+        {{- else if strings.HasPrefix $deviceID "rmk-" -}}
+          {{- $instructionKey = "rmk_split" -}}
+        {{- else if strings.HasSuffix $deviceID "-qube" -}}
+          {{- $instructionKey = "zmk_qube" -}}
+        {{- else if eq $deviceID "zmk-trackball-royale" -}}
+          {{- $instructionKey = "zmk_single_reset" -}}
+        {{- else if strings.HasPrefix $deviceID "zmk-trackball" -}}
+          {{- $instructionKey = "zmk_single" -}}
+        {{- else if strings.HasPrefix $deviceID "zmk-" -}}
+          {{- $instructionKey = "zmk_split" -}}
+        {{- else if eq $deviceID "service-rmk-reset" -}}
+          {{- $instructionKey = "service_rmk" -}}
+        {{- else if eq $deviceID "service-zmk-reset" -}}
+          {{- $instructionKey = "service_zmk" -}}
+        {{- end -}}
+        {{- $instruction := index site.Data.firmware_instructions $instructionKey -}}
+        {{- $docsPath := "" -}}
+        {{- $langPrefix := cond (eq $lang "en") "/en" "" -}}
+        {{- if strings.HasPrefix $deviceID "rmk-k04" -}}
+          {{- $docsPath = printf "%s/device/k04/" $langPrefix -}}
+        {{- else if strings.HasPrefix $deviceID "qmk-phenom" -}}
+          {{- $docsPath = printf "%s/device/phenom/" $langPrefix -}}
+        {{- else if strings.HasPrefix $deviceID "qmk-macropad" -}}
+          {{- $docsPath = printf "%s/device/macropad/" $langPrefix -}}
+        {{- else if eq $deviceID "qmk-sm30" -}}
+          {{- $docsPath = printf "%s/device/sm30/" $langPrefix -}}
+        {{- else if strings.HasPrefix $deviceID "qmk-k03" -}}
+          {{- $docsPath = printf "%s/device/archive/k03/" $langPrefix -}}
+        {{- else if strings.HasPrefix $deviceID "qmk-imperial44" -}}
+          {{- $docsPath = printf "%s/device/archive/imperial44/" $langPrefix -}}
+        {{- else if strings.HasPrefix $deviceID "qmk-hpd" -}}
+          {{- $docsPath = printf "%s/device/archive/hpd/" $langPrefix -}}
+        {{- else if strings.HasPrefix $deviceID "qmk-velvet" -}}
+          {{- $docsPath = printf "%s/device/archive/velvet/" $langPrefix -}}
+        {{- else if strings.HasSuffix $deviceID "-qube" -}}
+          {{- $docsPath = printf "%s/device/archive/qube/" $langPrefix -}}
+        {{- else if strings.HasPrefix $deviceID "zmk-trackball-mini" -}}
+          {{- $docsPath = printf "%s/device/tb-mini/" $langPrefix -}}
+        {{- else if eq $deviceID "zmk-trackball-royale" -}}
+          {{- $docsPath = printf "%s/device/tb-royale/" $langPrefix -}}
+        {{- else if strings.HasPrefix $deviceID "zmk-" -}}
+          {{- $docsPath = printf "%s/zmk/zmk-keyboards/" $langPrefix -}}
+        {{- end }}
         <section class="firmware-picker__device" data-firmware-device="{{ .id }}" hidden>
           <p class="firmware-picker__group">{{ $groupName }}</p>
           <p class="firmware-picker__device-name">{{ $deviceName }}</p>
@@ -82,6 +129,21 @@
               </a>
             {{- end }}
           </div>
+          {{- with index $instruction $lang }}
+            <div class="firmware-picker__instruction">
+              <p class="firmware-picker__instruction-title">{{ .title }} — {{ $deviceName }}</p>
+              <ol class="firmware-picker__instruction-steps">
+                {{- range .steps }}
+                  <li>{{ . | safeHTML }}</li>
+                {{- end }}
+              </ol>
+              {{- with $docsPath }}
+                <p class="firmware-picker__instruction-link">
+                  <a href="{{ . | relURL }}">{{ cond (eq $lang "en") "Full instructions in the device documentation" "Полная инструкция в документации устройства" }}</a>
+                </p>
+              {{- end }}
+            </div>
+          {{- end }}
         </section>
       {{- end }}
     {{- end }}
