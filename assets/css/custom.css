@@ -117,6 +117,7 @@ html.dark .firmware-picker {
   font-weight: 600;
 }
 
+.firmware-picker__search,
 .firmware-picker__select {
   width: 100%;
   min-height: 2.75rem;
@@ -126,18 +127,42 @@ html.dark .firmware-picker {
   background: white;
   color: rgb(17 24 39);
   font: inherit;
+}
+
+.firmware-picker__search {
+  margin-bottom: 1rem;
+}
+
+.firmware-picker__select {
   cursor: pointer;
 }
 
+.firmware-picker__search:focus-visible,
 .firmware-picker__select:focus-visible {
   outline: 2px solid rgb(37 99 235);
   outline-offset: 2px;
 }
 
+html.dark .firmware-picker__search,
 html.dark .firmware-picker__select {
   border-color: rgb(82 82 82);
   background: rgb(38 38 38);
   color: rgb(245 245 245);
+}
+
+.firmware-picker .firmware-picker__empty {
+  margin: 0.625rem 0 0;
+  color: rgb(185 28 28);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+html.dark .firmware-picker .firmware-picker__empty {
+  color: rgb(248 113 113);
+}
+
+.firmware-picker__empty[hidden] {
+  display: none;
 }
 
 .firmware-picker .firmware-picker__hint {

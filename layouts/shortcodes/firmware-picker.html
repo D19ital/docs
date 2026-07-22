@@ -1,12 +1,25 @@
 {{- $lang := .Page.Language.Lang -}}
 {{- $pickerID := printf "firmware-picker-%d" .Ordinal -}}
+{{- $searchID := printf "%s-search" $pickerID -}}
 {{- $selectLabel := cond (eq $lang "en") "Device" "Устройство" -}}
 {{- $selectPrompt := cond (eq $lang "en") "Select your device" "Выберите устройство" -}}
-{{- $hint := cond (eq $lang "en") "Check the model, revision, and firmware type before downloading." "Перед скачиванием проверьте модель, ревизию и тип прошивки." -}}
+{{- $searchLabel := cond (eq $lang "en") "Search by name" "Поиск по названию" -}}
+{{- $searchPlaceholder := cond (eq $lang "en") "Start typing a device name" "Начните вводить название устройства" -}}
+{{- $noResults := cond (eq $lang "en") "No devices found" "Устройства не найдены" -}}
+{{- $hint := cond (eq $lang "en") "Check the model, revision, and firmware type before downloading" "Перед скачиванием проверьте модель, ревизию и тип прошивки" -}}
 {{- $download := cond (eq $lang "en") "Download" "Скачать" -}}
 
 <div class="firmware-picker" data-firmware-picker>
   <div class="firmware-picker__field">
+    <label class="firmware-picker__label" for="{{ $searchID }}">{{ $searchLabel }}</label>
+    <input
+      class="firmware-picker__search"
+      id="{{ $searchID }}"
+      type="search"
+      placeholder="{{ $searchPlaceholder }}"
+      autocomplete="off"
+      data-firmware-search
+    >
     <label class="firmware-picker__label" for="{{ $pickerID }}">{{ $selectLabel }}</label>
     <select class="firmware-picker__select" id="{{ $pickerID }}" data-firmware-select autocomplete="off">
       <option value="">{{ $selectPrompt }}</option>
@@ -22,6 +35,7 @@
         </optgroup>
       {{- end }}
     </select>
+    <p class="firmware-picker__empty" data-firmware-empty role="status" hidden>{{ $noResults }}</p>
     <p class="firmware-picker__hint">{{ $hint }}</p>
   </div>
 
@@ -61,9 +75,21 @@
 
     if (!picker?.matches("[data-firmware-picker]")) return;
 
+    const search = picker.querySelector("[data-firmware-search]");
     const select = picker.querySelector("[data-firmware-select]");
+    const empty = picker.querySelector("[data-firmware-empty]");
     const result = picker.querySelector("[data-firmware-result]");
     const devices = picker.querySelectorAll("[data-firmware-device]");
+    const prompt = select.querySelector('option[value=""]').cloneNode(true);
+    const groups = Array.from(select.querySelectorAll("optgroup"), (group) => ({
+      label: group.label,
+      options: Array.from(group.querySelectorAll("option"), (option) => ({
+        value: option.value,
+        label: option.textContent,
+      })),
+    }));
+
+    const normalize = (value) => value.trim().toLocaleLowerCase();
 
     const update = () => {
       let hasSelection = false;
@@ -77,7 +103,40 @@
       result.hidden = !hasSelection;
     };
 
+    const filter = () => {
+      const query = normalize(search.value);
+      const previousValue = select.value;
+      let matchCount = 0;
+
+      select.replaceChildren(prompt.cloneNode(true));
+
+      groups.forEach((group) => {
+        const matches = group.options.filter((option) => normalize(option.label).includes(query));
+        if (!matches.length) return;
+
+        const optgroup = document.createElement("optgroup");
+        optgroup.label = group.label;
+
+        matches.forEach((match) => {
+          const option = document.createElement("option");
+          option.value = match.value;
+          option.textContent = match.label;
+          optgroup.append(option);
+        });
+
+        select.append(optgroup);
+        matchCount += matches.length;
+      });
+
+      select.value = Array.from(select.options).some((option) => option.value === previousValue)
+        ? previousValue
+        : "";
+      empty.hidden = matchCount !== 0;
+      update();
+    };
+
+    search.addEventListener("input", filter);
     select.addEventListener("change", update);
-    update();
+    filter();
   })();
 </script>
