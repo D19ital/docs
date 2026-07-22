@@ -1,9 +1,8 @@
 {{- $lang := .Page.Language.Lang -}}
 {{- $pickerID := printf "firmware-picker-%d" .Ordinal -}}
 {{- $searchID := printf "%s-search" $pickerID -}}
-{{- $selectLabel := cond (eq $lang "en") "Device" "Устройство" -}}
-{{- $selectPrompt := cond (eq $lang "en") "Select your device" "Выберите устройство" -}}
-{{- $searchLabel := cond (eq $lang "en") "Search by name" "Поиск по названию" -}}
+{{- $optionsID := printf "%s-options" $pickerID -}}
+{{- $deviceLabel := cond (eq $lang "en") "Device" "Устройство" -}}
 {{- $searchPlaceholder := cond (eq $lang "en") "Start typing a device name" "Начните вводить название устройства" -}}
 {{- $noResults := cond (eq $lang "en") "No devices found" "Устройства не найдены" -}}
 {{- $hint := cond (eq $lang "en") "Check the model, revision, and firmware type before downloading" "Перед скачиванием проверьте модель, ревизию и тип прошивки" -}}
@@ -11,31 +10,52 @@
 
 <div class="firmware-picker" data-firmware-picker>
   <div class="firmware-picker__field">
-    <label class="firmware-picker__label" for="{{ $searchID }}">{{ $searchLabel }}</label>
-    <input
-      class="firmware-picker__search"
-      id="{{ $searchID }}"
-      type="search"
-      placeholder="{{ $searchPlaceholder }}"
-      autocomplete="off"
-      data-firmware-search
-    >
-    <label class="firmware-picker__label" for="{{ $pickerID }}">{{ $selectLabel }}</label>
-    <select class="firmware-picker__select" id="{{ $pickerID }}" data-firmware-select autocomplete="off">
-      <option value="">{{ $selectPrompt }}</option>
+    <div class="firmware-picker__combobox">
+      <label class="firmware-picker__label" for="{{ $searchID }}">{{ $deviceLabel }}</label>
+      <input
+        class="firmware-picker__search"
+        id="{{ $searchID }}"
+        type="search"
+        role="combobox"
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-controls="{{ $optionsID }}"
+        placeholder="{{ $searchPlaceholder }}"
+        autocomplete="off"
+        data-firmware-search
+      >
+      <div class="firmware-picker__options" id="{{ $optionsID }}" role="listbox" data-firmware-options hidden>
       {{- range site.Data.firmware.groups }}
-        <optgroup label="{{ index .name $lang }}">
-          {{- range .devices }}
-            {{- $deviceName := .name -}}
-            {{- if and (eq $lang "en") .name_en -}}
-              {{- $deviceName = .name_en -}}
-            {{- end }}
-            <option value="{{ .id }}">{{ $deviceName }}</option>
-          {{- end }}
-        </optgroup>
+        {{- $groupName := index .name $lang -}}
+        {{- range .devices }}
+          {{- $deviceName := .name -}}
+          {{- if and (eq $lang "en") .name_en -}}
+            {{- $deviceName = .name_en -}}
+          {{- end -}}
+          {{- $searchNames := .name -}}
+          {{- with .name_en -}}
+            {{- $searchNames = printf "%s %s" $searchNames . -}}
+          {{- end -}}
+          {{- $optionID := printf "%s-option-%s" $pickerID .id -}}
+          <button
+            class="firmware-picker__option"
+            id="{{ $optionID }}"
+            type="button"
+            role="option"
+            aria-selected="false"
+            data-firmware-option
+            data-firmware-value="{{ .id }}"
+            data-firmware-name="{{ $deviceName }}"
+            data-firmware-search-names="{{ $searchNames }}"
+          >
+            <span class="firmware-picker__option-name">{{ $deviceName }}</span>
+            <span class="firmware-picker__option-group">{{ $groupName }}</span>
+          </button>
+        {{- end }}
       {{- end }}
-    </select>
-    <p class="firmware-picker__empty" data-firmware-empty role="status" hidden>{{ $noResults }}</p>
+        <p class="firmware-picker__empty" data-firmware-empty role="status" hidden>{{ $noResults }}</p>
+      </div>
+    </div>
     <p class="firmware-picker__hint">{{ $hint }}</p>
   </div>
 
@@ -76,26 +96,44 @@
     if (!picker?.matches("[data-firmware-picker]")) return;
 
     const search = picker.querySelector("[data-firmware-search]");
-    const select = picker.querySelector("[data-firmware-select]");
+    const optionsBox = picker.querySelector("[data-firmware-options]");
+    const options = Array.from(picker.querySelectorAll("[data-firmware-option]"));
     const empty = picker.querySelector("[data-firmware-empty]");
     const result = picker.querySelector("[data-firmware-result]");
     const devices = picker.querySelectorAll("[data-firmware-device]");
-    const prompt = select.querySelector('option[value=""]').cloneNode(true);
-    const groups = Array.from(select.querySelectorAll("optgroup"), (group) => ({
-      label: group.label,
-      options: Array.from(group.querySelectorAll("option"), (option) => ({
-        value: option.value,
-        label: option.textContent,
-      })),
-    }));
+    let matches = options;
+    let activeIndex = -1;
+    let selectedValue = "";
 
-    const normalize = (value) => value.trim().toLocaleLowerCase();
+    const cyrillic = {
+      а: "a", б: "b", в: "v", г: "g", д: "d", е: "e", ё: "e",
+      ж: "zh", з: "z", и: "i", й: "i", к: "k", л: "l", м: "m",
+      н: "n", о: "o", п: "p", р: "r", с: "s", т: "t", у: "u",
+      ф: "f", х: "h", ц: "ts", ч: "ch", ш: "sh", щ: "shch",
+      ы: "y", э: "e", ю: "yu", я: "ya", ъ: "", ь: "",
+    };
+
+    const normalize = (value) => Array.from(value.trim().toLocaleLowerCase())
+      .map((character) => cyrillic[character] ?? character)
+      .join("")
+      .normalize("NFD")
+      .replace(/\p{Diacritic}/gu, "")
+      .replace(/0/g, "o")
+      .replace(/ph/g, "f")
+      .replace(/th/g, "t")
+      .replace(/c(?!h)/g, "k")
+      .replace(/q/g, "k")
+      .replace(/w/g, "v")
+      .replace(/x/g, "ks")
+      .replace(/[^a-z0-9]+/g, "")
+      .replace(/[aeiouy]/g, "a")
+      .replace(/(.)\1+/g, "$1");
 
     const update = () => {
       let hasSelection = false;
 
       devices.forEach((device) => {
-        const isSelected = device.dataset.firmwareDevice === select.value;
+        const isSelected = device.dataset.firmwareDevice === selectedValue;
         device.hidden = !isSelected;
         hasSelection ||= isSelected;
       });
@@ -103,40 +141,97 @@
       result.hidden = !hasSelection;
     };
 
-    const filter = () => {
-      const query = normalize(search.value);
-      const previousValue = select.value;
-      let matchCount = 0;
-
-      select.replaceChildren(prompt.cloneNode(true));
-
-      groups.forEach((group) => {
-        const matches = group.options.filter((option) => normalize(option.label).includes(query));
-        if (!matches.length) return;
-
-        const optgroup = document.createElement("optgroup");
-        optgroup.label = group.label;
-
-        matches.forEach((match) => {
-          const option = document.createElement("option");
-          option.value = match.value;
-          option.textContent = match.label;
-          optgroup.append(option);
-        });
-
-        select.append(optgroup);
-        matchCount += matches.length;
-      });
-
-      select.value = Array.from(select.options).some((option) => option.value === previousValue)
-        ? previousValue
-        : "";
-      empty.hidden = matchCount !== 0;
-      update();
+    const closeOptions = () => {
+      optionsBox.hidden = true;
+      search.setAttribute("aria-expanded", "false");
+      search.removeAttribute("aria-activedescendant");
+      activeIndex = -1;
     };
 
-    search.addEventListener("input", filter);
-    select.addEventListener("change", update);
-    filter();
+    const openOptions = () => {
+      optionsBox.hidden = false;
+      search.setAttribute("aria-expanded", "true");
+    };
+
+    const setActive = (index) => {
+      options.forEach((option) => {
+        option.classList.remove("is-active");
+        option.setAttribute("aria-selected", "false");
+      });
+
+      if (!matches.length || index < 0) {
+        activeIndex = -1;
+        search.removeAttribute("aria-activedescendant");
+        return;
+      }
+
+      activeIndex = (index + matches.length) % matches.length;
+      const option = matches[activeIndex];
+      option.classList.add("is-active");
+      option.setAttribute("aria-selected", "true");
+      search.setAttribute("aria-activedescendant", option.id);
+      option.scrollIntoView({ block: "nearest" });
+    };
+
+    const filterOptions = () => {
+      const query = normalize(search.value);
+      matches = options.filter((option) => {
+        const isMatch = normalize(option.dataset.firmwareSearchNames).includes(query);
+        option.hidden = !isMatch;
+        return isMatch;
+      });
+
+      empty.hidden = matches.length !== 0;
+      setActive(-1);
+      openOptions();
+    };
+
+    const selectOption = (option) => {
+      selectedValue = option.dataset.firmwareValue;
+      search.value = option.dataset.firmwareName;
+      update();
+      closeOptions();
+    };
+
+    options.forEach((option) => {
+      option.addEventListener("mousedown", (event) => event.preventDefault());
+      option.addEventListener("click", () => selectOption(option));
+    });
+
+    search.addEventListener("focus", filterOptions);
+    search.addEventListener("blur", () => window.setTimeout(closeOptions, 0));
+    search.addEventListener("input", () => {
+      selectedValue = "";
+      update();
+      filterOptions();
+    });
+
+    search.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        if (optionsBox.hidden) filterOptions();
+        setActive(activeIndex + 1);
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        if (optionsBox.hidden) filterOptions();
+        setActive(activeIndex < 0 ? matches.length - 1 : activeIndex - 1);
+      } else if (event.key === "Enter") {
+        const option = matches[activeIndex] ?? (matches.length === 1 ? matches[0] : null);
+        if (option && !optionsBox.hidden) {
+          event.preventDefault();
+          selectOption(option);
+        }
+      } else if (event.key === "Escape") {
+        closeOptions();
+      } else if (event.key === "Tab") {
+        closeOptions();
+      }
+    });
+
+    document.addEventListener("pointerdown", (event) => {
+      if (!picker.contains(event.target)) closeOptions();
+    });
+
+    update();
   })();
 </script>
