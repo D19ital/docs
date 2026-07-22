@@ -28,6 +28,12 @@ aside .hx\:sticky.hx\:bottom-0.hx\:border-t {
   color: rgb(107 114 128); /* Tailwind gray-500 */
 }
 
+.hextra-nav-container .hextra-theme-toggle {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+}
+
 html.dark .hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) {
   color: rgb(156 163 175); /* Tailwind gray-400 */
 }
