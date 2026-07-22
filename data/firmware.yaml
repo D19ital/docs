@@ -38,7 +38,7 @@ groups:
 
   - id: rmk-previous
     name:
-      ru: RMK — предыдущие устройства
+      ru: RMK — предыдущие беспроводные устройства
       en: RMK — previous devices
     devices:
       - id: rmk-k03-v4
@@ -169,7 +169,7 @@ groups:
 
   - id: qmk-previous
     name:
-      ru: QMK — предыдущие устройства и ревизии
+      ru: QMK — предыдущие проводные устройства
       en: QMK — previous devices and revisions
     devices:
       - id: qmk-hpd-v1
