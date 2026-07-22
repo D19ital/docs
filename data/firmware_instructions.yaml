@@ -1,247 +1,104 @@
-k04:
-  source: /device/k04/#перепрошивкаобновление-встроенного-по
+rmk_split:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Скачайте прошивку «RMK — сброс всех настроек» и файлы K:04 для левой и правой половинок"
-      - "Подключите левую половинку по USB-C и дважды нажмите <code>Reset</code> на обратной стороне — откроется диск загрузчика"
-      - "Скопируйте на диск прошивку сброса RMK и повторите эти действия для правой половинки"
-      - "Снова дважды нажмите <code>Reset</code> на левой половинке и скопируйте файл K:04 для левой стороны"
-      - "Повторите действия для правой половинки, используя файл K:04 для правой стороны"
-      - "Если при копировании появляется сообщение об ошибке, его можно игнорировать — половинка перезагружается сразу после записи файла"
+      - "Скачайте файлы прошивки для левой и правой половинок"
+      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на открывшийся диск файл <code>left</code>"
+      - "Повторите действия для правой половинки, используя файл <code>right</code>"
   en:
     title: How to update the firmware
     steps:
-      - "Download the “RMK — reset all settings” firmware and the K:04 files for the left and right halves"
-      - "Connect the left half via USB-C and double-press <code>Reset</code> on the back — the bootloader drive will open"
-      - "Copy the RMK reset firmware to the drive and repeat these steps for the right half"
-      - "Double-press <code>Reset</code> on the left half again and copy the K:04 file for the left side"
-      - "Repeat these steps for the right half using the K:04 file for the right side"
-      - "If a copy error appears, it can be ignored — the half restarts immediately after the file is written"
+      - "Download the firmware files for the left and right halves"
+      - "Connect the left half via USB-C, quickly double-press <code>Reset</code>, and copy the <code>left</code> file to the drive that opens"
+      - "Repeat these steps for the right half using the <code>right</code> file"
 
-phenom:
-  source: /device/phenom/#перепрошивкаобновление-встроенного-по
+rmk_single:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Сохраните текущую раскладку в Entropy через «Раскладка» → «Экспорт раскладки»"
-      - "Переведите клавиатуру в режим загрузчика: дважды нажмите <code>Reset</code> снизу или зажмите <code>BOOT</code> и подключите USB-C"
-      - "Дождитесь появления диска загрузчика и скопируйте на него скачанный UF2-файл"
-      - "После перезагрузки импортируйте сохранённую раскладку через «Раскладка» → «Импорт раскладки»"
+      - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
+      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
   en:
     title: How to update the firmware
     steps:
-      - "Save the current layout in Entropy using “Layout” → “Export layout”"
-      - "Enter bootloader mode: double-press <code>Reset</code> on the bottom or hold <code>BOOT</code> while connecting USB-C"
-      - "Wait for the bootloader drive to open and copy the downloaded UF2 file to it"
-      - "After the keyboard restarts, import the saved layout using “Layout” → “Import layout”"
+      - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
+      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
 
-macropad:
-  source: /device/macropad/#обновление-прошивки
+qmk:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Убедитесь, что версия прошивки соответствует версии M4CR0Pad"
-      - "Сохраните текущую раскладку в Vial через «File» → «Save current layout»"
-      - "Переведите макропад в режим загрузчика одним из способов: удерживайте верхнюю левую клавишу при подключении USB-C, дважды нажмите <code>Reset</code> или удерживайте <code>BOOT</code> при подключении"
-      - "Дождитесь появления диска загрузчика и скопируйте на него скачанный UF2-файл"
-      - "После перезагрузки загрузите сохранённую раскладку через «File» → «Load saved layout»"
+      - "При необходимости сохраните текущую раскладку в Vial или Entropy"
+      - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
+      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
+      - "Если клавиатура состоит из двух половинок, повторите эти действия для второй половинки"
+      - "После обновления импортируйте сохранённую раскладку"
   en:
     title: How to update the firmware
     steps:
-      - "Make sure the firmware version matches the M4CR0Pad version"
-      - "Save the current layout in Vial using “File” → “Save current layout”"
-      - "Enter bootloader mode in one of these ways: hold the top-left key while connecting USB-C, double-press <code>Reset</code>, or hold <code>BOOT</code> while connecting"
-      - "Wait for the bootloader drive to open and copy the downloaded UF2 file to it"
-      - "After the macropad restarts, load the saved layout using “File” → “Load saved layout”"
+      - "Save the current layout in Vial or Entropy if needed"
+      - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
+      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
+      - "If the keyboard has two halves, repeat these steps for the other half"
+      - "Import the saved layout after the update"
 
-sm30:
-  source: /device/sm30/#перепрошивкаобновление-встроенного-по
+qmk_single:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Сохраните текущую раскладку в Vial через «File» → «Save current layout»"
-      - "Переведите SM30 в режим загрузчика одним из способов: удерживайте верхнюю левую клавишу второго ряда при подключении USB-C, дважды нажмите <code>Reset</code> или удерживайте <code>BOOT</code> при подключении"
-      - "Дождитесь появления диска загрузчика и скопируйте на него скачанный UF2-файл"
-      - "После перезагрузки загрузите сохранённую раскладку через «File» → «Load saved layout»"
+      - "При необходимости сохраните текущую раскладку в Vial или Entropy"
+      - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
+      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
+      - "После обновления импортируйте сохранённую раскладку"
   en:
     title: How to update the firmware
     steps:
-      - "Save the current layout in Vial using “File” → “Save current layout”"
-      - "Enter bootloader mode in one of these ways: hold the top-left key on the second row while connecting USB-C, double-press <code>Reset</code>, or hold <code>BOOT</code> while connecting"
-      - "Wait for the bootloader drive to open and copy the downloaded UF2 file to it"
-      - "After SM30 restarts, load the saved layout using “File” → “Load saved layout”"
+      - "Save the current layout in Vial or Entropy if needed"
+      - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
+      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
+      - "Import the saved layout after the update"
 
-k03_qmk:
-  source: /device/archive/k03/#обновление-прошивки
+zmk_split:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Сохраните текущую раскладку в Vial через «File» → «Save current layout»"
-      - "Зажмите верхнюю левую клавишу и подключите USB-C к левой половинке"
-      - "Дождитесь появления диска загрузчика и скопируйте на него скачанный UF2-файл"
-      - "Зажмите верхнюю правую клавишу на правой половинке, подключите USB-C и повторите прошивку"
-      - "После обновления загрузите сохранённую раскладку через «File» → «Load saved layout»"
+      - "Скачайте все показанные файлы для левой и правой половинок"
+      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на открывшийся диск файл <code>left</code>"
+      - "Повторите действия для правой половинки, используя файл <code>right</code>"
+      - "После обновления одновременно нажмите <code>Reset</code> на обеих половинках, чтобы восстановить их соединение"
   en:
     title: How to update the firmware
     steps:
-      - "Save the current layout in Vial using “File” → “Save current layout”"
-      - "Hold the top-left key and connect USB-C to the left half"
-      - "Wait for the bootloader drive to open and copy the downloaded UF2 file to it"
-      - "Hold the top-right key on the right half, connect USB-C, and repeat the flashing process"
-      - "After the update, load the saved layout using “File” → “Load saved layout”"
+      - "Download all displayed files for the left and right halves"
+      - "Connect the left half via USB-C, quickly double-press <code>Reset</code>, and copy the <code>left</code> file to the drive that opens"
+      - "Repeat these steps for the right half using the <code>right</code> file"
+      - "After the update, press <code>Reset</code> on both halves simultaneously to reconnect them"
 
-imperial44_qmk:
-  source: /device/archive/imperial44/#обновление-прошивки
+zmk_qube:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Сохраните текущую раскладку в Vial через «File» → «Save current layout»"
-      - "Зажмите верхнюю левую клавишу и подключите USB-C к левой половинке"
-      - "Дождитесь появления диска загрузчика и скопируйте на него скачанный UF2-файл"
-      - "Зажмите верхнюю правую клавишу на правой половинке, подключите USB-C и повторите прошивку"
-      - "После обновления загрузите сохранённую раскладку через «File» → «Load saved layout»"
+      - "Скачайте все показанные файлы"
+      - "По очереди подключите устройства, дважды быстро нажмите <code>Reset</code> на каждом и установите прошивки в порядке: Qube, левая половинка, правая половинка"
+      - "Используйте только соответствующие файлы <code>qube</code>, <code>left_qube</code> и <code>right</code>"
   en:
     title: How to update the firmware
     steps:
-      - "Save the current layout in Vial using “File” → “Save current layout”"
-      - "Hold the top-left key and connect USB-C to the left half"
-      - "Wait for the bootloader drive to open and copy the downloaded UF2 file to it"
-      - "Hold the top-right key on the right half, connect USB-C, and repeat the flashing process"
-      - "After the update, load the saved layout using “File” → “Load saved layout”"
+      - "Download all displayed files"
+      - "Connect each device in turn, quickly double-press <code>Reset</code> on each one, and install the firmware in this order: Qube, left half, right half"
+      - "Use only the matching <code>qube</code>, <code>left_qube</code>, and <code>right</code> files"
 
-hpd_qmk:
-  source: /device/archive/hpd/#обновление-прошивки
+zmk_single:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Сохраните текущую раскладку в Vial через «File» → «Save current layout»"
-      - "Зажмите верхнюю левую клавишу и подключите USB-C к левой половинке"
-      - "Дождитесь появления диска загрузчика и скопируйте на него скачанный UF2-файл"
-      - "Для правой половинки HPD v2 удерживайте верхнюю правую клавишу, для HPD v1 — верхнюю левую, затем подключите USB-C и повторите прошивку"
-      - "После обновления загрузите сохранённую раскладку через «File» → «Load saved layout»"
+      - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
+      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
   en:
     title: How to update the firmware
     steps:
-      - "Save the current layout in Vial using “File” → “Save current layout”"
-      - "Hold the top-left key and connect USB-C to the left half"
-      - "Wait for the bootloader drive to open and copy the downloaded UF2 file to it"
-      - "For the HPD v2 right half, hold the top-right key; for HPD v1, hold the top-left key, then connect USB-C and repeat the flashing process"
-      - "After the update, load the saved layout using “File” → “Load saved layout”"
-
-velvet_qmk:
-  source: /device/archive/velvet/#обновление-прошивки
-  ru:
-    title: Как обновить прошивку
-    steps:
-      - "Сохраните текущую раскладку в Vial через «File» → «Save current layout»"
-      - "Зажмите верхнюю левую клавишу и подключите USB-C к левой половинке"
-      - "Дождитесь появления диска загрузчика и скопируйте на него скачанный UF2-файл"
-      - "Зажмите верхнюю правую клавишу на правой половинке, подключите USB-C и повторите прошивку"
-      - "После обновления загрузите сохранённую раскладку через «File» → «Load saved layout»"
-  en:
-    title: How to update the firmware
-    steps:
-      - "Save the current layout in Vial using “File” → “Save current layout”"
-      - "Hold the top-left key and connect USB-C to the left half"
-      - "Wait for the bootloader drive to open and copy the downloaded UF2 file to it"
-      - "Hold the top-right key on the right half, connect USB-C, and repeat the flashing process"
-      - "After the update, load the saved layout using “File” → “Load saved layout”"
-
-k03_zmk:
-  source: /device/archive/k03-we/#прошивка
-  ru:
-    title: Как обновить прошивку
-    steps:
-      - "Скачайте <code>settings_reset</code> и файлы K:03 v4 для левой и правой половинок"
-      - "Подключите левую половинку по USB-C, дважды нажмите <code>Reset</code> и скопируйте <code>settings_reset</code> на открывшийся диск"
-      - "Повторите сброс для правой половинки"
-      - "Снова дважды нажмите <code>Reset</code> на левой половинке и скопируйте файл K:03 v4 для левой стороны"
-      - "Повторите действия для правой половинки, используя файл K:03 v4 для правой стороны"
-      - "Если при копировании появляется сообщение об ошибке, его можно игнорировать"
-  en:
-    title: How to update the firmware
-    steps:
-      - "Download <code>settings_reset</code> and the K:03 v4 files for the left and right halves"
-      - "Connect the left half via USB-C, double-press <code>Reset</code>, and copy <code>settings_reset</code> to the drive that opens"
-      - "Repeat the reset for the right half"
-      - "Double-press <code>Reset</code> on the left half again and copy the K:03 v4 file for the left side"
-      - "Repeat these steps for the right half using the K:03 v4 file for the right side"
-      - "If a copy error appears, it can be ignored"
-
-imperial44_zmk:
-  source: /device/archive/imperial44-we/#обновление-прошивки
-  ru:
-    title: Как обновить прошивку
-    steps:
-      - "Скачайте <code>settings_reset</code> и файлы Imperial44 для левой и правой половинок, затем выключите обе половинки"
-      - "Подключите левую половинку по USB-C, дважды нажмите <code>Reset</code> и скопируйте <code>settings_reset</code> на открывшийся диск"
-      - "Снова дважды нажмите <code>Reset</code> и скопируйте файл Imperial44 для левой стороны"
-      - "Повторите эти действия для правой половинки, используя файл для правой стороны"
-      - "Включите обе половинки и одновременно нажмите и отпустите <code>Reset</code> на них, чтобы синхронизировать клавиатуру"
-  en:
-    title: How to update the firmware
-    steps:
-      - "Download <code>settings_reset</code> and the Imperial44 files for the left and right halves, then turn off both halves"
-      - "Connect the left half via USB-C, double-press <code>Reset</code>, and copy <code>settings_reset</code> to the drive that opens"
-      - "Double-press <code>Reset</code> again and copy the Imperial44 file for the left side"
-      - "Repeat these steps for the right half using the file for the right side"
-      - "Turn on both halves and press and release <code>Reset</code> on them simultaneously to synchronize the keyboard"
-
-qube_zmk:
-  source: /device/archive/qube/
-  ru:
-    title: Как обновить прошивку
-    steps:
-      - "Скачайте <code>settings_reset</code> и три файла основной прошивки: для Qube, левой и правой половинок"
-      - "Выключите обе половинки клавиатуры"
-      - "По очереди подключите Qube, левую и правую половинки, дважды нажмите <code>Reset</code> на каждом устройстве и скопируйте <code>settings_reset</code>"
-      - "Снова переведите Qube в режим загрузчика и скопируйте файл прошивки Qube"
-      - "Прошейте левую половинку файлом <code>left_qube</code>, затем правую половинку файлом <code>right</code>"
-      - "Для Velvet UI используйте <code>ui_left</code> для левой половинки и <code>ui_right_qube</code> для правой"
-      - "Подключите Qube к компьютеру, включите сначала левую, затем правую половинку и дождитесь их синхронизации"
-  en:
-    title: How to update the firmware
-    steps:
-      - "Download <code>settings_reset</code> and the three main firmware files: Qube, left half, and right half"
-      - "Turn off both keyboard halves"
-      - "Connect Qube, the left half, and the right half one at a time, double-press <code>Reset</code> on each device, and copy <code>settings_reset</code>"
-      - "Put Qube into bootloader mode again and copy the Qube firmware file"
-      - "Flash the left half with the <code>left_qube</code> file, then flash the right half with the <code>right</code> file"
-      - "For Velvet UI, use <code>ui_left</code> for the left half and <code>ui_right_qube</code> for the right half"
-      - "Connect Qube to the computer, turn on the left half first, then the right half, and wait for synchronization"
-
-trackball_mini_zmk:
-  source: /device/tb-mini/#прошивка-мониторинг-заряда
-  ru:
-    title: Как обновить прошивку
-    steps:
-      - "Подключите Trackball Mini по USB-C"
-      - "Дважды быстро нажмите <code>Reset</code> на обратной стороне — откроется диск загрузчика"
-      - "Скопируйте скачанный UF2-файл на диск и дождитесь перезагрузки трекбола"
-  en:
-    title: How to update the firmware
-    steps:
-      - "Connect Trackball Mini via USB-C"
-      - "Quickly double-press <code>Reset</code> on the back — the bootloader drive will open"
-      - "Copy the downloaded UF2 file to the drive and wait for the trackball to restart"
-
-trackball_royale_zmk:
-  source: /device/tb-royale/#прошивка
-  ru:
-    title: Как обновить прошивку
-    steps:
-      - "Скачайте <code>settings_reset</code> и прошивку Trackball Royale"
-      - "Подключите трекбол по USB-C, дважды нажмите <code>Reset</code> с обратной стороны и скопируйте <code>settings_reset</code> на открывшийся диск"
-      - "После перезагрузки снова дважды нажмите <code>Reset</code>"
-      - "Скопируйте прошивку Trackball Royale на открывшийся диск и дождитесь перезагрузки"
-  en:
-    title: How to update the firmware
-    steps:
-      - "Download <code>settings_reset</code> and the Trackball Royale firmware"
-      - "Connect the trackball via USB-C, double-press <code>Reset</code> on the back, and copy <code>settings_reset</code> to the drive that opens"
-      - "After the trackball restarts, double-press <code>Reset</code> again"
-      - "Copy the Trackball Royale firmware to the drive that opens and wait for the trackball to restart"
+      - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
+      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
 
 service_rmk:
   ru:

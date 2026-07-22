@@ -68,7 +68,25 @@
           {{- $deviceName = .name_en -}}
         {{- end }}
         {{- $deviceID := .id -}}
-        {{- $instructionKey := index site.Data.firmware_instruction_map $deviceID -}}
+        {{- $instructionKey := "qmk" -}}
+        {{- if strings.HasPrefix $deviceID "rmk-trackball" -}}
+          {{- $instructionKey = "rmk_single" -}}
+        {{- else if strings.HasPrefix $deviceID "rmk-" -}}
+          {{- $instructionKey = "rmk_split" -}}
+        {{- else if strings.HasSuffix $deviceID "-qube" -}}
+          {{- $instructionKey = "zmk_qube" -}}
+        {{- else if strings.HasPrefix $deviceID "zmk-trackball" -}}
+          {{- $instructionKey = "zmk_single" -}}
+        {{- else if strings.HasPrefix $deviceID "zmk-" -}}
+          {{- $instructionKey = "zmk_split" -}}
+        {{- else if eq $deviceID "service-rmk-reset" -}}
+          {{- $instructionKey = "service_rmk" -}}
+        {{- else if eq $deviceID "service-zmk-reset" -}}
+          {{- $instructionKey = "service_zmk" -}}
+        {{- else if or (eq $deviceID "qmk-sm30") (strings.HasPrefix $deviceID "qmk-planeta") (strings.HasPrefix $deviceID "qmk-macropad") -}}
+          {{- $instructionKey = "qmk_single" -}}
+        {{- end -}}
+        {{- $instruction := index site.Data.firmware_instructions $instructionKey -}}
         <section class="firmware-picker__device" data-firmware-device="{{ .id }}" hidden>
           <p class="firmware-picker__group">{{ $groupName }}</p>
           <p class="firmware-picker__device-name">{{ $deviceName }}</p>
@@ -84,18 +102,15 @@
               </a>
             {{- end }}
           </div>
-          {{- with $instructionKey }}
-            {{- $instruction := index site.Data.firmware_instructions . -}}
-            {{- with index $instruction $lang }}
-              <div class="firmware-picker__instruction">
-                <p class="firmware-picker__instruction-title">{{ .title }} — {{ $deviceName }}</p>
-                <ol class="firmware-picker__instruction-steps">
-                  {{- range .steps }}
-                    <li>{{ . | safeHTML }}</li>
-                  {{- end }}
-                </ol>
-              </div>
-            {{- end }}
+          {{- with index $instruction $lang }}
+            <div class="firmware-picker__instruction">
+              <p class="firmware-picker__instruction-title">{{ .title }} — {{ $deviceName }}</p>
+              <ol class="firmware-picker__instruction-steps">
+                {{- range .steps }}
+                  <li>{{ . | safeHTML }}</li>
+                {{- end }}
+              </ol>
+            </div>
           {{- end }}
         </section>
       {{- end }}
