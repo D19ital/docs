@@ -2,30 +2,38 @@ rmk_split:
   ru:
     title: Как обновить прошивку
     steps:
+      - 'При необходимости сохраните текущую раскладку в <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a>'
       - "Скачайте файлы прошивки для левой и правой половинок"
       - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> с обратной стороны корпуса и скопируйте на появившийся диск загрузчика файл <code>left</code>"
       - "Повторите действия для правой половинки, используя файл <code>right</code>"
+      - "После обновления импортируйте сохранённую раскладку"
     note: "Если при копировании прошивки появляется окно с ошибкой копирования/извлечения диска, просто игнорируйте это сообщение"
   en:
     title: How to update the firmware
     steps:
+      - 'Save the current layout in <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a> if needed'
       - "Download the firmware files for the left and right halves"
       - "Connect the left half via USB-C, quickly double-press <code>Reset</code> on the back of the case, and copy the <code>left</code> file to the bootloader drive that appears"
       - "Repeat these steps for the right half using the <code>right</code> file"
+      - "Import the saved layout after the update"
     note: "If a copy or disk ejection error appears while copying the firmware, simply ignore the message"
 
 rmk_single:
   ru:
     title: Как обновить прошивку
     steps:
+      - 'При необходимости сохраните текущую раскладку в <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a>'
       - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
       - "Скопируйте скачанный UF2-файл на появившийся диск загрузчика — после копирования устройство перезагрузится"
+      - "После обновления импортируйте сохранённую раскладку"
     note: "Если при копировании прошивки появляется окно с ошибкой копирования/извлечения диска, просто игнорируйте это сообщение"
   en:
     title: How to update the firmware
     steps:
+      - 'Save the current layout in <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a> if needed'
       - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
       - "Copy the downloaded UF2 file to the bootloader drive that appears — the device will restart after copying"
+      - "Import the saved layout after the update"
     note: "If a copy or disk ejection error appears while copying the firmware, simply ignore the message"
 
 qmk:
