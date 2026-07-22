@@ -93,8 +93,8 @@ html.dark .hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-tog
    ========================================================================== */
 
 .firmware-picker {
+  position: relative;
   margin: 1.5rem 0;
-  overflow: hidden;
   border: 1px solid rgb(229 231 235);
   border-radius: 0.75rem;
   background: rgb(249 250 251);
@@ -117,8 +117,11 @@ html.dark .firmware-picker {
   font-weight: 600;
 }
 
-.firmware-picker__search,
-.firmware-picker__select {
+.firmware-picker__combobox {
+  position: relative;
+}
+
+.firmware-picker__search {
   width: 100%;
   min-height: 2.75rem;
   padding: 0.625rem 0.75rem;
@@ -129,29 +132,93 @@ html.dark .firmware-picker {
   font: inherit;
 }
 
-.firmware-picker__search {
-  margin-bottom: 1rem;
-}
-
-.firmware-picker__select {
-  cursor: pointer;
-}
-
-.firmware-picker__search:focus-visible,
-.firmware-picker__select:focus-visible {
+.firmware-picker__search:focus-visible {
   outline: 2px solid rgb(37 99 235);
   outline-offset: 2px;
 }
 
-html.dark .firmware-picker__search,
-html.dark .firmware-picker__select {
+html.dark .firmware-picker__search {
   border-color: rgb(82 82 82);
   background: rgb(38 38 38);
   color: rgb(245 245 245);
 }
 
+.firmware-picker__options {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.375rem);
+  right: 0;
+  left: 0;
+  max-height: 20rem;
+  overflow-y: auto;
+  padding: 0.375rem;
+  border: 1px solid rgb(209 213 219);
+  border-radius: 0.5rem;
+  background: white;
+  box-shadow: 0 12px 28px rgb(0 0 0 / 14%);
+}
+
+html.dark .firmware-picker__options {
+  border-color: rgb(82 82 82);
+  background: rgb(38 38 38);
+  box-shadow: 0 12px 28px rgb(0 0 0 / 35%);
+}
+
+.firmware-picker__options[hidden],
+.firmware-picker__option[hidden] {
+  display: none;
+}
+
+.firmware-picker .firmware-picker__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 0;
+  border-radius: 0.375rem;
+  background: transparent;
+  color: rgb(17 24 39);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.firmware-picker .firmware-picker__option:hover,
+.firmware-picker .firmware-picker__option.is-active {
+  background: rgb(239 246 255);
+  color: rgb(29 78 216);
+}
+
+html.dark .firmware-picker .firmware-picker__option {
+  color: rgb(245 245 245);
+}
+
+html.dark .firmware-picker .firmware-picker__option:hover,
+html.dark .firmware-picker .firmware-picker__option.is-active {
+  background: rgb(38 58 82);
+  color: rgb(147 197 253);
+}
+
+.firmware-picker__option-name {
+  font-weight: 600;
+}
+
+.firmware-picker__option-group {
+  color: rgb(107 114 128);
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-align: right;
+}
+
+html.dark .firmware-picker__option-group {
+  color: rgb(163 163 163);
+}
+
 .firmware-picker .firmware-picker__empty {
-  margin: 0.625rem 0 0;
+  margin: 0;
+  padding: 0.625rem 0.75rem;
   color: rgb(185 28 28);
   font-size: 0.875rem;
   line-height: 1.4;
