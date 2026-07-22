@@ -19,12 +19,14 @@ rmk_single:
     title: Как обновить прошивку
     steps:
       - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
-      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
+      - "Скопируйте скачанный UF2-файл на появившийся диск загрузчика — после копирования устройство перезагрузится"
+    note: "Если при копировании прошивки появляется окно с ошибкой копирования/извлечения диска, просто игнорируйте это сообщение"
   en:
     title: How to update the firmware
     steps:
       - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
-      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
+      - "Copy the downloaded UF2 file to the bootloader drive that appears — the device will restart after copying"
+    note: "If a copy or disk ejection error appears while copying the firmware, simply ignore the message"
 
 qmk:
   ru:
