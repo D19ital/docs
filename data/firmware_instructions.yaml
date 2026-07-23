@@ -123,14 +123,16 @@ qmk_single_old:
     title: Как обновить прошивку
     steps:
       - 'При необходимости сохраните текущую раскладку в <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a>'
-      - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
+      - "Скачайте файл прошивки"
+      - "Зажмите верхнюю левую клавишу и подключите устройство по USB-C"
       - "Скопируйте скачанный UF2-файл на появившийся диск — после копирования устройство перезагрузится"
       - "После обновления импортируйте сохранённую раскладку"
   en:
     title: How to update the firmware
     steps:
       - 'Save the current layout in <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a> if needed'
-      - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
+      - "Download the firmware file"
+      - "Hold down the top-left key and connect the device via USB-C"
       - "Copy the downloaded UF2 file to the drive that appears — the device will restart after copying"
       - "Import the saved layout after the update"
 
