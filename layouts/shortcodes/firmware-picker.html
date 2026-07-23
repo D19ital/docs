@@ -60,6 +60,8 @@
   </div>
 
   <div class="firmware-picker__result" data-firmware-result aria-live="polite" hidden>
+    {{- $qmkSplitOldIDs := slice "qmk-k03-v1" "qmk-imperial44-v1" "qmk-k02-v1" "qmk-remnant-v1" "qmk-velvet-v1" "qmk-velvet-v2" "qmk-k03-pro-v1-43" "qmk-k03-pro-v1-65" "qmk-hpd-v1" -}}
+    {{- $qmkSingleNewIDs := slice "qmk-sm30" "qmk-planeta-v1" "qmk-planeta-v2" "qmk-macropad-v2" "qmk-macropad-v3" "qmk-trackball-v1" "qmk-trackball-v2" -}}
     {{- range site.Data.firmware.groups }}
       {{- $groupName := index .name $lang -}}
       {{- range .devices }}
@@ -68,7 +70,7 @@
           {{- $deviceName = .name_en -}}
         {{- end }}
         {{- $deviceID := .id -}}
-        {{- $instructionKey := "qmk" -}}
+        {{- $instructionKey := "qmk_split_new" -}}
         {{- if strings.HasPrefix $deviceID "rmk-trackball" -}}
           {{- $instructionKey = "rmk_single" -}}
         {{- else if strings.HasPrefix $deviceID "rmk-" -}}
@@ -83,8 +85,12 @@
           {{- $instructionKey = "service_rmk" -}}
         {{- else if eq $deviceID "service-zmk-reset" -}}
           {{- $instructionKey = "service_zmk" -}}
-        {{- else if or (eq $deviceID "qmk-sm30") (strings.HasPrefix $deviceID "qmk-planeta") (strings.HasPrefix $deviceID "qmk-macropad") -}}
-          {{- $instructionKey = "qmk_single" -}}
+        {{- else if eq $deviceID "qmk-macropad-v1" -}}
+          {{- $instructionKey = "qmk_single_old" -}}
+        {{- else if in $qmkSingleNewIDs $deviceID -}}
+          {{- $instructionKey = "qmk_single_new" -}}
+        {{- else if in $qmkSplitOldIDs $deviceID -}}
+          {{- $instructionKey = "qmk_split_old" -}}
         {{- end -}}
         {{- $instruction := index site.Data.firmware_instructions $instructionKey -}}
         <section class="firmware-picker__device" data-firmware-device="{{ .id }}" hidden>
