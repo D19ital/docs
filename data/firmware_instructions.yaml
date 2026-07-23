@@ -164,15 +164,29 @@ zmk_qube:
   ru:
     title: Как обновить прошивку
     steps:
-      - "Скачайте все показанные файлы"
-      - "По очереди подключите устройства, дважды быстро нажмите <code>Reset</code> на каждом и установите прошивки в порядке: Qube, левая половинка, правая половинка"
-      - "Используйте только соответствующие файлы <code>qube</code>, <code>left_qube</code> и <code>right</code>"
+      - "Скачайте файлы прошивки для Qube, левой и правой половинок"
+      - "Подключите Qube по USB-C, дважды быстро нажмите <code>Reset</code> на нижней стороне корпуса и скопируйте на появившийся диск файл <code>qube</code>"
+      - "Повторите действия для левой и правой половинок, используя файлы <code>left</code> и <code>right</code> соответственно"
+      - "После обновления подключите Qube по USB-C. Затем включите левую половинку — она должна отобразиться на Qube вместе с уровнем заряда. После этого включите правую половинку"
+    step_notes:
+      - after_step: 1
+        text: 'Если вы хотите использовать <a href="https://docs.ergohaven.xyz/software/zmk/zmk-ruen/">RuEn</a>, скачайте соответствующую RuEn-прошивку для Qube'
+      - after_step: 3
+        text: "Во время обновления половинки должны быть выключены — переключатель питания снизу должен находиться в положении «выкл»"
+    note: "Если при копировании прошивки появляется окно с ошибкой копирования/извлечения диска, просто игнорируйте это сообщение"
   en:
     title: How to update the firmware
     steps:
-      - "Download all displayed files"
-      - "Connect each device in turn, quickly double-press <code>Reset</code> on each one, and install the firmware in this order: Qube, left half, right half"
-      - "Use only the matching <code>qube</code>, <code>left_qube</code>, and <code>right</code> files"
+      - "Download the firmware files for Qube and the left and right halves"
+      - "Connect Qube via USB-C, quickly double-press <code>Reset</code> on the bottom of the case, and copy the <code>qube</code> file to the drive that appears"
+      - "Repeat these steps for the left and right halves using the <code>left</code> and <code>right</code> files respectively"
+      - "After the update, connect Qube via USB-C. Then turn on the left half — it should appear on Qube along with its battery level. Finally, turn on the right half"
+    step_notes:
+      - after_step: 1
+        text: 'If you want to use <a href="https://docs.ergohaven.xyz/en/software/zmk/zmk-ruen/">RuEn</a>, download the corresponding RuEn firmware for Qube'
+      - after_step: 3
+        text: "During the update, the halves must be powered off — the power switch on the bottom must be in the off position"
+    note: "If a copy or disk ejection error appears while copying the firmware, simply ignore the message"
 
 zmk_single:
   ru:
