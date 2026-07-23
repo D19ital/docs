@@ -64,18 +64,42 @@ qmk_split_old:
     steps:
       - 'При необходимости сохраните текущую раскладку в <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a>'
       - "Скачайте файл прошивки"
-      - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
+      - "Для левой половинки зажмите верхнюю левую клавишу и подключите устройство по USB-C"
       - "Скопируйте скачанный UF2-файл на появившийся диск — после копирования устройство перезагрузится"
-      - "Если клавиатура состоит из двух половинок, повторите эти действия для второй половинки"
+      - "Для правой половинки зажмите верхнюю правую клавишу и подключите устройство по USB-C"
+      - "Скопируйте скачанный UF2-файл на появившийся диск — после копирования устройство перезагрузится"
       - "После обновления импортируйте сохранённую раскладку"
   en:
     title: How to update the firmware
     steps:
       - 'Save the current layout in <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a> if needed'
       - "Download the firmware file"
-      - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
+      - "For the left half, hold down the top-left key and connect the device via USB-C"
       - "Copy the downloaded UF2 file to the drive that appears — the device will restart after copying"
-      - "If the keyboard has two halves, repeat these steps for the other half"
+      - "For the right half, hold down the top-right key and connect the device via USB-C"
+      - "Copy the downloaded UF2 file to the drive that appears — the device will restart after copying"
+      - "Import the saved layout after the update"
+
+qmk_hpd_v1:
+  ru:
+    title: Как обновить прошивку
+    steps:
+      - 'При необходимости сохраните текущую раскладку в <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a>'
+      - "Скачайте файл прошивки"
+      - "Для левой половинки зажмите верхнюю левую клавишу и подключите устройство по USB-C"
+      - "Скопируйте скачанный UF2-файл на появившийся диск — после копирования устройство перезагрузится"
+      - "Для правой половинки зажмите верхнюю левую клавишу и подключите устройство по USB-C"
+      - "Скопируйте скачанный UF2-файл на появившийся диск — после копирования устройство перезагрузится"
+      - "После обновления импортируйте сохранённую раскладку"
+  en:
+    title: How to update the firmware
+    steps:
+      - 'Save the current layout in <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a> if needed'
+      - "Download the firmware file"
+      - "For the left half, hold down the top-left key and connect the device via USB-C"
+      - "Copy the downloaded UF2 file to the drive that appears — the device will restart after copying"
+      - "For the right half, hold down the top-left key and connect the device via USB-C"
+      - "Copy the downloaded UF2 file to the drive that appears — the device will restart after copying"
       - "Import the saved layout after the update"
 
 qmk_single_new:
