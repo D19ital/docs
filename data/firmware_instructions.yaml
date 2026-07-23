@@ -141,7 +141,7 @@ zmk_split:
     title: Как обновить прошивку
     steps:
       - "Скачайте файлы прошивки для левой и правой половинок"
-      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на появившийся диск файл <code>left</code>"
+      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> на нижней стороне корпуса и скопируйте на появившийся диск файл <code>left</code>"
       - "Повторите действия для правой половинки, используя файл <code>right</code>"
       - "После обновления одновременно нажмите <code>Reset</code> на обеих половинках, чтобы восстановить их соединение"
     step_notes:
@@ -152,7 +152,7 @@ zmk_split:
     title: How to update the firmware
     steps:
       - "Download the firmware files for the left and right halves"
-      - "Connect the left half via USB-C, quickly double-press <code>Reset</code>, and copy the <code>left</code> file to the drive that appears"
+      - "Connect the left half via USB-C, quickly double-press <code>Reset</code> on the bottom of the case, and copy the <code>left</code> file to the drive that appears"
       - "Repeat these steps for the right half using the <code>right</code> file"
       - "After the update, press <code>Reset</code> on both halves simultaneously to reconnect them"
     step_notes:
