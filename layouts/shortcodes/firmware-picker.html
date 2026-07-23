@@ -113,9 +113,17 @@
           {{- with index $instruction $lang }}
             <div class="firmware-picker__instruction">
               <p class="firmware-picker__instruction-title">{{ .title }} — {{ $deviceName }}</p>
+              {{- $instructionContent := . -}}
               <ol class="firmware-picker__instruction-steps">
-                {{- range .steps }}
-                  <li>{{ . | safeHTML }}</li>
+                {{- range $stepIndex, $step := .steps }}
+                  <li>
+                    {{- $step | safeHTML -}}
+                    {{- range $instructionContent.step_notes }}
+                      {{- if eq .after_step (add $stepIndex 1) }}
+                        <p class="firmware-picker__instruction-note">{{ .text | safeHTML }}</p>
+                      {{- end }}
+                    {{- end }}
+                  </li>
                 {{- end }}
               </ol>
               {{- with .note }}
