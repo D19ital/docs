@@ -354,6 +354,11 @@ html.dark .firmware-picker__instruction {
   line-height: 1.55;
 }
 
+.firmware-picker .firmware-picker__instruction-note {
+  margin: 0.75rem 0 0;
+  line-height: 1.55;
+}
+
 @media (max-width: 640px) {
   .firmware-picker__field,
   .firmware-picker__result {

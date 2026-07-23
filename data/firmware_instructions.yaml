@@ -2,43 +2,55 @@ rmk_split:
   ru:
     title: Как обновить прошивку
     steps:
+      - 'При необходимости сохраните текущую раскладку в <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a>'
       - "Скачайте файлы прошивки для левой и правой половинок"
-      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на открывшийся диск файл <code>left</code>"
+      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> с обратной стороны корпуса и скопируйте на появившийся диск загрузчика файл <code>left</code>"
       - "Повторите действия для правой половинки, используя файл <code>right</code>"
+      - "После обновления импортируйте сохранённую раскладку"
+    note: "Если при копировании прошивки появляется окно с ошибкой копирования/извлечения диска, просто игнорируйте это сообщение"
   en:
     title: How to update the firmware
     steps:
+      - 'Save the current layout in <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a> if needed'
       - "Download the firmware files for the left and right halves"
-      - "Connect the left half via USB-C, quickly double-press <code>Reset</code>, and copy the <code>left</code> file to the drive that opens"
+      - "Connect the left half via USB-C, quickly double-press <code>Reset</code> on the back of the case, and copy the <code>left</code> file to the bootloader drive that appears"
       - "Repeat these steps for the right half using the <code>right</code> file"
+      - "Import the saved layout after the update"
+    note: "If a copy or disk ejection error appears while copying the firmware, simply ignore the message"
 
 rmk_single:
   ru:
     title: Как обновить прошивку
     steps:
+      - 'При необходимости сохраните текущую раскладку в <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a>'
       - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
-      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
+      - "Скопируйте скачанный UF2-файл на появившийся диск загрузчика — после копирования устройство перезагрузится"
+      - "После обновления импортируйте сохранённую раскладку"
+    note: "Если при копировании прошивки появляется окно с ошибкой копирования/извлечения диска, просто игнорируйте это сообщение"
   en:
     title: How to update the firmware
     steps:
+      - 'Save the current layout in <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a> if needed'
       - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
-      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
+      - "Copy the downloaded UF2 file to the bootloader drive that appears — the device will restart after copying"
+      - "Import the saved layout after the update"
+    note: "If a copy or disk ejection error appears while copying the firmware, simply ignore the message"
 
 qmk:
   ru:
     title: Как обновить прошивку
     steps:
-      - "При необходимости сохраните текущую раскладку в Vial или Entropy"
+      - 'При необходимости сохраните текущую раскладку в <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a>'
       - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
-      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
+      - "Скопируйте скачанный UF2-файл на появившийся диск — после копирования устройство перезагрузится"
       - "Если клавиатура состоит из двух половинок, повторите эти действия для второй половинки"
       - "После обновления импортируйте сохранённую раскладку"
   en:
     title: How to update the firmware
     steps:
-      - "Save the current layout in Vial or Entropy if needed"
+      - 'Save the current layout in <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a> if needed'
       - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
-      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
+      - "Copy the downloaded UF2 file to the drive that appears — the device will restart after copying"
       - "If the keyboard has two halves, repeat these steps for the other half"
       - "Import the saved layout after the update"
 
@@ -46,16 +58,16 @@ qmk_single:
   ru:
     title: Как обновить прошивку
     steps:
-      - "При необходимости сохраните текущую раскладку в Vial или Entropy"
+      - 'При необходимости сохраните текущую раскладку в <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a>'
       - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
-      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
+      - "Скопируйте скачанный UF2-файл на появившийся диск — после копирования устройство перезагрузится"
       - "После обновления импортируйте сохранённую раскладку"
   en:
     title: How to update the firmware
     steps:
-      - "Save the current layout in Vial or Entropy if needed"
+      - 'Save the current layout in <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a> if needed'
       - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
-      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
+      - "Copy the downloaded UF2 file to the drive that appears — the device will restart after copying"
       - "Import the saved layout after the update"
 
 zmk_split:
@@ -63,14 +75,14 @@ zmk_split:
     title: Как обновить прошивку
     steps:
       - "Скачайте все показанные файлы для левой и правой половинок"
-      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на открывшийся диск файл <code>left</code>"
+      - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> и скопируйте на появившийся диск файл <code>left</code>"
       - "Повторите действия для правой половинки, используя файл <code>right</code>"
       - "После обновления одновременно нажмите <code>Reset</code> на обеих половинках, чтобы восстановить их соединение"
   en:
     title: How to update the firmware
     steps:
       - "Download all displayed files for the left and right halves"
-      - "Connect the left half via USB-C, quickly double-press <code>Reset</code>, and copy the <code>left</code> file to the drive that opens"
+      - "Connect the left half via USB-C, quickly double-press <code>Reset</code>, and copy the <code>left</code> file to the drive that appears"
       - "Repeat these steps for the right half using the <code>right</code> file"
       - "After the update, press <code>Reset</code> on both halves simultaneously to reconnect them"
 
@@ -93,25 +105,25 @@ zmk_single:
     title: Как обновить прошивку
     steps:
       - "Подключите устройство по USB-C и дважды быстро нажмите <code>Reset</code> на нижней части корпуса"
-      - "Скопируйте скачанный UF2-файл на открывшийся диск — после копирования устройство перезагрузится"
+      - "Скопируйте скачанный UF2-файл на появившийся диск — после копирования устройство перезагрузится"
   en:
     title: How to update the firmware
     steps:
       - "Connect the device via USB-C and quickly double-press <code>Reset</code> on the bottom of the case"
-      - "Copy the downloaded UF2 file to the drive that opens — the device will restart after copying"
+      - "Copy the downloaded UF2 file to the drive that appears — the device will restart after copying"
 
 service_rmk:
   ru:
     title: Как использовать прошивку сброса
     steps:
       - "Подключите устройство или половинку клавиатуры по USB-C и дважды быстро нажмите <code>Reset</code>"
-      - "Скопируйте файл сброса RMK на открывшийся диск"
+      - "Скопируйте файл сброса RMK на появившийся диск"
       - "После перезагрузки установите обычную прошивку для вашей модели; для сплит-клавиатуры повторите действия на обеих половинках"
   en:
     title: How to use the reset firmware
     steps:
       - "Connect the device or keyboard half via USB-C and quickly double-press <code>Reset</code>"
-      - "Copy the RMK reset file to the drive that opens"
+      - "Copy the RMK reset file to the drive that appears"
       - "After the device restarts, install the regular firmware for your model; repeat the steps on both halves of a split keyboard"
 
 service_zmk:
@@ -119,11 +131,11 @@ service_zmk:
     title: Как использовать прошивку сброса
     steps:
       - "Подключите устройство или половинку клавиатуры по USB-C и дважды быстро нажмите <code>Reset</code>"
-      - "Скопируйте файл сброса ZMK на открывшийся диск"
+      - "Скопируйте файл сброса ZMK на появившийся диск"
       - "После перезагрузки установите обычную прошивку для вашей модели; для сплит-клавиатуры повторите действия на обеих половинках"
   en:
     title: How to use the reset firmware
     steps:
       - "Connect the device or keyboard half via USB-C and quickly double-press <code>Reset</code>"
-      - "Copy the ZMK reset file to the drive that opens"
+      - "Copy the ZMK reset file to the drive that appears"
       - "After the device restarts, install the regular firmware for your model; repeat the steps on both halves of a split keyboard"

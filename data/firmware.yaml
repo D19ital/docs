@@ -38,18 +38,18 @@ groups:
 
   - id: rmk-previous
     name:
-      ru: RMK — предыдущие устройства
+      ru: RMK — предыдущие беспроводные устройства
       en: RMK — previous devices
     devices:
       - id: rmk-k03-v4
-        name: "K:03 v4"
+        name: "K:03 V4 - Wireless Edition"
         files:
           - label: { ru: Левая половина, en: Left half }
             url: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k03_left.uf2
           - label: { ru: Правая половина, en: Right half }
             url: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_k03_right.uf2
       - id: rmk-imperial44
-        name: Imperial44
+        name: Imperial44 v4 - Wireless Edition
         files:
           - label: { ru: Левая половина, en: Left half }
             url: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_imperial44_left.uf2
@@ -63,7 +63,7 @@ groups:
           - label: { ru: Правая половина, en: Right half }
             url: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_op36_right.uf2
       - id: rmk-velvet-v3
-        name: Velvet v3
+        name: Velvet v3 - Wireless Edition
         files:
           - label: { ru: Левая половина, en: Left half }
             url: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_velvet_left.uf2
@@ -169,7 +169,7 @@ groups:
 
   - id: qmk-previous
     name:
-      ru: QMK — предыдущие устройства и ревизии
+      ru: QMK — предыдущие проводные устройства
       en: QMK — previous devices and revisions
     devices:
       - id: qmk-hpd-v1
@@ -244,7 +244,7 @@ groups:
       en: ZMK — previous wireless devices
     devices:
       - id: zmk-k03-v4
-        name: "K:03 v4"
+        name: "K:03 V4 - Wireless Edition"
         files:
           - label: { ru: Левая половина — стандартная раскладка, en: Left half — standard layout }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_left-ergohaven-zmk.uf2
@@ -253,7 +253,7 @@ groups:
           - label: { ru: Правая половина, en: Right half }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_right-ergohaven-zmk.uf2
       - id: zmk-k03-v4-qube
-        name: "K:03 v4 + Qube"
+        name: "K:03 V4 - Wireless Edition + Qube"
         files:
           - label: { ru: Левая половина, en: Left half }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_left_qube-ergohaven-zmk.uf2
@@ -264,7 +264,7 @@ groups:
           - label: { ru: Qube — раскладка RuEn, en: Qube — RuEn layout }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_qube_ruen-ergohaven-zmk.uf2
       - id: zmk-imperial44
-        name: Imperial44
+        name: Imperial44 v4 - Wireless Edition
         files:
           - label: { ru: Левая половина — стандартная раскладка, en: Left half — standard layout }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left-ergohaven-zmk.uf2
@@ -273,7 +273,7 @@ groups:
           - label: { ru: Правая половина, en: Right half }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_right-ergohaven-zmk.uf2
       - id: zmk-imperial44-qube
-        name: Imperial44 + Qube
+        name: Imperial44 v4 - Wireless Edition + Qube
         files:
           - label: { ru: Левая половина, en: Left half }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left_qube-ergohaven-zmk.uf2
@@ -304,7 +304,7 @@ groups:
           - label: { ru: Qube — раскладка RuEn, en: Qube — RuEn layout }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_qube_ruen-ergohaven-zmk.uf2
       - id: zmk-velvet-v3
-        name: Velvet v3
+        name: Velvet v3 - Wireless Edition
         files:
           - label: { ru: Левая половина — стандартная раскладка, en: Left half — standard layout }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_left-ergohaven-zmk.uf2
@@ -313,7 +313,7 @@ groups:
           - label: { ru: Правая половина, en: Right half }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_right-ergohaven-zmk.uf2
       - id: zmk-velvet-v3-qube
-        name: Velvet v3 + Qube
+        name: Velvet v3 - Wireless Edition + Qube
         files:
           - label: { ru: Левая половина, en: Left half }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_left_qube-ergohaven-zmk.uf2
