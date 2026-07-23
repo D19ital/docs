@@ -356,7 +356,36 @@ html.dark .firmware-picker__instruction {
 
 .firmware-picker .firmware-picker__instruction-note {
   margin: 0.75rem 0 0;
+  padding: 0.75rem 0.875rem;
+  border-left: 3px solid rgb(59 130 246);
+  border-radius: 0.5rem;
+  background: rgb(239 246 255);
+  color: rgb(30 58 138);
   line-height: 1.55;
+}
+
+.firmware-picker .firmware-picker__instruction-note-label {
+  display: block;
+  margin-bottom: 0.125rem;
+  color: rgb(29 78 216);
+  font-weight: 650;
+}
+
+.firmware-picker .firmware-picker__instruction-note a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+html.dark .firmware-picker .firmware-picker__instruction-note {
+  border-color: rgb(96 165 250);
+  background: rgb(30 58 138 / 0.22);
+  color: rgb(219 234 254);
+}
+
+html.dark .firmware-picker .firmware-picker__instruction-note-label {
+  color: rgb(147 197 253);
 }
 
 @media (max-width: 640px) {
