@@ -177,13 +177,23 @@ groups:
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v1.uf2
-      - id: qmk-k03-v1-v2
-        name: "K:03 v1/v2"
+      - id: qmk-k03-v1
+        name: "K:03 v1"
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03_v1_v2.uf2
-      - id: qmk-imperial44-v1-v2
-        name: Imperial44 v1/v2
+      - id: qmk-k03-v2
+        name: "K:03 v2"
+        files:
+          - label: { ru: Прошивка, en: Firmware }
+            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03_v1_v2.uf2
+      - id: qmk-imperial44-v1
+        name: Imperial44 v1
+        files:
+          - label: { ru: Прошивка, en: Firmware }
+            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_imperial44_v1_v2.uf2
+      - id: qmk-imperial44-v2
+        name: Imperial44 v2
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_imperial44_v1_v2.uf2
