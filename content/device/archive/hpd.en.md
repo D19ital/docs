@@ -20,7 +20,7 @@ On the trackball and touchpad modules, you can adjust cursor movement sensitivit
 
 
 {{% details title="Changing DPI in Vial" closed="true" %}}
-  1. Download and open [Vial](https://docs.ergohaven.xyz/en/qmk/vial/).
+  1. Download and open [Vial](https://docs.eh.industries/software/qmk/vial/).
   2. In the top menu, go to the **Layouts** tab.
   3. Select the desired DPI value from the dropdown next to DPI.
 
@@ -35,7 +35,7 @@ In this tab you can also configure:
 {{% /details %}}
 
 {{% details title="Configuring Auto mouse in Vial" closed="true" %}}
-  1. Download and open [Vial](https://docs.ergohaven.xyz/en/qmk/vial/).
+  1. Download and open [Vial](https://docs.eh.industries/software/qmk/vial/).
   2. In the top menu, go to the **QMK Settings** tab.
   3. Then select the Auto mouse tab.
   4. Enable automatic mouse layer activation by checking Enable auto mouse layer feature.

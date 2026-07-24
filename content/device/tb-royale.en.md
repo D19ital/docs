@@ -52,14 +52,14 @@ The trackball supports wired connection via USB-C. Use the included cable or any
 
 ## Charging and battery monitoring
 
-[Charging and battery monitoring](https://docs.ergohaven.xyz/zmk/zmk-keyboards/#%d1%81%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%b8%d0%b5-%d0%b1%d0%b0%d1%82%d0%b0%d1%80%d0%b5%d0%b8) work the same way as for ZMK-based wireless keyboards.
+[Charging and battery monitoring](https://docs.eh.industries/software/zmk/zmk-keyboards/#battery-status) work the same way as for ZMK-based wireless keyboards.
 {{< callout type="warning" >}}
   To charge the trackball battery, the power switch on the bottom must be in the **On** position.
 {{< /callout >}}
 
 ## Key configuration
 
-You can assign any **behavior** to the trackball buttons using the [keymap editor](https://docs.ergohaven.xyz/zmk/keymap-editor/).
+You can assign any **behavior** to the trackball buttons using the [keymap editor](https://docs.eh.industries/software/zmk/keymap-editor/).
 For example, you can swap the *Sniper* and *Scroll* keys if that layout works better for you.
 
 ## Configuration
@@ -144,7 +144,7 @@ sniper {
 Firmware update is needed when:
 - A firmware update is available on [keymap_hub](https://github.com/ergohaven/keymap_hub)
 - You need to restore the trackball to factory settings
-- You are using custom firmware settings via a [fork](https://docs.ergohaven.xyz/zmk/fork-sync/)
+- You are using custom firmware settings via a [fork](https://docs.eh.industries/software/zmk/fork-sync/)
 
 {{% steps %}}
 
@@ -197,4 +197,4 @@ Flashing is complete — you can now connect the trackball to your device!
 
 Trackball Royale comes with a *3-year warranty and service support*.
 
-If you have any questions about setup, firmware, or operation, please contact [the Ergohaven Telegram group](https://t.me/c/1464748383/8323) or [knowledge base](https://docs.ergohaven.xyz/en/)
+If you have any questions about setup, firmware, or operation, please contact [the Ergohaven Telegram group](https://t.me/c/1464748383/8323) or [knowledge base](https://docs.eh.industries/)

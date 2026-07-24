@@ -55,13 +55,12 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --gc --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify
+          bash scripts/generate-en-redirects.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./public/ru
 
   # Deployment job
   deploy:
@@ -74,3 +73,18 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy-english:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Trigger English documentation deployment
+        env:
+          GH_TOKEN: ${{ secrets.DOCS_EN_TOKEN }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          gh api \
+            --method POST \
+            repos/ergohaven/docs-en/dispatches \
+            -f event_type=deploy \
+            -f "client_payload[source_sha]=$SOURCE_SHA"

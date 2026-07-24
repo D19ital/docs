@@ -157,7 +157,7 @@ zmk_split:
       - "After the update, press <code>Reset</code> on both halves simultaneously to reconnect them"
     step_notes:
       - after_step: 1
-        text: 'If you want to use <a href="https://docs.ergohaven.xyz/en/software/zmk/zmk-ruen/">RuEn</a>, download the corresponding RuEn firmware'
+        text: 'If you want to use <a href="https://docs.eh.industries/software/zmk/zmk-ruen/">RuEn</a>, download the corresponding RuEn firmware'
     note: "If a copy or disk ejection error appears while copying the firmware, simply ignore the message"
 
 zmk_qube:
@@ -183,7 +183,7 @@ zmk_qube:
       - "After the update, connect Qube via USB-C. Then turn on the left half — it should appear on Qube along with its battery level. Finally, turn on the right half"
     step_notes:
       - after_step: 1
-        text: 'If you want to use <a href="https://docs.ergohaven.xyz/en/software/zmk/zmk-ruen/">RuEn</a>, download the corresponding RuEn firmware for Qube'
+        text: 'If you want to use <a href="https://docs.eh.industries/software/zmk/zmk-ruen/">RuEn</a>, download the corresponding RuEn firmware for Qube'
       - after_step: 3
         text: "During the update, the halves must be powered off — the power switch on the bottom must be in the off position"
     note: "If a copy or disk ejection error appears while copying the firmware, simply ignore the message"
