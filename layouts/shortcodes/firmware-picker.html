@@ -8,6 +8,19 @@
 {{- $hint := cond (eq $lang "en") "Check the model, revision, and firmware type before downloading" "Перед скачиванием проверьте модель, ревизию и тип прошивки" -}}
 {{- $download := cond (eq $lang "en") "Download" "Скачать" -}}
 {{- $noteLabel := cond (eq $lang "en") "Note" "Примечание" -}}
+{{- $pickerOptions := slice -}}
+{{- $pickerSequence := 0 -}}
+{{- range site.Data.firmware.groups -}}
+  {{- $pickerGroupName := index .name $lang -}}
+  {{- range .devices -}}
+    {{- $pickerOrder := add 1000 $pickerSequence -}}
+    {{- with .picker_order -}}
+      {{- $pickerOrder = . -}}
+    {{- end -}}
+    {{- $pickerOptions = $pickerOptions | append (dict "device" . "group_name" $pickerGroupName "order" $pickerOrder) -}}
+    {{- $pickerSequence = add $pickerSequence 1 -}}
+  {{- end -}}
+{{- end -}}
 
 <div class="firmware-picker" data-firmware-picker>
   <div class="firmware-picker__field">
@@ -26,33 +39,32 @@
         data-firmware-search
       >
       <div class="firmware-picker__options" id="{{ $optionsID }}" role="listbox" data-firmware-options hidden>
-      {{- range site.Data.firmware.groups }}
-        {{- $groupName := index .name $lang -}}
-        {{- range .devices }}
-          {{- $deviceName := .name -}}
-          {{- if and (eq $lang "en") .name_en -}}
-            {{- $deviceName = .name_en -}}
-          {{- end -}}
-          {{- $searchNames := .name -}}
-          {{- with .name_en -}}
-            {{- $searchNames = printf "%s %s" $searchNames . -}}
-          {{- end -}}
-          {{- $optionID := printf "%s-option-%s" $pickerID .id -}}
-          <button
-            class="firmware-picker__option"
-            id="{{ $optionID }}"
-            type="button"
-            role="option"
-            aria-selected="false"
-            data-firmware-option
-            data-firmware-value="{{ .id }}"
-            data-firmware-name="{{ $deviceName }}"
-            data-firmware-search-names="{{ $searchNames }}"
-          >
-            <span class="firmware-picker__option-name">{{ $deviceName }}</span>
-            <span class="firmware-picker__option-group">{{ $groupName }}</span>
-          </button>
-        {{- end }}
+      {{- range sort $pickerOptions "order" }}
+        {{- $device := .device -}}
+        {{- $groupName := .group_name -}}
+        {{- $deviceName := $device.name -}}
+        {{- if and (eq $lang "en") $device.name_en -}}
+          {{- $deviceName = $device.name_en -}}
+        {{- end -}}
+        {{- $searchNames := $device.name -}}
+        {{- with $device.name_en -}}
+          {{- $searchNames = printf "%s %s" $searchNames . -}}
+        {{- end -}}
+        {{- $optionID := printf "%s-option-%s" $pickerID $device.id -}}
+        <button
+          class="firmware-picker__option"
+          id="{{ $optionID }}"
+          type="button"
+          role="option"
+          aria-selected="false"
+          data-firmware-option
+          data-firmware-value="{{ $device.id }}"
+          data-firmware-name="{{ $deviceName }}"
+          data-firmware-search-names="{{ $searchNames }}"
+        >
+          <span class="firmware-picker__option-name">{{ $deviceName }}</span>
+          <span class="firmware-picker__option-group">{{ $groupName }}</span>
+        </button>
       {{- end }}
         <p class="firmware-picker__empty" data-firmware-empty role="status" hidden>{{ $noResults }}</p>
       </div>
@@ -180,6 +192,7 @@
       .replace(/\p{Diacritic}/gu, "")
       .replace(/m4cr0pad/g, "macropad")
       .replace(/m4kropad/g, "macropad")
+      .replace(/k[^a-z0-9]*0+(?=[34])/g, "k")
       .replace(/0/g, "o")
       .replace(/ph/g, "f")
       .replace(/th/g, "t")

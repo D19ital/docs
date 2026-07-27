@@ -6,31 +6,37 @@ groups:
     devices:
       - id: rmk-k04
         name: "K:04"
+        picker_order: 10
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.3/k04-v0.1.3.zip
       - id: rmk-k04-qube
         name: "K:04 + Qube"
+        picker_order: 11
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.3/k04-qube-v0.1.3.zip
       - id: rmk-k04-mini
         name: "K:04 Mini"
+        picker_order: 12
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.3/k04-mini-v0.1.3.zip
       - id: rmk-k04-mini-qube
         name: "K:04 Mini + Qube"
+        picker_order: 13
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.3/k04-mini-qube-v0.1.3.zip
       - id: rmk-k04-micro
         name: "K:04 Micro"
+        picker_order: 14
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.3/k04-micro-v0.1.3.zip
       - id: rmk-k04-micro-qube
         name: "K:04 Micro + Qube"
+        picker_order: 15
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.3/k04-micro-qube-v0.1.3.zip
@@ -98,16 +104,19 @@ groups:
     devices:
       - id: qmk-phenom
         name: Phenom
+        picker_order: 20
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_v1.uf2
       - id: qmk-phenom-mini
         name: Phenom Mini
+        picker_order: 21
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_mini_v1.uf2
       - id: qmk-phenom-micro
         name: Phenom Micro
+        picker_order: 22
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_micro_v1.uf2
