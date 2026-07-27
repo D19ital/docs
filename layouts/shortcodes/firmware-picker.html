@@ -74,6 +74,10 @@
         {{- $instructionKey := "qmk_split_new" -}}
         {{- if strings.HasPrefix $deviceID "rmk-trackball" -}}
           {{- $instructionKey = "rmk_single" -}}
+        {{- else if and (strings.HasPrefix $deviceID "rmk-") (strings.HasSuffix $deviceID "-qube") -}}
+          {{- $instructionKey = "rmk_qube" -}}
+        {{- else if strings.HasPrefix $deviceID "rmk-k04" -}}
+          {{- $instructionKey = "rmk_archive_split" -}}
         {{- else if strings.HasPrefix $deviceID "rmk-" -}}
           {{- $instructionKey = "rmk_split" -}}
         {{- else if strings.HasSuffix $deviceID "-qube" -}}
