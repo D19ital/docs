@@ -44,7 +44,7 @@ rmk_qube:
     steps:
       - 'При необходимости сохраните текущую раскладку в <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a>'
       - "Скачайте архив с прошивками и распакуйте его"
-      - "Подключите Qube по USB-C, дважды быстро нажмите <code>Reset</code> на нижней стороне корпуса и скопируйте на появившийся диск файл <code>dongle</code>"
+      - "Подключите Qube по USB-C, дважды быстро нажмите <code>Reset</code> на нижней стороне корпуса и скопируйте на появившийся диск файл <code>qube</code>"
       - "Подключите левую половинку по USB-C, дважды быстро нажмите <code>Reset</code> с обратной стороны корпуса и скопируйте на появившийся диск файл <code>left</code>"
       - "Повторите действия для правой половинки, используя файл <code>right</code>"
       - "После обновления подключите Qube по USB-C. Затем включите левую половинку и после её подключения — правую"
@@ -55,7 +55,7 @@ rmk_qube:
     steps:
       - 'Save the current layout in <a href="https://github.com/ergohaven/entropy" target="_blank" rel="noopener">Entropy</a> if needed'
       - "Download and extract the firmware archive"
-      - "Connect Qube via USB-C, quickly double-press <code>Reset</code> on the bottom of the case, and copy the <code>dongle</code> file to the drive that appears"
+      - "Connect Qube via USB-C, quickly double-press <code>Reset</code> on the bottom of the case, and copy the <code>qube</code> file to the drive that appears"
       - "Connect the left half via USB-C, quickly double-press <code>Reset</code> on the back of the case, and copy the <code>left</code> file to the drive that appears"
       - "Repeat these steps for the right half using the <code>right</code> file"
       - "After the update, connect Qube via USB-C. Then turn on the left half and, once it connects, turn on the right half"
