@@ -19,7 +19,7 @@ Our keyboards are compatible with any switches that have **MX pins/base**. Accor
 **Both versions will fit**. 5-pin switches have two additional plastic pins for better mounting in the PCB. For our keyboards, this does not make much difference because the switches are mounted in the case, not in the PCB
 
 ### How do I configure my keyboard? How do I remap keys?
-Use the [Entropy](https://github.com/ergohaven/entropy) configurator to remap keys and configure your keyboard. Setup instructions are available in the [documentation](https://docs.ergohaven.xyz/en/)
+Use the [Entropy](https://github.com/ergohaven/entropy) configurator to remap keys and configure your keyboard. Setup instructions are available in the [documentation](https://docs.eh.industries/)
 
 ### How can I keep symbols in the same place regardless of the keyboard layout?
 Use **Universal Symbols** in the [Entropy](https://github.com/ergohaven/entropy) configurator

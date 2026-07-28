@@ -58,13 +58,13 @@ The keyboard supports wired connection via USB-C connector. Use the included cab
 4. Start a Bluetooth search on your device and find the keyboard in the list
 5. Connect the keyboard to your device
 {{< callout type="info" >}}
-   [Adding wireless connection to devices via Qube](https://docs.ergohaven.xyz/en/wireless/qube/)
+   [Adding wireless connection to devices via Qube](https://docs.eh.industries/device/archive/qube/)
 {{< /callout >}}
 {{% /details %}}
 
 ## Charging and Battery Monitoring
 
-Refer to the corresponding section of the article [First Steps with a ZMK Keyboard](https://docs.ergohaven.xyz/en/zmk/zmk-keyboards/)
+Refer to the corresponding section of the article [First Steps with a ZMK Keyboard](https://docs.eh.industries/software/zmk/zmk-keyboards/)
 {{< callout type="warning" >}}
   To charge the keyboard battery, the power switch on the bottom of the half must be in the **On** position.
 {{< /callout >}}
@@ -80,7 +80,7 @@ Refer to the article [RuEn Layout for Wireless Keyboards](/en/zmk/zmk-ruen)
 Firmware update is required when:
 - A new firmware version has been released on the [firmware page](https://docs.eh.industries/firmware/)
 - You need to restore the keyboard to factory settings
-- You are using custom firmware settings via a [fork](https://docs.ergohaven.xyz/en/zmk/fork-sync/)
+- You are using custom firmware settings via a [fork](https://docs.eh.industries/software/zmk/fork-sync/)
 
 {{% steps %}}
 
@@ -124,7 +124,7 @@ Copy or drag the *K:03 v4* Uf2 firmware file for the left half — it should reb
 
 Firmware update is complete — you can now connect the keyboard to your device!
 
-### Firmware Update via [Ergohaven's Qube](https://docs.ergohaven.xyz/en/wireless/qube/)
+### Firmware Update via [Ergohaven's Qube](https://docs.eh.industries/device/archive/qube/)
 
 ## Care and Maintenance
 
@@ -142,4 +142,4 @@ Firmware update is complete — you can now connect the keyboard to your device!
 
 The keyboard comes with a *3-year warranty and service support*.
 
-If you have any questions about setup, firmware, or operation, please contact [the Ergohaven Telegram group](https://t.me/c/1464748383/8323) or [knowledge base](https://docs.ergohaven.xyz/en/)
+If you have any questions about setup, firmware, or operation, please contact [the Ergohaven Telegram group](https://t.me/c/1464748383/8323) or [knowledge base](https://docs.eh.industries/)

@@ -1,4 +1,4 @@
-module docs.ergohaven.xyz
+module docs.eh.works
 
 go 1.24.4
 
