@@ -70,10 +70,10 @@ sidebar:
 {{< /callout >}}
 
 ## Настройка  
-Перейдите в статью [Настройка клавиатуры в ZMK keymap-editor](/zmk/keymap-editor)
+Перейдите в статью [Настройка клавиатуры в ZMK keymap-editor](/software/zmk/keymap-editor)
 
 ## Режим Ruen  
-Перейдите в статью [RuEn раскладка для беспроводных клавиатур](/zmk/zmk-ruen)
+Перейдите в статью [RuEn раскладка для беспроводных клавиатур](/software/zmk/zmk-ruen)
 
 ## Прошивка
 

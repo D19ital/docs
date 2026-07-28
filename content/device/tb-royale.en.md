@@ -52,7 +52,7 @@ The trackball supports wired connection via USB-C. Use the included cable or any
 
 ## Charging and battery monitoring
 
-[Charging and battery monitoring](https://docs.eh.industries/software/zmk/zmk-keyboards/#%d1%81%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%b8%d0%b5-%d0%b1%d0%b0%d1%82%d0%b0%d1%80%d0%b5%d0%b8) work the same way as for ZMK-based wireless keyboards.
+[Charging and battery monitoring](https://docs.eh.industries/software/zmk/zmk-keyboards/#battery-status) work the same way as for ZMK-based wireless keyboards.
 {{< callout type="warning" >}}
   To charge the trackball battery, the power switch on the bottom must be in the **On** position.
 {{< /callout >}}

@@ -70,10 +70,10 @@ Refer to the corresponding section of the article [First Steps with a ZMK Keyboa
 {{< /callout >}}
 
 ## Configuration
-Refer to the article [Keyboard Configuration in ZMK keymap-editor](/en/zmk/keymap-editor)
+Refer to the article [Keyboard Configuration in ZMK keymap-editor](/software/zmk/keymap-editor)
 
 ## Ruen Mode
-Refer to the article [RuEn Layout for Wireless Keyboards](/en/zmk/zmk-ruen)
+Refer to the article [RuEn Layout for Wireless Keyboards](/software/zmk/zmk-ruen)
 
 ## Firmware
 

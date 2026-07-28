@@ -42,10 +42,10 @@ Imperial44 Wireless Edition is a wireless, programmable mechanical split keyboar
 {{% /details %}}
 
 ## Keyboard configuration  
-Please refer to the article [Keyboard configuration in ZMK keymap-editor](/zmk/keymap-editor).
+Please refer to the article [Keyboard configuration in ZMK keymap-editor](/software/zmk/keymap-editor).
 
 ## RuEn mode  
-Please refer to the article [RuEn layout for wireless keyboards](/zmk/zmk-ruen).
+Please refer to the article [RuEn layout for wireless keyboards](/software/zmk/zmk-ruen).
 
 ## Firmware update
 
