@@ -21,7 +21,7 @@ sidebar:
 
 
 {{% details title="Изменение DPI в Vial" closed="true" %}}
-  1. Скачайте и откройте [Vial](https://docs.ergohaven.xyz/software/qmk/vial/)
+  1. Скачайте и откройте [Vial](https://docs.eh.works/software/qmk/vial/)
   2. В верхнем меню перейдите во вкладку **Layouts**
   3. Выберите нужное значение DPI в раскрывающемся списке напротив пункта DPI
 
@@ -36,7 +36,7 @@ sidebar:
 {{% /details %}}
 
 {{% details title="Настройка Auto mouse в Vial" closed="true" %}}
-  1. Скачайте и откройте [Vial](https://docs.ergohaven.xyz/software/qmk/vial/)
+  1. Скачайте и откройте [Vial](https://docs.eh.works/software/qmk/vial/)
   2. В верхнем меню перейдите во вкладку **QMK Settings**
   3. Ниже выберите вкладку Auto mouse
   4. Включите автоматическую активацию слоя мыши установив галочку в пункте Enable auto mouse layer feature
@@ -52,7 +52,7 @@ sidebar:
 
 ## Обновление прошивки
 
-Файлы прошивки и инструкция по обновлению находятся [здесь](https://docs.ergohaven.xyz/firmware/)
+Файлы прошивки и инструкция по обновлению находятся [здесь](https://docs.eh.works/firmware/)
 
 ## Модули (для HPD v2)
 

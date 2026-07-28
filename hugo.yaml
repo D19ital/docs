@@ -10,7 +10,7 @@ defaultContentLanguage: ru
 
 languages:
   ru:
-    baseURL: "https://docs.ergohaven.xyz/"
+    baseURL: "https://docs.eh.works/"
     languageCode: ru-RU
     languageName: Русский
     weight: 1
