@@ -127,4 +127,4 @@ To reflash/update the firmware, the keyboard must be put into bootloader mode. T
 
 The keyboard comes with a *3-year warranty and service support*.
 
-If you have any questions about setup, firmware, or operation, please contact [the Ergohaven Telegram group](https://t.me/c/1464748383/8323) or [knowledge base](https://docs.ergohaven.xyz/en/)
+If you have any questions about setup, firmware, or operation, please contact [the Ergohaven Telegram group](https://t.me/c/1464748383/8323) or [knowledge base](https://docs.eh.industries/)

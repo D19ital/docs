@@ -43,10 +43,10 @@ Imperial44 Wireless Edition - беспроводная программируе�
 {{% /details %}}
 
 ## Настройка клавиатуры  
-Пожалуйста перейдите в статью [Настройка клавиатуры в ZMK keymap-editor](/zmk/keymap-editor)
+Пожалуйста перейдите в статью [Настройка клавиатуры в ZMK keymap-editor](/software/zmk/keymap-editor)
 
 ## Режим Ruen  
-Пожалуйста перейдите в статью [RuEn раскладка для беспроводных клавиатур](/zmk/zmk-ruen)
+Пожалуйста перейдите в статью [RuEn раскладка для беспроводных клавиатур](/software/zmk/zmk-ruen)
 
 ## Обновление прошивки
 
@@ -69,4 +69,4 @@ Imperial44 Wireless Edition - беспроводная программируе�
 - Подключите клавиатуру к вашему устройству
 {{% /details %}}
 
-Прошивка клавиатуры с [Ergohaven's Qube](https://docs.ergohaven.xyz/wireless/qube/)
+Прошивка клавиатуры с [Ergohaven's Qube](https://docs.ergohaven.xyz/device/archive/qube/)

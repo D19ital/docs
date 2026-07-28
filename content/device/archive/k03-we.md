@@ -58,29 +58,29 @@ sidebar:
 3. Начните поиск Bluetooth на устройстве и найдите клавиатуру в списке
 4. Подключите клавиатуру к устройству
 {{< callout type="info" >}}
-   [Добавление беспроводного подключения к устройствам через Qube](https://docs.ergohaven.xyz/wireless/qube/)
+   [Добавление беспроводного подключения к устройствам через Qube](https://docs.ergohaven.xyz/device/archive/qube/)
 {{< /callout >}}
 {{% /details %}}
 
 ## Зарядка, мониторинг заряда
 
-Перейдите в соответствующий раздел статьи [Первые шаги с клавиатурой на ZMK](https://docs.ergohaven.xyz/zmk/zmk-keyboards/)
+Перейдите в соответствующий раздел статьи [Первые шаги с клавиатурой на ZMK](https://docs.ergohaven.xyz/software/zmk/zmk-keyboards/)
 {{< callout type="warning" >}}
   Для зарядки аккумулятора клавиатуры переключатель питания половинки снизу должен быть в положении **Вкл**
 {{< /callout >}}
 
 ## Настройка  
-Перейдите в статью [Настройка клавиатуры в ZMK keymap-editor](/zmk/keymap-editor)
+Перейдите в статью [Настройка клавиатуры в ZMK keymap-editor](/software/zmk/keymap-editor)
 
 ## Режим Ruen  
-Перейдите в статью [RuEn раскладка для беспроводных клавиатур](/zmk/zmk-ruen)
+Перейдите в статью [RuEn раскладка для беспроводных клавиатур](/software/zmk/zmk-ruen)
 
 ## Прошивка
 
 Прошивка требуется в случаях, когда:
 - Вышло обновление прошивки на [keymap_hub](https://github.com/ergohaven/keymap_hub)
 - Требуется вернуть клавиатуру к заводским настройкам
-- Вы используете собственные настройки в прошивке через [форк](https://docs.ergohaven.xyz/zmk/fork-sync/)
+- Вы используете собственные настройки в прошивке через [форк](https://docs.ergohaven.xyz/software/zmk/fork-sync/)
 
 {{% steps %}}
 
@@ -124,7 +124,7 @@ sidebar:
 
 Прошивка завершена, можно подключать клавиатуру к вашему устройству!
 
-### Прошивка клавиатуры с [Ergohaven's Qube](https://docs.ergohaven.xyz/wireless/qube/)
+### Прошивка клавиатуры с [Ergohaven's Qube](https://docs.ergohaven.xyz/device/archive/qube/)
 
 ## Уход и обслуживание
 

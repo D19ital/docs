@@ -95,7 +95,7 @@ sidebar:
 
 ## Прошивка, мониторинг заряда
 
-Прошивка и мониторинг заряда происходят аналогично <a href="https://docs.ergohaven.xyz/zmk/zmk-keyboards/" target="_blank">беспроводным клавиатурам на ZMK</a>.
+Прошивка и мониторинг заряда происходят аналогично <a href="https://docs.ergohaven.xyz/software/zmk/zmk-keyboards/" target="_blank">беспроводным клавиатурам на ZMK</a>.
 
 
 ## Переключение режимов

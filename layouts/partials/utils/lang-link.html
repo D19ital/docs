@@ -1,0 +1,23 @@
+{{/* Return an absolute link because translations are published on different hosts. */}}
+
+{{ $page := .context }}
+{{ $lang := .lang }}
+{{ $link := false }}
+
+{{ range $page.AllTranslations }}
+  {{ if eq .Language.Lang $lang }}
+    {{ $link = .Permalink }}
+  {{ end }}
+{{ end }}
+
+{{ if not $link }}
+  {{ range where $page.Sites ".Language.Lang" $lang }}
+    {{ $link = .Home.Permalink }}
+  {{ end }}
+{{ end }}
+
+{{ if not $link }}
+  {{ $link = site.Home.Permalink }}
+{{ end }}
+
+{{ return $link }}
