@@ -50,20 +50,8 @@ In this tab you can also configure:
 {{% /details %}}
 
 ## Firmware update
-### Preparation
-- Download the latest firmware version [here](https://docs.eh.industries/firmware/).
-- Save your layout in Vial: open the **"File"** menu, then click **"Save current layout"**.
 
-### Installation
-**Left half:** 
-- Hold the top-left key and connect the USB power cable to the left half.
-- Wait until the controller enters bootloader mode and a mass-storage drive opens.
-- Copy or drag-and-drop the UF2 file; the controller should reboot immediately and start working in normal mode.
-- Import your layout into Vial: open the "File" menu, then click "Load saved layout".  
-  
-**Right half:**
-- Hold the top-right key on the right half (HPD v2) or the top-left key (HPD v1) and connect the USB power cable to the right half.
-- Repeat the remaining steps as for the left half.
+Firmware files and update instructions are available [here](https://docs.eh.industries/firmware/)
 
 ## Modules (for HPD v2)
 

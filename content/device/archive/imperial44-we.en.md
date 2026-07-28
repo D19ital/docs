@@ -49,48 +49,5 @@ Please refer to the article [RuEn layout for wireless keyboards](/zmk/zmk-ruen).
 
 ## Firmware update
 
-{{% details title="Firmware for a keyboard without Ergohaven's Qube" closed="true" %}}
-- Download the [settings reset firmware](https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/settings_reset-ergohaven-zmk.uf2) and the latest firmware for the [left](https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_left-ergohaven-zmk.uf2) and [right](https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_right-ergohaven-zmk.uf2) halves.
-
-- Turn off both halves using the switch on the back of the keyboard.
-
-1. Connect the USB power cable to the left half, then press the Reset button on the back of the keyboard twice.
-2. Wait until the controller enters bootloader mode and a mass-storage drive opens (if autorun for removable drives is disabled on your device, open the drive manually).
-3. Copy or drag-and-drop the UF2 file with the “settings reset” firmware; the controller should reboot immediately.  
-> The reset firmware is used to wipe the keyboard’s internal memory. It resets connection profiles and half synchronization settings.
-4. Press the Reset button on the back of the keyboard twice again and wait until the controller enters bootloader mode (the mass-storage drive opens).
-5. Copy or drag-and-drop the UF2 firmware file for the left half; the controller should reboot immediately.
-
-- Repeat steps 1–5 for the right half.
-
-- Turn on both halves using the switch on the back of the keyboard.
-- Press and release the Reset buttons on both halves at the same time — this will synchronize the halves with each other.
-- Connect the keyboard to your device.
-{{% /details %}}
-
-{{% details title="Firmware for a keyboard with Ergohaven's Qube" closed="true" %}}
-- Download the [settings reset firmware](https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/settings_reset-ergohaven-zmk.uf2) and the latest firmware for [Qube](https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_qube-ergohaven-zmk.uf2), the [left half](https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_left_qube-ergohaven-zmk.uf2), and the [right half](https://github.com/ergohaven/ergohaven-zmk/releases/download/2025.11.30/imperial44_right-ergohaven-zmk.uf2).
-
-- Turn off both halves using the switch on the back of the keyboard.
-
-- Connect the USB power cable to Qube, then press the Reset button on the back of Qube twice.
-- Wait until the controller enters bootloader mode and a mass-storage drive opens (if autorun for removable drives is disabled on your device, open the drive manually).
-- Copy or drag-and-drop the UF2 file with the “settings reset” firmware; the controller should reboot immediately.  
-> The reset firmware is used to wipe Qube’s and the keyboard’s internal memory. It resets half-to-half synchronization and Qube pairing settings.
-- Press the Reset button on the back of Qube twice again and wait until the controller enters bootloader mode (the mass-storage drive opens).
-- Copy or drag-and-drop the UF2 firmware file for Qube; the controller should reboot immediately.
-
-1. Connect the USB power cable to the left half, then press the Reset button on the back of the keyboard twice.
-2. Wait until the controller enters bootloader mode and a mass-storage drive opens (if autorun for removable drives is disabled on your device, open the drive manually).
-3. Copy or drag-and-drop the UF2 file with the “settings reset” firmware; the controller should reboot immediately.
-4. Press the Reset button on the back of the keyboard twice again and wait until the controller enters bootloader mode (the mass-storage drive opens).
-5. Copy or drag-and-drop the UF2 firmware file for the left half; the controller should reboot immediately.
-
-- Repeat steps 1–5 for the right half.
-
-1. Connect Qube to your device and wait for Qube to boot.
-2. Turn on the left half using the switch on the back of the keyboard and wait for it to sync with Qube.  
-> It is important to follow the left-then-right connection order when pairing to Qube, because Qube synchronizes sequentially: first with the left half, then with the right half.
-3. Turn on the right half using the switch on the back of the keyboard and wait for it to sync with Qube.
-{{% /details %}}
+Firmware files and update instructions are available [here](https://docs.eh.industries/firmware/)
 
