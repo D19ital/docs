@@ -53,28 +53,6 @@ After setting all RGB parameters, click "Save" in the bottom-right corner of Via
 
 
 ## Firmware update
-{{< callout type="warning" >}}
-The firmware version must match your macropad version, otherwise the macropad may work incorrectly.
-{{< /callout >}}
 
-### Preparation  
-* Download the latest firmware for your macropad version [here](https://docs.eh.industries/firmware/).
-* Save your layout in Vial: "File" > "Save current layout".
-
-### Installation
-To reflash/update the macropad firmware, you need to put it into bootloader mode. You can do this in several ways (choose one):  
-1. **Bootmagic:**
-    - Hold the top-left key (key 9 in the default layout) and connect the USB power cable.
-    - Wait until the controller enters bootloader mode and a mass-storage drive opens.
-
-2. **Using the RESET button:**
-    - Connect the USB power cable and quickly press the RESET button twice on the bottom of the macropad.
-    - Wait until the controller enters bootloader mode and a mass-storage drive opens.
-
-3. **Using the BOOT button:**
-    - Hold the BOOT button on the bottom of the macropad and connect the USB power cable.
-    - Wait until the controller enters bootloader mode and a mass-storage drive opens.
-
-- Copy or drag-and-drop the UF2 file; the controller should reboot immediately and start working in normal mode.
-- Import your layout into Vial: "File" > "Load saved layout".
+Firmware files and update instructions are available [here](https://docs.eh.industries/firmware/)
 
