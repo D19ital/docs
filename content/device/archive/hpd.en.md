@@ -51,7 +51,7 @@ In this tab you can also configure:
 
 ## Firmware update
 ### Preparation
-- Download the latest firmware version [here](http://github.com/ergohaven/keymap_hub).
+- Download the latest firmware version [here](https://docs.eh.industries/firmware/).
 - Save your layout in Vial: open the **"File"** menu, then click **"Save current layout"**.
 
 ### Installation

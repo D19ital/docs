@@ -142,7 +142,7 @@ sniper {
 ## Прошивка
 
 Прошивка требуется в случаях, когда:
-- Вышло обновление прошивки на [keymap_hub](https://github.com/ergohaven/keymap_hub)
+- Вышло обновление прошивки на [странице с прошивками](https://docs.ergohaven.xyz/firmware/)
 - Требуется вернуть трекбол к заводским настройкам
 - Вы используете собственные настройки в прошивке через [форк](https://docs.ergohaven.xyz/software/zmk/fork-sync/)
 
@@ -150,7 +150,7 @@ sniper {
 
 ### Подготовка к прошивке
 
-Скачайте актуальные файлы прошивок *settings_reset* и *Trackball Royale* с [keymap_hub](https://github.com/ergohaven/keymap_hub)
+Скачайте актуальные файлы прошивок *settings_reset* и *Trackball Royale* со [страницы с прошивками](https://docs.ergohaven.xyz/firmware/)
 
 ### Прошивка для сброса настроек
 

@@ -78,7 +78,7 @@ Refer to the article [RuEn Layout for Wireless Keyboards](/software/zmk/zmk-ruen
 ## Firmware
 
 Firmware update is required when:
-- A new firmware version has been released on [keymap_hub](https://github.com/ergohaven/keymap_hub)
+- A new firmware version has been released on the [firmware page](https://docs.eh.industries/firmware/)
 - You need to restore the keyboard to factory settings
 - You are using custom firmware settings via a [fork](https://docs.eh.industries/software/zmk/fork-sync/)
 
@@ -86,7 +86,7 @@ Firmware update is required when:
 
 ### Preparing for Firmware Update
 
-Download the latest firmware files *settings_reset* and *K:03 v4* for the left and right halves from [keymap_hub](https://github.com/ergohaven/keymap_hub)
+Download the latest firmware files *settings_reset* and *K:03 v4* for the left and right halves from the [firmware page](https://docs.eh.industries/firmware/)
 
 ### Settings Reset Firmware
 
