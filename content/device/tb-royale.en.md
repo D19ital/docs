@@ -142,7 +142,7 @@ sniper {
 ## Firmware
 
 Firmware update is needed when:
-- A firmware update is available on [keymap_hub](https://github.com/ergohaven/keymap_hub)
+- A firmware update is available on the [firmware page](https://docs.eh.industries/firmware/)
 - You need to restore the trackball to factory settings
 - You are using custom firmware settings via a [fork](https://docs.ergohaven.xyz/zmk/fork-sync/)
 
@@ -150,7 +150,7 @@ Firmware update is needed when:
 
 ### Preparing to flash
 
-Download the latest *settings_reset* and *Trackball Royale* firmware files from [keymap_hub](https://github.com/ergohaven/keymap_hub).
+Download the latest *settings_reset* and *Trackball Royale* firmware files from the [firmware page](https://docs.eh.industries/firmware/)
 
 ### Settings reset firmware
 

@@ -58,7 +58,7 @@ The firmware version must match your macropad version, otherwise the macropad ma
 {{< /callout >}}
 
 ### Preparation  
-* Download the latest firmware for your macropad version [here](https://github.com/ergohaven/keymap_hub).
+* Download the latest firmware for your macropad version [here](https://docs.eh.industries/firmware/).
 * Save your layout in Vial: "File" > "Save current layout".
 
 ### Installation

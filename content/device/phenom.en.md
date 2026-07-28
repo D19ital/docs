@@ -89,7 +89,7 @@ To remap keys and configure the keyboard, use the graphical configurator [Entrop
 
 ## Firmware Reflashing/Update
 ### Preparation:
-- Download the latest firmware version [here](http://github.com/ergohaven/keymap_hub)
+- Download the latest firmware version [here](https://docs.eh.industries/firmware/)
 - Save your layout in the [Entropy](https://github.com/ergohaven/entropy) by opening the **"Layout"** menu, then selecting **"Export layout"**
 
 ### Installation
