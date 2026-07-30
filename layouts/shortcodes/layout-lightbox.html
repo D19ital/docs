@@ -1,0 +1,11 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $width := .Get "width" | default "720" -}}
+{{- $isEnglish := eq .Page.Language.Lang "en" -}}
+{{- $openLabel := cond $isEnglish "Enlarge %s" "Увеличить: %s" -}}
+{{- $dialogLabel := cond $isEnglish "Layout image viewer" "Просмотр изображения раскладки" -}}
+{{- $closeLabel := cond $isEnglish "Close image viewer" "Закрыть просмотр изображения" -}}
+{{- $zoomInLabel := cond $isEnglish "Show original size" "Показать оригинальный размер" -}}
+{{- $zoomOutLabel := cond $isEnglish "Fit image to window" "Вписать изображение в окно" -}}
+
+<a class="layout-lightbox-trigger" href="{{ $src | safeURL }}" aria-label="{{ printf $openLabel $alt }}" aria-haspopup="dialog" data-layout-lightbox data-layout-lightbox-dialog-label="{{ $dialogLabel }}" data-layout-lightbox-close-label="{{ $closeLabel }}" data-layout-lightbox-zoom-in-label="{{ $zoomInLabel }}" data-layout-lightbox-zoom-out-label="{{ $zoomOutLabel }}"><img src="{{ $src | safeURL }}" alt="{{ $alt }}" width="{{ $width }}" loading="lazy" decoding="async"></a>

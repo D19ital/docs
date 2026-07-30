@@ -4,3 +4,8 @@
 {{- range where .AllTranslations "Language.Lang" "en" }}
   <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
 {{- end }}
+{{- if .Params.layout_lightbox }}
+  {{- with resources.Get "js/layout-lightbox.js" | minify | fingerprint }}
+    <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+  {{- end }}
+{{- end }}
