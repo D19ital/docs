@@ -88,24 +88,9 @@ Phenom supports a modular system for both halves of the keyboard
 ## Configuration
 To remap keys and configure the keyboard, use the graphical configurator [Entropy](https://github.com/ergohaven/entropy)
 
-## Firmware Reflashing/Update
-### Preparation:
-- Download the latest firmware version [here](https://docs.eh.industries/firmware/)
-- Save your layout in the [Entropy](https://github.com/ergohaven/entropy) by opening the **"Layout"** menu, then selecting **"Export layout"**
+## Firmware update
 
-### Installation
-To reflash/update the firmware, the keyboard must be put into bootloader mode. This can be done in several ways. Choose one:
-
-1. **Using the RESET button:**
-    - Connect the USB power cable and quickly press the RESET button twice on the bottom of the keyboard
-    - Wait until the controller enters bootloader mode and the storage folder opens
-
-2. **Using the BOOT button:**
-    - Hold the BOOT button on the bottom of the keyboard and connect the USB power cable
-    - Wait until the controller enters bootloader mode and the storage folder opens
-
-- Copy or drag and drop the UF2 file, after which the controller should immediately reboot and start working in normal mode
-- Import the layout in the [Entropy](https://github.com/ergohaven/entropy) by opening the **"Layout"** menu, then selecting **"Import layout"**
+Firmware files and update instructions are available [here](https://docs.eh.industries/firmware/)
 
 ## Care and Maintenance
 

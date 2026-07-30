@@ -75,56 +75,9 @@ Refer to the article [Keyboard Configuration in ZMK keymap-editor](/software/zmk
 ## Ruen Mode
 Refer to the article [RuEn Layout for Wireless Keyboards](/software/zmk/zmk-ruen)
 
-## Firmware
+## Firmware update
 
-Firmware update is required when:
-- A new firmware version has been released on the [firmware page](https://docs.eh.industries/firmware/)
-- You need to restore the keyboard to factory settings
-- You are using custom firmware settings via a [fork](https://docs.eh.industries/software/zmk/fork-sync/)
-
-{{% steps %}}
-
-### Preparing for Firmware Update
-
-Download the latest firmware files *settings_reset* and *K:03 v4* for the left and right halves from the [firmware page](https://docs.eh.industries/firmware/)
-
-### Settings Reset Firmware
-
-Connect the left half of the keyboard to your computer (PC, laptop, etc.) using a USB-C cable, then double-press the *Reset* button on the back of the keyboard.
-
-{{< callout type="info" >}}
-  The keyboard will enter bootloader mode and a storage folder will open (if auto-run for connected drives is disabled on your device, navigate to the storage folder manually).
-{{< /callout >}}
-
-Copy or drag the *settings_reset* Uf2 file — the keyboard should reboot automatically.
-
-{{< callout type="info" >}}
-  The settings_reset firmware is used to wipe the keyboard's internal memory. It resets connection profiles and half-synchronization settings.
-{{< /callout >}}
-
-{{< callout type="important" >}}
-  Repeat the same steps for the right half.
-{{< /callout >}}
-
-
-### Completing the Firmware Update
-
-Double-press the *Reset* button on the back of the left half again and wait for it to enter bootloader mode (the storage folder will open).
-
-Copy or drag the *K:03 v4* Uf2 firmware file for the left half — it should reboot automatically.
-{{< callout type="info" >}}
-  If a copy error dialog appears during firmware upload, simply ignore it.
-{{< /callout >}}
-
-{{< callout type="important" >}}
-  Repeat the same steps for the **right** half, but use the *K:03 v4* Uf2 firmware file for the **right** half.
-{{< /callout >}}
-
-{{% /steps %}}
-
-Firmware update is complete — you can now connect the keyboard to your device!
-
-### Firmware Update via [Ergohaven's Qube](https://docs.eh.industries/device/archive/qube/)
+Firmware files and update instructions are available [here](https://docs.eh.industries/firmware/)
 
 ## Care and Maintenance
 

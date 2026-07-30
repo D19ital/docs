@@ -139,42 +139,9 @@ sniper {
 
 > The cursor slowdown on the adjust settings layer works the same way.
 
-## Firmware
+## Firmware update
 
-Firmware update is needed when:
-- A firmware update is available on the [firmware page](https://docs.eh.industries/firmware/)
-- You need to restore the trackball to factory settings
-- You are using custom firmware settings via a [fork](https://docs.eh.industries/software/zmk/fork-sync/)
-
-{{% steps %}}
-
-### Preparing to flash
-
-Download the latest *settings_reset* and *Trackball Royale* firmware files from the [firmware page](https://docs.eh.industries/firmware/)
-
-### Settings reset firmware
-
-Connect the trackball to your computer via USB-C cable, then double-press the *Reset* button on the back of the trackball.
-
-{{< callout type="info" >}}
-  The trackball will enter bootloader mode and a storage folder will open (if auto-run is disabled on your device, navigate to the storage folder manually).
-{{< /callout >}}
-
-Copy or drag the *settings_reset* UF2 file — the trackball should restart immediately.
-
-{{< callout type="info" >}}
-  The settings_reset firmware wipes the trackball's internal memory and clears all Bluetooth connection profiles.
-{{< /callout >}}
-
-### Completing the flash
-
-Double-press the *Reset* button on the back of the trackball again and wait for it to enter bootloader mode (the storage folder will open).
-
-Copy or drag the *Trackball Royale* UF2 firmware file — the trackball should restart immediately.
-
-{{% /steps %}}
-
-Flashing is complete — you can now connect the trackball to your device!
+Firmware files and update instructions are available [here](https://docs.eh.industries/firmware/)
 
 ## Care and maintenance
 
