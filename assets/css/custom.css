@@ -468,7 +468,35 @@ html.layout-lightbox-open body {
 
 .layout-lightbox-modal.is-zoomed .layout-lightbox-modal__viewport {
   display: block;
+  overflow: scroll;
   padding: 0;
+  scrollbar-color: rgb(209 213 219) rgb(31 41 55 / 85%);
+  scrollbar-width: auto;
+}
+
+.layout-lightbox-modal.is-zoomed .layout-lightbox-modal__viewport::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+.layout-lightbox-modal.is-zoomed .layout-lightbox-modal__viewport::-webkit-scrollbar-track {
+  background: rgb(31 41 55 / 85%);
+}
+
+.layout-lightbox-modal.is-zoomed .layout-lightbox-modal__viewport::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 9999px;
+  background: rgb(209 213 219 / 90%);
+  background-clip: content-box;
+}
+
+.layout-lightbox-modal.is-zoomed .layout-lightbox-modal__viewport::-webkit-scrollbar-thumb:hover {
+  background: white;
+  background-clip: content-box;
+}
+
+.layout-lightbox-modal.is-zoomed .layout-lightbox-modal__viewport::-webkit-scrollbar-corner {
+  background: rgb(31 41 55 / 85%);
 }
 
 .layout-lightbox-modal.is-zoomed .layout-lightbox-modal__image {
