@@ -426,3 +426,9 @@ groups:
         files:
           - label: { ru: Прошивка сброса, en: Reset firmware }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/settings_reset-ergohaven-zmk.uf2
+      - id: service-zmk-qube
+        name: ZMK - миграция Qube с RMK
+        name_en: ZMK - Qube migration from RMK
+        files:
+          - label: { ru: Прошивка миграции, en: Migration firmware }
+            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/qube_rmk_to_zmk_reset.uf2

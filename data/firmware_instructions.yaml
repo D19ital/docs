@@ -283,3 +283,19 @@ service_zmk:
       - "Connect the device or keyboard half via USB-C and quickly double-press <code>Reset</code>"
       - "Copy the ZMK reset file to the drive that appears"
       - "After the device restarts, install the regular firmware for your model; repeat the steps on both halves of a split keyboard"
+
+service_zmk_qube:
+  ru:
+    title: Как вернуть прошивку Qube с RMK на ZMK
+    steps:
+      - "Подключите Qube по USB-C и дважды быстро нажмите <code>Reset</code>"
+      - "Скопируйте <code>qube_rmk_to_zmk_reset.uf2</code> на появившийся диск"
+      - "После перезагрузки установите обычную прошивку Qube для вашей модели клавиатуры — <code>*_qube-ergohaven-zmk.uf2</code>"
+      - "Для половинок клавиатуры сначала используйте «ZMK — сброс всех настроек», затем установите соответствующие прошивки"
+  en:
+    title: How to migrate Qube firmware from RMK back to ZMK
+    steps:
+      - "Connect Qube via USB-C and quickly double-press <code>Reset</code>"
+      - "Copy <code>qube_rmk_to_zmk_reset.uf2</code> to the drive that appears"
+      - "After Qube restarts, install the regular <code>*_qube-ergohaven-zmk.uf2</code> firmware for your keyboard model"
+      - "For the keyboard halves, first use ‘ZMK — reset all settings’, then install the corresponding firmware"

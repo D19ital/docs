@@ -92,6 +92,8 @@
           {{- $instructionKey = "rmk_archive_split" -}}
         {{- else if strings.HasPrefix $deviceID "rmk-" -}}
           {{- $instructionKey = "rmk_split" -}}
+        {{- else if eq $deviceID "service-zmk-qube" -}}
+          {{- $instructionKey = "service_zmk_qube" -}}
         {{- else if strings.HasSuffix $deviceID "-qube" -}}
           {{- $instructionKey = "zmk_qube" -}}
         {{- else if strings.HasPrefix $deviceID "zmk-trackball" -}}
