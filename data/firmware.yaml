@@ -415,14 +415,14 @@ groups:
       en: Service firmware
     devices:
       - id: service-rmk-reset
-        name: RMK — сброс всех настроек
-        name_en: RMK — reset all settings
+        name: RMK - сброс всех настроек
+        name_en: RMK - reset all settings
         files:
           - label: { ru: Прошивка сброса, en: Reset firmware }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.3/settings-reset-v0.1.3.zip
       - id: service-zmk-reset
-        name: ZMK — сброс всех настроек
-        name_en: ZMK — reset all settings
+        name: ZMK - сброс всех настроек
+        name_en: ZMK - reset all settings
         files:
           - label: { ru: Прошивка сброса, en: Reset firmware }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/settings_reset-ergohaven-zmk.uf2
