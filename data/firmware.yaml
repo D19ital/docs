@@ -113,12 +113,6 @@ groups:
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/velvet-qube-v0.1.4.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/velvet_and_ui.entlayout
-      - id: rmk-trackball-mini-30
-        name: Trackball Mini v3.0
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_mini_v3.0.uf2
-
   - id: qmk-current
     name:
       ru: QMK — актуальные проводные устройства
