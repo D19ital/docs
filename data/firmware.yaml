@@ -52,17 +52,6 @@ groups:
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/k04-micro-qube-v0.1.4.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04_micro.entlayout
-      - id: rmk-trackball-mini-31
-        name: Trackball Mini v3.1
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_mini_v3.1.uf2
-      - id: rmk-trackball-royale
-        name: Trackball Royale
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/rmk-eh/releases/download/v0.1.1/0.1.1_trackball_royale.uf2
-
   - id: rmk-previous
     name:
       ru: RMK — предыдущие беспроводные устройства
