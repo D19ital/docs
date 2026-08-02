@@ -1,8 +1,8 @@
 {
   "format": "entropy.layout",
-  "version": 3,
+  "version": 4,
   "created_by": "Entropy",
-  "created_at": "2026-07-30T14:54:48.995322+03:00",
+  "created_at": "2026-08-02T20:49:15.381876300+03:00",
   "keyboard": {
     "name": "K:04 Mini",
     "firmware": "Vial",
@@ -699,117 +699,117 @@
       "custom_keycodes": [
         {
           "index": 0,
-          "name": "EH_PRINF",
-          "label": "Print\nInfo",
-          "title": "Print information about firmware and modes"
+          "name": "EH_RSRV00",
+          "label": "",
+          "title": "EH_RSRV00"
         },
         {
           "index": 1,
-          "name": "WRD_NXT",
-          "label": "Next\nWord",
-          "title": "Jump to next word"
+          "name": "EH_RSRV01",
+          "label": "",
+          "title": "EH_RSRV01"
         },
         {
           "index": 2,
-          "name": "WRD_PRV",
-          "label": "Prev\nWord",
-          "title": "Jump to previous word"
+          "name": "EH_RSRV02",
+          "label": "",
+          "title": "EH_RSRV02"
         },
         {
           "index": 3,
-          "name": "WNEXT",
-          "label": "Next\nWin",
-          "title": "Alt+Tab window switch"
+          "name": "EH_RSRV03",
+          "label": "",
+          "title": "EH_RSRV03"
         },
         {
           "index": 4,
-          "name": "WPREV",
-          "label": "Prev\nWin",
-          "title": "Alt+Shift+Tab window switch"
+          "name": "EH_RSRV04",
+          "label": "",
+          "title": "EH_RSRV04"
         },
         {
           "index": 5,
-          "name": "LNEXT",
-          "label": "Next\nLayer",
-          "title": "Switch to the next layer"
+          "name": "EH_RSRV05",
+          "label": "",
+          "title": "EH_RSRV05"
         },
         {
           "index": 6,
-          "name": "LPREV",
-          "label": "Prev\nLayer",
-          "title": "Switch to the previous layer"
+          "name": "EH_RSRV06",
+          "label": "",
+          "title": "EH_RSRV06"
         },
         {
           "index": 7,
-          "name": "LG_TOGGLE",
-          "label": "RuEn\nToggle",
-          "title": "Toggle language"
+          "name": "EH_RSRV07",
+          "label": "",
+          "title": "EH_RSRV07"
         },
         {
           "index": 8,
-          "name": "LG_SYNC",
-          "label": "RuEn\nSync",
-          "title": "Sync language state"
+          "name": "EH_RSRV08",
+          "label": "",
+          "title": "EH_RSRV08"
         },
         {
           "index": 9,
-          "name": "LG_SET_EN",
-          "label": "RuEn\nEn",
-          "title": "Set English language"
+          "name": "EH_RSRV09",
+          "label": "",
+          "title": "EH_RSRV09"
         },
         {
           "index": 10,
-          "name": "LG_SET_RU",
-          "label": "RuEn\nRu",
-          "title": "Set Russian language"
+          "name": "EH_RSRV10",
+          "label": "",
+          "title": "EH_RSRV10"
         },
         {
           "index": 11,
-          "name": "LG_SET_M0",
-          "label": "RuEn\nM0",
-          "title": "Set language toggle to Macro 0"
+          "name": "EH_RSRV11",
+          "label": "",
+          "title": "EH_RSRV11"
         },
         {
           "index": 12,
-          "name": "LG_SET_M1M2",
-          "label": "RuEn\nM1M2",
-          "title": "Set language toggle to Macro 1/Macro 2"
+          "name": "EH_RSRV12",
+          "label": "",
+          "title": "EH_RSRV12"
         },
         {
           "index": 13,
-          "name": "LG_SET_DFLT",
-          "label": "RuEn\nDflt",
-          "title": "Set language toggle to default"
+          "name": "EH_RSRV13",
+          "label": "",
+          "title": "EH_RSRV13"
         },
         {
           "index": 14,
-          "name": "LG_WORD",
-          "label": "RuEn\nword",
-          "title": "Temporary English word mode"
+          "name": "EH_RSRV14",
+          "label": "",
+          "title": "EH_RSRV14"
         },
         {
           "index": 15,
-          "name": "LG_MOD",
-          "label": "RuEn\nTg/Mod",
-          "title": "Toggle layout on press and release"
+          "name": "EH_RSRV15",
+          "label": "",
+          "title": "EH_RSRV15"
         },
         {
           "index": 16,
-          "name": "LG_STORE",
-          "label": "RuEn\nStore",
-          "title": "Store current layout"
+          "name": "EH_RSRV16",
+          "label": "",
+          "title": "EH_RSRV16"
         },
         {
           "index": 17,
-          "name": "LG_REVERT",
-          "label": "RuEn\nRevert",
-          "title": "Revert to stored layout"
+          "name": "EH_RSRV17",
+          "label": "",
+          "title": "EH_RSRV17"
         },
         {
           "index": 18,
-          "name": "LG_TG_MAC",
-          "label": "RuEn\nMac Tg",
-          "title": "Toggle MacOS Russian layout mode"
+          "name": "EH_RSRV18",
+          "label": "",
+          "title": "EH_RSRV18"
         },
         {
           "index": 19,
@@ -1846,16 +1846,16 @@
       ]
     ],
     "encoder_visibility": [
-      false,
-      false
+      true,
+      true
     ],
     "layout_options": 0,
     "layer_names": [
-      "BASE_0",
-      "1",
-      "Simbol",
+      "Base",
+      "Number",
+      "Symbol",
       "Adj",
-      "Мышь",
+      "Mouse",
       "5",
       "6",
       "7",

@@ -6,7 +6,6 @@
 {{- $searchPlaceholder := cond (eq $lang "en") "Start typing a device name" "Начните вводить название устройства" -}}
 {{- $noResults := cond (eq $lang "en") "No devices found" "Устройства не найдены" -}}
 {{- $hint := cond (eq $lang "en") "Check the model, revision, and firmware type before downloading" "Перед скачиванием проверьте модель, ревизию и тип прошивки" -}}
-{{- $download := cond (eq $lang "en") "Download" "Скачать" -}}
 {{- $noteLabel := cond (eq $lang "en") "Note" "Примечание" -}}
 {{- $pickerOptions := slice -}}
 {{- $pickerSequence := 0 -}}
@@ -52,7 +51,7 @@
         {{- end -}}
         {{- $optionID := printf "%s-option-%s" $pickerID $device.id -}}
         <button
-          class="firmware-picker__option"
+          class="firmware-picker__option{{ if $device.picker_break_before }} firmware-picker__option--break-before{{ end }}"
           id="{{ $optionID }}"
           type="button"
           role="option"
@@ -125,7 +124,7 @@
                   <path d="m7 10 5 5 5-5"></path>
                   <path d="M5 21h14"></path>
                 </svg>
-                <span>{{ $download }} — {{ index .label $lang }}</span>
+                <span>{{ index .label $lang }}</span>
               </a>
             {{- end }}
           </div>
