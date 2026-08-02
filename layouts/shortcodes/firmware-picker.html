@@ -7,6 +7,7 @@
 {{- $noResults := cond (eq $lang "en") "No devices found" "Устройства не найдены" -}}
 {{- $hint := cond (eq $lang "en") "Check the model, revision, and firmware type before downloading" "Перед скачиванием проверьте модель, ревизию и тип прошивки" -}}
 {{- $noteLabel := cond (eq $lang "en") "Note" "Примечание" -}}
+{{- $standardLayoutNote := cond (eq $lang "en") "Download and import the standard layout into <a href=\"https://github.com/ergohaven/entropy\" target=\"_blank\" rel=\"noopener\">Entropy</a> if it was lost after migrating from ZMK or updating the RMK firmware." "Скачайте и импортируйте в <a href=\"https://github.com/ergohaven/entropy\" target=\"_blank\" rel=\"noopener\">Entropy</a> стандартную раскладку, если она сбилась после перехода с ZMK или обновления RMK-прошивки." -}}
 {{- $pickerOptions := slice -}}
 {{- $pickerSequence := 0 -}}
 {{- range site.Data.firmware.groups -}}
@@ -82,6 +83,12 @@
           {{- $deviceName = .name_en -}}
         {{- end }}
         {{- $deviceID := .id -}}
+        {{- $hasStandardLayout := false -}}
+        {{- range .files -}}
+          {{- if strings.HasSuffix .url ".entlayout" -}}
+            {{- $hasStandardLayout = true -}}
+          {{- end -}}
+        {{- end -}}
         {{- $instructionKey := "qmk_split_new" -}}
         {{- if strings.HasPrefix $deviceID "rmk-trackball" -}}
           {{- $instructionKey = "rmk_single" -}}
@@ -151,6 +158,12 @@
                 <aside class="firmware-picker__instruction-note" role="note">
                   <span class="firmware-picker__instruction-note-label">{{ $noteLabel }}</span>
                   {{- . | safeHTML -}}
+                </aside>
+              {{- end }}
+              {{- if $hasStandardLayout }}
+                <aside class="firmware-picker__instruction-note firmware-picker__instruction-note--layout" role="note">
+                  <span class="firmware-picker__instruction-note-label">{{ $noteLabel }}</span>
+                  {{- $standardLayoutNote | safeHTML -}}
                 </aside>
               {{- end }}
             </div>
