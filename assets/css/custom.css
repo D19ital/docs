@@ -191,6 +191,10 @@ html.dark .firmware-picker__options {
   cursor: pointer;
 }
 
+.firmware-picker .firmware-picker__option--break-before {
+  margin-top: 1rem;
+}
+
 .firmware-picker .firmware-picker__option:hover,
 .firmware-picker .firmware-picker__option.is-active {
   background: rgb(239 246 255);

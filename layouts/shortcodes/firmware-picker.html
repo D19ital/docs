@@ -51,7 +51,7 @@
         {{- end -}}
         {{- $optionID := printf "%s-option-%s" $pickerID $device.id -}}
         <button
-          class="firmware-picker__option"
+          class="firmware-picker__option{{ if $device.picker_break_before }} firmware-picker__option--break-before{{ end }}"
           id="{{ $optionID }}"
           type="button"
           role="option"

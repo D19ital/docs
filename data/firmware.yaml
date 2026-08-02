@@ -1,8 +1,8 @@
 groups:
   - id: rmk-current
     name:
-      ru: RMK — актуальные беспроводные устройства
-      en: RMK — current wireless devices
+      ru: RMK — беспроводные устройства
+      en: RMK — wireless devices
     devices:
       - id: rmk-k04
         name: "K:04"
@@ -22,7 +22,7 @@ groups:
             url: /entlayout/k_04.entlayout
       - id: rmk-k04-mini
         name: "K:04 Mini"
-        picker_order: 12
+        picker_order: 13
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/k04-mini-v0.1.4.zip
@@ -30,7 +30,7 @@ groups:
             url: /entlayout/k_04_mini.entlayout
       - id: rmk-k04-mini-qube
         name: "K:04 Mini + Qube"
-        picker_order: 13
+        picker_order: 14
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/k04-mini-qube-v0.1.4.zip
@@ -38,7 +38,7 @@ groups:
             url: /entlayout/k_04_mini.entlayout
       - id: rmk-k04-micro
         name: "K:04 Micro"
-        picker_order: 14
+        picker_order: 16
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/k04-micro-v0.1.4.zip
@@ -46,19 +46,22 @@ groups:
             url: /entlayout/k_04_micro.entlayout
       - id: rmk-k04-micro-qube
         name: "K:04 Micro + Qube"
-        picker_order: 15
+        picker_order: 17
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/k04-micro-qube-v0.1.4.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04_micro.entlayout
+
   - id: rmk-previous
     name:
-      ru: RMK — предыдущие беспроводные устройства
-      en: RMK — previous devices
+      ru: RMK — беспроводные устройства
+      en: RMK — wireless devices
     devices:
       - id: rmk-k03-v4
         name: "K:03 V4 - Wireless Edition"
+        picker_order: 20
+        picker_break_before: true
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/k03-v0.1.4.zip
@@ -66,6 +69,7 @@ groups:
             url: /entlayout/k_03.entlayout
       - id: rmk-k03-v4-qube
         name: "K:03 V4 - Wireless Edition + Qube"
+        picker_order: 21
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/k03-qube-v0.1.4.zip
@@ -73,6 +77,7 @@ groups:
             url: /entlayout/k_03.entlayout
       - id: rmk-imperial44
         name: Imperial44 v4 - Wireless Edition
+        picker_order: 24
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/imperial44-v0.1.4.zip
@@ -80,6 +85,7 @@ groups:
             url: /entlayout/imperial44.entlayout
       - id: rmk-imperial44-qube
         name: Imperial44 v4 - Wireless Edition + Qube
+        picker_order: 25
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/imperial44-qube-v0.1.4.zip
@@ -87,6 +93,7 @@ groups:
             url: /entlayout/imperial44.entlayout
       - id: rmk-op36
         name: OP36
+        picker_order: 27
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/op36-v0.1.4.zip
@@ -94,311 +101,123 @@ groups:
             url: /entlayout/op36.entlayout
       - id: rmk-op36-qube
         name: OP36 + Qube
+        picker_order: 28
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/op36-qube-v0.1.4.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/op36.entlayout
       - id: rmk-velvet-v3
-        name: Velvet v3 - Wireless and Velvet v3 - UI
+        name: Velvet v3 - Wireless/UI
+        picker_order: 30
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/velvet-v0.1.4.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/velvet_and_ui.entlayout
       - id: rmk-velvet-v3-qube
-        name: Velvet v3 - Wireless and Velvet v3 - UI + Qube
+        name: Velvet v3 - Wireless/UI + Qube
+        picker_order: 31
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
             url: https://github.com/ergohaven/rmk/releases/download/v0.1.4/velvet-qube-v0.1.4.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/velvet_and_ui.entlayout
+
   - id: qmk-current
     name:
-      ru: QMK — актуальные проводные устройства
-      en: QMK — current wired devices
+      ru: QMK — проводные устройства
+      en: QMK — wired devices
     devices:
       - id: qmk-phenom
         name: Phenom
-        picker_order: 20
+        picker_order: 12
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_v1.uf2
       - id: qmk-phenom-mini
         name: Phenom Mini
-        picker_order: 21
+        picker_order: 15
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_mini_v1.uf2
       - id: qmk-phenom-micro
         name: Phenom Micro
-        picker_order: 22
+        picker_order: 18
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_phenom_micro_v1.uf2
+      - id: qmk-k03-v3-v4
+        name: "K:03 v3/v4"
+        picker_order: 22
+        files:
+          - label: { ru: Прошивка, en: Firmware }
+            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03_v3_v4.uf2
+      - id: qmk-k03-pro-v2-v3
+        name: "K:03 PRO v2/v3"
+        picker_order: 23
+        files:
+          - label: { ru: Прошивка, en: Firmware }
+            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03pro_v2_v3.uf2
+      - id: qmk-imperial44-v3-v4
+        name: Imperial44 v3/v4
+        picker_order: 26
+        files:
+          - label: { ru: Прошивка, en: Firmware }
+            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_imperial44_v3_v4.uf2
+      - id: qmk-hpd-v2
+        name: HPD v2
+        picker_order: 29
+        files:
+          - label: { ru: Без модулей, en: No modules }
+            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2.uf2
+          - label: { ru: Энкодер/трекбол, en: Encoder/trackball }
+            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2_enc_ball.uf2
+          - label: { ru: Энкодер/тачпад, en: Encoder/touchpad }
+            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2_enc_touch.uf2
+          - label: { ru: Энкодер/джойстик, en: Encoder/joystick }
+            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2_enc_joy.uf2
+      - id: qmk-velvet-v3
+        name: Velvet v3
+        picker_order: 32
+        files:
+          - label: { ru: Прошивка, en: Firmware }
+            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_velvet_v3.uf2
       - id: qmk-macropad-v3
         name: M4CR0Pad v3
+        picker_order: 34
+        picker_break_before: true
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_macropad_v3.uf2
       - id: qmk-sm30
         name: SM30
+        picker_order: 35
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_sm30_v1.uf2
-      - id: qmk-k03-v3-v4
-        name: "K:03 v3/v4"
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03_v3_v4.uf2
-      - id: qmk-imperial44-v3-v4
-        name: Imperial44 v3/v4
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_imperial44_v3_v4.uf2
-      - id: qmk-planeta-v2
-        name: Planeta v2
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_planeta_v2.uf2
-      - id: qmk-velvet-v3
-        name: Velvet v3
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_velvet_v3.uf2
-      - id: qmk-trackball-v2
-        name: Trackball v2
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_trackball_v2.uf2
-      - id: qmk-k03-pro-v2-v3
-        name: "K:03 PRO v2/v3"
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03pro_v2_v3.uf2
-      - id: qmk-hpd-v2
-        name: HPD v2 (без модулей)
-        name_en: HPD v2 (no modules)
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2.uf2
-      - id: qmk-hpd-v2-encoder-trackball
-        name: HPD v2 (энкодер/трекбол)
-        name_en: HPD v2 (encoder/trackball)
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2_enc_ball.uf2
-      - id: qmk-hpd-v2-encoder-touch
-        name: HPD v2 (энкодер/тачпад)
-        name_en: HPD v2 (encoder/touch)
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2_enc_touch.uf2
-      - id: qmk-hpd-v2-encoder-joystick
-        name: HPD v2 (энкодер/джойстик)
-        name_en: HPD v2 (encoder/joystick)
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v2_enc_joy.uf2
-
-  - id: qmk-previous
-    name:
-      ru: QMK — предыдущие проводные устройства
-      en: QMK — previous devices and revisions
-    devices:
-      - id: qmk-hpd-v1
-        name: HPD v1
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_hpd_v1.uf2
-      - id: qmk-k03-v1
-        name: "K:03 v1"
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03_v1_v2.uf2
-      - id: qmk-k03-v2
-        name: "K:03 v2"
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03_v1_v2.uf2
-      - id: qmk-imperial44-v1
-        name: Imperial44 v1
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_imperial44_v1_v2.uf2
-      - id: qmk-imperial44-v2
-        name: Imperial44 v2
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_imperial44_v1_v2.uf2
-      - id: qmk-k02-v1
-        name: "K:02"
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k02_v1.uf2
-      - id: qmk-planeta-v1
-        name: Planeta v1
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_planeta_v1.uf2
-      - id: qmk-macropad-v1
-        name: M4CR0Pad v1
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_macropad_v1.uf2
-      - id: qmk-macropad-v2
-        name: M4CR0Pad v2
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_macropad_v2.uf2
-      - id: qmk-remnant-v1
-        name: Remnant
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_remnant_v1.uf2
-      - id: qmk-velvet-v1
-        name: Velvet v1
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_velvet_v1.uf2
-      - id: qmk-velvet-v2
-        name: Velvet v2
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_velvet_v2.uf2
-      - id: qmk-trackball-v1
-        name: Trackball v1
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_trackball_v1.uf2
-      - id: qmk-k03-pro-v1-43
-        name: "K:03 PRO v1 43 mm"
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03pro_43mm_v1.uf2
-      - id: qmk-k03-pro-v1-65
-        name: "K:03 PRO v1 65 mm"
-        files:
-          - label: { ru: Прошивка, en: Firmware }
-            url: https://github.com/ergohaven/vial-qmk/releases/download/4.0.5/4.0.5_k03pro_65mm_v1.uf2
 
   - id: zmk-previous
     name:
-      ru: ZMK — предыдущие беспроводные устройства
-      en: ZMK — previous wireless devices
+      ru: ZMK — беспроводные устройства
+      en: ZMK — wireless devices
     devices:
-      - id: zmk-k03-v4
-        name: "K:03 V4 - Wireless Edition"
-        files:
-          - label: { ru: Левая половина — стандартная раскладка, en: Left half — standard layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_left-ergohaven-zmk.uf2
-          - label: { ru: Левая половина — раскладка RuEn, en: Left half — RuEn layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_left_ruen-ergohaven-zmk.uf2
-          - label: { ru: Правая половина, en: Right half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_right-ergohaven-zmk.uf2
-      - id: zmk-k03-v4-qube
-        name: "K:03 V4 - Wireless Edition + Qube"
-        files:
-          - label: { ru: Левая половина, en: Left half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_left_qube-ergohaven-zmk.uf2
-          - label: { ru: Правая половина, en: Right half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_right-ergohaven-zmk.uf2
-          - label: { ru: Qube — стандартная раскладка, en: Qube — standard layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_qube-ergohaven-zmk.uf2
-          - label: { ru: Qube — раскладка RuEn, en: Qube — RuEn layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/k03_qube_ruen-ergohaven-zmk.uf2
-      - id: zmk-imperial44
-        name: Imperial44 v4 - Wireless Edition
-        files:
-          - label: { ru: Левая половина — стандартная раскладка, en: Left half — standard layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left-ergohaven-zmk.uf2
-          - label: { ru: Левая половина — раскладка RuEn, en: Left half — RuEn layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left_ruen-ergohaven-zmk.uf2
-          - label: { ru: Правая половина, en: Right half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_right-ergohaven-zmk.uf2
-      - id: zmk-imperial44-qube
-        name: Imperial44 v4 - Wireless Edition + Qube
-        files:
-          - label: { ru: Левая половина, en: Left half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_left_qube-ergohaven-zmk.uf2
-          - label: { ru: Правая половина, en: Right half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_right-ergohaven-zmk.uf2
-          - label: { ru: Qube — стандартная раскладка, en: Qube — standard layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_qube-ergohaven-zmk.uf2
-          - label: { ru: Qube — раскладка RuEn, en: Qube — RuEn layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/imperial44_qube_ruen-ergohaven-zmk.uf2
-      - id: zmk-op36
-        name: OP36
-        files:
-          - label: { ru: Левая половина — стандартная раскладка, en: Left half — standard layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_left-ergohaven-zmk.uf2
-          - label: { ru: Левая половина — раскладка RuEn, en: Left half — RuEn layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_left_ruen-ergohaven-zmk.uf2
-          - label: { ru: Правая половина, en: Right half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_right-ergohaven-zmk.uf2
-      - id: zmk-op36-qube
-        name: OP36 + Qube
-        files:
-          - label: { ru: Левая половина, en: Left half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_left_qube-ergohaven-zmk.uf2
-          - label: { ru: Правая половина, en: Right half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_right-ergohaven-zmk.uf2
-          - label: { ru: Qube — стандартная раскладка, en: Qube — standard layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_qube-ergohaven-zmk.uf2
-          - label: { ru: Qube — раскладка RuEn, en: Qube — RuEn layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/op36_qube_ruen-ergohaven-zmk.uf2
-      - id: zmk-velvet-v3
-        name: Velvet v3 - Wireless Edition
-        files:
-          - label: { ru: Левая половина — стандартная раскладка, en: Left half — standard layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_left-ergohaven-zmk.uf2
-          - label: { ru: Левая половина — раскладка RuEn, en: Left half — RuEn layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_left_ruen-ergohaven-zmk.uf2
-          - label: { ru: Правая половина, en: Right half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_right-ergohaven-zmk.uf2
-      - id: zmk-velvet-v3-qube
-        name: Velvet v3 - Wireless Edition + Qube
-        files:
-          - label: { ru: Левая половина, en: Left half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_left_qube-ergohaven-zmk.uf2
-          - label: { ru: Правая половина, en: Right half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_right-ergohaven-zmk.uf2
-          - label: { ru: Qube — стандартная раскладка, en: Qube — standard layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_qube-ergohaven-zmk.uf2
-          - label: { ru: Qube — раскладка RuEn, en: Qube — RuEn layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_qube_ruen-ergohaven-zmk.uf2
-      - id: zmk-velvet-v3-ui
-        name: Velvet v3 UI
-        files:
-          - label: { ru: Левая половина, en: Left half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_left-ergohaven-zmk.uf2
-          - label: { ru: Правая половина — стандартная раскладка, en: Right half — standard layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_right-ergohaven-zmk.uf2
-          - label: { ru: Правая половина — раскладка RuEn, en: Right half — RuEn layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_right_ruen-ergohaven-zmk.uf2
-      - id: zmk-velvet-v3-ui-qube
-        name: Velvet v3 UI + Qube
-        files:
-          - label: { ru: Левая половина, en: Left half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_left-ergohaven-zmk.uf2
-          - label: { ru: Правая половина, en: Right half }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_right_qube-ergohaven-zmk.uf2
-          - label: { ru: Qube — стандартная раскладка, en: Qube — standard layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_qube-ergohaven-zmk.uf2
-          - label: { ru: Qube — раскладка RuEn, en: Qube — RuEn layout }
-            url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/velvet_v3_ui_qube_ruen-ergohaven-zmk.uf2
       - id: zmk-trackball-mini-30
         name: Trackball Mini v3.0
+        picker_order: 40
+        picker_break_before: true
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/trackball_v3.0-ergohaven-zmk.uf2
       - id: zmk-trackball-mini-31
         name: Trackball Mini v3.1
+        picker_order: 41
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/trackball_v3.1-ergohaven-zmk.uf2
       - id: zmk-trackball-royale
         name: Trackball Royale
+        picker_order: 42
         files:
           - label: { ru: Прошивка, en: Firmware }
             url: https://github.com/ergohaven/ergohaven-zmk/releases/download/2026.03.16/trackball_royal-ergohaven-zmk.uf2
