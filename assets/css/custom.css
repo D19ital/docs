@@ -392,6 +392,26 @@ html.dark .firmware-picker .firmware-picker__instruction-note-label {
   color: rgb(147 197 253);
 }
 
+.firmware-picker .firmware-picker__instruction-note--layout {
+  border-color: rgb(245 158 11);
+  background: rgb(254 249 195);
+  color: rgb(113 63 18);
+}
+
+.firmware-picker .firmware-picker__instruction-note--layout .firmware-picker__instruction-note-label {
+  color: rgb(161 98 7);
+}
+
+html.dark .firmware-picker .firmware-picker__instruction-note--layout {
+  border-color: rgb(251 191 36);
+  background: rgb(113 63 18 / 0.32);
+  color: rgb(254 240 138);
+}
+
+html.dark .firmware-picker .firmware-picker__instruction-note--layout .firmware-picker__instruction-note-label {
+  color: rgb(253 224 71);
+}
+
 @media (max-width: 640px) {
   .firmware-picker__field,
   .firmware-picker__result {
