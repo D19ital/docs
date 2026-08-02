@@ -70,6 +70,36 @@ If a group of adjacent keys is not working, the issue is most likely with a row 
 
 {{< /details >}}
 
+## Wireless Connection
+
+{{< details title="Device does not appear in the Bluetooth list" closed="true" >}}
+
+{{% steps %}}
+
+### Charge the device
+
+Charge the device to rule out a depleted battery
+
+### Reset the Bluetooth profile
+
+Clear the selected Bluetooth profile on the device and remove its previous pairing from the PC if it is still present
+
+### Try another device
+
+Check whether the device can connect to another PC, phone, or other compatible device
+
+### Perform a cold reset of the PC
+
+Shut down the computer, disconnect its power supply for 30–60 seconds, and discharge residual power by pressing the power button
+
+### Flash the settings reset firmware
+
+Reflash the device using the settings reset firmware
+
+{{% /steps %}}
+
+{{< /details >}}
+
 ## Software Issues
 
 {{< details title="Trackball: poor pointer accuracy, jerky cursor movement" closed="true" >}}
