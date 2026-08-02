@@ -7,7 +7,7 @@
 {{- $noResults := cond (eq $lang "en") "No devices found" "Устройства не найдены" -}}
 {{- $hint := cond (eq $lang "en") "Check the model, revision, and firmware type before downloading" "Перед скачиванием проверьте модель, ревизию и тип прошивки" -}}
 {{- $noteLabel := cond (eq $lang "en") "Note" "Примечание" -}}
-{{- $standardLayoutNote := cond (eq $lang "en") "Download and import the standard layout into <a href=\"https://github.com/ergohaven/entropy\" target=\"_blank\" rel=\"noopener\">Entropy</a> if it was lost after migrating from ZMK or updating the RMK firmware." "Скачайте и импортируйте в <a href=\"https://github.com/ergohaven/entropy\" target=\"_blank\" rel=\"noopener\">Entropy</a> стандартную раскладку, если она сбилась после перехода с ZMK или обновления RMK-прошивки." -}}
+{{- $standardLayoutNote := cond (eq $lang "en") "Download and import the standard layout into <a href=\"https://github.com/ergohaven/entropy\" target=\"_blank\" rel=\"noopener\">Entropy</a> if it was lost after migrating from ZMK or updating the RMK firmware" "Скачайте и импортируйте в <a href=\"https://github.com/ergohaven/entropy\" target=\"_blank\" rel=\"noopener\">Entropy</a> стандартную раскладку, если она сбилась после перехода с ZMK или обновления RMK-прошивки" -}}
 {{- $pickerOptions := slice -}}
 {{- $pickerSequence := 0 -}}
 {{- range site.Data.firmware.groups -}}
