@@ -1,8 +1,8 @@
 {
   "format": "entropy.layout",
-  "version": 3,
+  "version": 4,
   "created_by": "Entropy",
-  "created_at": "2026-07-30T13:24:48.482652+03:00",
+  "created_at": "2026-08-02T16:03:13.116109+03:00",
   "keyboard": {
     "name": "Imperial44",
     "firmware": "Vial",
@@ -875,14 +875,14 @@
         32259,
         32260,
         32263,
-        0,
+        1,
         170,
         168,
         169,
         1,
         1,
         1,
-        0,
+        32264,
         172,
         174,
         171,
@@ -1544,15 +1544,15 @@
       ]
     ],
     "encoder_visibility": [
-      true,
-      true
+      false,
+      false
     ],
     "layout_options": null,
     "layer_names": [
-      "0",
-      "1",
-      "2",
-      "3",
+      "Base",
+      "Number",
+      "Symbol",
+      "Adj",
       "4",
       "5",
       "6",
@@ -2247,7 +2247,40 @@
           "tapping_term": 250
         }
       ],
-      "names": []
+      "names": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     "key_overrides": {
       "entries": [],
