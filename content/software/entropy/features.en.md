@@ -155,6 +155,8 @@ Open **Layout → Layout Indicator**
 - Show the full layout or pressed keys only
 - Track the active layer, Combos, and Tap Dance actions
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/matrix-indicator.mp4" >}}
+
 ## Live Features
 
 Open **Config → Live Features** to check the data that Entropy can send to firmware

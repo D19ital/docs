@@ -155,6 +155,8 @@ Layout Indicator — отдельное окно с текущим слоем и
 - Показывайте полную раскладку или только нажатия
 - Отслеживайте активный слой, Combo и Tap Dance
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/matrix-indicator.mp4" >}}
+
 ## Live-интеграции
 
 Откройте **Настройки → Live-интеграции**, чтобы проверить доступные данные, которые Entropy передаёт прошивке
