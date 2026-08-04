@@ -89,6 +89,8 @@ A Key Override replaces a key when its modifier and layer conditions match
 - **Suppressed modifiers** — modifiers hidden while the replacement is active
 - **Enable on layers** — layers on which the rule can run
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/key-overrides.mp4" >}}
+
 ## Text Expander
 
 Text Expander replaces short local triggers with prepared text on the computer rather than in device firmware
