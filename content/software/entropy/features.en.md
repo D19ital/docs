@@ -136,6 +136,8 @@ Open **Advanced → Typing Trainer** for a local typing-speed test
 - Optional punctuation and digits
 - WPM, accuracy, errors, and local result history
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/typing-trainer.mp4" >}}
+
 ## Matrix Tester
 
 Matrix Tester displays physical switch presses and helps locate a position that does not register

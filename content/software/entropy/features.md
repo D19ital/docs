@@ -136,6 +136,8 @@ Entropy должна оставаться запущенной в фоне, а �
 - Дополнительная пунктуация и цифры
 - WPM, точность, ошибки и локальная история результатов
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/typing-trainer.mp4" >}}
+
 ## Matrix Tester
 
 Matrix Tester показывает нажатия физических свитчей и помогает найти несрабатывающую позицию
