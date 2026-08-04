@@ -28,6 +28,8 @@ Open **Config → App settings**
 | **Diagnostics** | Writes logs for troubleshooting |
 | **Interactive tour** | Runs the interface tour again |
 
+{{< layout-lightbox src="/images/entropy/settings-app.png" alt="Entropy app settings" width="900" >}}
+
 **Import settings** and **Export settings** use `.entsettings` files to transfer application preferences and Text Expander rules
 
 On Linux, this page also provides the Vial udev rule installer
@@ -42,6 +44,8 @@ A macro runs a sequence of actions after one key press
 4. Enter a name and optional description
 5. Add actions in the required order
 6. Assign the slot to the selected key
+
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/macros.mp4" >}}
 
 Available actions:
 
@@ -64,6 +68,8 @@ Tap Dance assigns different actions to one key depending on how it is pressed
 
 **Tapping term** sets the window in which the firmware distinguishes these actions
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/tap-dance.mp4" >}}
+
 ## Combos
 
 A Combo sends one action when two to four input keys are pressed together
@@ -71,6 +77,8 @@ A Combo sends one action when two to four input keys are pressed together
 Open **Advanced → Combos**, select a slot, then choose the input keys and output action
 
 Combo timeout defines the maximum interval between input presses
+
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/combo.mp4" >}}
 
 ## Key Overrides
 
@@ -82,6 +90,8 @@ A Key Override replaces a key when its modifier and layer conditions match
 - **Negative modifiers** — conditions that block the rule
 - **Suppressed modifiers** — modifiers hidden while the replacement is active
 - **Enable on layers** — layers on which the rule can run
+
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/key-overrides.mp4" >}}
 
 ## Text Expander
 
@@ -96,6 +106,8 @@ Text Expander replaces short local triggers with prepared text on the computer r
 3. Add a rule
 4. Enter a trigger such as `:mail`
 5. Enter the replacement text
+
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/text-expander.mp4" >}}
 
 A trigger must start with `:` or `;` and cannot contain spaces
 
@@ -126,6 +138,8 @@ Open **Advanced → Typing Trainer** for a local typing-speed test
 - Optional punctuation and digits
 - WPM, accuracy, errors, and local result history
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/typing-trainer.mp4" >}}
+
 ## Matrix Tester
 
 Matrix Tester displays physical switch presses and helps locate a position that does not register
@@ -146,6 +160,8 @@ Open **Layout → Layout Indicator**
 - Adjust visibility
 - Show the full layout or pressed keys only
 - Track the active layer, Combos, and Tap Dance actions
+
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/matrix-indicator.mp4" >}}
 
 ## Live Features
 
@@ -174,6 +190,8 @@ You can configure the timeout, repeat behavior, and the groups of keys affected 
 
 Controls the tap/hold decision window, permissive hold, hold-on-other-key, and one-shot modifier or layer behavior
 
+{{< layout-lightbox src="/images/entropy/settings-tap-hold.png" alt="Tap-Hold and One Shot settings" width="900" >}}
+
 {{< /details >}}
 
 {{< details title="Mouse Keys" closed="true" >}}
@@ -188,13 +206,19 @@ Magic changes global modifier and system-key behavior
 
 Grave Escape defines which modifiers make the combined key send `Esc`, `` ` ``, or `~`
 
+{{< layout-lightbox src="/images/entropy/settings-magic.png" alt="Magic settings" width="900" >}}
+
 {{< /details >}}
 
 {{< details title="RGB and Layer LEDs" closed="true" >}}
 
 RGB controls the effect, color, speed, and brightness of compatible lighting
 
+{{< layout-lightbox src="/images/entropy/settings-rgb.png" alt="RGB settings" width="900" >}}
+
 Layer LEDs set brightness, timeout, and individual colors for layers or Bluetooth profiles
+
+{{< layout-lightbox src="/images/entropy/settings-layer-leds.png" alt="Layer LED settings" width="900" >}}
 
 {{< /details >}}
 
@@ -204,6 +228,8 @@ Entropy can show or hide encoders, select display presets, and change module par
 
 These can include pointer mode, axes, DPI, scroll sensitivity, acceleration, gestures, inversion, and automatic mouse layers
 
+{{< layout-lightbox src="/images/entropy/settings-modules.png" alt="Module settings" width="900" >}}
+
 {{< /details >}}
 
 {{< details title="Bluetooth" closed="true" >}}
@@ -211,5 +237,7 @@ These can include pointer mode, axes, DPI, scroll sensitivity, acceleration, ges
 Compatible firmware can expose profile controls, sleep timeouts, and other Bluetooth parameters
 
 These settings are separate from operating-system pairing and change the behavior of the device itself
+
+{{< layout-lightbox src="/images/entropy/settings-bluetooth.png" alt="Bluetooth settings" width="900" >}}
 
 {{< /details >}}
