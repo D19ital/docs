@@ -1,6 +1,7 @@
 ---
 title: Universal Symbols
 weight: 5
+layout_lightbox: true
 prev: features
 next: troubleshooting
 ---
@@ -26,7 +27,7 @@ The **Universal** picker tab contains 32 ASCII punctuation characters:
 - + * = # @ $ % ^ & | \ _
 ```
 
-![Universal Symbols picker](/images/entropy/universal-picker.png)
+{{< layout-lightbox src="/images/entropy/universal-picker.png" alt="Universal Symbols picker" width="900" >}}
 
 Compatible firmware also exposes the Russian letters `х`, `б`, `ю`, and `ъ` under **Special → International**, hold Shift for an uppercase letter
 
@@ -72,7 +73,7 @@ Layout Sync reports the current operating-system layout to firmware and automati
 4. Enable the switch
 5. Allow Entropy to keep running in the background
 
-![Layout Sync ready](/images/entropy/layout-sync.png)
+{{< layout-lightbox src="/images/entropy/layout-sync.png" alt="Layout Sync ready" width="900" >}}
 
 {{< video autoplay="true" loop="true" muted="true" src="/video/entropy/layout-sync.mp4" >}}
 

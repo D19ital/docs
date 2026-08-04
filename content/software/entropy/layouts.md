@@ -1,6 +1,7 @@
 ---
 title: Раскладки и слои
 weight: 3
+layout_lightbox: true
 prev: quick-start
 next: features
 ---
@@ -116,4 +117,4 @@ next: features
 
 PDF создаёт по одной странице A4 для каждого выбранного слоя и автоматически выбирает ориентацию
 
-![Экспорт нескольких слоёв](/images/entropy/layout-export.jpg)
+{{< layout-lightbox src="/images/entropy/layout-export.jpg" alt="Экспорт нескольких слоёв" width="720" >}}

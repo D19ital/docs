@@ -1,6 +1,7 @@
 ---
 title: Настройки и возможности
 weight: 4
+layout_lightbox: true
 prev: layouts
 next: universal-symbols
 ---
@@ -86,7 +87,7 @@ Key Override заменяет клавишу при выполнении усл�
 
 Text Expander заменяет короткие локальные триггеры готовым текстом и работает на компьютере, а не в прошивке устройства
 
-![Text Expander](/images/entropy/text-expander.png)
+{{< layout-lightbox src="/images/entropy/text-expander.png" alt="Text Expander" width="900" >}}
 
 ### Создание правила
 
@@ -129,7 +130,7 @@ Entropy должна оставаться запущенной в фоне, а �
 
 Matrix Tester показывает нажатия физических свитчей и помогает найти несрабатывающую позицию
 
-![Matrix Tester](/images/entropy/matrix-tester.png)
+{{< layout-lightbox src="/images/entropy/matrix-tester.png" alt="Matrix Tester" width="900" >}}
 
 Откройте **Настройки → Тестер матрицы**, нажмите несколько клавиш и следите за счётчиком проверенных позиций
 

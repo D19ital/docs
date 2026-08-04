@@ -1,6 +1,7 @@
 ---
 title: Универсальные символы
 weight: 5
+layout_lightbox: true
 prev: features
 next: troubleshooting
 ---
@@ -26,7 +27,7 @@ Entropy нужна для настройки и автоматической с�
 - + * = # @ $ % ^ & | \ _
 ```
 
-![Пикер универсальных символов](/images/entropy/universal-picker.png)
+{{< layout-lightbox src="/images/entropy/universal-picker.png" alt="Пикер универсальных символов" width="900" >}}
 
 Совместимая прошивка также предоставляет русские буквы `х`, `б`, `ю` и `ъ` в разделе **Спец → Международные**, удержание Shift вводит заглавную букву
 
@@ -72,7 +73,7 @@ Layout Sync передаёт прошивке текущую раскладку 
 4. Включите переключатель
 5. Разрешите Entropy работать в фоне
 
-![Layout Sync готов к работе](/images/entropy/layout-sync.png)
+{{< layout-lightbox src="/images/entropy/layout-sync.png" alt="Layout Sync готов к работе" width="900" >}}
 
 {{< video autoplay="true" loop="true" muted="true" src="/video/entropy/layout-sync.mp4" >}}
 

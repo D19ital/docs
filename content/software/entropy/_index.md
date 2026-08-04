@@ -1,6 +1,7 @@
 ---
 title: Entropy
 bookCollapseSection: true
+layout_lightbox: true
 next: installation
 cascade:
   type: docs
@@ -8,7 +9,7 @@ cascade:
 
 Entropy — кроссплатформенное приложение Ergohaven для настройки программируемых клавиатур и других устройств ввода с прошивками Vial-QMK и Vial-RMK
 
-![Интерфейс Entropy](/images/entropy/overview.png)
+{{< layout-lightbox src="/images/entropy/overview.png" alt="Интерфейс Entropy" width="900" >}}
 
 Приложение объединяет редактор раскладки, настройку функций прошивки, тестирование устройства и дополнительные инструменты в одном интерфейсе
 

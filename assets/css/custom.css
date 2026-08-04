@@ -428,8 +428,8 @@ html.dark .firmware-picker .firmware-picker__instruction-note--layout .firmware-
 }
 
 /* ==========================================================================
-   Layout image lightbox
-   Scoped to the K:04 and Phenom layout shortcodes.
+   Documentation image lightbox
+   Used for layouts and enlarged interface illustrations.
    ========================================================================== */
 
 .layout-lightbox-trigger {
