@@ -43,6 +43,8 @@ A macro runs a sequence of actions after one key press
 5. Add actions in the required order
 6. Assign the slot to the selected key
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/macros.mp4" >}}
+
 Available actions:
 
 - **Text** — type text one character at a time
