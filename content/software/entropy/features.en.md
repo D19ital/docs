@@ -66,6 +66,8 @@ Tap Dance assigns different actions to one key depending on how it is pressed
 
 **Tapping term** sets the window in which the firmware distinguishes these actions
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/tap-dance.mp4" >}}
+
 ## Combos
 
 A Combo sends one action when two to four input keys are pressed together
