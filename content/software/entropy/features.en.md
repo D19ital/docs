@@ -105,6 +105,8 @@ Text Expander replaces short local triggers with prepared text on the computer r
 4. Enter a trigger such as `:mail`
 5. Enter the replacement text
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/text-expander.mp4" >}}
+
 A trigger must start with `:` or `;` and cannot contain spaces
 
 Use `\n` for a new line and `$|$` for the cursor position after insertion
