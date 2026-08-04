@@ -2,6 +2,7 @@
 title: Settings and features
 weight: 4
 layout_lightbox: true
+video_lightbox: true
 prev: layouts
 next: universal-symbols
 ---

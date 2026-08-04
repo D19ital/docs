@@ -2,6 +2,7 @@
 title: Универсальные символы
 weight: 5
 layout_lightbox: true
+video_lightbox: true
 prev: features
 next: troubleshooting
 ---
