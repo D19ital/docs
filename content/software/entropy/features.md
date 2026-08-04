@@ -28,6 +28,8 @@ Entropy показывает только те функции, которые п
 | **Диагностика** | Записывает логи для поиска ошибок |
 | **Интерактивный тур** | Повторно запускает обучение интерфейсу |
 
+{{< layout-lightbox src="/images/entropy/settings-app.png" alt="Настройки приложения Entropy" width="900" >}}
+
 Кнопки **Импорт настроек** и **Экспорт настроек** работают с файлами `.entsettings` и позволяют перенести параметры приложения и правила Text Expander
 
 В Linux на этой странице также доступна установка правил udev для Vial
@@ -188,6 +190,8 @@ Layout Indicator — отдельное окно с текущим слоем и
 
 Управляет временем выбора tap/hold, permissive hold, удержанием при другой клавише и поведением одноразовых модификаторов или слоёв
 
+{{< layout-lightbox src="/images/entropy/settings-tap-hold.png" alt="Настройки Tap-Hold и One Shot" width="900" >}}
+
 {{< /details >}}
 
 {{< details title="Mouse Keys" closed="true" >}}
@@ -202,13 +206,19 @@ Magic меняет глобальное поведение модификато�
 
 Grave Escape определяет, при каких модификаторах комбинированная клавиша отправляет `Esc`, `` ` `` или `~`
 
+{{< layout-lightbox src="/images/entropy/settings-magic.png" alt="Magic-настройки" width="900" >}}
+
 {{< /details >}}
 
 {{< details title="RGB и подсветка слоёв" closed="true" >}}
 
 RGB управляет эффектом, цветом, скоростью и яркостью совместимой подсветки
 
+{{< layout-lightbox src="/images/entropy/settings-rgb.png" alt="Настройки RGB" width="900" >}}
+
 Подсветка слоёв задаёт яркость, таймаут и отдельные цвета для слоёв или Bluetooth-профилей
+
+{{< layout-lightbox src="/images/entropy/settings-layer-leds.png" alt="Настройки подсветки слоёв" width="900" >}}
 
 {{< /details >}}
 
@@ -218,6 +228,8 @@ Entropy может показывать или скрывать энкодеры
 
 К ним относятся режим указателя, оси, DPI, чувствительность скролла, ускорение, жесты, инверсия и автоматический мышиный слой
 
+{{< layout-lightbox src="/images/entropy/settings-modules.png" alt="Настройки модулей" width="900" >}}
+
 {{< /details >}}
 
 {{< details title="Bluetooth" closed="true" >}}
@@ -225,5 +237,7 @@ Entropy может показывать или скрывать энкодеры
 Совместимая прошивка может предоставлять управление профилями, таймаутами сна и другими параметрами Bluetooth
 
 Эти настройки отличаются от системного окна сопряжения и меняют поведение самого устройства
+
+{{< layout-lightbox src="/images/entropy/settings-bluetooth.png" alt="Настройки Bluetooth" width="900" >}}
 
 {{< /details >}}

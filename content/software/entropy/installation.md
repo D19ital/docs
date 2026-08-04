@@ -1,6 +1,7 @@
 ---
 title: Установка
 weight: 1
+layout_lightbox: true
 prev: /software/entropy
 next: quick-start
 ---
@@ -82,6 +83,8 @@ sudo apt-get install ibus python3-gi gir1.2-ibus-1.0
 ## Обновление
 
 Откройте **Настройки → Об Entropy**, чтобы проверить наличие новой версии и перейти к её загрузке
+
+{{< layout-lightbox src="/images/entropy/settings-about.png" alt="Страница Об Entropy" width="900" >}}
 
 Скачайте новый файл для своей платформы и замените предыдущую сборку, пользовательские настройки хранятся отдельно и сохраняются при обновлении
 
