@@ -76,6 +76,8 @@ Open **Advanced → Combos**, select a slot, then choose the input keys and outp
 
 Combo timeout defines the maximum interval between input presses
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/combo.mp4" >}}
+
 ## Key Overrides
 
 A Key Override replaces a key when its modifier and layer conditions match

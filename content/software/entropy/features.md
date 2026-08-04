@@ -76,6 +76,8 @@ Combo отправляет одно действие при одновремен
 
 Таймаут Combo определяет максимально допустимый интервал между входными нажатиями
 
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/combo.mp4" >}}
+
 ## Key Overrides
 
 Key Override заменяет клавишу при выполнении условий модификаторов и слоя
