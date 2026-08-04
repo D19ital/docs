@@ -2,6 +2,7 @@
 title: Layouts and layers
 weight: 3
 layout_lightbox: true
+video_lightbox: true
 prev: quick-start
 next: features
 ---

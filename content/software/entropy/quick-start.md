@@ -1,6 +1,7 @@
 ---
 title: Быстрый старт и навигация
 weight: 2
+video_lightbox: true
 prev: installation
 next: layouts
 ---

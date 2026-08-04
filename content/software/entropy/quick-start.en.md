@@ -1,6 +1,7 @@
 ---
 title: Quick start and navigation
 weight: 2
+video_lightbox: true
 prev: installation
 next: layouts
 ---

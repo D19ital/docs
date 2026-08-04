@@ -9,3 +9,8 @@
     <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
   {{- end }}
 {{- end }}
+{{- if .Params.video_lightbox }}
+  {{- with resources.Get "js/video-lightbox.js" | minify | fingerprint }}
+    <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+  {{- end }}
+{{- end }}

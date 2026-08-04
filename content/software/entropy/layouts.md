@@ -2,6 +2,7 @@
 title: Раскладки и слои
 weight: 3
 layout_lightbox: true
+video_lightbox: true
 prev: quick-start
 next: features
 ---

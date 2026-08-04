@@ -1,8 +1,36 @@
+{{- $src := .Get "src" -}}
+{{- $lightbox := .Page.Params.video_lightbox -}}
+{{- $isEnglish := eq .Page.Language.Lang "en" -}}
+{{- $openLabel := cond $isEnglish "Open video in full screen" "Открыть видео на весь экран" -}}
+{{- $dialogLabel := cond $isEnglish "Video viewer" "Просмотр видео" -}}
+{{- $closeLabel := cond $isEnglish "Close video viewer" "Закрыть просмотр видео" -}}
+
+{{- if $lightbox }}
+<button class="video-lightbox-trigger" type="button" aria-label="{{ $openLabel }}" aria-haspopup="dialog" data-video-lightbox data-video-lightbox-src="{{ $src | safeURL }}" data-video-lightbox-dialog-label="{{ $dialogLabel }}" data-video-lightbox-close-label="{{ $closeLabel }}" data-video-lightbox-autoplay="{{ if .Get "autoplay" }}true{{ else }}false{{ end }}" data-video-lightbox-loop="{{ if .Get "loop" }}true{{ else }}false{{ end }}" data-video-lightbox-muted="{{ if .Get "muted" }}true{{ else }}false{{ end }}">
+  <video
+    {{ if .Get "autoplay" }}autoplay{{ end }}
+    {{ if .Get "loop" }}loop{{ end }}
+    {{ if .Get "muted" }}muted{{ end }}
+    playsinline>
+    <source src="{{ $src | safeURL }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <span class="video-lightbox-trigger__icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 3H3v5"></path>
+      <path d="M16 3h5v5"></path>
+      <path d="M8 21H3v-5"></path>
+      <path d="M16 21h5v-5"></path>
+    </svg>
+  </span>
+</button>
+{{- else }}
 <video 
   {{ if .Get "autoplay" }}autoplay{{ end }}
   {{ if .Get "loop" }}loop{{ end }}
   {{ if .Get "muted" }}muted{{ end }}
   style="max-width: 100%">
-  <source src="{{ .Get "src" }}" type="video/mp4">
+  <source src="{{ $src | safeURL }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+{{- end }}
