@@ -1,6 +1,7 @@
 ---
 title: Layouts and layers
 weight: 3
+layout_lightbox: true
 prev: quick-start
 next: features
 ---
@@ -116,4 +117,4 @@ Select **Layout → Export image**, then choose:
 
 PDF creates one A4 page for each selected layer and chooses the page orientation automatically
 
-![Multi-layer export](/images/entropy/layout-export.jpg)
+{{< layout-lightbox src="/images/entropy/layout-export.jpg" alt="Multi-layer export" width="720" >}}

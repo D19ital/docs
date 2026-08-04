@@ -1,6 +1,7 @@
 ---
 title: Settings and features
 weight: 4
+layout_lightbox: true
 prev: layouts
 next: universal-symbols
 ---
@@ -86,7 +87,7 @@ A Key Override replaces a key when its modifier and layer conditions match
 
 Text Expander replaces short local triggers with prepared text on the computer rather than in device firmware
 
-![Text Expander](/images/entropy/text-expander.png)
+{{< layout-lightbox src="/images/entropy/text-expander.png" alt="Text Expander" width="900" >}}
 
 ### Creating a rule
 
@@ -129,7 +130,7 @@ Open **Advanced → Typing Trainer** for a local typing-speed test
 
 Matrix Tester displays physical switch presses and helps locate a position that does not register
 
-![Matrix Tester](/images/entropy/matrix-tester.png)
+{{< layout-lightbox src="/images/entropy/matrix-tester.png" alt="Matrix Tester" width="900" >}}
 
 Open **Config → Matrix Tester**, press several keys, and watch the tested-position counter
 
