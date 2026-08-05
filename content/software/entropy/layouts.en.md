@@ -119,3 +119,5 @@ Select **Layout → Export image**, then choose:
 PDF creates one A4 page for each selected layer and chooses the page orientation automatically
 
 {{< layout-lightbox src="/images/entropy/layout-export.jpg" alt="Multi-layer export" width="720" >}}
+
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/image-export-en.mp4" >}}

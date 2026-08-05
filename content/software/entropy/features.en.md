@@ -46,7 +46,7 @@ A macro runs a sequence of actions after one key press
 5. Add actions in the required order
 6. Assign the slot to the selected key
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/macros.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/macros-en.mp4" >}}
 
 Available actions:
 
@@ -69,7 +69,7 @@ Tap Dance assigns different actions to one key depending on how it is pressed
 
 **Tapping term** sets the window in which the firmware distinguishes these actions
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/tap-dance.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/tap-dance-en.mp4" >}}
 
 ## Combos
 
@@ -79,7 +79,7 @@ Open **Advanced → Combos**, select a slot, then choose the input keys and outp
 
 Combo timeout defines the maximum interval between input presses
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/combo.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/combo-en.mp4" >}}
 
 ## Key Overrides
 
@@ -92,7 +92,7 @@ A Key Override replaces a key when its modifier and layer conditions match
 - **Suppressed modifiers** — modifiers hidden while the replacement is active
 - **Enable on layers** — layers on which the rule can run
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/key-overrides.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/key-overrides-en.mp4" >}}
 
 ## Text Expander
 
@@ -108,7 +108,7 @@ Text Expander replaces short local triggers with prepared text on the computer r
 4. Enter a trigger such as `:mail`
 5. Enter the replacement text
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/text-expander.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/text-expander-en.mp4" >}}
 
 A trigger must start with `:` or `;` and cannot contain spaces
 
@@ -139,7 +139,7 @@ Open **Advanced → Typing Trainer** for a local typing-speed test
 - Optional punctuation and digits
 - WPM, accuracy, errors, and local result history
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/typing-trainer.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/typing-trainer-en.mp4" >}}
 
 ## Matrix Tester
 
@@ -162,7 +162,7 @@ Open **Layout → Layout Indicator**
 - Show the full layout or pressed keys only
 - Track the active layer, Combos, and Tap Dance actions
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/matrix-indicator.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/matrix-indicator-en.mp4" >}}
 
 ## Live Features
 

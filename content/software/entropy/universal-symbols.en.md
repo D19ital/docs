@@ -28,7 +28,7 @@ The **Universal** picker tab contains 32 ASCII punctuation characters:
 - + * = # @ $ % ^ & | \ _
 ```
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/universal-picker.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/universal-picker-en.mp4" >}}
 
 Compatible firmware also exposes the Russian letters `х`, `б`, `ю`, and `ъ` under **Special → International**, hold Shift for an uppercase letter
 
@@ -76,7 +76,7 @@ Layout Sync reports the current operating-system layout to firmware and automati
 
 {{< layout-lightbox src="/images/entropy/layout-sync.png" alt="Layout Sync ready" width="900" >}}
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/layout-sync.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/layout-sync-en.mp4" >}}
 
 With Layout Sync enabled, you can change language through the operating system and Entropy keeps firmware state synchronized
 
