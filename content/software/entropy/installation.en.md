@@ -84,7 +84,7 @@ If Entropy cannot see a Bluetooth device, also check **Input Monitoring**, fully
 
 Open **Config → About Entropy** to check for a new version and open its download page
 
-{{< layout-lightbox src="/images/entropy/settings-about.png" alt="About Entropy page" width="900" >}}
+{{< layout-lightbox src="/images/entropy/settings-about-en.png" alt="About Entropy page" width="900" >}}
 
 Download the new file for your platform and replace the previous build, user settings are stored separately and remain available after an update
 

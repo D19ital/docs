@@ -30,7 +30,7 @@ The top of the window contains three main sections
 - **Advanced** — Text Expander, Typing Trainer, and advanced firmware features
 - **Config** — Entropy preferences and available device settings
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/navigation.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/navigation-en.mp4" >}}
 
 ### Layout
 
@@ -57,6 +57,8 @@ Open **Layout** to access these actions
 - Export an image or PDF
 - Open Layout Indicator
 - View device information
+
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/device-menu-en.mp4" >}}
 
 ### Advanced
 
@@ -89,7 +91,7 @@ Entropy displays a short tour of the main interface areas on first launch
 
 Run it again through **Config → App settings → Interactive tour → Show tour**
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/onboarding.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/onboarding-en.mp4" >}}
 
 ## Saving changes
 

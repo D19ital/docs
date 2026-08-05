@@ -16,7 +16,7 @@ next: features
 
 The picker accepts a physical key press from a regular keyboard or a mouse selection
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/key-picker.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/key-picker-en.mp4" >}}
 
 ## Key picker sections
 
@@ -45,7 +45,7 @@ A layer is a separate set of assignments for the same physical keys
 
 Layer `0` is normally the base layer, while higher layers contain navigation, symbols, mouse functions, media, and other actions
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/layers.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/layers-en.mp4" >}}
 
 ### Switching and names
 
@@ -83,7 +83,7 @@ Open **Layout → Layer operations**
 - **All keys — Inherit** — inherits every position from lower layers
 - **Undo layer change** — restores the state before the latest group operation
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/layer-operations.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/layer-operations-en.mp4" >}}
 
 {{< callout type="warning" >}}
 Export a layout backup before filling or mirroring a layer
@@ -106,6 +106,8 @@ During import, Entropy first creates an automatic backup of the current device a
 **Exact mapping** is used for the same device, while **universal mapping** transfers compatible positions between different layouts
 
 Do not disconnect the device until the file has been applied
+
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/entlayout-en.mp4" >}}
 
 ## Image and PDF export
 

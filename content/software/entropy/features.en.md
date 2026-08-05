@@ -29,7 +29,7 @@ Open **Config → App settings**
 | **Diagnostics** | Writes logs for troubleshooting |
 | **Interactive tour** | Runs the interface tour again |
 
-{{< layout-lightbox src="/images/entropy/settings-app.png" alt="Entropy app settings" width="900" >}}
+{{< layout-lightbox src="/images/entropy/settings-app-en.png" alt="Entropy app settings" width="900" >}}
 
 **Import settings** and **Export settings** use `.entsettings` files to transfer application preferences and Text Expander rules
 
@@ -191,7 +191,7 @@ You can configure the timeout, repeat behavior, and the groups of keys affected 
 
 Controls the tap/hold decision window, permissive hold, hold-on-other-key, and one-shot modifier or layer behavior
 
-{{< layout-lightbox src="/images/entropy/settings-tap-hold.png" alt="Tap-Hold and One Shot settings" width="900" >}}
+{{< layout-lightbox src="/images/entropy/settings-tap-hold-en.png" alt="Tap-Hold and One Shot settings" width="900" >}}
 
 {{< /details >}}
 
@@ -207,7 +207,7 @@ Magic changes global modifier and system-key behavior
 
 Grave Escape defines which modifiers make the combined key send `Esc`, `` ` ``, or `~`
 
-{{< layout-lightbox src="/images/entropy/settings-magic.png" alt="Magic settings" width="900" >}}
+{{< layout-lightbox src="/images/entropy/settings-magic-en.png" alt="Magic settings" width="900" >}}
 
 {{< /details >}}
 
@@ -215,11 +215,11 @@ Grave Escape defines which modifiers make the combined key send `Esc`, `` ` ``, 
 
 RGB controls the effect, color, speed, and brightness of compatible lighting
 
-{{< layout-lightbox src="/images/entropy/settings-rgb.png" alt="RGB settings" width="900" >}}
+{{< layout-lightbox src="/images/entropy/settings-rgb-en.png" alt="RGB settings" width="900" >}}
 
 Layer LEDs set brightness, timeout, and individual colors for layers or Bluetooth profiles
 
-{{< layout-lightbox src="/images/entropy/settings-layer-leds.png" alt="Layer LED settings" width="900" >}}
+{{< layout-lightbox src="/images/entropy/settings-layer-leds-en.png" alt="Layer LED settings" width="900" >}}
 
 {{< /details >}}
 
@@ -229,7 +229,7 @@ Entropy can show or hide encoders, select display presets, and change module par
 
 These can include pointer mode, axes, DPI, scroll sensitivity, acceleration, gestures, inversion, and automatic mouse layers
 
-{{< layout-lightbox src="/images/entropy/settings-modules.png" alt="Module settings" width="900" >}}
+{{< layout-lightbox src="/images/entropy/settings-modules-en.png" alt="Module settings" width="900" >}}
 
 {{< /details >}}
 
@@ -239,6 +239,6 @@ Compatible firmware can expose profile controls, sleep timeouts, and other Bluet
 
 These settings are separate from operating-system pairing and change the behavior of the device itself
 
-{{< layout-lightbox src="/images/entropy/settings-bluetooth.png" alt="Bluetooth settings" width="900" >}}
+{{< layout-lightbox src="/images/entropy/settings-bluetooth-en.png" alt="Bluetooth settings" width="900" >}}
 
 {{< /details >}}
