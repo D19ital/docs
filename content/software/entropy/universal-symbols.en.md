@@ -28,7 +28,7 @@ The **Universal** picker tab contains 32 ASCII punctuation characters:
 - + * = # @ $ % ^ & | \ _
 ```
 
-{{< layout-lightbox src="/images/entropy/universal-picker.png" alt="Universal Symbols picker" width="900" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/universal-picker.mp4" >}}
 
 Compatible firmware also exposes the Russian letters `х`, `б`, `ю`, and `ъ` under **Special → International**, hold Shift for an uppercase letter
 
