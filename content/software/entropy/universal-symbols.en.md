@@ -60,7 +60,7 @@ Entropy displays these assignments with a two-line `Universal` legend and the se
 
 The `macOS` action changes the mapping table in firmware: leave PC mode enabled on Windows/Linux and use macOS mode on Apple computers
 
-{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/universal-controls.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/universal-controls-en.mp4" >}}
 
 Layout Indicator highlights the active key, while the system language indicator makes the result of `Toggle`, `EN`, and `RU` visible
 
