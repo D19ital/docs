@@ -28,7 +28,7 @@ Entropy нужна для настройки и автоматической с�
 - + * = # @ $ % ^ & | \ _
 ```
 
-{{< layout-lightbox src="/images/entropy/universal-picker.png" alt="Пикер универсальных символов" width="900" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/video/entropy/universal-picker.mp4" >}}
 
 Совместимая прошивка также предоставляет русские буквы `х`, `б`, `ю` и `ъ` в разделе **Спец → Международные**, удержание Shift вводит заглавную букву
 
