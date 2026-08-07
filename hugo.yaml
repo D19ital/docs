@@ -58,7 +58,7 @@ languages:
     languageName: English
     weight: 2
     params:
-      brandURL: "https://eh.industries/"
+      brandURL: "https://docs.eh.works/"
     menus:
       main:
         - identifier: docs
