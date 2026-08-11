@@ -10,5 +10,6 @@ toc: false
   {{< card link="sm30" title="Space Mission 30" >}}
   {{< card link="tb-mini" title="Trackball Mini" >}}
   {{< card link="tb-royale" title="Trackball Royale" >}}
+  {{< card link="guides" title="Общие инструкции" subtitle="Подключение, настройка, обслуживание и поддержка" >}}
   {{< card link="archive" title="Предыдущие релизы" >}}
 {{< /cards >}}
