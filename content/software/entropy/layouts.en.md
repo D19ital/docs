@@ -22,7 +22,7 @@ The picker accepts a physical key press from a regular keyboard or a mouse selec
 
 | Section | Purpose |
 | --- | --- |
-| **Basic** | Letters, numbers, navigation, function keys, and numpad |
+| **Basic** | Letters, numbers, navigation, F1–F24 function keys, and numpad |
 | **Symbols** | Symbols that depend on the active operating-system layout |
 | **Universal** | EN/RU-independent punctuation and compatible RMK layout controls |
 | **Modifiers** | Modifiers, layer actions, Mod+Key, Mod-Tap, and One-Shot Mod |
@@ -32,6 +32,8 @@ The picker accepts a physical key press from a regular keyboard or a mouse selec
 | **Custom** | Custom keycodes exposed by the firmware |
 
 Some sections appear only when the firmware supports them
+
+F13–F24 are available as regular function keys in the main picker and nested action pickers
 
 ### Mod+Key and Mod-Tap
 
@@ -99,11 +101,16 @@ Depending on device capabilities, the file can include:
 - Encoder visibility and layout geometry options
 - Layer names
 - Macros, Combos, Tap Dance, Key Overrides, and Alt Repeat
+- Compatible portable firmware settings: Auto Shift, Tap-Hold, One Shot, Mouse Keys, Magic, Grave Escape, and touchpad options
 - Layout-related Text Expander settings
 
 During import, Entropy first creates an automatic backup of the current device and then displays a report of imported and skipped sections
 
+On compatible RMK firmware, Universal Symbols and Russian letters used as Combo outputs or in any Tap Dance action are exported and imported without loss
+
 **Exact mapping** is used for the same device, while **universal mapping** transfers compatible positions between different layouts
+
+Portable settings are applied only when the target device supports a matching setting and format. The import report lists unsupported, incompatible, and failed values
 
 Do not disconnect the device until the file has been applied
 

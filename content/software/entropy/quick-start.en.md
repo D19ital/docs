@@ -56,7 +56,7 @@ Open **Layout** to access these actions
 - Import or export `.entlayout`
 - Export an image or PDF
 - Open Layout Indicator
-- View device information
+- View device information and check for firmware updates
 
 {{< video autoplay="true" loop="true" muted="true" src="/video/entropy/device-menu-en.mp4" >}}
 
@@ -83,7 +83,7 @@ This menu contains application preferences and firmware features
 - Live Features
 - Magic and Tap-Hold/One Shot
 - Vial lock or unlock
-- Entropy version information
+- Entropy information and application updates
 
 ## Interactive tour
 

@@ -1,7 +1,6 @@
 ---
 title: Installation
 weight: 1
-layout_lightbox: true
 prev: /software/entropy
 next: quick-start
 ---
@@ -80,15 +79,15 @@ If Entropy cannot see a Bluetooth device, also check **Input Monitoring**, fully
   {{< /tab >}}
 {{< /tabs >}}
 
-## Updating
+## Updating Entropy
 
 Open **Config → About Entropy** to check for a new version and open its download page
-
-{{< layout-lightbox src="/images/entropy/settings-about-en.png" alt="About Entropy page" width="900" >}}
 
 Download the new file for your platform and replace the previous build, user settings are stored separately and remain available after an update
 
 Before a major update, create backups with **Export settings** and **Layout → Export layout**
+
+Firmware updates for the connected device are checked separately under **Layout → About device**
 
 ## Uninstalling
 

@@ -76,9 +76,9 @@ Over Bluetooth, Entropy loads the first layer immediately and reads other layers
 - Do not switch devices during initial loading
 - Click **Retry** if only one section failed
 - Reconnect the device after repeated failures
-- Open **Layout → About device → Refresh device data** after a firmware update
+- After updating firmware, reconnect the device and wait for its capabilities to load automatically
 
-Refreshing device data removes the local schema cache and reads it again
+There is no manual device-data refresh action: Entropy checks firmware and loads device data automatically on connection
 
 ## A menu item is missing
 
@@ -86,10 +86,21 @@ Entropy hides features that the firmware does not expose
 
 - Check the firmware version
 - Connect the device and wait for all data to load
-- Refresh device data after flashing new firmware
+- Reconnect the device after flashing new firmware
 - Confirm that the required capability is supported by this firmware
 
 Missing RGB, Auto Shift, Combos, modules, Universal Symbols, or another page is expected when firmware does not advertise that feature
+
+## Firmware update not found
+
+The automatic check under **Layout → About device** is available only for supported Ergohaven RMK profiles
+
+- If update rows are not shown, the connected firmware does not report a supported update profile
+- **Published package not found** means Entropy could not find an exact ZIP for the device model and topology
+- After a network error, verify access to GitHub and click **Check** again
+- If automatic download is unavailable, find the package manually on the [Firmware](/firmware/) page
+
+Entropy does not install the downloaded package automatically
 
 ## Changes are not saved
 

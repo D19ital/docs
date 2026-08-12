@@ -34,20 +34,17 @@ Entropy works with devices that expose a compatible Vial interface
 
 The available pages depend on firmware capabilities: Entropy hides settings that the connected device does not support
 
-{{< callout type="info" >}}
-This documentation is based on Entropy `v0.3.2-rc.1`
-{{< /callout >}}
-
 ## Main features
 
 - Key, layer, and encoder configuration
 - Macros, Combos, Tap Dance, and Key Overrides
 - Auto Shift, Tap-Hold, One Shot, Mouse Keys, Magic, and Grave Escape
 - RGB, Layer LEDs, displays, modules, and pointing devices
-- `.entlayout` import and export, plus PNG, SVG, and PDF export
+- `.entlayout` import and export with compatible firmware settings, plus PNG, SVG, and PDF export
 - Matrix Tester and the separate Layout Indicator window
 - Text Expander and Typing Trainer
 - Live integrations for time, volume, media, and the operating-system layout
 - Universal Symbols for consistent punctuation in English and Russian layouts
+- Automatic firmware update checks for supported Ergohaven RMK devices
 
 The latest builds are available on [GitHub Releases](https://github.com/ergohaven/entropy/releases)
