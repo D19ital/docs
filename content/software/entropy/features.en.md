@@ -19,9 +19,9 @@ Open **Config → App settings**
 | --- | --- |
 | **Language** | Switches between the English and Russian interface |
 | **Key legends** | Shows EN or EN/RU legends in the selected order |
-| **Run in background** | Keeps Live Features and Text Expander active after closing the window |
+| **Close to tray / Run in background** | Keeps Live Features and Text Expander active after closing the window; the label depends on the operating system |
 | **Launch at startup** | Starts Entropy with the user session |
-| **Launch minimized** | Hides the window during automatic startup |
+| **Launch in tray / Launch minimized** | Starts Entropy directly in the Windows system tray or minimized on other operating systems during automatic startup |
 | **Shifted number symbols** | Shows shifted symbols above the number row |
 | **Layer hover preview** | Previews a target layer while hovering over a layer key |
 | **Encoder hover zoom** | Enlarges encoders on hover |
@@ -32,6 +32,8 @@ Open **Config → App settings**
 {{< layout-lightbox src="/images/entropy/settings-app-en.png" alt="Entropy app settings" width="900" >}}
 
 **Import settings** and **Export settings** use `.entsettings` files to transfer application preferences and Text Expander rules
+
+Entropy creates an automatic backup before import. All settings files are applied as one operation: if any write fails, the application restores the previous state
 
 On Linux, this page also provides the Vial udev rule installer
 
@@ -58,6 +60,8 @@ Available actions:
 
 Names and descriptions are stored locally and included in `.entlayout`
 
+Changed macros are written in the background, while unchanged firmware buffers are not sent again
+
 ## Tap Dance
 
 Tap Dance assigns different actions to one key depending on how it is pressed
@@ -66,6 +70,8 @@ Tap Dance assigns different actions to one key depending on how it is pressed
 - **Hold** — hold
 - **Double Tap** — double press
 - **Tap + Hold** — press, then hold
+
+On compatible RMK firmware, any of the four actions can use a Universal Symbol or Russian letter exposed as a firmware-native action
 
 **Tapping term** sets the window in which the firmware distinguishes these actions
 
@@ -76,6 +82,8 @@ Tap Dance assigns different actions to one key depending on how it is pressed
 A Combo sends one action when two to four input keys are pressed together
 
 Open **Advanced → Combos**, select a slot, then choose the input keys and output action
+
+On compatible RMK firmware, each Combo can also be limited to **All layers** or one specific layer. Universal Symbols and Russian letters are available as outputs when the firmware advertises those actions
 
 Combo timeout defines the maximum interval between input presses
 
@@ -177,6 +185,21 @@ Entropy must keep running in the background for Live Features
 
 See [Universal Symbols](../universal-symbols) for Layout Sync details
 
+## Device firmware updates
+
+For supported Ergohaven RMK devices, Entropy automatically checks for a newer stable firmware release
+
+1. Connect the device and open **Layout → About device**
+2. Compare **Firmware version**, **Latest firmware**, and **Firmware status**
+3. Click **Download** to open the exact ZIP package for the connected device model and topology
+4. Click **Changelog** to view the release notes
+
+**Check** runs the lookup again. If the device or its firmware does not provide a supported update profile, firmware rows and download actions are not shown
+
+{{< callout type="important" >}}
+Entropy opens the package download but does not flash the device automatically. Follow the instructions on the [Firmware](/firmware/) page before installing it
+{{< /callout >}}
+
 ## Firmware settings
 
 {{< details title="Auto Shift" closed="true" >}}
@@ -228,6 +251,8 @@ Layer LEDs set brightness, timeout, and individual colors for layers or Bluetoot
 Entropy can show or hide encoders, select display presets, and change module parameters exposed by firmware
 
 These can include pointer mode, axes, DPI, scroll sensitivity, acceleration, gestures, inversion, and automatic mouse layers
+
+On K:04, select the module separately for the left and right halves: **None**, **Encoder**, **Trackball**, or **Touchpad**. An encoder appears on the layout only for a side set to Encoder; its press and two rotation actions remain anchored to the replaced matrix position
 
 {{< layout-lightbox src="/images/entropy/settings-modules-en.png" alt="Module settings" width="900" >}}
 

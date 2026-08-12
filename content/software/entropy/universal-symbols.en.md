@@ -32,7 +32,7 @@ The **Universal** picker tab contains 32 ASCII punctuation characters:
 
 Compatible firmware also exposes the Russian letters `х`, `б`, `ю`, and `ъ` under **Special → International**, hold Shift for an uppercase letter
 
-Unicode typography, arrows, mathematical signs, and extra currency symbols are not supported in this version
+The picker does not include Unicode typography, arrows, mathematical signs, or extra currency symbols
 
 ## Assignment
 
@@ -43,6 +43,15 @@ Unicode typography, arrows, mathematical signs, and extra currency symbols are n
 5. Select a punctuation character or control action
 
 Entropy displays these assignments with a two-line `Universal` legend and the selected character or action name
+
+## Combos and Tap Dance
+
+On compatible RMK firmware, Universal Symbols and Russian letters are available beyond regular key assignments:
+
+- In **Combos** — as the output action
+- In **Tap Dance** — for Tap, Hold, Double Tap, and Tap + Hold actions
+
+Entropy preserves these actions without loss when exporting and importing `.entlayout` files
 
 ## Control actions
 
@@ -124,5 +133,5 @@ If the character differs, check Layout Sync, press `Sync`, and verify the PC/mac
 
 - Update the device's RMK firmware to a version with Universal Symbols
 - Reconnect the device
-- Open **Layout → About device → Refresh device data** if firmware was updated without changing its name
+- Wait for Entropy to load firmware capabilities automatically after reconnecting
 - Make sure the device is connected through Vial-RMK rather than firmware without this capability
