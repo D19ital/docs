@@ -1,6 +1,61 @@
 (() => {
   'use strict';
 
+  const root = document.documentElement;
+  const themeToggles = [...document.querySelectorAll('[data-eh-theme-toggle]')];
+  const darkPreference = window.matchMedia('(prefers-color-scheme: dark)');
+
+  const syncThemeToggles = () => {
+    const isDark = root.classList.contains('dark');
+
+    themeToggles.forEach((toggle) => {
+      const label = isDark ? toggle.dataset.labelLight : toggle.dataset.labelDark;
+      toggle.setAttribute('aria-pressed', String(isDark));
+      toggle.setAttribute('aria-label', label);
+      toggle.title = label;
+    });
+  };
+
+  const applyTheme = (theme) => {
+    if (typeof window.setTheme === 'function') {
+      window.setTheme(theme);
+    } else {
+      root.classList.remove('light', 'dark');
+      root.classList.add(theme);
+      root.style.colorScheme = theme;
+    }
+
+    try {
+      localStorage.setItem('color-theme', theme);
+    } catch (_) {
+      // The toggle still works when storage is unavailable.
+    }
+
+    syncThemeToggles();
+  };
+
+  themeToggles.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      applyTheme(root.classList.contains('dark') ? 'light' : 'dark');
+    });
+  });
+
+  darkPreference.addEventListener?.('change', () => {
+    let storedTheme = null;
+
+    try {
+      storedTheme = localStorage.getItem('color-theme');
+    } catch (_) {
+      // Keep the current resolved theme when storage is unavailable.
+    }
+
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      window.requestAnimationFrame(syncThemeToggles);
+    }
+  });
+
+  syncThemeToggles();
+
   const header = document.querySelector('.hextra-nav-container');
   if (!header) return;
 

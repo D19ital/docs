@@ -2,18 +2,20 @@
 {{- $changeTheme := (T "changeTheme") | default "Change theme" -}}
 {{- $light := (T "light") | default "Light" -}}
 {{- $dark := (T "dark") | default "Dark" -}}
-{{- $system := (T "system") | default "System" -}}
+{{- $toLight := printf "%s: %s" $changeTheme $light -}}
+{{- $toDark := printf "%s: %s" $changeTheme $dark -}}
 
-<div class="eh-theme-control" data-theme="light">
+<div class="eh-theme-control">
   <button
-    title="{{ $changeTheme }}"
-    data-state="closed"
+    title="{{ $toDark }}"
     data-location="{{ $location }}"
-    class="hextra-theme-toggle eh-theme-toggle"
+    data-label-light="{{ $toLight }}"
+    data-label-dark="{{ $toDark }}"
+    data-eh-theme-toggle
+    class="eh-theme-toggle"
     type="button"
-    aria-label="{{ $changeTheme }}"
-    aria-expanded="false"
-    aria-haspopup="menu"
+    aria-label="{{ $toDark }}"
+    aria-pressed="false"
   >
     <span class="eh-theme-toggle__icons" aria-hidden="true">
       <svg class="eh-theme-toggle__icon eh-theme-toggle__sun" viewBox="0 0 24 24">
@@ -25,32 +27,4 @@
       </svg>
     </span>
   </button>
-  <ul
-    class="hextra-theme-toggle-options eh-header-menu eh-theme-options hx:hidden hx:z-20"
-    style="position: fixed; inset: auto auto 0px 0px; margin: 0px;"
-    data-theme="light"
-    role="menu"
-  >
-    {{- range $item := slice
-      (dict "id" "light" "label" $light)
-      (dict "id" "dark" "label" $dark)
-      (dict "id" "system" "label" $system)
-    -}}
-      <li role="none">
-        <button
-          type="button"
-          role="menuitemradio"
-          aria-checked="{{ if eq $item.id `light` }}true{{ else }}false{{ end }}"
-          tabindex="-1"
-          data-item="{{ $item.id }}"
-          class="eh-header-menu__item eh-theme-options__item"
-        >
-          <span>{{ $item.label }}</span>
-          <svg class="eh-header-menu__check" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="m5 12 4 4L19 6" />
-          </svg>
-        </button>
-      </li>
-    {{- end -}}
-  </ul>
 </div>
