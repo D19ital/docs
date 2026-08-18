@@ -45,13 +45,10 @@ languages:
           weight: 6
           params:
             type: language-switch
-            label: true     # опционально
-            icon: "translate"  # опционально, иначе будет дефолтная иконка
         - name: Theme
           weight: 7
           params:
-              type: theme-toggle
-              label: true   # опционально, по умолчанию false
+            type: theme-toggle
   en:
     baseURL: "https://docs.eh.industries/"
     languageCode: en-US
@@ -93,13 +90,10 @@ languages:
           weight: 7
           params:
             type: language-switch
-            label: true     # опционально
-            icon: "translate"  # опционально, иначе будет дефолтная иконка
         - name: Theme
           weight: 8
           params:
-              type: theme-toggle
-              label: true   # опционально, по умолчанию false
+            type: theme-toggle
 
 markup:
   goldmark:
@@ -117,7 +111,9 @@ params:
       path: images/eh-full.svg
       dark: images/eh-full-white.svg
       link: /
-      width: 150
+      # The SVG has generous vertical whitespace; 112 px makes its visible
+      # wordmark match Entropy's 1.55rem brand size.
+      width: 112
       height: auto
 
   footer:
