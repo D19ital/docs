@@ -1,15 +1,249 @@
 /* ==========================================================================
-   Hextra – Navbar + Footer tweaks
+   Entropy visual language
+   Palette, type and header behavior mirror github.com/ergohaven/entropy-site.
    ========================================================================== */
 
-/* ----------------------------------------------------------------------------
-   Navbar typography
-   (Set the footer-ish/nav link/button font size here; change to 15/17/18.)
-   ---------------------------------------------------------------------------- */
-.hextra-nav-container a:not(.hextra-language-switcher),
-.hextra-nav-container button:not(.hextra-theme-toggle) {
-  font-size: 14px !important;
+:root {
+  --eh-bg: #f6f4f2;
+  --eh-bg-elevated: #fcfbfa;
+  --eh-surface: #ece9e6;
+  --eh-surface-strong: #e2dedb;
+  --eh-text: #242225;
+  --eh-text-soft: #706b6e;
+  --eh-line: #d8d3d0;
+  --eh-line-strong: #bbb4b1;
+  --eh-accent: #bd838d;
+  --eh-accent-deep: #8f5963;
+  --eh-accent-hover: #7f4e58;
+  --eh-accent-soft: #eee0e2;
+  --eh-accent-contrast: #fffafb;
+  --eh-ambient-glow: rgb(189 131 141 / 13%);
+  --eh-control-shadow: 0 8px 22px rgb(73 48 55 / 12%);
+  --eh-shell: 1240px;
+  --eh-gutter: clamp(1.25rem, 4vw, 3rem);
+  --eh-radius-sm: 0.75rem;
+
+  /* Keep Hextra components in the same muted rose accent. */
+  --primary-hue: 349deg;
+  --primary-saturation: 31%;
+  --primary-lightness: 63%;
+  --hextra-max-navbar-width: var(--eh-shell);
+  --hextra-max-footer-width: 100%;
+  color-scheme: light;
+}
+
+html.dark {
+  --eh-bg: #111012;
+  --eh-bg-elevated: #181719;
+  --eh-surface: #211f22;
+  --eh-surface-strong: #2a282c;
+  --eh-text: #f0eced;
+  --eh-text-soft: #aaa3a6;
+  --eh-line: #302e32;
+  --eh-line-strong: #4a464c;
+  --eh-accent: #c58b95;
+  --eh-accent-deep: #d5a2aa;
+  --eh-accent-hover: #dfb0b8;
+  --eh-accent-soft: #271a1e;
+  --eh-accent-contrast: #171214;
+  --eh-ambient-glow: rgb(197 139 149 / 10%);
+  --eh-control-shadow: 0 10px 28px rgb(0 0 0 / 28%);
+  color-scheme: dark;
+}
+
+html {
+  scroll-padding-top: 5rem;
+  background: var(--eh-bg);
+}
+
+body {
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 50% -8rem, var(--eh-ambient-glow), transparent 36rem),
+    var(--eh-bg);
+  color: var(--eh-text);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: var(--eh-accent);
+  color: var(--eh-accent-contrast);
+}
+
+:focus-visible {
+  outline: 2px solid var(--eh-accent-deep);
+  outline-offset: 4px;
+}
+
+.content :is(h1, h2, h3, h4) {
+  color: var(--eh-text);
+  font-weight: 520;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+.content h1 {
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+}
+
+.content h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.content h3 {
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+/* Header */
+
+.hextra-nav-container {
+  height: 4rem;
+  border-bottom: 1px solid transparent;
+  background: transparent !important;
+  opacity: 1;
+  transition:
+    transform 420ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 360ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+  will-change: transform;
+}
+
+.hextra-nav-container.is-scrolled {
+  border-color: var(--eh-line);
+  background: var(--eh-bg) !important;
+}
+
+.hextra-nav-container.is-hidden {
+  transform: translateY(calc(-100% - 1px));
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hextra-nav-container-blur,
+.hextra-nav-container-blur:is(html[class~="dark"] *) {
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.hextra-nav-container nav {
+  width: min(100%, var(--eh-shell));
+  height: 4rem !important;
+  padding-inline: var(--eh-gutter) !important;
+  gap: 0.75rem !important;
+}
+
+.hextra-nav-container nav > a:first-child {
+  flex: 0 0 auto;
+}
+
+.hextra-nav-container nav > a:not(:first-child),
+.hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) {
+  color: var(--eh-text-soft) !important;
+  font-size: 0.875rem !important;
+  font-weight: 560 !important;
   line-height: 1.2 !important;
+  transition: color 150ms ease, background 150ms ease;
+}
+
+.hextra-nav-container nav > a:not(:first-child):hover,
+.hextra-nav-container nav > a:not(:first-child):focus-visible,
+.hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle):hover,
+.hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle):focus-visible {
+  color: var(--eh-text) !important;
+}
+
+.hextra-nav-container :is(
+  .hextra-language-switcher,
+  .hextra-theme-toggle,
+  .hextra-hamburger-menu
+) {
+  min-height: 2.75rem;
+  border-radius: 0.65rem !important;
+}
+
+.hextra-nav-container :is(
+  .hextra-language-switcher,
+  .hextra-theme-toggle,
+  .hextra-hamburger-menu
+):hover {
+  background: var(--eh-surface) !important;
+}
+
+.hextra-nav-container .hextra-search-input {
+  min-height: 2.75rem;
+  border: 1px solid transparent;
+  border-radius: 0.65rem !important;
+  background: var(--eh-surface) !important;
+  color: var(--eh-text) !important;
+}
+
+.hextra-nav-container .hextra-search-input:focus-visible {
+  border-color: var(--eh-line-strong);
+  background: var(--eh-bg-elevated) !important;
+  box-shadow: var(--eh-control-shadow);
+}
+
+.hextra-nav-container :is(.hextra-language-options, .hextra-theme-toggle-options),
+.hextra-search-results {
+  border-color: var(--eh-line) !important;
+  border-radius: 0.65rem !important;
+  background: var(--eh-bg-elevated) !important;
+  box-shadow: var(--eh-control-shadow) !important;
+}
+
+.hextra-sidebar-container {
+  background: transparent;
+}
+
+@media (max-width: 48rem) {
+  .hextra-nav-container nav {
+    padding-inline: var(--eh-gutter) !important;
+  }
+
+  .hextra-nav-container nav > a:first-child img {
+    width: 120px;
+    height: auto;
+  }
+
+  .hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) {
+    display: grid;
+    width: 2.75rem;
+    padding: 0 !important;
+    place-items: center;
+  }
+
+  .hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) > div {
+    gap: 0 !important;
+  }
+
+  .hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) span {
+    display: none;
+  }
+
+  .hextra-sidebar-container {
+    background: var(--eh-bg) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hextra-nav-container {
+    transition: border-color 180ms ease, background 180ms ease;
+  }
 }
 
 /* ----------------------------------------------------------------------------
@@ -22,22 +256,6 @@ aside .hx\:sticky.hx\:bottom-0.hx\:border-t {
 /* ----------------------------------------------------------------------------
    Theme + language switchers (inherit size, unify icon sizing, set colors)
    ---------------------------------------------------------------------------- */
-.hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) {
-  font-size: inherit !important;
-  line-height: inherit !important;
-  color: rgb(107 114 128); /* Tailwind gray-500 */
-}
-
-.hextra-nav-container .hextra-theme-toggle {
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  line-height: 1.2 !important;
-}
-
-html.dark .hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) {
-  color: rgb(156 163 175); /* Tailwind gray-400 */
-}
-
 .hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) svg {
   width: 1em !important;
   height: 1em !important;
@@ -50,10 +268,6 @@ html.dark .hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-tog
    ---------------------------------------------------------------------------- */
 
 /* Full-width footer container (Hextra supports --hextra-max-footer-width). */
-:root {
-  --hextra-max-footer-width: 100%;
-}
-
 /* Make footer background match the page (transparent in both modes). */
 .hextra-footer,
 .hextra-footer:is(html[class~="dark"] *) {
