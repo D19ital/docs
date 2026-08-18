@@ -383,7 +383,10 @@ html.dark .eh-theme-toggle__moon {
 
   .eh-theme-toggle__icon,
   .hextra-card,
-  .hextra-card .hextra-card-icon svg {
+  .hextra-card .hextra-card-icon svg,
+  article details,
+  article details > summary,
+  article details > summary::before {
     transition-duration: 0.01ms !important;
   }
 }
@@ -452,6 +455,109 @@ aside .hx\:sticky.hx\:bottom-0.hx\:border-t {
 .hextra-card .hextra-card-subtitle p {
   color: var(--eh-text-soft) !important;
   line-height: 1.55;
+}
+
+/* ----------------------------------------------------------------------------
+   Details (Entropy card-style disclosure panels)
+   ---------------------------------------------------------------------------- */
+
+article details {
+  padding: 0.5rem !important;
+  border: 1px solid var(--eh-line);
+  border-radius: 0.85rem !important;
+  background: var(--eh-bg-elevated) !important;
+  color: var(--eh-text);
+  box-shadow: none;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease;
+}
+
+article details:hover,
+article details:focus-within,
+article details[open] {
+  border-color: var(--eh-line-strong);
+  box-shadow: 0 6px 18px rgb(56 44 49 / 8%);
+}
+
+article details > summary {
+  display: flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding: 0.55rem 0.75rem !important;
+  border-radius: 0.65rem !important;
+  background: transparent !important;
+  color: var(--eh-text);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.3;
+  list-style: none;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+article details > summary::-webkit-details-marker {
+  display: none;
+}
+
+article details > summary::marker {
+  content: "";
+}
+
+article details > summary::before {
+  box-sizing: border-box;
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  margin: 0 0.8rem 0 0.2rem !important;
+  padding: 0 !important;
+  flex: 0 0 auto;
+  transform: rotate(-45deg) !important;
+  border: 0;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  background: none !important;
+  content: "";
+  transition: transform 160ms ease;
+}
+
+article details[open] > summary::before {
+  transform: rotate(45deg) !important;
+}
+
+article details:hover > summary,
+article details:focus-within > summary,
+article details[open] > summary {
+  background: var(--eh-surface) !important;
+  color: var(--eh-text);
+}
+
+article details > summary strong {
+  color: inherit;
+  font-size: inherit !important;
+  font-weight: inherit;
+}
+
+article details > div {
+  padding: 0.65rem 0.75rem 0.75rem !important;
+  color: var(--eh-text);
+}
+
+article details > div > :first-child {
+  margin-top: 0;
+}
+
+article details > div > :last-child {
+  margin-bottom: 0;
+}
+
+article details > summary ~ :not(div) {
+  margin-inline: 0.75rem;
+}
+
+article details > summary ~ :not(div):last-child {
+  margin-bottom: 0.75rem;
 }
 
 /* ----------------------------------------------------------------------------
