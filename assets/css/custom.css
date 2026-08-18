@@ -160,7 +160,7 @@ textarea {
 }
 
 .hextra-nav-container nav > a:not(:first-child),
-.hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle) {
+.hextra-nav-container :is(.hextra-language-switcher, .eh-theme-toggle) {
   color: var(--eh-text-soft) !important;
   font-size: 0.875rem !important;
   font-weight: 560 !important;
@@ -170,14 +170,14 @@ textarea {
 
 .hextra-nav-container nav > a:not(:first-child):hover,
 .hextra-nav-container nav > a:not(:first-child):focus-visible,
-.hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle):hover,
-.hextra-nav-container :is(.hextra-language-switcher, .hextra-theme-toggle):focus-visible {
+.hextra-nav-container :is(.hextra-language-switcher, .eh-theme-toggle):hover,
+.hextra-nav-container :is(.hextra-language-switcher, .eh-theme-toggle):focus-visible {
   color: var(--eh-text) !important;
 }
 
 .hextra-nav-container :is(
   .hextra-language-switcher,
-  .hextra-theme-toggle,
+  .eh-theme-toggle,
   .hextra-hamburger-menu
 ) {
   min-height: 2.75rem;
@@ -185,7 +185,7 @@ textarea {
 }
 
 .hextra-nav-container :is(
-  .hextra-theme-toggle,
+  .eh-theme-toggle,
   .hextra-hamburger-menu
 ):hover {
   background: var(--eh-surface) !important;
@@ -193,7 +193,7 @@ textarea {
 
 .hextra-nav-container :is(
   .hextra-language-switcher,
-  .hextra-theme-toggle,
+  .eh-theme-toggle,
   .hextra-hamburger-menu
 ) {
   border: 0;
@@ -271,10 +271,8 @@ textarea {
   transition: opacity 150ms ease, transform 180ms ease;
 }
 
-.eh-theme-control[data-theme="light"] .eh-theme-toggle__sun,
-.eh-theme-control[data-theme="dark"] .eh-theme-toggle__moon,
-html:not(.dark) .eh-theme-control[data-theme="system"] .eh-theme-toggle__sun,
-html.dark .eh-theme-control[data-theme="system"] .eh-theme-toggle__moon {
+html:not(.dark) .eh-theme-toggle__sun,
+html.dark .eh-theme-toggle__moon {
   opacity: 1;
   transform: rotate(0deg) scale(1);
 }
@@ -300,7 +298,7 @@ html.dark .eh-theme-control[data-theme="system"] .eh-theme-toggle__moon {
   box-shadow: var(--eh-control-shadow);
 }
 
-.hextra-nav-container :is(.hextra-language-options, .hextra-theme-toggle-options),
+.hextra-nav-container .hextra-language-options,
 .hextra-search-results {
   border-color: var(--eh-line) !important;
   border-radius: 0.65rem !important;
@@ -325,10 +323,6 @@ html.dark .eh-theme-control[data-theme="system"] .eh-theme-toggle__moon {
   min-width: 4.25rem;
 }
 
-.eh-theme-options {
-  min-width: 8rem !important;
-}
-
 .eh-header-menu__item {
   position: relative;
   display: flex;
@@ -349,8 +343,7 @@ html.dark .eh-theme-control[data-theme="system"] .eh-theme-toggle__moon {
 
 .eh-header-menu__item:hover,
 .eh-header-menu__item:focus-visible,
-.eh-header-menu__item[aria-current="page"],
-.eh-header-menu__item[aria-checked="true"] {
+.eh-header-menu__item[aria-current="page"] {
   background: var(--eh-surface);
   color: var(--eh-text);
 }
@@ -360,27 +353,6 @@ html.dark .eh-theme-control[data-theme="system"] .eh-theme-toggle__moon {
   font-size: 0.68rem;
   font-weight: 720;
   letter-spacing: 0.08em;
-}
-
-.eh-theme-options__item {
-  justify-content: space-between;
-  padding-inline: 0.75rem;
-  text-align: left;
-}
-
-.eh-header-menu__check {
-  width: 0.9rem;
-  height: 0.9rem;
-  fill: none;
-  opacity: 0;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-}
-
-.eh-theme-options__item[aria-checked="true"] .eh-header-menu__check {
-  opacity: 1;
 }
 
 .hextra-sidebar-container {
@@ -408,6 +380,12 @@ html.dark .eh-theme-control[data-theme="system"] .eh-theme-toggle__moon {
   .hextra-nav-container {
     transition: border-color 180ms ease, background 180ms ease;
   }
+
+  .eh-theme-toggle__icon,
+  .hextra-card,
+  .hextra-card .hextra-card-icon svg {
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* ----------------------------------------------------------------------------
@@ -422,6 +400,58 @@ aside .hx\:sticky.hx\:bottom-0.hx\:border-t {
   border-color: var(--eh-line) !important;
   background: var(--eh-bg) !important;
   box-shadow: 0 -12px 16px var(--eh-bg) !important;
+}
+
+/* ----------------------------------------------------------------------------
+   Cards (Entropy secondary-surface interaction)
+   ---------------------------------------------------------------------------- */
+
+.hextra-card {
+  border: 1px solid var(--eh-line) !important;
+  border-radius: 0.85rem !important;
+  background: var(--eh-bg-elevated) !important;
+  color: var(--eh-text) !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease !important;
+}
+
+.hextra-card:hover,
+.hextra-card:focus-visible {
+  border-color: var(--eh-line-strong) !important;
+  background: var(--eh-surface) !important;
+  color: var(--eh-text) !important;
+  box-shadow: 0 6px 18px rgb(56 44 49 / 8%) !important;
+}
+
+.hextra-card .hextra-card-image {
+  border-bottom: 1px solid var(--eh-line);
+  background: var(--eh-surface);
+}
+
+.hextra-card .hextra-card-icon {
+  color: var(--eh-text) !important;
+  font-weight: 650 !important;
+}
+
+.hextra-card .hextra-card-icon svg {
+  color: var(--eh-accent-deep) !important;
+  transition: color 160ms ease !important;
+}
+
+.hextra-card:hover .hextra-card-icon svg,
+.hextra-card:focus-visible .hextra-card-icon svg {
+  color: var(--eh-accent-hover) !important;
+}
+
+.hextra-card .hextra-card-subtitle,
+.hextra-card .hextra-card-subtitle p {
+  color: var(--eh-text-soft) !important;
+  line-height: 1.55;
 }
 
 /* ----------------------------------------------------------------------------
@@ -445,7 +475,7 @@ aside .hx\:sticky.hx\:bottom-0.hx\:border-t {
 .hextra-footer :is(
   .hextra-language-switcher,
   .hextra-language-options,
-  .hextra-theme-toggle
+  .eh-theme-control
 ) {
   display: none !important;
 }
