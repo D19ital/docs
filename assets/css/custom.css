@@ -140,14 +140,18 @@ textarea {
 }
 
 .hextra-nav-container nav {
+  display: grid !important;
   width: min(calc(100% - (2 * var(--eh-gutter))), var(--eh-shell));
   height: 4rem !important;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   padding-inline: 0 !important;
   gap: 0.75rem !important;
 }
 
 .hextra-nav-container nav > a:first-child {
   flex: 0 0 auto;
+  margin-inline: 0 !important;
+  justify-self: start;
 }
 
 .eh-docs-brand {
@@ -159,7 +163,24 @@ textarea {
   height: auto;
 }
 
-.hextra-nav-container nav > a:not(:first-child),
+.eh-primary-nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.9rem, 1.8vw, 1.7rem);
+}
+
+.eh-header-controls {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  justify-self: end;
+}
+
+.eh-primary-nav__link,
 .hextra-nav-container :is(.hextra-language-switcher, .eh-theme-toggle) {
   color: var(--eh-text-soft) !important;
   font-size: 0.875rem !important;
@@ -168,11 +189,28 @@ textarea {
   transition: color 150ms ease, background 150ms ease;
 }
 
-.hextra-nav-container nav > a:not(:first-child):hover,
-.hextra-nav-container nav > a:not(:first-child):focus-visible,
+.eh-primary-nav__link:hover,
+.eh-primary-nav__link:focus-visible,
 .hextra-nav-container :is(.hextra-language-switcher, .eh-theme-toggle):hover,
 .hextra-nav-container :is(.hextra-language-switcher, .eh-theme-toggle):focus-visible {
   color: var(--eh-text) !important;
+}
+
+.eh-primary-nav__arrow {
+  margin-left: 0.15rem;
+  font-size: 0.75em;
+}
+
+@media (min-width: 48rem) and (max-width: 75.5rem) {
+  .hextra-nav-container nav .hextra-search-wrapper {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 58rem) {
+  .hextra-nav-container nav .hextra-search-wrapper {
+    display: none;
+  }
 }
 
 .hextra-nav-container :is(
@@ -360,7 +398,7 @@ html.dark .eh-theme-toggle__moon {
   background: transparent;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 47.999rem) {
   .hextra-nav-container .hextra-hamburger-menu {
     display: grid;
     place-items: center;

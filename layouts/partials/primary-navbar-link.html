@@ -1,0 +1,33 @@
+{{- $currentPage := .currentPage -}}
+{{- $link := .link -}}
+{{- $item := .item -}}
+{{- $icon := .icon -}}
+{{- $external := .external -}}
+
+{{- $active := or ($currentPage.HasMenuCurrent "main" $item) ($currentPage.IsMenuCurrent "main" $item) -}}
+{{- if and (not $active) $link -}}
+  {{- $currentPath := strings.TrimSuffix "/" $currentPage.RelPermalink -}}
+  {{- $linkPath := strings.TrimSuffix "/" $link -}}
+  {{- if eq $currentPath $linkPath -}}
+    {{- $active = true -}}
+  {{- end -}}
+{{- end -}}
+{{- $activeClass := cond $active "hx:font-medium" "hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200" -}}
+{{- $showArrow := in (slice "roadmap" "faq" "shop") $item.Identifier -}}
+
+<a
+  title="{{ or (T $item.Identifier) $item.Name | safeHTML }}"
+  href="{{ $link }}"
+  {{ if $external }}target="_blank" rel="noreferrer"{{ end }}
+  class="eh-primary-nav__link hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:hidden hx:whitespace-nowrap hx:md:inline-flex hx:items-center {{ $activeClass }}"
+>
+  {{- if $icon -}}
+    <span class="hx:inline-flex hx:items-center">
+      {{- partial "utils/icon" (dict "name" $icon "attributes" `height="1em" class="hx:inline-block"`) -}}
+    </span>
+  {{- end -}}
+  <span class="hx:text-center">{{- or (T $item.Identifier) $item.Name | safeHTML -}}</span>
+  {{- if $showArrow -}}
+    <span class="eh-primary-nav__arrow" aria-hidden="true">↗</span>
+  {{- end -}}
+</a>
