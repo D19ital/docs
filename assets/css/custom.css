@@ -294,6 +294,7 @@ html.dark .eh-theme-toggle__moon {
 
 .hextra-nav-container .hextra-search-input:focus-visible {
   border-color: var(--eh-line-strong);
+  outline: none;
   background: var(--eh-bg-elevated) !important;
   box-shadow: var(--eh-control-shadow);
 }
