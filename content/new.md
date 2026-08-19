@@ -99,14 +99,14 @@ title: С чего начать?
 
 **Прошивка:** QMK
 
-**Настройка:** [Entropy](https://github.com/ergohaven/entropy)
+**Настройка:** [Entropy](https://entropy.tools/ru/)
   {{< /tab >}}
   {{< tab >}}
 Половинки общаются по **беспроводному протоколу**, подключение к компьютеру — по Bluetooth. До **5 профилей** устройств. Требует периодической зарядки (~2 часа, работа от нескольких недель)
 
 **Прошивка:** RMK
 
-**Настройка:** [Entropy](https://github.com/ergohaven/entropy)
+**Настройка:** [Entropy](https://entropy.tools/ru/)
   {{< /tab >}}
 {{< /tabs >}}
 
@@ -114,8 +114,8 @@ title: С чего начать?
 
 | Прошивка | Конфигуратор | Для каких устройств |
 |----------|--------------|----------------------|
-| **QMK** | [Entropy](https://github.com/ergohaven/entropy) | Серия клавиатур Phenom |
-| **RMK** | [Entropy](https://github.com/ergohaven/entropy) | Серия клавиатур K:04 |
+| **QMK** | [Entropy](https://entropy.tools/ru/) | Серия клавиатур Phenom |
+| **RMK** | [Entropy](https://entropy.tools/ru/) | Серия клавиатур K:04 |
 
 **Entropy** — это настольное приложение с современным, минималистичным и интуитивно понятным интерфейсом для настройки программируемых устройств ввода под управлением прошивки Vial-QMK или Vial-RMK
 
