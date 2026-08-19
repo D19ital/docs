@@ -26,18 +26,21 @@
   <div class="firmware-picker__field">
     <div class="firmware-picker__combobox">
       <label class="firmware-picker__label" for="{{ $searchID }}">{{ $deviceLabel }}</label>
-      <input
-        class="firmware-picker__search"
-        id="{{ $searchID }}"
-        type="search"
-        role="combobox"
-        aria-autocomplete="list"
-        aria-expanded="false"
-        aria-controls="{{ $optionsID }}"
-        placeholder="{{ $searchPlaceholder }}"
-        autocomplete="off"
-        data-firmware-search
-      >
+      <div class="firmware-picker__control">
+        <input
+          class="firmware-picker__search"
+          id="{{ $searchID }}"
+          type="search"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-expanded="false"
+          aria-controls="{{ $optionsID }}"
+          placeholder="{{ $searchPlaceholder }}"
+          autocomplete="off"
+          data-firmware-search
+        >
+        <i class="firmware-picker__chevron" aria-hidden="true"></i>
+      </div>
       <div class="firmware-picker__options" id="{{ $optionsID }}" role="listbox" data-firmware-options hidden>
       {{- range sort $pickerOptions "order" }}
         {{- $device := .device -}}
