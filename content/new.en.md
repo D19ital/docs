@@ -99,14 +99,14 @@ The halves are connected to each other via a **USB-C** cable, and one half conne
 
 **Firmware:** QMK
 
-**Configuration:** [Entropy](https://github.com/ergohaven/entropy)
+**Configuration:** [Entropy](https://entropy.tools)
   {{< /tab >}}
   {{< tab >}}
 The halves communicate **wirelessly**, with the computer connection via Bluetooth. Up to **5 device profiles**. Requires periodic charging (~2 hours, lasts several weeks on a charge)
 
 **Firmware:** RMK
 
-**Configuration:** [Entropy](https://github.com/ergohaven/entropy)
+**Configuration:** [Entropy](https://entropy.tools)
   {{< /tab >}}
 {{< /tabs >}}
 
@@ -114,8 +114,8 @@ The halves communicate **wirelessly**, with the computer connection via Bluetoot
 
 | Firmware | Configurator | Supported devices |
 |----------|--------------|-------------------|
-| **QMK** | [Entropy](https://github.com/ergohaven/entropy) | Phenom keyboard series |
-| **RMK** | [Entropy](https://github.com/ergohaven/entropy) | K:04 keyboard series |
+| **QMK** | [Entropy](https://entropy.tools) | Phenom keyboard series |
+| **RMK** | [Entropy](https://entropy.tools) | K:04 keyboard series |
 
 **Entropy** is a desktop application with a modern, minimalistic, and intuitive interface for configuring programmable input devices running Vial-QMK or Vial-RMK firmware
 
