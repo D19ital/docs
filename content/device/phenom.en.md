@@ -86,7 +86,7 @@ Phenom supports a modular system for both halves of the keyboard
 - each module is configured separately, and the active layer is shown by indicator lighting
 
 ## Configuration
-To remap keys and configure the keyboard, use the graphical configurator [Entropy](https://github.com/ergohaven/entropy)
+To remap keys and configure the keyboard, use the graphical configurator [Entropy](https://entropy.tools)
 
 ## Firmware update
 
