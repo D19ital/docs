@@ -423,6 +423,7 @@ html.dark .eh-theme-toggle__moon {
   .eh-theme-toggle__icon,
   .hextra-card,
   .hextra-card .hextra-card-icon svg,
+  .hextra-tabs-toggle,
   article details,
   article details > summary,
   article details > summary::before {
@@ -494,6 +495,93 @@ aside .hx\:sticky.hx\:bottom-0.hx\:border-t {
 .hextra-card .hextra-card-subtitle p {
   color: var(--eh-text-soft) !important;
   line-height: 1.55;
+}
+
+/* ----------------------------------------------------------------------------
+   Tabs (Entropy segmented control)
+   ---------------------------------------------------------------------------- */
+
+.hextra-scrollbar > [role="tablist"] {
+  display: flex !important;
+  width: max-content !important;
+  min-width: min(100%, 22rem) !important;
+  max-width: 100%;
+  margin-top: 1rem !important;
+  padding: 0.25rem !important;
+  overflow: visible;
+  border: 1px solid var(--eh-line) !important;
+  border-radius: 999px !important;
+  background: var(--eh-bg-elevated) !important;
+}
+
+.hextra-tabs-toggle {
+  display: flex !important;
+  min-width: 0;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  padding: 0.55rem 0.75rem !important;
+  flex: 1 0 auto;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: var(--eh-text-soft) !important;
+  font-size: 0.8rem;
+  font-weight: 650 !important;
+  line-height: 1.2 !important;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 160ms ease, color 160ms ease !important;
+}
+
+.hextra-tabs-toggle:hover {
+  background: var(--eh-surface) !important;
+  color: var(--eh-text) !important;
+}
+
+.hextra-tabs-toggle[aria-selected="true"] {
+  background: var(--eh-accent-soft) !important;
+  color: var(--eh-accent-deep) !important;
+}
+
+.hextra-tabs-toggle:focus-visible {
+  outline: 2px solid var(--eh-accent-deep) !important;
+  outline-offset: 2px !important;
+}
+
+.hextra-tabs-panel {
+  color: var(--eh-text);
+}
+
+@media (max-width: 24rem) {
+  .hextra-tabs-toggle {
+    padding-inline: 0.5rem !important;
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 21rem) {
+  .hextra-scrollbar > [role="tablist"] {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .hextra-tabs-toggle {
+    flex: 1 1 0;
+    white-space: normal;
+  }
+
+  .hextra-tabs-toggle > span {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+  }
+
+  .hextra-tabs-toggle > span > span {
+    min-width: 0;
+    white-space: normal;
+  }
 }
 
 /* ----------------------------------------------------------------------------
