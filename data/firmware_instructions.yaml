@@ -292,6 +292,7 @@ service_zmk_qube:
       - "Скопируйте <code>qube_rmk_to_zmk_reset.uf2</code> на появившийся диск"
       - "После перезагрузки установите обычную прошивку Qube для вашей модели клавиатуры — <code>*_qube-ergohaven-zmk.uf2</code>"
       - "Для половинок клавиатуры сначала используйте «ZMK — сброс всех настроек», затем установите соответствующие прошивки"
+    note: "Восстанавливает SoftDevice S140 после прошивки несовместимым файлом RMK или Qube/dongle. После восстановления необходимо установить штатную прошивку устройства."
   en:
     title: How to migrate Qube firmware from RMK back to ZMK
     steps:
@@ -299,3 +300,4 @@ service_zmk_qube:
       - "Copy <code>qube_rmk_to_zmk_reset.uf2</code> to the drive that appears"
       - "After Qube restarts, install the regular <code>*_qube-ergohaven-zmk.uf2</code> firmware for your keyboard model"
       - "For the keyboard halves, first use ‘ZMK — reset all settings’, then install the corresponding firmware"
+    note: "Restores SoftDevice S140 after an incompatible RMK or Qube/dongle firmware file has been installed. The regular device firmware must be installed afterward."
