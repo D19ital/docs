@@ -13,8 +13,10 @@ layout: landing
 - [x] Phenom
 - [x] Phenom Mini
 - [x] Phenom Micro
-- [ ] Project "Sprawl"
-- [ ] Project "Angled"
+- [x] K:04 Series tenting (Project "Angled")
+- [ ] Project "Ortho"
+- [ ] Space Mission 62
+- [ ] Project "Customize"
 
 
 ## 2025
