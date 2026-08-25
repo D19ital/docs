@@ -9,7 +9,7 @@ groups:
         picker_order: 10
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/k04-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k04-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04.entlayout
       - id: rmk-k04-qube
@@ -17,7 +17,7 @@ groups:
         picker_order: 11
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/k04-qube-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k04-qube-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04.entlayout
       - id: rmk-k04-mini
@@ -25,7 +25,7 @@ groups:
         picker_order: 13
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/k04-mini-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k04-mini-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04_mini.entlayout
       - id: rmk-k04-mini-qube
@@ -33,7 +33,7 @@ groups:
         picker_order: 14
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/k04-mini-qube-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k04-mini-qube-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04_mini.entlayout
       - id: rmk-k04-micro
@@ -41,7 +41,7 @@ groups:
         picker_order: 16
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/k04-micro-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k04-micro-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04_micro.entlayout
       - id: rmk-k04-micro-qube
@@ -49,7 +49,7 @@ groups:
         picker_order: 17
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/k04-micro-qube-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k04-micro-qube-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04_micro.entlayout
 
@@ -64,7 +64,7 @@ groups:
         picker_break_before: true
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/k03-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k03-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_03.entlayout
       - id: rmk-k03-v4-qube
@@ -72,7 +72,7 @@ groups:
         picker_order: 21
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/k03-qube-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k03-qube-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_03.entlayout
       - id: rmk-imperial44
@@ -80,7 +80,7 @@ groups:
         picker_order: 24
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/imperial44-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/imperial44-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/imperial44.entlayout
       - id: rmk-imperial44-qube
@@ -88,7 +88,7 @@ groups:
         picker_order: 25
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/imperial44-qube-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/imperial44-qube-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/imperial44.entlayout
       - id: rmk-op36
@@ -96,7 +96,7 @@ groups:
         picker_order: 27
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/op36-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/op36-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/op36.entlayout
       - id: rmk-op36-qube
@@ -104,7 +104,7 @@ groups:
         picker_order: 28
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/op36-qube-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/op36-qube-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/op36.entlayout
       - id: rmk-velvet-v3
@@ -112,7 +112,7 @@ groups:
         picker_order: 30
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/velvet-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/velvet-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/velvet_and_ui.entlayout
       - id: rmk-velvet-v3-qube
@@ -120,7 +120,7 @@ groups:
         picker_order: 31
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.7/velvet-qube-v0.1.7.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/velvet-qube-v0.1.8.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/velvet_and_ui.entlayout
 
