@@ -9,7 +9,7 @@ groups:
         picker_order: 10
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k04-v0.1.8.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.9/k04-v0.1.9.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04.entlayout
       - id: rmk-k04-qube
@@ -25,7 +25,7 @@ groups:
         picker_order: 13
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k04-mini-v0.1.8.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.9/k04-mini-v0.1.9.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04_mini.entlayout
       - id: rmk-k04-mini-qube
@@ -41,7 +41,7 @@ groups:
         picker_order: 16
         files:
           - label: { ru: Архив с прошивками, en: Firmware archive }
-            url: https://github.com/ergohaven/rmk/releases/download/v0.1.8/k04-micro-v0.1.8.zip
+            url: https://github.com/ergohaven/rmk/releases/download/v0.1.9/k04-micro-v0.1.9.zip
           - label: { ru: Стандартная раскладка, en: Standard layout }
             url: /entlayout/k_04_micro.entlayout
       - id: rmk-k04-micro-qube
