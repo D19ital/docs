@@ -7,7 +7,7 @@ cascade:
   type: docs
 ---
 
-Entropy is a cross-platform Ergohaven application for configuring programmable keyboards and other input devices running Vial-QMK or Vial-RMK firmware
+[Entropy](https://entropy.tools/) is a cross-platform Ergohaven application for configuring programmable keyboards and other input devices running Vial-QMK or Vial-RMK firmware
 
 {{< layout-lightbox src="/images/entropy/overview.png" alt="Entropy interface" width="900" >}}
 
