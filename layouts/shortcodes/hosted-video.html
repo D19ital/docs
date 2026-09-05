@@ -1,0 +1,50 @@
+{{- $poster := .Get "poster" -}}
+{{- $posterAlt := .Get "poster_alt" | default "" -}}
+{{- $videoTitle := .Get "title" | default "Video" -}}
+{{- $youtubeID := .Get "youtube_id" -}}
+{{- $youtubeURL := .Get "youtube_url" -}}
+{{- $vkOwnerID := .Get "vk_owner_id" -}}
+{{- $vkVideoID := .Get "vk_video_id" -}}
+{{- $vkURL := .Get "vk_url" -}}
+{{- $defaultSource := .Get "default" | default "vk" -}}
+{{- $youtubeEmbed := printf "https://www.youtube-nocookie.com/embed/%s?autoplay=1&rel=0" $youtubeID -}}
+{{- $vkEmbed := printf "https://vkvideo.ru/video_ext.php?oid=%s&id=%s&hd=2&autoplay=1" $vkOwnerID $vkVideoID -}}
+{{- $isEnglish := eq .Page.Language.Lang "en" -}}
+{{- $sourceLabel := cond $isEnglish "Video source" "Источник видео" -}}
+{{- $playVkLabel := cond $isEnglish "Play on VK Video" "Воспроизвести через VK Видео" -}}
+{{- $playYoutubeLabel := cond $isEnglish "Play on YouTube" "Воспроизвести через YouTube" -}}
+{{- $fallbackLabel := cond $isEnglish "Open directly:" "Открыть напрямую:" -}}
+{{- $vkStatus := cond $isEnglish "VK Video player opened" "Открыт плеер VK Видео" -}}
+{{- $youtubeStatus := cond $isEnglish "YouTube player opened" "Открыт плеер YouTube" -}}
+
+<div
+  class="hosted-video"
+  data-hosted-video
+  data-default-source="{{ $defaultSource }}"
+  data-video-title="{{ $videoTitle }}"
+  data-vk-src="{{ $vkEmbed | safeURL }}"
+  data-youtube-src="{{ $youtubeEmbed | safeURL }}"
+  data-vk-label="VK Видео"
+  data-youtube-label="YouTube"
+  data-vk-play-label="{{ $playVkLabel }}"
+  data-youtube-play-label="{{ $playYoutubeLabel }}"
+  data-vk-status="{{ $vkStatus }}"
+  data-youtube-status="{{ $youtubeStatus }}">
+  <div class="hosted-video__viewport" data-hosted-video-viewport>
+    <img class="hosted-video__poster" src="{{ $poster | safeURL }}" alt="{{ $posterAlt }}" width="900" loading="eager" decoding="async">
+    <button class="hosted-video__play" type="button" data-hosted-video-play aria-label="{{ if eq $defaultSource "youtube" }}{{ $playYoutubeLabel }}{{ else }}{{ $playVkLabel }}{{ end }}">
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+        <path d="M8 5v14l11-7z"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="hosted-video__controls">
+    <span class="hosted-video__source-label">{{ $sourceLabel }}</span>
+    <div class="hosted-video__sources" role="group" aria-label="{{ $sourceLabel }}">
+      <button class="hosted-video__source" type="button" data-hosted-video-source="vk" aria-pressed="{{ if eq $defaultSource "vk" }}true{{ else }}false{{ end }}">VK Видео</button>
+      <button class="hosted-video__source" type="button" data-hosted-video-source="youtube" aria-pressed="{{ if eq $defaultSource "youtube" }}true{{ else }}false{{ end }}">YouTube</button>
+    </div>
+  </div>
+  <p class="hosted-video__fallback">{{ $fallbackLabel }} <a href="{{ $vkURL | safeURL }}" target="_blank" rel="noopener noreferrer">VK Видео</a> · <a href="{{ $youtubeURL | safeURL }}" target="_blank" rel="noopener noreferrer">YouTube</a></p>
+  <p class="hosted-video__status" data-hosted-video-status aria-live="polite"></p>
+</div>

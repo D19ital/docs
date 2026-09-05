@@ -20,3 +20,8 @@
     <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
   {{- end }}
 {{- end }}
+{{- if .Params.hosted_video }}
+  {{- with resources.Get "js/hosted-video.js" | minify | fingerprint }}
+    <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+  {{- end }}
+{{- end }}
