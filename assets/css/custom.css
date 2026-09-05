@@ -1332,3 +1332,139 @@ html.video-lightbox-open body {
     right: 0.75rem;
   }
 }
+
+/* ==========================================================================
+   Hosted video selector
+   Shows a local poster and loads only the video provider selected by the user.
+   ========================================================================== */
+
+.hosted-video {
+  width: min(100%, 900px);
+  margin: 1.5rem 0;
+}
+
+.hosted-video__viewport {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--eh-line);
+  border-radius: var(--eh-radius-sm);
+  background: #090909;
+  box-shadow: var(--eh-control-shadow);
+}
+
+.hosted-video__poster,
+.hosted-video__frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.hosted-video__poster {
+  object-fit: cover;
+}
+
+.hosted-video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(255 255 255 / 38%);
+  border-radius: 9999px;
+  background: rgb(0 0 0 / 72%);
+  color: white;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 32%);
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.hosted-video__play svg {
+  margin-left: 0.2rem;
+}
+
+.hosted-video__play:hover {
+  transform: translate(-50%, -50%) scale(1.06);
+  background: rgb(0 0 0 / 88%);
+}
+
+.hosted-video__play:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 4px;
+}
+
+.hosted-video__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.8rem;
+}
+
+.hosted-video__source-label {
+  color: var(--eh-text-soft);
+  font-size: 0.9rem;
+}
+
+.hosted-video__sources {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  border: 1px solid var(--eh-line);
+  border-radius: 9999px;
+  background: var(--eh-surface);
+}
+
+.hosted-video__source {
+  padding: 0.35rem 0.8rem;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  color: var(--eh-text-soft);
+  cursor: pointer;
+}
+
+.hosted-video__source:hover {
+  color: var(--eh-text);
+}
+
+.hosted-video__source[aria-pressed="true"] {
+  background: var(--eh-accent-deep);
+  color: var(--eh-accent-contrast);
+  box-shadow: 0 2px 8px rgb(73 48 55 / 18%);
+}
+
+.content .hosted-video__fallback {
+  margin: 0.65rem 0 0;
+  color: var(--eh-text-soft);
+  font-size: 0.875rem;
+}
+
+.hosted-video__status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .hosted-video__play {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hosted-video__play {
+    transition: none;
+  }
+}
