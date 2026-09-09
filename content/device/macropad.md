@@ -70,6 +70,15 @@ sidebar:
   Не допускайте попадания жидкости внутрь устройства!
 {{< /callout >}}
 
+{{% details title="Инструкция по замене корпуса" closed="true" %}}
+
+<video controls playsinline preload="none" poster="/images/macropad/macropad_v3_case_replace_preview.png" style="max-width: 100%">
+  <source src="/video/macropad/macropad_v3_case_replace.mp4" type="video/mp4">
+  Ваш браузер не поддерживает воспроизведение видео
+</video>
+
+{{% /details %}}
+
 ## Поддержка
 
 На макропад распространяется *3 года гарантии и сервисной поддержки*.
